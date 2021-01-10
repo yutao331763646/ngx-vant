@@ -1,0 +1,16 @@
+<h1>{{title}}</h1>
+<div
+    class="card"
+    *ngFor="let card of cards"
+>
+    <h3>{{card.title}}</h3>
+    <p *ngIf="card.desc"  [innerHTML]="card.desc"></p>
+    <!-- <div class="highlight"> -->
+    <pre *ngIf="card.code">
+        <code
+            class="language-js"
+            [innerHTML]="card.code  | highlightAuto"
+        ></code>
+    </pre>
+    <!-- </div> -->
+</div>

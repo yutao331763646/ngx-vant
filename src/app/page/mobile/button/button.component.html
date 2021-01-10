@@ -1,0 +1,201 @@
+<vant-mobile-nav title='Button'></vant-mobile-nav>
+<vant-mobile-demo
+    title='按钮类型'
+    class="demo-button"
+>
+    <div class="demo-button-row">
+        <van-button type="primary">主要按钮</van-button>
+        <van-button type="info">信息按钮</van-button>
+        <van-button type="default">默认按钮</van-button>
+    </div>
+    <van-button type="danger">危险按钮</van-button>
+    <van-button type="warning">警告按钮</van-button>
+</vant-mobile-demo>
+
+<vant-mobile-demo
+    title='朴素按钮'
+    class="demo-button"
+>
+    <van-button
+        [plain]="true"
+        type="primary"
+    >
+        朴素按钮
+    </van-button>
+    <van-button
+        [plain]="true"
+        type="info"
+    >
+        朴素按钮
+    </van-button>
+</vant-mobile-demo>
+
+<vant-mobile-demo
+    title='细边框'
+    class="demo-button"
+>
+    <van-button
+        [plain]="true"
+        [hairline]="true"
+        type="primary"
+    >
+        细边框按钮
+    </van-button>
+    <van-button
+        [hairline]="true"
+        type="info"
+    >
+        细边框按钮
+    </van-button>
+</vant-mobile-demo>
+
+<vant-mobile-demo
+    title='禁用状态'
+    class="demo-button"
+>
+    <van-button
+        [disabled]="true"
+        type="primary"
+    >
+        禁用状态
+    </van-button>
+    <van-button
+        [disabled]="true"
+        type="info"
+    >
+        禁用状态
+    </van-button>
+</vant-mobile-demo>
+
+<vant-mobile-demo
+    title='加载状态'
+    class="demo-button"
+>
+    <van-button
+        [loading]="true"
+        type="primary"
+    >
+
+    </van-button>
+    <van-button
+        [loading]="true"
+        loadingSize='20px'
+        loadingType='spinner'
+        type="primary"
+    >
+
+    </van-button>
+    <van-button
+        [loading]="true"
+        type="info"
+        loadingText='加载中...'
+    >
+
+    </van-button>
+    <!-- <van-button
+        [disabled]="true"
+        type="info"
+    >
+        禁用状态
+    </van-button> -->
+</vant-mobile-demo>
+
+<vant-mobile-demo
+    title='按钮形状'
+    class="demo-button"
+>
+    <van-button
+        [square]="true"
+        type="primary"
+    >
+        方形按钮
+    </van-button>
+    <van-button
+        [round]="true"
+        type="info"
+    >
+        圆形按钮
+    </van-button>
+</vant-mobile-demo>
+
+<vant-mobile-demo
+    title='图标按钮'
+    class="demo-button"
+>
+    <van-button
+        icon="plus"
+        type="primary"
+    >
+    </van-button>
+    <van-button
+        icon="plus"
+        type="info"
+    >
+        按钮
+    </van-button>
+    <van-button [plain]="true"
+        icon="https://img.yzcdn.cn/vant/user-active.png"
+        type="info"  iconPrefix='right'
+    >
+        按钮
+    </van-button>
+</vant-mobile-demo>
+
+<vant-mobile-demo
+    title='按钮尺寸'
+    class="demo-button"
+>
+    <div class="demo-button-row">
+
+        <van-button
+            type="primary"
+            size="large"
+        >
+            大号按钮
+        </van-button>
+    </div>
+    <van-button
+        type="primary"
+        size="normal"
+    >
+        普通按钮
+    </van-button>
+    <van-button
+        type="primary"
+        size="small"
+    >
+        小型按钮
+    </van-button>
+    <van-button
+        type="primary"
+        size="mini"
+    >
+        迷你按钮
+    </van-button>
+</vant-mobile-demo>
+
+<vant-mobile-demo
+    title='块级元素'
+    class="demo-button"
+>
+    <van-button
+        type="primary"
+        [block]="true"
+    >
+        块级元素
+    </van-button>
+</vant-mobile-demo>
+
+<vant-mobile-demo
+    title='自定义颜色'
+    class="demo-button"
+>
+    <van-button color="#7232dd">单色按钮</van-button>
+    <van-button
+        [plain]="true"
+        color="#0032dd"
+    >
+        单色按钮
+    </van-button>
+    <van-button color="linear-gradient(to right, #ff6034, #ee0a24)">渐变色按钮</van-button>
+</vant-mobile-demo>

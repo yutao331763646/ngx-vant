@@ -1,0 +1,28 @@
+@import '../../common/style/var.less';
+
+.van-doc-container {
+  box-sizing: border-box;
+  padding-left: @van-doc-nav-width;
+  overflow: hidden;
+  padding-top: 60px;
+
+  &--with-simulator {
+    padding-right: @van-doc-simulator-width + @van-doc-padding;
+  }
+}
+
+
+.van-doc-content {
+  position: relative;
+  flex: 1;
+  padding: 0 0 75px;
+}
+
+.van-doc-row {
+  width: 100%;
+
+  @media (min-width: @van-doc-row-max-width) {
+    width: @van-doc-row-max-width;
+    margin: 0 auto;
+  }
+}

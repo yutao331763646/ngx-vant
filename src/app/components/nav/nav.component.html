@@ -1,0 +1,20 @@
+<div class="van-doc-nav">
+    <div
+        *ngFor="let group of navConfig"
+        class="van-doc-nav__group"
+    >
+        <div class="van-doc-nav__title">{{ group.title }}</div>
+        <ng-container *ngIf="group.items">
+            <div
+                *ngFor="let item of group.items"
+                class="van-doc-nav__item"
+            >
+                <a (click)="toPath(item)">
+                    <span>{{ item.title}}</span>
+                </a>
+                <!-- <van-doc-nav-link :item="item" :base="base" /> -->
+            </div>
+        </ng-container>
+      
+    </div>
+</div>

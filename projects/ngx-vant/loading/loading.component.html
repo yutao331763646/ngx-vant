@@ -1,0 +1,43 @@
+<div
+    [class]="'van-loading '"
+    [class.van-loading--circular]="type==='circular'"
+    [class.van-loading--spinner]="type==='spinner'"
+    [class.van-loading--vertical]="vertical"
+    [style.color]="isButton?'inherit':''"
+    [style.fontSize]="isButton?'inherit':''"
+>
+    <span
+        [class]="'van-loading__spinner'"
+        [class.van-loading__spinner--circular]="type==='circular'"
+        [class.van-loading__spinner--spinner]="type==='spinner'"
+        [style.color]="color"
+        [style.width]="size"
+        [style.height]="size"
+    >
+        <ng-container *ngIf='type==="circular"'>
+            <svg
+                class='van-loading__circular'
+                viewBox="25 25 50 50"
+            >
+                <circle
+                    cx="50"
+                    cy="50"
+                    r="20"
+                    fill="none"
+                ></circle>
+            </svg>
+        </ng-container>
+        <ng-container *ngIf="type==='spinner'">
+            <ng-container *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1,1]">
+                <i></i>
+            </ng-container>
+        </ng-container>
+    </span>
+    <span
+        class="van-loading__text"
+        [style.color]="textColor||color"
+        [style.fontSize]="textSize"
+    >
+        <ng-content></ng-content>
+    </span>
+</div>

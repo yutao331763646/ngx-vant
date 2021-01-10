@@ -1,0 +1,44 @@
+<button
+    [class]="'van-button van-button--' + type + ' van-button--' + size"
+    [class.van-button--hairline]="hairline"
+    [class.van-button--round]="round"
+    [class.van-button--square]="square"
+    [class.van-button--plain]="plain"
+    [class.van-button--disabled]="disabled"
+    [class.van-button--block]="block"
+    [class.van-hairline--surround]="hairline"
+    [disabled]="disabled"
+    [style]="colorStyle"
+>
+    <div class="van-button__content">
+        <van-icon
+            *ngIf="icon&&iconPrefix==='left'"
+            [name]="icon"
+        ></van-icon>
+        <span
+            *ngIf="!loading"
+            class="van-button__text"
+            [style.marginLeft]="icon&&iconPrefix==='left'?'4px':''"
+            [style.marginRight]="icon&&iconPrefix==='right'?'4px':''"
+        >
+            <ng-content></ng-content>
+        </span>
+        <van-loading
+            *ngIf="loading"
+            [isButton]="true"
+            color='currentColor'
+            [size]='loadingSize'
+            [type]='loadingType'
+        ></van-loading>
+        <span
+            *ngIf="loadingText"
+            class="van-button__text"
+        >
+            {{loadingText}}
+        </span>
+        <van-icon
+            *ngIf="icon&&iconPrefix==='right'"
+            [name]="icon"
+        ></van-icon>
+    </div>
+</button>

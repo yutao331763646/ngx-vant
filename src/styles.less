@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+// @import './packages/style/index.less';
+@import '../projects//ngx-vant//style/index.less';
+@import './app/common/style/highlight.less';
+
+p>code,
+li>code,
+table code {
+  display: inline;
+  margin: 0 2px;
+  padding: 2px 5px;
+  font-size: 14px;
+  font-family: inherit;
+  word-break: keep-all;
+  background-color: @van-doc-background-color;
+  border-radius: 4px;
+  -webkit-font-smoothing: antialiased;
+}
+
+p>code {
+  font-size: 14px;
+}
+
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 6px;
+}
+
+:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(69, 90, 100, 0.2);
+}

@@ -1,0 +1,41 @@
+<vant-mobile-nav title='Loading'></vant-mobile-nav>
+
+<vant-mobile-demo title='加载类型'>
+    <van-loading></van-loading>
+    <van-loading type="spinner"></van-loading>
+</vant-mobile-demo>
+<vant-mobile-demo title='自定义颜色'>
+    <van-loading color="#1989fa"></van-loading>
+    <van-loading
+        type="spinner"
+        color="#1989fa"
+    ></van-loading>
+</vant-mobile-demo>
+<vant-mobile-demo title='自定义大小'>
+    <van-loading
+        color="#1989fa"
+        [size]="54"
+    ></van-loading>
+    <van-loading
+        type="spinner"
+        color="red"
+        size="26px"
+    ></van-loading>
+</vant-mobile-demo>
+<vant-mobile-demo title='加载文案'>
+    <van-loading size="24px">加载中...</van-loading>
+</vant-mobile-demo>
+<vant-mobile-demo title='垂直排列'>
+    <van-loading
+        size="24px"
+        [vertical]='true'
+    >
+        加载中...
+    </van-loading>
+</vant-mobile-demo>
+<vant-mobile-demo title='自定义文案颜色'>
+    <!-- 可修改文案和加载图标的颜色 -->
+    <van-loading color="#0094ff">加载中...</van-loading>
+    <!-- 只修改文案颜色 -->
+    <van-loading textColor="#0094ff">加载中...</van-loading>
+</vant-mobile-demo>

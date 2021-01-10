@@ -1,0 +1,25 @@
+// @import '../../../../packages/style/var.less';
+@import '../../../../../projects/ngx-vant/style/var.less';
+:host ::ng-deep .van-doc-demo-block {
+  padding: 0 @padding-md;
+}
+
+:host ::ng-deep .van-doc-demo-block__title {
+  padding-left: 0;
+}
+van-button:not(:last-child) {
+    margin-right: @padding-md;
+  }
+.demo-button {
+    .van-doc-demo-block {
+      padding: 0 @padding-md;
+      .van-doc-demo-block__title {
+        padding-left: 0;
+      }
+    }
+  
+  
+    &-row {
+      margin-bottom: @padding-sm;
+    }
+  }

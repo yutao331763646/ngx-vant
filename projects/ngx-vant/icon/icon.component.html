@@ -1,0 +1,17 @@
+<i
+    [class]="'van-icon ' +( imageIcon?' ': classPrefix+'-' + name)"
+    [style.color]="color"
+    [style.fontSize]="fontSize"
+>
+    <img
+        *ngIf='imageIcon'
+        class='van-icon__image'
+        [src]='name'
+    >
+    <div
+        *ngIf="dot||showInfo"
+        [class]="'van-info ' + (showInfo?'':'van-info--dot') "
+    >
+        {{badge}}
+    </div>
+</i>

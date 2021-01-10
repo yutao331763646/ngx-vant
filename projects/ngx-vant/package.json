@@ -1,0 +1,24 @@
+{
+    "name": "ngx-vant",
+    "version": "0.3.5",
+    "author": "YuTao",
+    "license": "MIT",
+    "description": "An enterprise-class UI components based on Vant and Angular",
+    "peerDependencies": {
+        "@angular/common": "^11.0.5",
+        "@angular/core": "^11.0.5"
+    },
+    "dependencies": {
+        "@vant/icons": "^1.5.0",
+        "tslib": "^2.0.0"
+    },
+    "keywords": [
+        "vant",
+        "design",
+        "angular",
+        "ui",
+        "framework",
+        "frontend",
+        "ngx-vant"
+    ]
+}
