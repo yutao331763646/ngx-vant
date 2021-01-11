@@ -20,5 +20,12 @@
         "framework",
         "frontend",
         "ngx-vant"
-    ]
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yutao331763646/ngx-vant"
+      },
+      "bugs": {
+        "url": "https://github.com/yutao331763646/ngx-vant/issues"
+      }
 }
