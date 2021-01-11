@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve  --port  4201",
-    "build": "ng build --prod",
+    "start": "ng serve",
+    "doc": "ng serve  --port  4201",
+    "doc:build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
