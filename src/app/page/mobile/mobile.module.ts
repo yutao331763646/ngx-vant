@@ -9,6 +9,7 @@ import { MobileComponent } from './mobile.component'
 import { LoadingComponent } from "./loading/loading.component";
 import { NgxVantModule } from "projects/ngx-vant/ngx-vant.module";
 import { HomeComponent } from "./home/home.component";
+import { NavBarComponent } from "./nav-bar/nav-bar.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule,NgxVantModule
@@ -16,7 +17,8 @@ import { HomeComponent } from "./home/home.component";
 
     declarations: [
         ButtonComponent, NavComponent, DemoComponent,
-        IconComponent, MobileComponent, LoadingComponent,HomeComponent
+        IconComponent, MobileComponent, LoadingComponent,HomeComponent,
+        NavBarComponent
     ]
 })
 export class MobileModule { }

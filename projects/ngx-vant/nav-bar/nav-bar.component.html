@@ -1,0 +1,34 @@
+<div
+    [class]="'van-nav-bar '"
+    [class.safe-area-inset-top]="safeAreaInsetTop"
+    [class.fixed]="fixed"
+    [class.van-hairline--bottom]="fixed"
+    [style.zIndex]="zIndex"
+>
+    <div class="van-nav-bar__content">
+        <div
+            *ngIf="leftText||leftArrow"
+            class="van-nav-bar__left"
+            (click)="leftClick($event)"
+        >
+            <van-icon
+                *ngIf="leftArrow"
+                [isLeftArrow]="true"
+                name="arrow-left"
+            ></van-icon>
+            <span
+                *ngIf="leftText"
+                class="van-nav-bar__text"
+            >
+                {{leftText}}
+            </span>
+        </div>
+        <div class="van-nav-bar__title van-ellipsis">{{title}}</div>
+        <div
+            *ngIf="rightText"
+            class="van-nav-bar__right"  (click)="leftRight($event)"
+        >
+            <span class="van-nav-bar__text">{{rightText}}</span>
+        </div>
+    </div>
+</div>

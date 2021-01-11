@@ -5,6 +5,7 @@ import { HomeComponent } from './page/mobile/home/home.component';
 import { IconComponent } from './page/mobile/icon/icon.component';
 import { LoadingComponent } from './page/mobile/loading/loading.component';
 import { MobileComponent } from './page/mobile/mobile.component';
+import { NavBarComponent } from './page/mobile/nav-bar/nav-bar.component';
 
 const routes: Routes = [
     {
@@ -35,6 +36,9 @@ const routes: Routes = [
             }, {
                 path: 'loading',
                 component: LoadingComponent
+            }, {
+                path: 'nav-bar',
+                component: NavBarComponent
             }
         ]
         // loadChildren: () => import('./page/mobile/mobile.module').then(m => m.MobileModule)

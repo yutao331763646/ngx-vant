@@ -4,6 +4,7 @@ import { ButtonComponent } from "./button/button.component";
 import { HomeComponent } from "./home/home.component";
 import { IconComponent } from "./icon/icon.component";
 import { LoadingComponent } from "./loading/loading.component";
+import { NavBarComponent } from "./nav-bar/nav-bar.component";
 import { QuickstartComponent } from "./quickstart/quickstart.component";
 
 const routes: Routes = [
@@ -13,8 +14,8 @@ const routes: Routes = [
 
     },
     {
-        path:'quickstart',
-        component:QuickstartComponent
+        path: 'quickstart',
+        component: QuickstartComponent
     },
     {
         path: 'button',
@@ -26,6 +27,9 @@ const routes: Routes = [
     }, {
         path: 'loading',
         component: LoadingComponent
+    }, {
+        path: 'nav-bar',
+        component: NavBarComponent
     }
 ];
 

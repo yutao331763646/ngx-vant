@@ -2,6 +2,7 @@
     [class]="'van-icon ' +( imageIcon?' ': classPrefix+'-' + name)"
     [style.color]="color"
     [style.fontSize]="fontSize"
+    [class.van-nav-bar__arrow]="isLeftArrow"
 >
     <img
         *ngIf='imageIcon'

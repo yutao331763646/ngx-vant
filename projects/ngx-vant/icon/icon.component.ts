@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, ElementRef, Input, OnInit } from '@angular/core';
+import { removeNgTag } from '../utils';
 function isImage(name?: string): boolean {
     return name ? name.indexOf('/') !== -1 : false;
 }
@@ -20,7 +21,8 @@ function addUnit(value?: string | number): string | undefined {
     templateUrl: './icon.component.html',
     styleUrls: ['./icon.component.less']
 })
-export class IconComponent  {
+export class IconComponent implements OnInit {
+    @Input() isLeftArrow:boolean = false
     @Input() dot: boolean = false
     @Input() color: string = ''
     @Input() classPrefix: string = 'van-icon'
@@ -52,5 +54,8 @@ export class IconComponent  {
     imageIcon = false;
     showInfo = false;
     fontSize: undefined | string = ''
-    constructor() { }
+    constructor(private el: ElementRef) { }
+    ngOnInit() {
+        removeNgTag(this.el.nativeElement)
+    }
 }
