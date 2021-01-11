@@ -1,6 +1,6 @@
 export const navConfig ={
     title: 'Vant',
-    description: '轻量、可靠的移动端 Vue 组件库',
+    description: '轻量、可靠的移动端 Angular 组件库',
     logo: 'https://img.yzcdn.cn/vant/logo.png',
     langLabel: '中文',
     links: [

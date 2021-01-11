@@ -8,19 +8,19 @@ import { NavigationEnd, Router } from '@angular/router';
     styleUrls: ['./simulator.component.less']
 })
 export class SimulatorComponent implements OnInit {
-    src:SafeHtml ='http://localhost:4201/#/mobile/button'
+    src:SafeHtml ='https://www.yutaooo.com/#/mobile/button'
     constructor(private router: Router, private sanitizer: DomSanitizer) {
         
         this.router.events.subscribe((event: any) => {
             if (event instanceof NavigationEnd) {
+                const host = window.location.href.split('/#/')
                 const urls = event.url.split('/')
-                console.log(urls)
                 const homeUrl = ['home','quickstart']
                 let mUrl = urls[urls.length - 1]
                 if(homeUrl.includes(mUrl)){
                     mUrl ='home'
                 }
-                this.src = this.sanitizer.bypassSecurityTrustResourceUrl(`http://localhost:4201/#/mobile/${mUrl}`);
+                this.src = this.sanitizer.bypassSecurityTrustResourceUrl(`${host[0]}/#/mobile/${mUrl}`);
             }
         })
     }
