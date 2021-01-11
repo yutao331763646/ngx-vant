@@ -10,6 +10,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 
 
-发布：
+<!-- 发布：
 1、npm run package
-2、cd /dist/ngx-vant  执行 npm publish
+2、cd /dist/ngx-vant  执行 npm publish -->

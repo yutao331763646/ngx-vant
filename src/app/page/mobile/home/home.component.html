@@ -1,0 +1,44 @@
+<div class="demo-home">
+    <h1 class="demo-home__title demo-home__title--small">
+        <img [src]="navConfig.logo">
+        <span>{{ navConfig.title }}</span>
+    </h1>
+    <h2
+        *ngIf="navConfig.description"
+        class="demo-home__desc"
+    >
+        {{ navConfig.description }}
+    </h2>
+    <ng-container *ngFor="let group of navConfig.nav;">
+        <div class="demo-home-nav">
+            <div class="demo-home-nav__title">{{ group.title }}</div>
+            <div class="demo-home-nav__group">
+                <div
+                    *ngFor="let navItem of group.items"
+                    class="demo-home-nav__block"
+                >
+
+                    <!-- <router-link
+                        class="demo-home-nav__block"
+                        v-for="navItem in group.items"
+                        :key="navItem.path"
+                        :to="`${base}/${navItem.path}`"
+                        > -->
+                    {{ navItem.title }}
+                    <svg viewBox="0 0 1024 1024" class="demo-home-nav__icon">
+                        <path
+                          fill="#B6C3D2"
+                          d="M601.1 556.5L333.8 289.3c-24.5-24.5-24.5-64.6 0-89.1s64.6-24.5 89.1 0l267.3 267.3c24.5 24.5 24.5 64.6 0 89.1-24.5 24.4-64.6 24.4-89.1-.1z"
+                        />
+                        <path
+                          fill="#B6C3D2"
+                          d="M690.2 556.5L422.9 823.8c-24.5 24.5-64.6 24.5-89.1 0s-24.5-64.6 0-89.1l267.3-267.3c24.5-24.5 64.6-24.5 89.1 0 24.5 24.6 24.5 64.6 0 89.1z"
+                        />
+                      </svg>
+                    <!-- <arrow-right class="demo-home-nav__icon" /> -->
+                    <!-- </router-link> -->
+                </div>
+            </div>
+        </div>
+    </ng-container>
+</div>

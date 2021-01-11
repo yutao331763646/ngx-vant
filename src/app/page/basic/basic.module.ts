@@ -7,6 +7,8 @@ import { ButtonComponent } from './button/button.component'
 import { IconComponent } from './icon/icon.component'
 import { HighlightPipe } from '../../common/pipe/highlight.pipe'
 import { LoadingComponent } from "./loading/loading.component";
+import { HomeComponent } from "./home/home.component";
+import { QuickstartComponent } from "./quickstart/quickstart.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule,
@@ -14,7 +16,8 @@ import { LoadingComponent } from "./loading/loading.component";
     ],
     declarations: [
         DomeComponent, ButtonComponent, HighlightPipe,
-        IconComponent,LoadingComponent
+        IconComponent, LoadingComponent, HomeComponent,
+        QuickstartComponent
     ]
 })
 export class BasicModule { }

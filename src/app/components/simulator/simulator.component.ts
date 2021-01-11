@@ -12,11 +12,15 @@ export class SimulatorComponent implements OnInit {
     constructor(private router: Router, private sanitizer: DomSanitizer) {
         
         this.router.events.subscribe((event: any) => {
-            // console.log(event)
             if (event instanceof NavigationEnd) {
                 const urls = event.url.split('/')
                 console.log(urls)
-                this.src = this.sanitizer.bypassSecurityTrustResourceUrl(`http://localhost:4201/#/mobile/${urls[urls.length - 1]}`);
+                const homeUrl = ['home','quickstart']
+                let mUrl = urls[urls.length - 1]
+                if(homeUrl.includes(mUrl)){
+                    mUrl ='home'
+                }
+                this.src = this.sanitizer.bypassSecurityTrustResourceUrl(`http://localhost:4201/#/mobile/${mUrl}`);
             }
         })
     }

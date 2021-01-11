@@ -8,6 +8,7 @@ import { IconComponent } from './icon/icon.component'
 import { MobileComponent } from './mobile.component'
 import { LoadingComponent } from "./loading/loading.component";
 import { NgxVantModule } from "projects/ngx-vant/ngx-vant.module";
+import { HomeComponent } from "./home/home.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule,NgxVantModule
@@ -15,7 +16,7 @@ import { NgxVantModule } from "projects/ngx-vant/ngx-vant.module";
 
     declarations: [
         ButtonComponent, NavComponent, DemoComponent,
-        IconComponent, MobileComponent, LoadingComponent
+        IconComponent, MobileComponent, LoadingComponent,HomeComponent
     ]
 })
 export class MobileModule { }

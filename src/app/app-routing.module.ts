@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ButtonComponent } from './page/mobile/button/button.component';
+import { HomeComponent } from './page/mobile/home/home.component';
 import { IconComponent } from './page/mobile/icon/icon.component';
 import { LoadingComponent } from './page/mobile/loading/loading.component';
 import { MobileComponent } from './page/mobile/mobile.component';
@@ -19,6 +20,10 @@ const routes: Routes = [
         children: [
             {
                 path: '', redirectTo: '/mobile/button', pathMatch: 'full'
+            },
+            {
+                path: 'home',
+                component: HomeComponent
             },
             {
                 path: 'button',
