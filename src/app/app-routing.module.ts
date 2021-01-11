@@ -20,7 +20,7 @@ const routes: Routes = [
         component: MobileComponent,
         children: [
             {
-                path: '', redirectTo: '/mobile/button', pathMatch: 'full'
+                path: '', redirectTo: '/mobile/home', pathMatch: 'full'
             },
             {
                 path: 'home',

@@ -1,6 +1,6 @@
 {
     "name": "ngx-vant",
-    "version": "0.3.5",
+    "version": "0.3.7",
     "author": "YuTao",
     "license": "MIT",
     "description": "An enterprise-class UI components based on Vant and Angular",
@@ -24,8 +24,9 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/yutao331763646/ngx-vant"
-      },
-      "bugs": {
+    },
+    "bugs": {
         "url": "https://github.com/yutao331763646/ngx-vant/issues"
-      }
+    },
+    "homepage": "https://www.yutaooo.com/"
 }
