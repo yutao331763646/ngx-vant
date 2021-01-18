@@ -1,0 +1,33 @@
+<div
+    class="van-image"
+    [class.van-button--round]="round"
+    [style.width]="width"
+    [style.height]="height"
+>
+    <img
+        class="van-image__img"
+        [src]="src"
+        [alt]="alt"
+        [style.objectFit]="fit"
+    >
+    <div
+        *ngIf="showLoading"
+        class="van-image__loading"
+    >
+        <van-icon
+            [name]='loadingIcon'
+            [size]="loadingIconSize"
+            [color]="loadingIconColor"
+        ></van-icon>
+    </div>
+    <div
+        *ngIf="showError"
+        class="van-image__error"
+    >
+        <van-icon
+            [name]='errorIcon'
+            [size]="loadingIconSize"
+            [color]="loadingIconColor"
+        ></van-icon>
+    </div>
+</div>

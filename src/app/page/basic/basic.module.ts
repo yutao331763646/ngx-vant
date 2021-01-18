@@ -10,6 +10,7 @@ import { LoadingComponent } from "./loading/loading.component";
 import { HomeComponent } from "./home/home.component";
 import { QuickstartComponent } from "./quickstart/quickstart.component";
 import { NavBarComponent } from "./nav-bar/nav-bar.component";
+import { ImageComponent } from "./image/image.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule,
@@ -18,7 +19,7 @@ import { NavBarComponent } from "./nav-bar/nav-bar.component";
     declarations: [
         DomeComponent, ButtonComponent, HighlightPipe,
         IconComponent, LoadingComponent, HomeComponent,
-        QuickstartComponent,
+        QuickstartComponent,ImageComponent,
         NavBarComponent
     ]
 })

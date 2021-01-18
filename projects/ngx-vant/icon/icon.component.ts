@@ -22,11 +22,11 @@ function addUnit(value?: string | number): string | undefined {
     styleUrls: ['./icon.component.less']
 })
 export class IconComponent implements OnInit {
-    @Input() isLeftArrow:boolean = false
+    @Input() isLeftArrow: boolean = false
     @Input() dot: boolean = false
     @Input() color: string = ''
     @Input() classPrefix: string = 'van-icon'
-
+    @Input() nativeClassName: string = ''
     private _name: string = '';
     @Input()
     get name(): string { return this._name; }

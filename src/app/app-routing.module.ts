@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ButtonComponent } from './page/mobile/button/button.component';
 import { HomeComponent } from './page/mobile/home/home.component';
 import { IconComponent } from './page/mobile/icon/icon.component';
+import { ImageComponent } from './page/mobile/image/image.component';
 import { LoadingComponent } from './page/mobile/loading/loading.component';
 import { MobileComponent } from './page/mobile/mobile.component';
 import { NavBarComponent } from './page/mobile/nav-bar/nav-bar.component';
@@ -39,6 +40,9 @@ const routes: Routes = [
             }, {
                 path: 'nav-bar',
                 component: NavBarComponent
+            }, {
+                path: 'image',
+                component: ImageComponent
             }
         ]
         // loadChildren: () => import('./page/mobile/mobile.module').then(m => m.MobileModule)
