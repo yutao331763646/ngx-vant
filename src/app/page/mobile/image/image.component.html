@@ -9,35 +9,172 @@
 
 </vant-mobile-demo>
 <vant-mobile-demo title='填充模式'>
+    <div style="    display: flex;flex-wrap: wrap;">
 
-    <van-image
-        width="100"
-        height="100"
-        fit='contain'
-        src="https://img.yzcdn.cn/vant/cat.jpeg"
-    ></van-image>
-    <van-image
-        width="100"
-        height="100"
-        fit='cover'
-        src="https://img.yzcdn.cn/vant/cat.jpeg"
-    ></van-image>
-    <van-image
-        width="100"
-        height="100"
-        fit='fill'
-        src="https://img.yzcdn.cn/vant/cat.jpeg"
-    ></van-image>
-    <van-image
-        width="100"
-        height="100"
-        fit='none'
-        src="https://img.yzcdn.cn/vant/cat.jpeg"
-    ></van-image>
-    <van-image
-        width="100"
-        height="100"
-        fit='scale-down'
-        src="https://img.yzcdn.cn/vant/cat.jpeg"
-    ></van-image>
+        <div class="row">
+            <van-image
+                width="100%"
+                height="100"
+                fit='contain'
+                src="https://img.yzcdn.cn/vant/cat.jpeg"
+            ></van-image>
+            <div class="text">contain</div>
+        </div>
+
+        <div class="row">
+            <van-image
+                width="100%"
+                height="100"
+                fit='cover'
+                src="https://img.yzcdn.cn/vant/cat.jpeg"
+            ></van-image>
+            <div class="text">cover</div>
+        </div>
+
+        <div class="row">
+            <van-image
+                width="100%"
+                height="100"
+                fit='fill'
+                src="https://img.yzcdn.cn/vant/cat.jpeg"
+            ></van-image>
+            <div class="text">fill</div>
+        </div>
+
+        <div class="row">
+            <van-image
+                width="100"
+                height="100"
+                fit='none'
+                src="https://img.yzcdn.cn/vant/cat.jpeg"
+            ></van-image>
+            <div class="text">none</div>
+        </div>
+
+        <div class="row">
+            <van-image
+                width="100"
+                height="100"
+                fit='scale-down'
+                src="https://img.yzcdn.cn/vant/cat.jpeg"
+            ></van-image>
+            <div class="text">scale-down</div>
+        </div>
+    </div>
+
+</vant-mobile-demo>
+<vant-mobile-demo title='圆形图片'>
+    <div style="    display: flex;flex-wrap: wrap;">
+
+        <div class="row">
+            <van-image
+                [round]='true'
+                width="100%"
+                height="100"
+                fit='contain'
+                src="https://img.yzcdn.cn/vant/cat.jpeg"
+            ></van-image>
+            <div class="text">contain</div>
+        </div>
+
+        <div class="row">
+            <van-image
+                [round]='true'
+                width="100%"
+                height="100"
+                fit='cover'
+                src="https://img.yzcdn.cn/vant/cat.jpeg"
+            ></van-image>
+            <div class="text">cover</div>
+        </div>
+
+        <div class="row">
+            <van-image
+                [round]='true'
+                width="100%"
+                height="100"
+                fit='fill'
+                src="https://img.yzcdn.cn/vant/cat.jpeg"
+            ></van-image>
+            <div class="text">fill</div>
+        </div>
+
+        <div class="row">
+            <van-image
+                [round]='true'
+                width="100"
+                height="100"
+                fit='none'
+                src="https://img.yzcdn.cn/vant/cat.jpeg"
+            ></van-image>
+            <div class="text">none</div>
+        </div>
+
+        <div class="row">
+            <van-image
+                [round]='true'
+                width="100"
+                height="100"
+                fit='scale-down'
+                src="https://img.yzcdn.cn/vant/cat.jpeg"
+            ></van-image>
+            <div class="text">scale-down</div>
+        </div>
+    </div>
+
+</vant-mobile-demo>
+
+<vant-mobile-demo title='加载中提示'>
+    <div style="    display: flex;flex-wrap: wrap;">
+
+        <div class="row">
+            <van-image
+                [showLoading]='true'
+                width="100%"
+                height="100"
+                src="https://img.yzcdn.cn/vant/cat.jpeg"
+            ></van-image>
+            <div class="text">默认提示</div>
+        </div>
+
+        <!-- <div class="row">
+            <van-image
+                [showLoading]='true'
+                loadingIcon='spinner'
+                width="100%"
+                height="100"
+                src="https://img.yzcdn.cn/vant/cat.jpeg"
+            ></van-image>
+            <div class="text">自定义提示</div>
+        </div> -->
+
+    </div>
+
+</vant-mobile-demo>
+<vant-mobile-demo title='加载失败提示'>
+    <div style="    display: flex;flex-wrap: wrap;">
+
+        <div class="row">
+            <van-image
+                [showError]='true'
+                width="100%"
+                height="100"
+                src="https://img.yzcdn.cn/vant/cat.jpeg"
+            ></van-image>
+            <div class="text">默认提示</div>
+        </div>
+
+        <!-- <div class="row">
+            <van-image
+                [showLoading]='true'
+                loadingIcon='spinner'
+                width="100%"
+                height="100"
+                src="https://img.yzcdn.cn/vant/cat.jpeg"
+            ></van-image>
+            <div class="text">自定义提示</div>
+        </div> -->
+
+    </div>
+
 </vant-mobile-demo>
