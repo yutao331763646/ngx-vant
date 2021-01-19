@@ -1,3 +1,7 @@
-<p>
-  col works!
-</p>
+<div
+    [ngClass]="classMap"
+    [style.paddingLeft]="paddingLeft"
+    [style.paddingRight]="paddingRight"
+>
+    <ng-content></ng-content>
+</div>
