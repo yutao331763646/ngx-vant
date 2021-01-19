@@ -59,10 +59,10 @@ export const navConfig = [
           path: 'image',
           title: 'Image 图片',
         },
-        // {
-        //   path: 'col',
-        //   title: 'Layout 布局',
-        // },
+        {
+          path: 'layout',
+          title: 'Layout 布局',
+        },
         // {
         //   path: 'popup',
         //   title: 'Popup 弹出层',

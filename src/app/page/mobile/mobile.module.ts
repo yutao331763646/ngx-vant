@@ -11,6 +11,7 @@ import { NgxVantModule } from "projects/ngx-vant/ngx-vant.module";
 import { HomeComponent } from "./home/home.component";
 import { NavBarComponent } from "./nav-bar/nav-bar.component";
 import { ImageComponent } from "./image/image.component";
+import { LayoutComponent } from "./layout/layout.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule,NgxVantModule
@@ -19,7 +20,7 @@ import { ImageComponent } from "./image/image.component";
     declarations: [
         ButtonComponent, NavComponent, DemoComponent,
         IconComponent, MobileComponent, LoadingComponent,HomeComponent,
-        NavBarComponent,ImageComponent
+        NavBarComponent,ImageComponent,LayoutComponent
     ]
 })
 export class MobileModule { }
