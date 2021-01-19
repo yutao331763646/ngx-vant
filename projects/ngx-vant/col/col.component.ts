@@ -1,4 +1,4 @@
-import { Component, ElementRef, Host, Input, OnChanges, OnInit, Renderer2, SimpleChanges } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Host, Input, OnChanges, OnInit, Output, Renderer2, SimpleChanges } from '@angular/core';
 import { removeNgTag } from '../utils';
 export function isNotNil<T>(value: T): value is NonNullable<T> {
     return typeof value !== 'undefined' && value !== null;
@@ -14,17 +14,21 @@ export class ColComponent implements OnInit, OnChanges {
     @Input() offset: number | string = '';
     paddingLeft: string | null = ''
     paddingRight: string | null = ''
+    @Output() readonly click = new EventEmitter<MouseEvent>();
     constructor(
         private elementRef: ElementRef,
         public renderer: Renderer2,
     ) { }
-
+  
     ngOnInit() {
         removeNgTag(this.elementRef.nativeElement)
         this.setHostClassMap();
     }
     ngOnChanges(): void {
         this.setHostClassMap();
+    }
+    onClick(e: MouseEvent): void {
+        this.click.emit(e);
     }
     setGutter(space: any) {
         console.log(space)

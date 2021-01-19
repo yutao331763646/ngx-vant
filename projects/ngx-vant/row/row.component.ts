@@ -17,8 +17,7 @@ export type RowJustify =
     styleUrls: ['./row.component.less']
 })
 export class RowComponent implements OnInit, AfterContentInit {
-    @ContentChildren(ColComponent)
-    clos: QueryList<ColComponent> | undefined;
+    @ContentChildren(ColComponent) clos: QueryList<ColComponent> | undefined;
     @Input() type: RowType = ''
     @Input() justify: RowJustify = 'start'
     @Input() align: RowAlign = 'top'
