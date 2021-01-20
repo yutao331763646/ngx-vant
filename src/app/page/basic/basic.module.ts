@@ -12,6 +12,7 @@ import { QuickstartComponent } from "./quickstart/quickstart.component";
 import { NavBarComponent } from "./nav-bar/nav-bar.component";
 import { ImageComponent } from "./image/image.component";
 import { LayoutComponent } from "./layout/layout.component";
+import { ProgressComponent } from "./progress/progress.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule,
@@ -21,7 +22,7 @@ import { LayoutComponent } from "./layout/layout.component";
         DomeComponent, ButtonComponent, HighlightPipe,
         IconComponent, LoadingComponent, HomeComponent,
         QuickstartComponent,ImageComponent,
-        NavBarComponent,LayoutComponent
+        NavBarComponent,LayoutComponent,ProgressComponent
     ]
 })
 export class BasicModule { }
