@@ -7,7 +7,9 @@ import { ImageComponent } from "./image/image.component";
 import { LayoutComponent } from "./layout/layout.component";
 import { LoadingComponent } from "./loading/loading.component";
 import { NavBarComponent } from "./nav-bar/nav-bar.component";
+import { ProgressComponent } from "./progress/progress.component";
 import { QuickstartComponent } from "./quickstart/quickstart.component";
+import { ToastComponent } from "./toast/toast.component";
 
 const routes: Routes = [
     {
@@ -38,6 +40,12 @@ const routes: Routes = [
     }, {
         path: 'layout',
         component: LayoutComponent
+    }, {
+        path: 'toast',
+        component: ToastComponent
+    }, {
+        path: 'progress',
+        component: ProgressComponent
     }
 ];
 

@@ -8,6 +8,8 @@ import { LayoutComponent } from './page/mobile/layout/layout.component';
 import { LoadingComponent } from './page/mobile/loading/loading.component';
 import { MobileComponent } from './page/mobile/mobile.component';
 import { NavBarComponent } from './page/mobile/nav-bar/nav-bar.component';
+import { ProgressComponent } from './page/mobile/progress/progress.component';
+import { ToastComponent } from './page/mobile/toast/toast.component';
 
 const routes: Routes = [
     {
@@ -47,6 +49,12 @@ const routes: Routes = [
             }, {
                 path: 'layout',
                 component: LayoutComponent
+            }, {
+                path: 'toast',
+                component: ToastComponent
+            }, {
+                path: 'progress',
+                component: ProgressComponent
             }
         ]
         // loadChildren: () => import('./page/mobile/mobile.module').then(m => m.MobileModule)

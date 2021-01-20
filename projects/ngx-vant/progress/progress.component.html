@@ -1,0 +1,22 @@
+<div
+    #pro
+    class="van-progress"
+    [style.background]="trackColor"
+    [style.height]="strokeWidth"
+>
+    <span
+        class="van-progress__portion"
+        [style.background]="inactive ? '#cacaca' : color"
+        [style.width]="progressWidth"
+    >
+        <span
+            #pivot
+            class="van-progress__pivot"
+            [style.color]="textColor"
+            [style.left]="pivotLeft"
+            [style.background]="pivotColor?pivotColor:(inactive ? '#cacaca' : color)"
+        >
+            {{pivotText ?pivotText: percentage + '%'}}
+        </span>
+    </span>
+</div>

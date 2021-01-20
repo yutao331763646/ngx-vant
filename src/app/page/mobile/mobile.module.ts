@@ -12,6 +12,8 @@ import { HomeComponent } from "./home/home.component";
 import { NavBarComponent } from "./nav-bar/nav-bar.component";
 import { ImageComponent } from "./image/image.component";
 import { LayoutComponent } from "./layout/layout.component";
+import { ToastComponent } from "./toast/toast.component";
+import { ProgressComponent } from "./progress/progress.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule,NgxVantModule
@@ -20,7 +22,8 @@ import { LayoutComponent } from "./layout/layout.component";
     declarations: [
         ButtonComponent, NavComponent, DemoComponent,
         IconComponent, MobileComponent, LoadingComponent,HomeComponent,
-        NavBarComponent,ImageComponent,LayoutComponent
+        NavBarComponent,ImageComponent,LayoutComponent,ToastComponent,
+        ProgressComponent
     ]
 })
 export class MobileModule { }

@@ -71,10 +71,10 @@ export const navConfig = [
         //   path: 'style',
         //   title: 'Style 内置样式',
         // },
-        // {
-        //   path: 'toast',
-        //   title: 'Toast 轻提示',
-        // },
+        {
+          path: 'toast',
+          title: 'Toast 轻提示',
+        },
       ],
     },
     {
@@ -234,10 +234,10 @@ export const navConfig = [
         //   path: 'popover',
         //   title: 'Popover 气泡弹出框',
         // },
-        // {
-        //   path: 'progress',
-        //   title: 'Progress 进度条',
-        // },
+        {
+          path: 'progress',
+          title: 'Progress 进度条',
+        },
         // {
         //   path: 'skeleton',
         //   title: 'Skeleton 骨架屏',
