@@ -1,0 +1,40 @@
+<div
+    class="van-cell"
+    [class.van-cell--center]="center"
+    [class.van-cell--required]="required"
+    [class.van-cell--borderless]="border"
+    [class.van-cell--size]="size"
+    [class.van-cell--clickable]="isLink||clickable"
+    [attr.role]="clickable ? 'button' : null"
+    [attr.tabindex]="clickable ? 0 : null"
+>
+    <van-icon
+        *ngIf="icon"
+        nativeClassName='van-cell__left-icon'
+        name='icon'
+        classPrefix='iconPrefix'
+    ></van-icon>
+    <div
+        [class]="'van-cell__title '+titleClass"
+        [ngStyle]="titleStyle"
+    >
+        <span>{{title}}</span>
+        <div
+            *ngIf="label"
+            class="'van-cell__label '+labelClass"
+        >
+            {{label}}
+        </div>
+    </div>
+    <div
+        *ngIf="value"
+        [class]="'van-cell__value '+valueClass"
+    >
+        <span>{{value}}</span>
+    </div>
+    <van-icon
+        *ngIf="isLink"  
+        nativeClassName='van-cell__right-icon'
+        [name]="arrowDirection?('arrow-'+arrowDirection):'arrow'"
+    ></van-icon>
+</div>

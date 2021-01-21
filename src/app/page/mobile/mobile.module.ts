@@ -14,6 +14,7 @@ import { ImageComponent } from "./image/image.component";
 import { LayoutComponent } from "./layout/layout.component";
 import { ToastComponent } from "./toast/toast.component";
 import { ProgressComponent } from "./progress/progress.component";
+import { CellComponent } from "./cell/cell.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule,NgxVantModule
@@ -23,7 +24,7 @@ import { ProgressComponent } from "./progress/progress.component";
         ButtonComponent, NavComponent, DemoComponent,
         IconComponent, MobileComponent, LoadingComponent,HomeComponent,
         NavBarComponent,ImageComponent,LayoutComponent,ToastComponent,
-        ProgressComponent
+        ProgressComponent,CellComponent
     ]
 })
 export class MobileModule { }

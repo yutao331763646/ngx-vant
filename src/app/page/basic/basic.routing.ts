@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { ButtonComponent } from "./button/button.component";
+import { CellComponent } from "./cell/cell.component";
 import { HomeComponent } from "./home/home.component";
 import { IconComponent } from "./icon/icon.component";
 import { ImageComponent } from "./image/image.component";
@@ -46,6 +47,9 @@ const routes: Routes = [
     }, {
         path: 'progress',
         component: ProgressComponent
+    } , {
+        path: 'cell',
+        component: CellComponent
     }
 ];
 

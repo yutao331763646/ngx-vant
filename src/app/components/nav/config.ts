@@ -47,10 +47,10 @@ export const navConfig = [
           path: 'button',
           title: 'Button 按钮',
         },
-        // {
-        //   path: 'cell',
-        //   title: 'Cell 单元格',
-        // },
+        {
+          path: 'cell',
+          title: 'Cell 单元格',
+        },
         {
           path: 'icon',
           title: 'Icon 图标',

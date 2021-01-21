@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ButtonComponent } from './page/mobile/button/button.component';
+import { CellComponent } from './page/mobile/cell/cell.component';
 import { HomeComponent } from './page/mobile/home/home.component';
 import { IconComponent } from './page/mobile/icon/icon.component';
 import { ImageComponent } from './page/mobile/image/image.component';
@@ -55,6 +56,10 @@ const routes: Routes = [
             }, {
                 path: 'progress',
                 component: ProgressComponent
+            }
+            , {
+                path: 'cell',
+                component: CellComponent
             }
         ]
         // loadChildren: () => import('./page/mobile/mobile.module').then(m => m.MobileModule)
