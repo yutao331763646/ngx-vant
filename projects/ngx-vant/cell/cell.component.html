@@ -11,10 +11,10 @@
     <van-icon
         *ngIf="icon"
         nativeClassName='van-cell__left-icon'
-        name='icon'
-        classPrefix='iconPrefix'
+        [name]='icon'
+        [classPrefix]="iconPrefix?iconPrefix:'van-icon'"
     ></van-icon>
-    <div
+    <div *ngIf="title"
         [class]="'van-cell__title '+titleClass"
         [ngStyle]="titleStyle"
     >
@@ -29,11 +29,12 @@
     <div
         *ngIf="value"
         [class]="'van-cell__value '+valueClass"
+        [class.van-cell__value--alone]='!title'
     >
         <span>{{value}}</span>
     </div>
     <van-icon
-        *ngIf="isLink"  
+        *ngIf="isLink"
         nativeClassName='van-cell__right-icon'
         [name]="arrowDirection?('arrow-'+arrowDirection):'arrow'"
     ></van-icon>
