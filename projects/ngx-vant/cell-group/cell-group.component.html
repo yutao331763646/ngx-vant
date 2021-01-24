@@ -1,8 +1,11 @@
 <div>
-    <div class="van-cell-group__title">
+    <div
+        *ngIf="title"
+        class="van-cell-group__title"
+    >
         {{title}}
     </div>
     <div class="van-cell-group van-hairline--top-bottom">
         <ng-content></ng-content>
-    </div>  
+    </div>
 </div>

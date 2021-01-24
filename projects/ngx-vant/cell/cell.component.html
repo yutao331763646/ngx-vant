@@ -21,7 +21,7 @@
         <span>{{title}}</span>
         <div
             *ngIf="label"
-            class="'van-cell__label '+labelClass"
+            [class]="'van-cell__label '+labelClass"
         >
             {{label}}
         </div>

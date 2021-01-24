@@ -1,25 +1,68 @@
-<van-cell title="单元格" value="内容" [isLink]="true"></van-cell>
-<van-cell title="单元格" value="内容" [isLink]="true"></van-cell>
-<van-cell-group title="分组1">
-    <van-cell title="单元格" value="内容" [isLink]="true"></van-cell>
-    <van-cell title="单元格" value="内容" [isLink]="true"></van-cell>
-</van-cell-group>
+<vant-mobile-nav title='Cell'></vant-mobile-nav>
 
-<van-cell-group>
-    <van-cell title="单元格" value="内容" ></van-cell>
-    <van-cell title="单元格" value="内容" label="描述信息" ></van-cell>
-  </van-cell-group>
-  <van-cell title="单元格" value="内容" size="large"  ></van-cell>
-  <van-cell title="单元格" value="内容" size="large" label="描述信息"  ></van-cell>
-  <van-cell title="单元格" icon="location-o"  ></van-cell>
-  <van-cell value="内容" ></van-cell>
-  <van-cell title="单元格" [isLink]="true" ></van-cell>
-  <van-cell title="单元格" [isLink]="true" value="内容" ></van-cell>
-  <van-cell title="单元格" [isLink]="true" arrowDirection="down" value="内容" ></van-cell>
-  <van-cell-group title="分组1">
+<vant-mobile-demo
+    title='基础用法'
+>
+    <van-cell-group>
+        <van-cell title="单元格" value="内容" ></van-cell>
+        <van-cell title="单元格" value="内容" label="描述信息" ></van-cell>
+    </van-cell-group>
+</vant-mobile-demo>
+
+
+<vant-mobile-demo
+    title='单元格大小'
+>
+
+    <van-cell title="单元格" value="内容" size="large"  ></van-cell>
+    <van-cell title="单元格" value="内容" size="large" label="描述信息"  ></van-cell>
+</vant-mobile-demo>
+
+
+
+<vant-mobile-demo
+    title='展示图标'
+>
+
+<van-cell title="单元格" icon="location-o"  ></van-cell>
+</vant-mobile-demo>
+
+
+
+<vant-mobile-demo
+    title='只设置 value'
+>
+
+<van-cell value="内容" ></van-cell>
+</vant-mobile-demo>
+
+
+<vant-mobile-demo
+    title='展示箭头'
+>
+
+    <van-cell title="单元格" [isLink]="true" ></van-cell>
+    <van-cell title="单元格" [isLink]="true" value="内容" ></van-cell>
+    <van-cell title="单元格" [isLink]="true" arrowDirection="down" value="内容" ></van-cell>
+</vant-mobile-demo>
+
+<vant-mobile-demo
+    title='分组标题'
+>
+
+<van-cell-group title="分组1">
     <van-cell title="单元格" value="内容"></van-cell>
   </van-cell-group>
   <van-cell-group title="分组2">
     <van-cell title="单元格" value="内容" ></van-cell>
   </van-cell-group>
+</vant-mobile-demo>
+
+<vant-mobile-demo
+    title='垂直居中'
+>
+
+
   <van-cell [center]="true" title="单元格" value="内容" label="描述信息" ></van-cell>
+</vant-mobile-demo>
+
