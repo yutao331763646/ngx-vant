@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit } from '@angular/core';
+import { removeNgTag } from '../utils';
 
 @Component({
     selector: 'van-cell',
@@ -22,9 +23,10 @@ export class CellComponent implements OnInit {
     @Input() title: string | number = '';
     @Input() value: string | number = '';
     @Input() arrowDirection: 'up' | 'down' | 'left' | 'right' |'' = '';
-    constructor() { }
+    constructor(private el: ElementRef) { }
     
     ngOnInit() {
+        removeNgTag(this.el.nativeElement)
     }
 
 }
