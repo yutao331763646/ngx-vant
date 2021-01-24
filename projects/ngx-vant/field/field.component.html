@@ -1,3 +1,39 @@
-<p>
-  field works!
-</p>
+<van-cell
+    [icon]="leftIcon"
+    [size]="size"
+    [title]='label'
+    [center]="center"
+    [border]="border"
+    [isLink]="isLink"
+    [required]="required"
+    [clickable]="clickable"
+    [titleStyle]="{width:labelWidth}"
+    [valueClass]="'van-field__value'"
+    [titleClass]="'van-field__label '+labelClass+ ' '+labelAlign"
+    [arrowDirection]="arrowDirection"
+    [class.van-field--error]="error"
+    [class.van-field--disabled]="disabled"
+    [class.van-field--min-height]="type === 'textarea'"
+    [class]="' van-field van-field--label-'+labelAlign"
+>
+    <div class="van-field__body">
+        <textarea
+            *ngIf="type === 'textarea'"
+            [class]="'van-field__control van-field__control'+inputAlign"
+            [placeholder]="placeholder"
+            [disabled]='disabled'
+            [readonly]='readonly'
+            [name]='name'  [(ngModel)]="value"
+        ></textarea>
+        <input
+            *ngIf="type !== 'textarea'"
+            [class]="'van-field__control van-field__control'+inputAlign"
+            [placeholder]="placeholder"
+            [disabled]='disabled'
+            [readonly]='readonly'
+            [name]='name'
+            [type]="inputType"
+            [(ngModel)]="value"
+        >
+    </div>
+</van-cell>

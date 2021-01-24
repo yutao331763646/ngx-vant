@@ -1,3 +1,6 @@
-<p>
-  field works!
-</p>
+<van-field  label="文本" placeholder="请输入用户名" ></van-field>
+
+<van-cell-group>
+    <van-field label="文本" value="输入框只读" [readonly]="true" ></van-field>
+    <van-field label="文本" value="输入框已禁用" [disabled]="true" ></van-field>
+  </van-cell-group>
