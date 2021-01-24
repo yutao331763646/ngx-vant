@@ -10,6 +10,7 @@ import { ColModule } from './col/col.module';
 import { ToastModule } from './toast/toast.module';
 import { ProgressModule } from './progress/progress.module';
 import { CellModule } from './cell/index.module';
+import { FieldModule } from './field/field.module';
 
 export * from './icon/icon.module';
 export * from './button/button.module';
@@ -21,12 +22,13 @@ export * from './col/col.module';
 export * from './toast/toast.module';
 export * from './progress/progress.module';
 export * from './cell/index.module';
+export * from './field/field.module';
 @NgModule({
     imports: [],
     exports: [
         IconModule,ButtonModule,LoadingModule,
         NavBarModule,ImageModule,RowModule,ColModule,
-        ToastModule,ProgressModule,CellModule
+        ToastModule,ProgressModule,CellModule,FieldModule
     ],
     declarations: []
   })

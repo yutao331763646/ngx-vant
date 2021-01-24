@@ -96,10 +96,10 @@ export const navConfig = [
         //   path: 'datetime-picker',
         //   title: 'DatetimePicker 时间选择',
         // },
-        // {
-        //   path: 'field',
-        //   title: 'Field 输入框',
-        // },
+        {
+          path: 'field',
+          title: 'Field 输入框',
+        },
         // {
         //   path: 'form',
         //   title: 'Form 表单',
