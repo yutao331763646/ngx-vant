@@ -10,6 +10,7 @@ import { LayoutComponent } from './page/mobile/layout/layout.component';
 import { LoadingComponent } from './page/mobile/loading/loading.component';
 import { MobileComponent } from './page/mobile/mobile.component';
 import { NavBarComponent } from './page/mobile/nav-bar/nav-bar.component';
+import { OverlayComponent } from './page/mobile/overlay/overlay.component';
 import { ProgressComponent } from './page/mobile/progress/progress.component';
 import { ToastComponent } from './page/mobile/toast/toast.component';
 
@@ -64,6 +65,9 @@ const routes: Routes = [
             }, {
                 path: 'field',
                 component: FieldComponent
+            },{
+                path:'overlay',
+                component:OverlayComponent
             }
         ]
         // loadChildren: () => import('./page/mobile/mobile.module').then(m => m.MobileModule)

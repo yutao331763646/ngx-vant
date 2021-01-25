@@ -9,6 +9,7 @@ import { ImageComponent } from "./image/image.component";
 import { LayoutComponent } from "./layout/layout.component";
 import { LoadingComponent } from "./loading/loading.component";
 import { NavBarComponent } from "./nav-bar/nav-bar.component";
+import { OverlayComponent } from "./overlay/overlay.component";
 import { ProgressComponent } from "./progress/progress.component";
 import { QuickstartComponent } from "./quickstart/quickstart.component";
 import { ToastComponent } from "./toast/toast.component";
@@ -54,6 +55,9 @@ const routes: Routes = [
     }, {
         path: 'field',
         component: FieldComponent
+    },{
+        path:'overlay',
+        component:OverlayComponent
     }
 ];
 

@@ -15,6 +15,7 @@ import { LayoutComponent } from "./layout/layout.component";
 import { ProgressComponent } from "./progress/progress.component";
 import { CellComponent } from "./cell/cell.component";
 import { FieldComponent } from "./field/field.component";
+import { OverlayComponent } from "./overlay/overlay.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule,
@@ -25,7 +26,7 @@ import { FieldComponent } from "./field/field.component";
         IconComponent, LoadingComponent, HomeComponent,
         QuickstartComponent,ImageComponent,
         NavBarComponent,LayoutComponent,ProgressComponent,
-        CellComponent,FieldComponent
+        CellComponent,FieldComponent,OverlayComponent
     ]
 })
 export class BasicModule { }
