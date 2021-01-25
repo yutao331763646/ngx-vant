@@ -57,7 +57,7 @@ export class FieldComponent implements OnInit {
     ></van-field>
     <van-field
         [(ngModel)]="value2"
-        [clearable]="true
+        [clearable]="true"
         label="文本"
         leftIcon="music-o"
         placeholder="显示清除图标"
@@ -95,9 +95,9 @@ export class FieldComponent implements OnInit {
     label="短信验证码"
     placeholder="请输入短信验证码"
 >
-    <template #button>
+    <ng-template #button>
         <van-button size="small" type="primary">发送验证码</van-button>
-    </template>
+    </ng-template>
 </van-field>`
     },{
         title:'显示字数统计',

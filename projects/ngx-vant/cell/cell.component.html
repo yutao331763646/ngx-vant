@@ -17,12 +17,14 @@
     <div
         *ngIf="title"
         [class]="'van-cell__title '+titleClass"
+        [class.van-cell__disabled]="disabled"
         [ngStyle]="titleStyle"
     >
         <span>{{title}}</span>
         <div
             *ngIf="label"
             [class]="'van-cell__label '+labelClass"
+           
         >
             {{label}}
         </div>

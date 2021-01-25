@@ -23,7 +23,8 @@ export class CellComponent implements OnInit {
     @Input() cellClass: string = '';
     @Input() title: string | number = '';
     @Input() value: string | number = '';
-    @Input() arrowDirection: 'up' | 'down' | 'left' | 'right' |'' = '';
+    @Input() arrowDirection: 'up' | 'down' | 'left' | 'right' | '' = '';
+    @Input() disabled: boolean = false
     constructor(private el: ElementRef) { }
     ngOnInit() {
         removeNgTag(this.el.nativeElement)

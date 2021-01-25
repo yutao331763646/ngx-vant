@@ -5,6 +5,7 @@
     [center]="center"
     [border]="border"
     [isLink]="isLink"
+    [disabled]="disabled"
     [required]="required"
     [clickable]="clickable"
     [titleStyle]="{width:labelWidth}"
@@ -16,7 +17,7 @@
     <div class="van-field__body">
         <textarea
             *ngIf="type === 'textarea'"
-            [class]="'van-field__control van-field__control'+inputAlign"
+            [class]="'van-field__control van-field__control--'+inputAlign"
             [class.van-field__control--error]="error"
             [class.van-field__control--disabled]="disabled"
             [class.van-field__control--min-height]="type === 'textarea'"
@@ -31,7 +32,7 @@
         ></textarea>
         <input
             *ngIf="type !== 'textarea'"
-            [class]="'van-field__control van-field__control'+inputAlign"
+            [class]="'van-field__control van-field__control--'+inputAlign"
             [class.van-field__control--error]="error"
             [class.van-field__control--disabled]="disabled"
             [placeholder]="placeholder"

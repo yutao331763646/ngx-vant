@@ -17,7 +17,7 @@ export class FieldComponent implements OnInit, OnChanges {
     @Input() isLink: boolean = false;
     @Input() required: boolean = false;
     @Input() clickable: boolean = false;
-    @Input() iconPrefix: string = '';
+    @Input() iconPrefix: string = 'van-icon';
     @Input() titleStyle: { [klass: string]: any } = {};
     @Input() titleClass: string = '';
     @Input() valueClass: string = '';
