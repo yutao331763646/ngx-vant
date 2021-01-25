@@ -23,7 +23,7 @@ export class FieldComponent implements OnInit, OnChanges {
     @Input() valueClass: string = '';
     @Input() labelClass: string = '';
     @Input() title: string | number = '';
-    @Input() value: string | number = '';
+    @Input() value: string  = '';
     @Input() arrowDirection: 'up' | 'down' | 'left' | 'right' | '' = '';
 
     @Input() leftIcon: string = ''
