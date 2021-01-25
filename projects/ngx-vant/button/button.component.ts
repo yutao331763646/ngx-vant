@@ -1,5 +1,6 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, ElementRef, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { LoadingType } from '../loading/loading.component';
+import { removeNgTag } from '../utils';
 
 export type ButtonType = 'default' | 'primary' | 'info' | 'warning' | 'danger';
 export type ButtonSize = 'large' | 'normal' | 'small' | 'mini';
@@ -9,7 +10,7 @@ export type ButtonSize = 'large' | 'normal' | 'small' | 'mini';
     templateUrl: './button.component.html',
     styleUrls: ['./button.component.less']
 })
-export class ButtonComponent implements OnChanges {
+export class ButtonComponent implements OnInit, OnChanges {
     @Input() type: ButtonType = 'default';
     @Input() size: ButtonSize = 'normal';
     @Input() round: boolean = false;
@@ -39,7 +40,10 @@ export class ButtonComponent implements OnChanges {
     private _plain: boolean = false;
 
     colorStyle: any = {}
-    constructor() { }
+    constructor(private elementRef: ElementRef,) { }
+    ngOnInit() {
+        removeNgTag(this.elementRef.nativeElement)
+    }
     ngOnChanges(changes: SimpleChanges) {
         if (changes.color) {
             this.colorStyle.color = this.plain ? changes.color.currentValue : 'white'

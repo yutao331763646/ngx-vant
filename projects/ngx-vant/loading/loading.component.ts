@@ -1,20 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { addUnit } from '../utils';
 export type LoadingType = 'spinner' | 'circular'
-export function isDef<T>(val: T): val is NonNullable<T> {
-    return val !== undefined && val !== null;
-}
-export function isNumeric(val: string): boolean {
-    return /^\d+(\.\d+)?$/.test(val);
-}
 
-export function addUnit(value?: string | number): string | undefined {
-    if (!isDef(value)) {
-        return undefined;
-    }
-
-    value = String(value);
-    return isNumeric(value) ? `${value}px` : value;
-}
 @Component({
     selector: 'van-loading',
     templateUrl: './loading.component.html',

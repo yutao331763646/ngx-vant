@@ -11,29 +11,72 @@
     [valueClass]="'van-field__value'"
     [titleClass]="'van-field__label '+labelClass+ ' '+labelAlign"
     [arrowDirection]="arrowDirection"
-    [class.van-field--error]="error"
-    [class.van-field--disabled]="disabled"
-    [class.van-field--min-height]="type === 'textarea'"
     [class]="' van-field van-field--label-'+labelAlign"
 >
     <div class="van-field__body">
         <textarea
             *ngIf="type === 'textarea'"
             [class]="'van-field__control van-field__control'+inputAlign"
+            [class.van-field__control--error]="error"
+            [class.van-field__control--disabled]="disabled"
+            [class.van-field__control--min-height]="type === 'textarea'"
             [placeholder]="placeholder"
             [disabled]='disabled'
             [readonly]='readonly'
-            [name]='name'  [(ngModel)]="value"
+            [name]='name'
+            [(ngModel)]="value"
+            (focus)="onFocus($event)"
+            (blur)="onBlur($event)"
+            (input)="onInputChange($event)"
         ></textarea>
         <input
             *ngIf="type !== 'textarea'"
             [class]="'van-field__control van-field__control'+inputAlign"
+            [class.van-field__control--error]="error"
+            [class.van-field__control--disabled]="disabled"
             [placeholder]="placeholder"
             [disabled]='disabled'
             [readonly]='readonly'
             [name]='name'
             [type]="inputType"
+            [attr.inputMode]="inputMode"
             [(ngModel)]="value"
+            (focus)="onFocus($event)"
+            (blur)="onBlur($event)"
+            (input)="onInputChange($event)"
         >
+        <van-icon
+            [show]="showClear"
+            name='clear'
+            nativeClassName='van-field__clear'
+            (click)="onClickClear($event)"
+        ></van-icon>
+        <div
+            *ngIf="rightIcon"
+            class="van-field__right-icon"
+        >
+            <van-icon
+                [name]="rightIcon"
+                [classPrefix]="iconPrefix"
+            ></van-icon>
+        </div>
+        <div
+            *ngIf="button"
+            class="van-field__button"
+        >
+            <ng-template [ngTemplateOutlet]="button"></ng-template>
+        </div>
+    </div>
+    <div
+        *ngIf="showWordLimit&&maxlength"
+        class="van-field__word-limit"
+    >
+        <span class="van-field__word-num">{{(value||'').length}}/{{maxlength}}</span>
+    </div>
+    <div
+        *ngIf="errorMessage"
+        [class]="'van-field__error-message '+'van-field__error-message--'+errorMessageAlign"
+    >
+        {{errorMessage}}
     </div>
 </van-cell>

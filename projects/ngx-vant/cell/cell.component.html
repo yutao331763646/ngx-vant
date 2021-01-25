@@ -1,5 +1,5 @@
 <div
-    class="van-cell"
+    [class]="'van-cell '+cellClass"
     [class.van-cell--center]="center"
     [class.van-cell--required]="required"
     [class.van-cell--borderless]="border"
@@ -14,7 +14,8 @@
         [name]='icon'
         [classPrefix]="iconPrefix?iconPrefix:'van-icon'"
     ></van-icon>
-    <div *ngIf="title"
+    <div
+        *ngIf="title"
         [class]="'van-cell__title '+titleClass"
         [ngStyle]="titleStyle"
     >
@@ -27,10 +28,10 @@
         </div>
     </div>
     <div
-        *ngIf="value"
         [class]="'van-cell__value '+valueClass"
         [class.van-cell__value--alone]='!title'
     >
+        <ng-content></ng-content>
         <span>{{value}}</span>
     </div>
     <van-icon
@@ -38,5 +39,5 @@
         nativeClassName='van-cell__right-icon'
         [name]="arrowDirection?('arrow-'+arrowDirection):'arrow'"
     ></van-icon>
-    <ng-content></ng-content>
+
 </div>

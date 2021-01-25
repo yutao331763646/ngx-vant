@@ -1,19 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-export function isDef<T>(val: T): val is NonNullable<T> {
-    return val !== undefined && val !== null;
-}
-export function isNumeric(val: string): boolean {
-    return /^\d+(\.\d+)?$/.test(val);
-}
+import { addUnit } from '../utils';
 
-export function addUnit(value?: string | number): string | undefined {
-    if (!isDef(value)) {
-        return undefined;
-    }
-
-    value = String(value);
-    return isNumeric(value) ? `${value}px` : value;
-}
 export type ImgageFit = 'contain' | 'cover' | 'fill' | 'none' | 'scale-down';
 
 @Component({

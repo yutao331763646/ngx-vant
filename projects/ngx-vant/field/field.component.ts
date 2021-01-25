@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnChanges, OnInit, SimpleChanges, TemplateRef } from '@angular/core';
 import { addUnit, removeNgTag } from '../utils';
 export type FieldType = 'tel' | 'digit' | 'number' | 'textarea' | 'password' | 'text'
 
@@ -7,7 +7,7 @@ export type FieldType = 'tel' | 'digit' | 'number' | 'textarea' | 'password' | '
     templateUrl: './field.component.html',
     styleUrls: ['./field.component.less']
 })
-export class FieldComponent implements OnInit {
+export class FieldComponent implements OnInit, OnChanges {
 
     @Input() center: boolean = false;
     @Input() icon: string = '';
@@ -45,7 +45,9 @@ export class FieldComponent implements OnInit {
     @Input() placeholder: string = ''
     @Input() readonly: boolean = false
     @Input() name: string = ''
-    // @Input() type: FieldType = 'text'
+    @Input() button?: TemplateRef<void>
+    @Input() showWordLimit: boolean = false
+    @Input() maxlength:string | number = '';
 
 
     inputType: FieldType = 'text';
@@ -70,10 +72,46 @@ export class FieldComponent implements OnInit {
 
     @Input() clearable: boolean = false
     @Input() clearTrigger: 'always' | 'focus' = 'focus'
+    @Input() rightIcon: string = ''
+
+    showClear: boolean = false
+    focused: boolean = false
     constructor(private el: ElementRef) { }
 
     ngOnInit() {
         removeNgTag(this.el.nativeElement)
+    }
+    onFocus(event: FocusEvent): void {
+        this.focused = true;
+    }
+    onBlur(event: FocusEvent): void {
+        this.focused = false;
+    }
+    onClickClear(event: MouseEvent): void {
+        event.preventDefault()
+        this.value = ''
+        this.showClear = false
+    }
+    onInputChange(event: Event): void {
+        if (this.clearable) {
+            if (this.clearable && !this.readonly) {
+                const trigger = this.clearTrigger === 'always' ||
+                    (this.clearTrigger === 'focus' && this.focused)
+                this.showClear = this.value !== '' && trigger
+            }
+
+        }
+    }
+    ngOnChanges(changes: SimpleChanges) {
+        if (changes.clearable) {
+            if (changes.clearable.currentValue && !(changes.readonly)) {
+                const trigger = changes.clearTrigger ? changes.clearTrigger.currentValue === 'always' : false
+                this.showClear = trigger
+            }
+
+        }
+        console.log(this.showClear)
+
     }
 
 }

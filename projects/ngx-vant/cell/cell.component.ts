@@ -20,6 +20,7 @@ export class CellComponent implements OnInit {
     @Input() titleClass: string = '';
     @Input() valueClass: string = '';
     @Input() labelClass: string = '';
+    @Input() cellClass: string = '';
     @Input() title: string | number = '';
     @Input() value: string | number = '';
     @Input() arrowDirection: 'up' | 'down' | 'left' | 'right' |'' = '';

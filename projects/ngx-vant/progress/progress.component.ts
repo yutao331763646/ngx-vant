@@ -1,20 +1,5 @@
 import { Component, ElementRef, Input, OnInit, SimpleChanges, ViewChild } from '@angular/core';
-import { removeNgTag } from '../utils';
-export function isDef<T>(val: T): val is NonNullable<T> {
-    return val !== undefined && val !== null;
-}
-export function isNumeric(val: string): boolean {
-    return /^\d+(\.\d+)?$/.test(val);
-}
-
-export function addUnit(value?: string | number): string | undefined {
-    if (!isDef(value)) {
-        return undefined;
-    }
-
-    value = String(value);
-    return isNumeric(value) ? `${value}px` : value;
-}
+import { addUnit, removeNgTag } from '../utils';
 @Component({
     selector: 'van-progress',
     templateUrl: './progress.component.html',

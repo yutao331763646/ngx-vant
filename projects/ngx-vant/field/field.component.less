@@ -170,3 +170,18 @@
     }
   }
 }
+.van-field__control--error::placeholder {
+    color: @field-input-error-text-color;
+    -webkit-text-fill-color: currentColor;
+  }
+
+  .van-field__control--disabled {
+    color: @field-input-disabled-text-color;
+    cursor: not-allowed;
+    opacity: 1;
+    // fix disabled color in mobile safari
+    -webkit-text-fill-color: @field-input-disabled-text-color;
+  }
+  .van-field__control--min-height{
+    min-height: @field-text-area-min-height;
+  }

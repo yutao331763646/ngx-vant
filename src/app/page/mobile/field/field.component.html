@@ -4,3 +4,31 @@
     <van-field label="文本" value="输入框只读" [readonly]="true" ></van-field>
     <van-field label="文本" value="输入框已禁用" [disabled]="true" ></van-field>
   </van-cell-group>
+<van-field
+    [clearable]="true" [error]="true"    errorMessage='手机号ff格式错误' errorMessageAlign='center'
+    label="文本"
+    placeholder="请输入用户名"
+></van-field>
+<van-field [error]="true"    errorMessage='手机号格式错误'
+    label="短信验证码"
+    placeholder="请输入短信验证码"
+    [button]="button"
+    [center]="true"
+></van-field>
+<ng-template #button>
+    <van-button
+        size="small"
+        type="primary"   
+    >
+        发送验证码
+    </van-button>
+</ng-template>
+<van-field [error]="true" [required]='true'
+    autosize
+    label="留言"
+    type="textarea"
+    maxlength="50"
+    placeholder="请输入留言"
+    [showWordLimit]="true"
+    errorMessage='手机号格式错误'
+></van-field>
