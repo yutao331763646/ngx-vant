@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./overlay.component.scss']
 })
 export class OverlayComponent implements OnInit {
-
+    show:boolean=false
   constructor() { }
 
   ngOnInit() {

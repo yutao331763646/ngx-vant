@@ -1,3 +1,11 @@
-<p>
-  overlay works!
-</p>
+<van-overlay
+    [show]="show"
+    (click)="show=false"
+></van-overlay>
+
+<van-button
+    type="primary"
+    (click)="show=true"
+>
+    主要按钮
+</van-button>

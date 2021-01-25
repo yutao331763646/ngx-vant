@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MobileModule } from './page/mobile/mobile.module';
 import { NgxVantModule } from 'projects/ngx-vant/ngx-vant.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -13,7 +15,8 @@ import { NgxVantModule } from 'projects/ngx-vant/ngx-vant.module';
     imports: [
         BrowserModule,
         AppRoutingModule,
-        MobileModule,NgxVantModule
+        MobileModule,NgxVantModule,
+        BrowserAnimationsModule
     ],
     providers: [],
     bootstrap: [AppComponent]

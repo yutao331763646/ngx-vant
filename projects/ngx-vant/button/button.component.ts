@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
 import { LoadingType } from '../loading/loading.component';
 import { removeNgTag } from '../utils';
 
@@ -11,6 +11,7 @@ export type ButtonSize = 'large' | 'normal' | 'small' | 'mini';
     styleUrls: ['./button.component.less']
 })
 export class ButtonComponent implements OnInit, OnChanges {
+    @Output() readonly click = new EventEmitter<MouseEvent>();
     @Input() type: ButtonType = 'default';
     @Input() size: ButtonSize = 'normal';
     @Input() round: boolean = false;
@@ -43,6 +44,9 @@ export class ButtonComponent implements OnInit, OnChanges {
     constructor(private elementRef: ElementRef,) { }
     ngOnInit() {
         removeNgTag(this.elementRef.nativeElement)
+    }
+    onClick(e: MouseEvent): void{
+        this.click.emit(e);
     }
     ngOnChanges(changes: SimpleChanges) {
         if (changes.color) {
