@@ -6,13 +6,25 @@
 
 </van-overlay>
 <div
+    *ngIf="position==='center'"
     class="van-popup"
+    [@overlayAnimation]="isOpen"
     [ngStyle]="customStyle"
     [style.zIndex]="2022"
     [class.van-popup--center]="position==='center'"
+>
+    <ng-content></ng-content>
+</div>
+<div
+    *ngIf="position!=='center'"
+    class="van-popup"
+    [ngStyle]="customStyle"
+    [style.zIndex]="2022"
     [class.van-popup--top]="position==='top'"
     [class.van-popup--bottom]="position==='bottom'"
     [class.van-popup--right]="position==='right'"
     [class.van-popup--left]="position==='left'"
     [style.transform]="transform"
-></div>
+>
+    <!-- <ng-content></ng-content> -->
+</div>

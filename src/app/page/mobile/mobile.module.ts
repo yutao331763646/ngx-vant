@@ -18,6 +18,7 @@ import { CellComponent } from "./cell/cell.component";
 import { FieldComponent } from "./field/field.component";
 import { OverlayComponent } from "./overlay/overlay.component";
 import { PopupComponent } from "./popup/popup.component";
+import { VanDocDemoCardComponent } from "./components/van-doc-demo-card/van-doc-demo-card.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule,NgxVantModule
@@ -28,7 +29,7 @@ import { PopupComponent } from "./popup/popup.component";
         IconComponent, MobileComponent, LoadingComponent,HomeComponent,
         NavBarComponent,ImageComponent,LayoutComponent,ToastComponent,
         ProgressComponent,CellComponent,FieldComponent,OverlayComponent,
-        PopupComponent
+        PopupComponent,VanDocDemoCardComponent
     ]
 })
 export class MobileModule { }

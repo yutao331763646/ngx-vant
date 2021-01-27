@@ -1,9 +1,11 @@
-import { Component, EventEmitter, Input, OnInit, Output, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { overlayAnimation } from '../overlay/overlay.animation';
 
 @Component({
     selector: 'van-popup',
     templateUrl: './popup.component.html',
     styleUrls: ['./popup.component.less'],
+    animations: [overlayAnimation]
 })
 export class PopupComponent implements OnInit {
     isOpen = false;
@@ -39,9 +41,8 @@ export class PopupComponent implements OnInit {
                 position = `translate3d(0, 100%, 0)`;
                 break;
             default:
-                position = `translateY(100%)`;
+                position = ``;
         }
-        console.log(position)
         return position
 
     }
@@ -53,7 +54,5 @@ export class PopupComponent implements OnInit {
         this.visible = false
         this.visibleChange.emit(false)
     }
-    ngOnChanges(change: SimpleChanges) {
-        console.log(change)
-    }
+  
 }

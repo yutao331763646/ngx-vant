@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { removeNgTag } from '../utils';
 
 @Component({
@@ -25,9 +25,13 @@ export class CellComponent implements OnInit {
     @Input() value: string | number = '';
     @Input() arrowDirection: 'up' | 'down' | 'left' | 'right' | '' = '';
     @Input() disabled: boolean = false
+    @Output() readonly click = new EventEmitter<MouseEvent>();
     constructor(private el: ElementRef) { }
     ngOnInit() {
         removeNgTag(this.el.nativeElement)
+    }
+    onClick(e: MouseEvent): void {
+        this.click.emit(e);
     }
 
 }

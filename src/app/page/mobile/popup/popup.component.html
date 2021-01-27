@@ -1,51 +1,62 @@
 <vant-mobile-nav title='Popup'></vant-mobile-nav>
-<van-popup
-    [(visible)]="show"
-    position='left'
-    [customStyle]="{height:'100%',width:'30%'}"
-></van-popup>
-<van-button
-    type="primary"
-    (click)="show=true"
->
-左侧弹出
-</van-button>
+<van-van-doc-demo-card title='基础用法'>
+    <van-cell
+        title="展示弹出层"
+        [isLink]="true"
+        (click)="show=true"
+    ></van-cell>
+    <van-popup
+        [(visible)]="show"
+        position='center'
+    >
+        <div style="padding: 30px 50px;">内容</div>
+    </van-popup>
 
+</van-van-doc-demo-card>
 
-<van-popup
-    [(visible)]="show1"
-    position='right'
-    [customStyle]="{height:'100%',width:'30%'}"
-></van-popup>
-<van-button
-    type="primary"
-    (click)="show1=true"
->
-右侧弹出
-</van-button>
+<van-van-doc-demo-card title='弹出位置'>
+    <van-cell
+        title="顶部弹出"
+        [isLink]="true"
+        (click)="show2=true"
+    ></van-cell>
+    <van-cell
+        title="底部弹出"
+        [isLink]="true"
+        (click)="show3=true"
+    ></van-cell>
+    <van-cell
+        title="左侧弹出"
+        [isLink]="true"
+        (click)="show4=true"
+    ></van-cell>
+    <van-cell
+        title="右侧弹出"
+        [isLink]="true"
+        (click)="show1=true"
+    ></van-cell>
+    <van-popup
+        [(visible)]="show4"
+        position='left'
+        [customStyle]="{height:'100%',width:'30%'}"
+    ></van-popup>
 
+    <van-popup
+        [(visible)]="show1"
+        position='right'
+        [customStyle]="{height:'100%',width:'30%'}"
+    ></van-popup>
 
-<van-popup
-    [(visible)]="show2"
-    position='top'
-    [customStyle]="{height:'30%',width:'100%'}"
-></van-popup>
-<van-button
-    type="primary"
-    (click)="show2=true"
->
-上侧弹出
-</van-button>
+    <van-popup
+        [(visible)]="show2"
+        position='top'
+        [customStyle]="{height:'30%',width:'100%'}"
+    ></van-popup>
 
+    <van-popup
+        [(visible)]="show3"
+        position='bottom'
+        [customStyle]="{height:'30%',width:'100%'}"
+    ></van-popup>
 
-<van-popup
-    [(visible)]="show3"
-    position='bottom'
-    [customStyle]="{height:'30%',width:'100%'}"
-></van-popup>
-<van-button
-    type="primary"
-    (click)="show3=true"
->
-下侧弹出
-</van-button>
+</van-van-doc-demo-card>
