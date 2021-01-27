@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PopupComponent implements OnInit {
     show = false
+    show1 = false
+    show2 = false
+    show3 = false
     constructor() { }
 
     ngOnInit() {

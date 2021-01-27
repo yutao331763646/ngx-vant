@@ -1,6 +1,8 @@
 <div
     [class]="'van-overlay '+className"
-    [@overlayAnimation]="show"   (click)="onClick($event)"
+    [ngStyle]="customStyle"
+    [@overlayAnimation]="show"
+    (click)="onClick($event)"
 >
     <ng-content></ng-content>
 </div>

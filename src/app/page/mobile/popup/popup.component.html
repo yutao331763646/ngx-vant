@@ -1,10 +1,51 @@
 <vant-mobile-nav title='Popup'></vant-mobile-nav>
 <van-popup
     [(visible)]="show"
+    position='left'
+    [customStyle]="{height:'100%',width:'30%'}"
 ></van-popup>
 <van-button
     type="primary"
     (click)="show=true"
 >
-    打开popup
+左侧弹出
+</van-button>
+
+
+<van-popup
+    [(visible)]="show1"
+    position='right'
+    [customStyle]="{height:'100%',width:'30%'}"
+></van-popup>
+<van-button
+    type="primary"
+    (click)="show1=true"
+>
+右侧弹出
+</van-button>
+
+
+<van-popup
+    [(visible)]="show2"
+    position='top'
+    [customStyle]="{height:'30%',width:'100%'}"
+></van-popup>
+<van-button
+    type="primary"
+    (click)="show2=true"
+>
+上侧弹出
+</van-button>
+
+
+<van-popup
+    [(visible)]="show3"
+    position='bottom'
+    [customStyle]="{height:'30%',width:'100%'}"
+></van-popup>
+<van-button
+    type="primary"
+    (click)="show3=true"
+>
+下侧弹出
 </van-button>
