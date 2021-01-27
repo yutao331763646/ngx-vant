@@ -12,6 +12,7 @@ import { ProgressModule } from './progress/progress.module';
 import { CellModule } from './cell/index.module';
 import { FieldModule } from './field/field.module';
 import { OverlayModule } from './overlay/overlay.module';
+import { PopupModule } from './popup/popup.module';
 
 export * from './icon/icon.module';
 export * from './button/button.module';
@@ -25,13 +26,14 @@ export * from './progress/progress.module';
 export * from './cell/index.module';
 export * from './field/field.module';
 export * from './overlay/overlay.module';
+export * from './popup/popup.module';
 @NgModule({
     imports: [],
     exports: [
         IconModule,ButtonModule,LoadingModule,
         NavBarModule,ImageModule,RowModule,ColModule,
         ToastModule,ProgressModule,CellModule,FieldModule,
-        OverlayModule
+        OverlayModule,PopupModule
     ],
     declarations: []
   })
