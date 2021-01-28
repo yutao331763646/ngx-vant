@@ -1,16 +1,38 @@
 <vant-mobile-nav title='Overlay'></vant-mobile-nav>
 <van-overlay
-    [show]="show"
-    (click)="show=false"
+    [show]="show2"
+    (click)="show2=false"
 >
     <div class="wrapper">
         <div class="block"></div>
     </div>
 </van-overlay>
-
-<van-button
-    type="primary"
-    (click)="show=true"
+<van-overlay
+    [show]="show"
+    (click)="show=false"
 >
-    主要按钮
-</van-button>
+
+</van-overlay>
+
+<vant-mobile-demo
+    title='基础用法'
+    class="demo-button"
+>
+    <van-button
+        type="primary"
+        (click)="show=true"
+    >
+        显示遮罩层
+    </van-button>
+</vant-mobile-demo>
+<vant-mobile-demo
+    title='嵌入内容'
+    class="demo-button"
+>
+    <van-button
+        type="primary"
+        (click)="show2=true"
+    >
+        嵌入内容
+    </van-button>
+</vant-mobile-demo>
