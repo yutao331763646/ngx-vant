@@ -11,6 +11,10 @@ export class PopupComponent implements OnInit {
     show2 = false
     show3 = false
     show4 = false
+    show5 = false
+    show6 = false
+    show7 = false
+    show8 = false
     constructor() { }
 
     ngOnInit() {

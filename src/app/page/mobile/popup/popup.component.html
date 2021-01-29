@@ -60,3 +60,63 @@
     ></van-popup>
 
 </van-van-doc-demo-card>
+
+<van-van-doc-demo-card title='关闭图标'>
+    <van-cell
+        title="关闭图标"
+        [isLink]="true"
+        (click)="show6=true"
+    ></van-cell>
+    <van-cell
+        title="自定义图标"
+        [isLink]="true"
+        (click)="show7=true"
+    ></van-cell>
+    <van-cell
+        title="图标位置"
+        [isLink]="true"
+        (click)="show8=true"
+    ></van-cell>
+    <van-popup
+        [(visible)]="show6"
+        [closeable]="true"
+        position='bottom'
+        [round]="true"
+        [customStyle]="{height:'30%',width:'100%'}"
+    >
+    </van-popup>
+    <van-popup
+        [(visible)]="show7"
+        [closeable]="true"
+        position='bottom'
+        closeIcon='close'
+        [round]="true"
+        [customStyle]="{height:'30%',width:'100%'}"
+    >
+    </van-popup>
+    <van-popup
+        [(visible)]="show8"
+        [closeable]="true"
+        position='bottom'
+        [round]="true"
+        closeIconPosition='top-left'
+        [customStyle]="{height:'30%',width:'100%'}"
+    >
+    </van-popup>
+</van-van-doc-demo-card>
+
+<van-van-doc-demo-card title='圆角弹窗'>
+    <van-cell
+        title="圆角弹窗"
+        [isLink]="true"
+        (click)="show5=true"
+    ></van-cell>
+    <van-popup
+        [(visible)]="show5"
+        position='bottom'
+        [round]="true"
+        [customStyle]="{height:'30%',width:'100%'}"
+    >
+    </van-popup>
+
+</van-van-doc-demo-card>
