@@ -15,10 +15,14 @@ export class TabComponent implements OnInit {
     @Input() name: number | string = ''
     @Input() titleStyle: { [klass: string]: any } = {};
     @Input() titleClass: string = ''
+    currentIndex: number = 0
     constructor(private el: ElementRef) { }
 
     ngOnInit() {
         removeNgTag(this.el.nativeElement)
+    }
+    setActive(num:number){
+        
     }
 
 }

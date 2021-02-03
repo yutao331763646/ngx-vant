@@ -1,4 +1,4 @@
-import { Component, ContentChildren, ElementRef, Input, OnInit, QueryList, TemplateRef, ViewChild } from '@angular/core';
+import { Component, ContentChildren, ElementRef, Input, OnInit, QueryList, TemplateRef, ViewChild, ViewChildren } from '@angular/core';
 import { TabComponent } from '../tab/tab.component';
 import { addUnit } from '../utils';
 import { TitleComponent } from './title.component';
@@ -10,7 +10,7 @@ export type TabsType = 'line' | 'card';
 })
 export class TabsComponent implements OnInit {
     @ContentChildren(TabComponent, { descendants: true }) allTabs: QueryList<TabComponent> = new QueryList<TabComponent>();
-    @ViewChild('titleRef', { static: true }) titleRef!: TitleComponent;
+    @ViewChildren('titleRef') titleRef!: QueryList<TitleComponent>;
 
     @Input() swipeThreshold: number | string = 5
     @Input() ellipsis: boolean = true
@@ -20,7 +20,7 @@ export class TabsComponent implements OnInit {
     // @Input() lineWidth: number | string = '40px'
     // @Input() lineHeight: number | string = '3px'
     @Input() animated: boolean = false
-    @Input() duration:  string = '0.3'
+    @Input() duration: string = '0.3'
     @Input() border: boolean = false
 
     @Input()
@@ -41,13 +41,24 @@ export class TabsComponent implements OnInit {
     constructor() { }
 
     ngOnInit() {
+        setTimeout(() => {
+            const dom: any = document.getElementsByClassName('van-tab')
+            console.log(dom[0].offsetWidth)
+            const { offsetLeft, offsetWidth } = dom[0]
+            const target = {
+                currentTarget: { offsetLeft, offsetWidth }
+            }
+            this.currentChange(target, 0)
+        })
     }
     ngAfterViewInit() {
-        console.log(this.titleRef)
+
+        // this.titleRef.changes.subscribe(res=>{
+        //     console.log(res)
+        // })
+        //     console.log((this.titleRef))
     }
     ngAfterContentInit() {
-        // const el = (this.allTabs.first as any).el.nativeElement.offsetWidth
-        // console.log(el)
         // this.children = this.allTabs.map((item, index) => {
         //     console.log(item.title)
         //     const { badge, disabled, dot, title,info, name, titleStyle, titleClass } = item
@@ -56,11 +67,10 @@ export class TabsComponent implements OnInit {
         //     }
         // })
     }
-    currentChange(target: any) {
-        console.log(target)
+    currentChange(currentTarget: any, index: number) {
+        const target = currentTarget.currentTarget
         const { offsetLeft, offsetWidth } = target
-        console.log(offsetLeft, offsetWidth)
         this.lineLeft = offsetLeft + offsetWidth / 2;
-        console.log(this.lineLeft)
+        console.log(this.allTabs)
     }
 }

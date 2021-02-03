@@ -7,10 +7,13 @@
             [style.color]="color"
             [style.background]="background"
         >
-            <van-tab-title
+            <div
                 #titleRef
-                [allTabs]="allTabs" (click)="currentChange($event)"
-            ></van-tab-title>
+                van-tab-title
+                *ngFor="let child of allTabs;let i=index"
+                [title]="child.title"
+                (click)="currentChange($event,i)"
+            ></div>
             <!-- <div
                 *ngFor="let child of allTabs"
                 role="tab" 

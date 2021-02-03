@@ -45,16 +45,6 @@ export class ColComponent implements OnInit, OnChanges {
             [`van-col--${this.span}`]: isNotNil(this.span),
             [`van-col--offset-${this.offset}`]: isNotNil(this.offset),
         };
-        // for (const i in this.classMap) {
-        //     if (this.classMap.hasOwnProperty(i)) {
-        //         this.renderer.removeClass(this.elementRef.nativeElement, i);
-        //     }
-        // }
         this.classMap = { ...hostClassMap };
-        // for (const i in this.classMap) {
-        //     if (this.classMap.hasOwnProperty(i) && this.classMap[i]) {
-        //         this.renderer.addClass(this.elementRef.nativeElement, i);
-        //     }
-        // }
     }
 }
