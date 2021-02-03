@@ -1,3 +1,34 @@
-<p>
-  tabs works!
-</p>
+<div class="van-tabs van-tabs--line">
+    <div class="van-tabs__wrap">
+        <div
+            role="tablist"
+            class="van-tabs__nav"
+            [class.van-tabs__nav--line]="type==='line'"
+            [style.color]="color"
+            [style.background]="background"
+        >
+            <van-tab-title
+                #titleRef
+                [allTabs]="allTabs" (click)="currentChange($event)"
+            ></van-tab-title>
+            <!-- <div
+                *ngFor="let child of allTabs"
+                role="tab" 
+                class="van-tab van-tab--active"
+            >
+                <span class="van-tab__text van-tab__text--ellipsis">{{child.title}}</span>
+            </div> -->
+            <div
+                *ngIf="type==='line'"
+                class="ddd van-tabs__line"
+                [style.width]="lineWidth"
+                [style.height]="lineHeight"
+                [style.transform]=" 'translateX('+ lineLeft+'px) translateX(-50%)' "
+                [style.transitionDuration]="duration+'s'"
+            ></div>
+        </div>
+    </div>
+    <div class="van-tabs__content">
+        <ng-content></ng-content>
+    </div>
+</div>
