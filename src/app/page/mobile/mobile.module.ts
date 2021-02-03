@@ -19,17 +19,18 @@ import { FieldComponent } from "./field/field.component";
 import { OverlayComponent } from "./overlay/overlay.component";
 import { PopupComponent } from "./popup/popup.component";
 import { VanDocDemoCardComponent } from "./components/van-doc-demo-card/van-doc-demo-card.component";
+import { TabsComponent } from "./tabs/tabs.component";
 @NgModule({
     imports: [
-        RouterModule, CommonModule,NgxVantModule
+        RouterModule, CommonModule, NgxVantModule
     ],
 
     declarations: [
         ButtonComponent, NavComponent, DemoComponent,
-        IconComponent, MobileComponent, LoadingComponent,HomeComponent,
-        NavBarComponent,ImageComponent,LayoutComponent,ToastComponent,
-        ProgressComponent,CellComponent,FieldComponent,OverlayComponent,
-        PopupComponent,VanDocDemoCardComponent
+        IconComponent, MobileComponent, LoadingComponent, HomeComponent,
+        NavBarComponent, ImageComponent, LayoutComponent, ToastComponent,
+        ProgressComponent, CellComponent, FieldComponent, OverlayComponent,
+        PopupComponent, VanDocDemoCardComponent, TabsComponent
     ]
 })
 export class MobileModule { }

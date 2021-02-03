@@ -17,6 +17,7 @@ import { CellComponent } from "./cell/cell.component";
 import { FieldComponent } from "./field/field.component";
 import { OverlayComponent } from "./overlay/overlay.component";
 import { PopupComponent } from "./popup/popup.component";
+import { TabsComponent } from "./tabs/tabs.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule,
@@ -27,7 +28,8 @@ import { PopupComponent } from "./popup/popup.component";
         IconComponent, LoadingComponent, HomeComponent,
         QuickstartComponent,ImageComponent,
         NavBarComponent,LayoutComponent,ProgressComponent,
-        CellComponent,FieldComponent,OverlayComponent,PopupComponent
+        CellComponent,FieldComponent,OverlayComponent,PopupComponent,
+        TabsComponent
     ]
 })
 export class BasicModule { }

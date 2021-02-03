@@ -13,6 +13,7 @@ import { OverlayComponent } from "./overlay/overlay.component";
 import { PopupComponent } from "./popup/popup.component";
 import { ProgressComponent } from "./progress/progress.component";
 import { QuickstartComponent } from "./quickstart/quickstart.component";
+import { TabsComponent } from "./tabs/tabs.component";
 import { ToastComponent } from "./toast/toast.component";
 
 const routes: Routes = [
@@ -62,6 +63,9 @@ const routes: Routes = [
     },{
         path:'popup',
         component:PopupComponent
+    },{
+        path:'tab',
+        component:TabsComponent
     }
 ];
 

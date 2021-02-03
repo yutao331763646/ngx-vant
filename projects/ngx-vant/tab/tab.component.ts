@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-tab',
+  selector: 'van-tab',
   templateUrl: './tab.component.html',
   styleUrls: ['./tab.component.less']
 })
