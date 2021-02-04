@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TabsComponent } from './tabs.component';
+import { TabBodyComponent, TabsComponent } from './tabs.component';
 import { TitleComponent } from './title.component';
 
 @NgModule({
     imports: [
         CommonModule
     ],
-    exports: [TabsComponent,TitleComponent],
-    declarations: [TabsComponent,TitleComponent]
+    exports: [TabsComponent,TitleComponent,TabBodyComponent],
+    declarations: [TabsComponent,TitleComponent,TabBodyComponent]
 })
 export class VantTabsModule { }

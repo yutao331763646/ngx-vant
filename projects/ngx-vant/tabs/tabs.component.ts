@@ -1,7 +1,8 @@
-import { Component, ContentChildren, ElementRef, Input, OnInit, QueryList, TemplateRef, ViewChild, ViewChildren } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ContentChildren, ElementRef, Input, OnInit, QueryList, TemplateRef, ViewChild, ViewChildren, ViewEncapsulation } from '@angular/core';
 import { TabComponent } from '../tab/tab.component';
 import { addUnit } from '../utils';
 import { TitleComponent } from './title.component';
+import { delay, filter, first, startWith, takeUntil } from 'rxjs/operators';
 export type TabsType = 'line' | 'card';
 @Component({
     selector: 'van-tabs',
@@ -12,13 +13,12 @@ export class TabsComponent implements OnInit {
     @ContentChildren(TabComponent, { descendants: true }) allTabs: QueryList<TabComponent> = new QueryList<TabComponent>();
     @ViewChildren('titleRef') titleRef!: QueryList<TitleComponent>;
 
+
     @Input() swipeThreshold: number | string = 5
     @Input() ellipsis: boolean = true
     @Input() type: TabsType = 'line'
     @Input() color: string = '#ee0a24'
     @Input() background: string = 'white'
-    // @Input() lineWidth: number | string = '40px'
-    // @Input() lineHeight: number | string = '3px'
     @Input() animated: boolean = false
     @Input() duration: string = '0.3'
     @Input() border: boolean = false
@@ -38,6 +38,8 @@ export class TabsComponent implements OnInit {
     private _lineHeight: string | number = '';
 
     lineLeft: string = ''
+
+    currentIndex: number = 0
     constructor() { }
 
     ngOnInit() {
@@ -52,25 +54,33 @@ export class TabsComponent implements OnInit {
         })
     }
     ngAfterViewInit() {
-
-        // this.titleRef.changes.subscribe(res=>{
-        //     console.log(res)
-        // })
-        //     console.log((this.titleRef))
     }
     ngAfterContentInit() {
-        // this.children = this.allTabs.map((item, index) => {
-        //     console.log(item.title)
-        //     const { badge, disabled, dot, title,info, name, titleStyle, titleClass } = item
-        //     return {
-        //         badge, disabled, dot, info,title, name, titleStyle, titleClass
-        //     }
-        // })
+      
     }
+
     currentChange(currentTarget: any, index: number) {
         const target = currentTarget.currentTarget
         const { offsetLeft, offsetWidth } = target
         this.lineLeft = offsetLeft + offsetWidth / 2;
-        console.log(this.allTabs)
+        this.currentIndex = index
     }
+}
+
+
+@Component({
+    selector: '[tab-body]',
+    template: `
+      <ng-container *ngIf="active ">
+        <ng-template [ngTemplateOutlet]="content"></ng-template>
+      </ng-container>
+    `,
+    host: {
+        class: 'van-tab__pane',
+        role: 'tabpanel'
+    }
+})
+export class TabBodyComponent {
+    @Input() content: TemplateRef<void> | null = null;
+    @Input() active = false;
 }

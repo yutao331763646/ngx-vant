@@ -14,13 +14,6 @@
                 [title]="child.title"
                 (click)="currentChange($event,i)"
             ></div>
-            <!-- <div
-                *ngFor="let child of allTabs"
-                role="tab" 
-                class="van-tab van-tab--active"
-            >
-                <span class="van-tab__text van-tab__text--ellipsis">{{child.title}}</span>
-            </div> -->
             <div
                 *ngIf="type==='line'"
                 class="ddd van-tabs__line"
@@ -32,6 +25,12 @@
         </div>
     </div>
     <div class="van-tabs__content">
-        <ng-content></ng-content>
+        <div
+            tab-body
+            *ngFor="let child of allTabs;let i=index"
+            [content]="child.content"
+            [active]="currentIndex===i"
+        ></div>
+
     </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnChanges, OnInit, SimpleChanges, TemplateRef, ViewChild } from '@angular/core';
 import { removeNgTag } from '../utils';
 
 @Component({
@@ -6,7 +6,8 @@ import { removeNgTag } from '../utils';
     templateUrl: './tab.component.html',
     styleUrls: ['./tab.component.less']
 })
-export class TabComponent implements OnInit {
+export class TabComponent implements OnInit, OnChanges {
+    @ViewChild('contentTemplate', { static: true }) contentTemplate!: TemplateRef<any>;
     @Input() title: string = ''
     @Input() disabled: boolean = false
     @Input() dot: boolean = false
@@ -15,14 +16,16 @@ export class TabComponent implements OnInit {
     @Input() name: number | string = ''
     @Input() titleStyle: { [klass: string]: any } = {};
     @Input() titleClass: string = ''
-    currentIndex: number = 0
     constructor(private el: ElementRef) { }
 
     ngOnInit() {
         removeNgTag(this.el.nativeElement)
     }
-    setActive(num:number){
-        
-    }
+    ngOnChanges(changes: SimpleChanges) {
+        console.log(changes.title.currentValue)
 
+    }
+    get content(): TemplateRef<any> {
+        return this.contentTemplate;
+    }
 }
