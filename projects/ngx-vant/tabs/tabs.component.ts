@@ -14,7 +14,7 @@ export class TabsComponent implements OnInit {
     @ViewChildren('titleRef') titleRef!: QueryList<TitleComponent>;
 
 
-    @Input() swipeThreshold: number | string = 5
+    // @Input() swipeThreshold: number | string = 5
     @Input() ellipsis: boolean = true
     @Input() type: TabsType = 'line'
     @Input() color: string = '#ee0a24'
@@ -22,6 +22,18 @@ export class TabsComponent implements OnInit {
     @Input() animated: boolean = false
     @Input() duration: string = '0.3'
     @Input() border: boolean = false
+    scrollable: boolean = false
+
+    @Input()
+    get swipeThreshold(): string | number { return this._swipeThreshold; }
+    set swipeThreshold(value: string | number) {
+        this.scrollable = this.allTabs.length > value
+        console.log(this.allTabs)
+        this._swipeThreshold = addUnit(value) as string;
+    }
+    private _swipeThreshold: string | number = '';
+
+
 
     @Input()
     get lineWidth(): string | number { return this._lineWidth; }
@@ -45,7 +57,6 @@ export class TabsComponent implements OnInit {
     ngOnInit() {
         setTimeout(() => {
             const dom: any = document.getElementsByClassName('van-tab')
-            console.log(dom[0].offsetWidth)
             const { offsetLeft, offsetWidth } = dom[0]
             const target = {
                 currentTarget: { offsetLeft, offsetWidth }
@@ -56,7 +67,8 @@ export class TabsComponent implements OnInit {
     ngAfterViewInit() {
     }
     ngAfterContentInit() {
-      
+        this.scrollable = this.allTabs.length > this.swipeThreshold
+        console.log(this.allTabs.length)
     }
 
     currentChange(currentTarget: any, index: number) {

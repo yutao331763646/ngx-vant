@@ -1,9 +1,13 @@
 <div class="van-tabs van-tabs--line">
-    <div class="van-tabs__wrap">
+    <div
+        class="van-tabs__wrap"
+        [class.van-tabs__wrap--scrollable]="scrollable"
+    >
         <div
             role="tablist"
             class="van-tabs__nav"
             [class.van-tabs__nav--line]="type==='line'"
+            [class.van-tabs__nav--complete]="scrollable"
             [style.color]="color"
             [style.background]="background"
         >
