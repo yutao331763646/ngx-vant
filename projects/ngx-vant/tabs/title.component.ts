@@ -7,11 +7,12 @@ import { Component, EventEmitter, Input, OnInit, Output, QueryList } from '@angu
     host: {
         role: 'tab',
         class: 'van-tab van-tab--active',
+        '(click)': 'handleClick($event)'
     }
 })
 export class TitleComponent implements OnInit {
     @Input() title: string = '';
-    @Output() readonly onClick = new EventEmitter<any>();
+    @Output() readonly onClick = new EventEmitter<MouseEvent>();
 
     constructor() {
     }
@@ -19,6 +20,8 @@ export class TitleComponent implements OnInit {
     }
     ngAfterViewInit() {
     }
-
+    handleClick(event: MouseEvent): void {
+        this.onClick.emit(event)
+    }
 
 }

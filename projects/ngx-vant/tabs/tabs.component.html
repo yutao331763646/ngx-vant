@@ -3,7 +3,7 @@
         class="van-tabs__wrap"
         [class.van-tabs__wrap--scrollable]="scrollable"
     >
-        <div
+        <div #navRef
             role="tablist"
             class="van-tabs__nav"
             [class.van-tabs__nav--line]="type==='line'"
@@ -16,11 +16,11 @@
                 van-tab-title
                 *ngFor="let child of allTabs;let i=index"
                 [title]="child.title"
-                (click)="currentChange($event,i)"
+                (click)="currentChange($event,i,true)"
             ></div>
             <div
                 *ngIf="type==='line'"
-                class="ddd van-tabs__line"
+                class="van-tabs__line"
                 [style.width]="lineWidth"
                 [style.height]="lineHeight"
                 [style.transform]=" 'translateX('+ lineLeft+'px) translateX(-50%)' "

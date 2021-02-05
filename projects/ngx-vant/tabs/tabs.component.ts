@@ -1,8 +1,6 @@
-import { ChangeDetectionStrategy, Component, ContentChildren, ElementRef, Input, OnInit, QueryList, TemplateRef, ViewChild, ViewChildren, ViewEncapsulation } from '@angular/core';
+import { Component, ContentChildren, ElementRef, Input, OnInit, QueryList, TemplateRef, ViewChild, ViewChildren, ViewEncapsulation } from '@angular/core';
 import { TabComponent } from '../tab/tab.component';
-import { addUnit } from '../utils';
-import { TitleComponent } from './title.component';
-import { delay, filter, first, startWith, takeUntil } from 'rxjs/operators';
+import { addUnit, scrollLeftTo } from '../utils';
 export type TabsType = 'line' | 'card';
 @Component({
     selector: 'van-tabs',
@@ -11,10 +9,8 @@ export type TabsType = 'line' | 'card';
 })
 export class TabsComponent implements OnInit {
     @ContentChildren(TabComponent, { descendants: true }) allTabs: QueryList<TabComponent> = new QueryList<TabComponent>();
-    @ViewChildren('titleRef') titleRef!: QueryList<TitleComponent>;
-
-
-    // @Input() swipeThreshold: number | string = 5
+    // @ViewChildren('titleRef') titleRef!: QueryList<TitleComponent>;
+    @ViewChild('navRef') navRef!: ElementRef<HTMLElement>;  
     @Input() ellipsis: boolean = true
     @Input() type: TabsType = 'line'
     @Input() color: string = '#ee0a24'
@@ -61,21 +57,32 @@ export class TabsComponent implements OnInit {
             const target = {
                 currentTarget: { offsetLeft, offsetWidth }
             }
-            this.currentChange(target, 0)
+            this.currentChange(target, 0, false)
         })
     }
     ngAfterViewInit() {
     }
     ngAfterContentInit() {
         this.scrollable = this.allTabs.length > this.swipeThreshold
-        console.log(this.allTabs.length)
     }
 
-    currentChange(currentTarget: any, index: number) {
+    currentChange(currentTarget: any, index: number, bool: boolean) {
         const target = currentTarget.currentTarget
         const { offsetLeft, offsetWidth } = target
         this.lineLeft = offsetLeft + offsetWidth / 2;
         this.currentIndex = index
+        if (bool) {
+            this.scrollIntoView(offsetLeft, offsetWidth, false)
+        }
+    }
+    // scroll active tab into view
+    scrollIntoView(offsetLeft: any, offsetWidth: any, immediate: boolean) {
+        console.log(this.navRef)
+        // if (!this.scrollable || !titles || !titles[this.currentIndex]) {
+        //     return;
+        // }
+        const to = offsetLeft - (this.navRef.nativeElement.offsetWidth - offsetWidth) / 2;
+        scrollLeftTo(this.navRef.nativeElement, to, immediate ? 0 : +this.duration);
     }
 }
 
