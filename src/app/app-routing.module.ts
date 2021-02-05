@@ -10,6 +10,7 @@ import { LayoutComponent } from './page/mobile/layout/layout.component';
 import { LoadingComponent } from './page/mobile/loading/loading.component';
 import { MobileComponent } from './page/mobile/mobile.component';
 import { NavBarComponent } from './page/mobile/nav-bar/nav-bar.component';
+import { NotifyComponent } from './page/mobile/notify/notify.component';
 import { OverlayComponent } from './page/mobile/overlay/overlay.component';
 import { PopupComponent } from './page/mobile/popup/popup.component';
 import { ProgressComponent } from './page/mobile/progress/progress.component';
@@ -76,6 +77,9 @@ const routes: Routes = [
             },{
                 path:'tab',
                 component:TabsComponent
+            },{
+                path:'notify',
+                component:NotifyComponent
             }
         ]
         // loadChildren: () => import('./page/mobile/mobile.module').then(m => m.MobileModule)

@@ -20,6 +20,7 @@ import { OverlayComponent } from "./overlay/overlay.component";
 import { PopupComponent } from "./popup/popup.component";
 import { VanDocDemoCardComponent } from "./components/van-doc-demo-card/van-doc-demo-card.component";
 import { TabsComponent } from "./tabs/tabs.component";
+import { NotifyComponent } from "./notify/notify.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule, NgxVantModule
@@ -30,7 +31,7 @@ import { TabsComponent } from "./tabs/tabs.component";
         IconComponent, MobileComponent, LoadingComponent, HomeComponent,
         NavBarComponent, ImageComponent, LayoutComponent, ToastComponent,
         ProgressComponent, CellComponent, FieldComponent, OverlayComponent,
-        PopupComponent, VanDocDemoCardComponent, TabsComponent
+        PopupComponent, VanDocDemoCardComponent, TabsComponent,NotifyComponent
     ]
 })
 export class MobileModule { }

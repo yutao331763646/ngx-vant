@@ -18,6 +18,7 @@ import { FieldComponent } from "./field/field.component";
 import { OverlayComponent } from "./overlay/overlay.component";
 import { PopupComponent } from "./popup/popup.component";
 import { TabsComponent } from "./tabs/tabs.component";
+import { NotifyComponent } from "./notify/notify.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule,
@@ -29,7 +30,7 @@ import { TabsComponent } from "./tabs/tabs.component";
         QuickstartComponent,ImageComponent,
         NavBarComponent,LayoutComponent,ProgressComponent,
         CellComponent,FieldComponent,OverlayComponent,PopupComponent,
-        TabsComponent
+        TabsComponent,NotifyComponent
     ]
 })
 export class BasicModule { }

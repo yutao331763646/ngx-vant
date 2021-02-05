@@ -15,7 +15,7 @@ export class PopupComponent implements OnInit {
         this.isOpen = value;
     }
     @Output() visibleChange = new EventEmitter<boolean>(false);
-
+    @Input() overlay:boolean=true
     @Input() closeOnClickOverlay: boolean = true
     @Input() position: 'top' | 'bottom' | 'right' | 'left' | 'center' = 'center'
     @Input() customStyle: { [klass: string]: any } = {};

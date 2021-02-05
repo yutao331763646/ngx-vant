@@ -1,4 +1,5 @@
 <van-overlay
+    *ngIf="overlay"
     [show]="isOpen"
     [closeOnClickOverlay]="closeOnClickOverlay"
     (maskClose)="maskClose()"

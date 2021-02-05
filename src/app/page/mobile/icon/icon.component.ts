@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-
+import { icons } from './config';
 @Component({
-  selector: 'app-icon',
-  templateUrl: './icon.component.html',
-  styleUrls: ['./icon.component.less']
+    selector: 'app-icon',
+    templateUrl: './icon.component.html',
+    styleUrls: ['./icon.component.less']
 })
 export class IconComponent implements OnInit {
+    icons = icons
+    constructor() { }
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+    ngOnInit() {
+        console.log(icons)
+    }
 
 }

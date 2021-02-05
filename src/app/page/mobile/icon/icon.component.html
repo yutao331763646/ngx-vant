@@ -1,5 +1,5 @@
 <vant-mobile-nav title='Icon'></vant-mobile-nav>
-<van-icon  name="chat-o" size="32"></van-icon>
+<!-- <van-icon  name="chat-o" size="32"></van-icon>
 <van-icon name="https://b.yzcdn.cn/vant/icon-demo-1126.png"  size="32"></van-icon>
 
 <van-icon name="chat-o" [dot]='true'  size="32"></van-icon>
@@ -10,4 +10,154 @@
 <van-icon name="fire-o" color="#ee0a24"  size="32"></van-icon>
 
 <van-icon name="chat-o" size="40" ></van-icon>
- <van-icon name="chat-o" size="30px" ></van-icon>
+ <van-icon name="chat-o" size="30px" ></van-icon> -->
+
+
+
+
+
+<van-tabs>
+    <van-tab title='用法示例'>
+        <div class="icon_demo">
+            <vant-mobile-demo title='基础用法'>
+                <van-row>
+                    <van-col span="6">
+                        <van-icon
+                            name="chat-o"
+                            size="32"
+                        ></van-icon>
+                    </van-col>
+                    <van-col span="6">
+                        <van-icon
+                            name="https://b.yzcdn.cn/vant/icon-demo-1126.png"
+                            size="32"
+                        ></van-icon>
+                    </van-col>
+                </van-row>
+            </vant-mobile-demo>
+
+
+
+
+            <vant-mobile-demo title='徽标提示'>
+                <van-row>
+                    <van-col span="6">
+                        <van-icon
+                            name="chat-o"
+                            [dot]='true'
+                            size="32"
+                        ></van-icon>
+                    </van-col>
+                    <van-col span="6">
+                        <van-icon
+                            name="chat-o"
+                            badge="9"
+                            size="32"
+                        ></van-icon>
+                    </van-col>
+                    <van-col span="6">
+                        <van-icon
+                            name="chat-o"
+                            badge="99+"
+                            size="32"
+                        ></van-icon>
+                    </van-col>
+                </van-row>
+            </vant-mobile-demo>
+            <vant-mobile-demo title='图标颜色'>
+                <van-row>
+                    <van-col span="6">
+                        <van-icon
+                            name="cart-o"
+                            color="#1989fa"
+                            size="32"
+                        ></van-icon>
+                    </van-col>
+                    <van-col span="6">
+                        <van-icon
+                            name="fire-o"
+                            color="#ee0a24"
+                            size="32"
+                        ></van-icon>
+                    </van-col>
+
+
+
+
+                </van-row>
+            </vant-mobile-demo>
+            <vant-mobile-demo title='图标大小'>
+                <van-row>
+                    <van-col span="6">
+                        <van-icon
+                            name="chat-o"
+                            size="30px"
+                        ></van-icon>
+                    </van-col>
+                    <van-col span="6">
+                        <van-icon
+                            name="chat-o"
+                            size="40"
+                        ></van-icon>
+                    </van-col>
+
+
+
+
+                </van-row>
+            </vant-mobile-demo>
+        </div>
+    </van-tab>
+    <van-tab title='基础图标'>
+        <div class="icon_demo">
+            <van-row>
+                <van-col
+                    span="6"
+                    *ngFor="let icon of icons.basic"
+                >
+                    <van-icon
+                        [name]="icon"
+                        size="32"
+                    ></van-icon>
+                    <span>{{icon}}</span>
+                </van-col>
+
+
+            </van-row>
+        </div>
+    </van-tab>
+    <van-tab title='线框风格'>
+        <div class="icon_demo">
+            <van-row>
+                <van-col
+                    span="6"
+                    *ngFor="let icon of icons.outline"
+                >
+                    <van-icon
+                        [name]="icon"
+                        size="32"
+                    ></van-icon>
+                    <span>{{icon}}</span>
+                </van-col>
+
+
+            </van-row>
+        </div>
+    </van-tab>
+    <van-tab title='实底风格'> <div class="icon_demo">
+        <van-row>
+            <van-col
+                span="6"
+                *ngFor="let icon of icons.filled"
+            >
+                <van-icon
+                    [name]="icon"
+                    size="32"
+                ></van-icon>
+                <span>{{icon}}</span>
+            </van-col>
+
+
+        </van-row>
+    </div></van-tab>
+</van-tabs>
