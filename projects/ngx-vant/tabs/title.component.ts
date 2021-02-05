@@ -7,11 +7,13 @@ import { Component, EventEmitter, Input, OnInit, Output, QueryList } from '@angu
     host: {
         role: 'tab',
         class: 'van-tab van-tab--active',
+        '[class.van-tab--disabled]': 'disabled',
         '(click)': 'handleClick($event)'
     }
 })
 export class TitleComponent implements OnInit {
     @Input() title: string = '';
+    @Input() disabled: boolean = false
     @Output() readonly onClick = new EventEmitter<MouseEvent>();
 
     constructor() {

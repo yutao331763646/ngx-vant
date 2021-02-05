@@ -7,6 +7,7 @@
             role="tablist"
             class="van-tabs__nav"
             [class.van-tabs__nav--line]="type==='line'"
+            [class.van-tabs__nav--card]="type==='card'"
             [class.van-tabs__nav--complete]="scrollable"
             [style.color]="color"
             [style.background]="background"
@@ -16,6 +17,7 @@
                 van-tab-title
                 *ngFor="let child of allTabs;let i=index"
                 [title]="child.title"
+                [disabled]="child.disabled"
                 (click)="currentChange($event,i,true)"
             ></div>
             <div

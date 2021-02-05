@@ -10,7 +10,7 @@ export type TabsType = 'line' | 'card';
 export class TabsComponent implements OnInit {
     @ContentChildren(TabComponent, { descendants: true }) allTabs: QueryList<TabComponent> = new QueryList<TabComponent>();
     // @ViewChildren('titleRef') titleRef!: QueryList<TitleComponent>;
-    @ViewChild('navRef') navRef!: ElementRef<HTMLElement>;  
+    @ViewChild('navRef') navRef!: ElementRef<HTMLElement>;
     @Input() ellipsis: boolean = true
     @Input() type: TabsType = 'line'
     @Input() color: string = '#ee0a24'
@@ -18,6 +18,7 @@ export class TabsComponent implements OnInit {
     @Input() animated: boolean = false
     @Input() duration: string = '0.3'
     @Input() border: boolean = false
+
     scrollable: boolean = false
 
     @Input()
@@ -67,6 +68,7 @@ export class TabsComponent implements OnInit {
     }
 
     currentChange(currentTarget: any, index: number, bool: boolean) {
+        if(this.allTabs.toArray()[index].disabled) return
         const target = currentTarget.currentTarget
         const { offsetLeft, offsetWidth } = target
         this.lineLeft = offsetLeft + offsetWidth / 2;
