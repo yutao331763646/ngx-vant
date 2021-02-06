@@ -23,7 +23,7 @@ export class PopupComponent implements OnInit {
     @Input() safeAreaInsetBottom: boolean = false
     @Input() closeable: boolean = false
     @Input() closeIcon: string = 'cross'
-    // @Input() closeIconPosition: string = 'top-right'
+    @Input() nativeClass: string = ''
 
     iconPositionNativeClass = 'van-popup__close-icon--top-right'
     @Input()

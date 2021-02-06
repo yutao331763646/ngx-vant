@@ -8,7 +8,7 @@
 </van-overlay>
 <div
     *ngIf="position==='center'"
-    class="van-popup"
+    [class]="'van-popup '+nativeClass"
     [@overlayAnimation]="isOpen"
     [ngStyle]="customStyle"
     [style.zIndex]="2022"
@@ -20,7 +20,7 @@
 </div>
 <div
     *ngIf="position!=='center'"
-    class="van-popup"
+    [class]="'van-popup '+nativeClass"
     [ngStyle]="customStyle"
     [style.zIndex]="2022"
     [class.van-popup--top]="position==='top'"
@@ -39,5 +39,5 @@
         [nativeClassName]="'van-popup__close-icon '+iconPositionNativeClass"
     ></van-icon>
 
-    <!-- <ng-content></ng-content> -->
+    <ng-content></ng-content>
 </div>

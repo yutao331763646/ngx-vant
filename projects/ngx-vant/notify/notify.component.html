@@ -1,7 +1,9 @@
-<van-popup [overlay]='false'
+<van-popup
+    [overlay]='false'
     [(visible)]="show"
     position='top'
-    [customStyle]="{height:'30%',width:'100%'}"
+    [nativeClass]="'van-notify van-notify--'+type "
+    [customStyle]="{width:'100%',heigth:'100px'}"
 >
+    <div>{{message}}</div>
 </van-popup>
-ddd

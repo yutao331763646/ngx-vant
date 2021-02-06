@@ -1,17 +1,55 @@
 import { Component, OnInit } from '@angular/core';
 import { NotifyService } from 'projects/ngx-vant/notify/notify.service';
 @Component({
-  selector: 'app-notify',
-  templateUrl: './notify.component.html',
-  styleUrls: ['./notify.component.less']
+    selector: 'app-notify',
+    templateUrl: './notify.component.html',
+    styleUrls: ['./notify.component.less']
 })
 export class NotifyComponent implements OnInit {
 
-  constructor(private notifyService:NotifyService) { }
+    constructor(private notifyService: NotifyService) { }
 
-  ngOnInit() {
-      console.log(this.notifyService)
-      this.notifyService.create()
-  }
-
+    ngOnInit() {
+    }
+    baseClick() {
+        this.notifyService.create({
+            type: 'danger',
+            message: '基础用法 ',
+            duration: 3000,
+            color: 'white',
+            background: ''
+        })
+    }
+    primaryClick() {
+        this.notifyService.primary({
+            message: '主要通知 ',
+            duration: 3000,
+            color: 'white',
+            background: ''
+        })
+    }
+    successClick() {
+        this.notifyService.success({
+            message: '成功通知 ',
+            duration: 3000,
+            color: 'white',
+            background: ''
+        })
+    }
+    dangerClick() {
+        this.notifyService.danger({
+            message: '危险通知 ',
+            duration: 3000,
+            color: 'white',
+            background: ''
+        })
+    }
+    warningClick() {
+        this.notifyService.warning({
+            message: '警告通知 ',
+            duration: 3000,
+            color: 'white',
+            background: ''
+        })
+    }
 }
