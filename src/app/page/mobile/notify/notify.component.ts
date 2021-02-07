@@ -52,4 +52,21 @@ export class NotifyComponent implements OnInit {
             background: ''
         })
     }
+    customStyleClick() {
+        this.notifyService.create({
+            type: 'danger',
+            message: '自定义颜色 ', duration: 3000,
+            color: '#ad0000',
+            background: '#ffe1e1'
+        })
+    }
+    customDurationClick() {
+        this.notifyService.create({
+            type: 'danger',
+            message: '自定义颜色 ',
+            duration: 1000,
+            color: 'white',
+            background: ''
+        })
+    }
 }
