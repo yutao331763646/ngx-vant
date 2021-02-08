@@ -254,10 +254,10 @@ export const navConfig = [
         //   path: 'swipe',
         //   title: 'Swipe 轮播',
         // },
-        // {
-        //   path: 'tag',
-        //   title: 'Tag 标签',
-        // },
+        {
+          path: 'tag',
+          title: 'Tag 标签',
+        },
       ],
     },
     {

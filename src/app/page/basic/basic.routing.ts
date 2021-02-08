@@ -15,6 +15,7 @@ import { PopupComponent } from "./popup/popup.component";
 import { ProgressComponent } from "./progress/progress.component";
 import { QuickstartComponent } from "./quickstart/quickstart.component";
 import { TabsComponent } from "./tabs/tabs.component";
+import { TagComponent } from "./tag/tag.component";
 import { ToastComponent } from "./toast/toast.component";
 
 const routes: Routes = [
@@ -70,6 +71,9 @@ const routes: Routes = [
     },{
         path:'notify',
         component:NotifyComponent
+    },{
+        path:'tag',
+        component:TagComponent
     }
 ];
 

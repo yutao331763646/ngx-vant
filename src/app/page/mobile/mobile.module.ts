@@ -21,6 +21,7 @@ import { PopupComponent } from "./popup/popup.component";
 import { VanDocDemoCardComponent } from "./components/van-doc-demo-card/van-doc-demo-card.component";
 import { TabsComponent } from "./tabs/tabs.component";
 import { NotifyComponent } from "./notify/notify.component";
+import { TagComponent } from "./tag/tag.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule, NgxVantModule
@@ -31,7 +32,8 @@ import { NotifyComponent } from "./notify/notify.component";
         IconComponent, MobileComponent, LoadingComponent, HomeComponent,
         NavBarComponent, ImageComponent, LayoutComponent, ToastComponent,
         ProgressComponent, CellComponent, FieldComponent, OverlayComponent,
-        PopupComponent, VanDocDemoCardComponent, TabsComponent,NotifyComponent
+        PopupComponent, VanDocDemoCardComponent, TabsComponent,NotifyComponent,
+        TagComponent
     ]
 })
 export class MobileModule { }
