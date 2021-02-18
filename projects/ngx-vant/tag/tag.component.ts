@@ -14,7 +14,7 @@ export type TagProps = {
 @Component({
   selector: 'van-tag',
   templateUrl: './tag.component.html',
-  styleUrls: ['./tag.component.scss']
+  styleUrls: ['./tag.component.less']
 })
 export class TagComponent implements OnInit {
 
