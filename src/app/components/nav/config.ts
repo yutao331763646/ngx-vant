@@ -246,10 +246,10 @@ export const navConfig = [
         //   path: 'steps',
         //   title: 'Steps 步骤条',
         // },
-        // {
-        //   path: 'sticky',
-        //   title: 'Sticky 粘性布局',
-        // },
+        {
+          path: 'sticky',
+          title: 'Sticky 粘性布局',
+        },
         // {
         //   path: 'swipe',
         //   title: 'Swipe 轮播',

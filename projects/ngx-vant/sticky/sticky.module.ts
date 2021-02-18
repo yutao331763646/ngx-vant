@@ -3,9 +3,10 @@ import { CommonModule } from '@angular/common';
 import { StickyComponent } from './sticky.component';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [StickyComponent]
+    imports: [
+        CommonModule
+    ],
+    exports: [StickyComponent],
+    declarations: [StickyComponent]
 })
 export class StickyModule { }

@@ -1,3 +1,9 @@
-<p>
-  sticky works!
-</p>
+<div>
+    <div
+        class="van-sticky "
+        [class.van-sticky--fixed]="fixed"
+        [style.top]="offsetTop+'px'"
+    >
+        <ng-content></ng-content>
+    </div>
+</div>

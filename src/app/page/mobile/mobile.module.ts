@@ -22,6 +22,7 @@ import { VanDocDemoCardComponent } from "./components/van-doc-demo-card/van-doc-
 import { TabsComponent } from "./tabs/tabs.component";
 import { NotifyComponent } from "./notify/notify.component";
 import { TagComponent } from "./tag/tag.component";
+import { StickyComponent } from "./sticky/sticky.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule, NgxVantModule
@@ -33,7 +34,7 @@ import { TagComponent } from "./tag/tag.component";
         NavBarComponent, ImageComponent, LayoutComponent, ToastComponent,
         ProgressComponent, CellComponent, FieldComponent, OverlayComponent,
         PopupComponent, VanDocDemoCardComponent, TabsComponent,NotifyComponent,
-        TagComponent
+        TagComponent,StickyComponent
     ]
 })
 export class MobileModule { }

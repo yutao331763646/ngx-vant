@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { StickyComponent } from "./sticky/sticky.component";
 import { ButtonComponent } from "./button/button.component";
 import { CellComponent } from "./cell/cell.component";
 import { FieldComponent } from "./field/field.component";
@@ -74,6 +75,9 @@ const routes: Routes = [
     },{
         path:'tag',
         component:TagComponent
+    }, {
+        path: 'sticky',
+        component: StickyComponent
     }
 ];
 

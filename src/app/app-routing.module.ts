@@ -14,6 +14,7 @@ import { NotifyComponent } from './page/mobile/notify/notify.component';
 import { OverlayComponent } from './page/mobile/overlay/overlay.component';
 import { PopupComponent } from './page/mobile/popup/popup.component';
 import { ProgressComponent } from './page/mobile/progress/progress.component';
+import { StickyComponent } from './page/mobile/sticky/sticky.component';
 import { TabsComponent } from './page/mobile/tabs/tabs.component';
 import { TagComponent } from './page/mobile/tag/tag.component';
 import { ToastComponent } from './page/mobile/toast/toast.component';
@@ -69,21 +70,24 @@ const routes: Routes = [
             }, {
                 path: 'field',
                 component: FieldComponent
-            },{
-                path:'overlay',
-                component:OverlayComponent
-            },{
-                path:'popup',
-                component:PopupComponent
-            },{
-                path:'tab',
-                component:TabsComponent
-            },{
-                path:'notify',
-                component:NotifyComponent
-            },{
-                path:'tag',
-                component:TagComponent
+            }, {
+                path: 'overlay',
+                component: OverlayComponent
+            }, {
+                path: 'popup',
+                component: PopupComponent
+            }, {
+                path: 'tab',
+                component: TabsComponent
+            }, {
+                path: 'notify',
+                component: NotifyComponent
+            }, {
+                path: 'tag',
+                component: TagComponent
+            }, {
+                path: 'sticky',
+                component: StickyComponent
             }
         ]
         // loadChildren: () => import('./page/mobile/mobile.module').then(m => m.MobileModule)

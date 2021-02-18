@@ -1,15 +1,39 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnDestroy, OnInit } from '@angular/core';
+import { fromEvent, Subscription } from 'rxjs';
+import { getElementTop, getScroller, getScrollTop } from '../utils';
 
 @Component({
-  selector: 'app-sticky',
-  templateUrl: './sticky.component.html',
-  styleUrls: ['./sticky.component.scss']
+    selector: 'van-sticky',
+    templateUrl: './sticky.component.html',
+    styleUrls: ['./sticky.component.less']
 })
-export class StickyComponent implements OnInit {
+export class StickyComponent implements OnInit, OnDestroy {
+    @Input() offsetTop: number = 0
+    scroller: any = null
+    subscribeScoll$: Subscription = Subscription.EMPTY
+    fixed: boolean = false
+    constructor(private el: ElementRef) {
+        if (!this.scroller) {
+            console.log(this.el)
+            this.scroller = getScroller(this.el.nativeElement);
+            console.log(this.scroller)
+            this.subscribeScoll$ = fromEvent(this.scroller, 'scroll')
+                .subscribe((event) => {
+                    const scrollTop = getScrollTop(window);
+                    const topToPageTop = getElementTop(this.el.nativeElement);
+                    console.log(event)
+                    if (scrollTop + this.offsetTop > topToPageTop) {
+                        this.fixed = true;
+                    } else {
+                        this.fixed = false;
+                    }
+                });
+        }
+    }
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+    ngOnInit() {
+    }
+    ngOnDestroy() {
+        this.subscribeScoll$.unsubscribe();
+    }
 }
