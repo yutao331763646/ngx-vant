@@ -25,7 +25,6 @@
         <div
             *ngIf="label"
             [class]="'van-cell__label '+labelClass"
-           
         >
             {{label}}
         </div>
@@ -35,7 +34,9 @@
         [class.van-cell__value--alone]='!title'
     >
         <ng-content></ng-content>
-        <span>{{value}}</span>
+        <span>
+            <ng-container *vanTemplateOutlet="value">{{ value }}</ng-container>
+        </span>
     </div>
     <van-icon
         *ngIf="isLink"

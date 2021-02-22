@@ -124,6 +124,7 @@ export function cancelRaf(id: number) {
     iCancel.call(root, id);
 }
 let scrollLeftRafId: number;
+
 function scrollLeftTo(
     scroller: HTMLElement,
     to: number,

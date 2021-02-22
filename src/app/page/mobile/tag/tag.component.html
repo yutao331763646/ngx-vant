@@ -1,3 +1,39 @@
-<p>
-  tag works!
-</p>
+<vant-mobile-nav title='Tag'></vant-mobile-nav>
+<van-van-doc-demo-card title='基础用法'>
+    <van-cell
+        title="primary 类型"
+        [value]="primaryTel"
+    ></van-cell>
+    <van-cell
+        title="success 类型"
+        [value]="successTel"
+    ></van-cell>
+    <van-cell
+        title="danger 类型"
+        [value]="dangerTel"
+    ></van-cell>
+    <van-cell
+        title="warning 类型"
+        [value]="warningTel"
+    ></van-cell>
+    <ng-template #primaryTel>
+        <van-tag type="primary">标签</van-tag>
+    </ng-template>
+    <ng-template #successTel>
+        <van-tag type="success">标签</van-tag>
+    </ng-template>
+    <ng-template #dangerTel>
+        <van-tag type="danger">标签</van-tag>
+    </ng-template>
+    <ng-template #warningTel>
+        <van-tag type="warning">标签</van-tag>
+    </ng-template>
+</van-van-doc-demo-card>
+
+<van-van-doc-demo-card title='样式风格'>
+    <van-cell
+        title="展示弹出层"
+        [value]="'ddd'"
+    ></van-cell>
+
+</van-van-doc-demo-card>

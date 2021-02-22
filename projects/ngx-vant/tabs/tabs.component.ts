@@ -77,12 +77,7 @@ export class TabsComponent implements OnInit {
             this.scrollIntoView(offsetLeft, offsetWidth, false)
         }
     }
-    // scroll active tab into view
     scrollIntoView(offsetLeft: any, offsetWidth: any, immediate: boolean) {
-        console.log(this.navRef)
-        // if (!this.scrollable || !titles || !titles[this.currentIndex]) {
-        //     return;
-        // }
         const to = offsetLeft - (this.navRef.nativeElement.offsetWidth - offsetWidth) / 2;
         scrollLeftTo(this.navRef.nativeElement, to, immediate ? 0 : +this.duration);
     }

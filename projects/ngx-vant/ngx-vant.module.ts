@@ -17,6 +17,7 @@ import { TabsModule } from './tabs/index.module';
 import { NotifyModule } from './notify/notify.module';
 import { TagModule } from './tag/tag.module';
 import { StickyModule } from './sticky/sticky.module';
+import { DirectiveModule } from './directive/directive.module';
 
 export * from './icon/icon.module';
 export * from './button/button.module';
@@ -35,14 +36,15 @@ export * from './tabs/index.module';
 export * from './notify/notify.module';
 export * from './tag/tag.module';
 export * from './sticky/sticky.module';
+export * from './directive/directive.module';
 @NgModule({
-    imports: [],
+    imports: [DirectiveModule],
     exports: [
         IconModule,ButtonModule,LoadingModule,
         NavBarModule,ImageModule,RowModule,ColModule,
         ToastModule,ProgressModule,CellModule,FieldModule,
         OverlayModule,PopupModule,TabsModule,NotifyModule,
-        TagModule,StickyModule
+        TagModule,StickyModule,DirectiveModule
     ],
     declarations: []
   })
