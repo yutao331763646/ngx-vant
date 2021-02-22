@@ -32,8 +32,124 @@
 
 <van-van-doc-demo-card title='样式风格'>
     <van-cell
-        title="展示弹出层"
-        [value]="'ddd'"
+        title="空心样式"
+        [value]="primaryPlainTel"
     ></van-cell>
+    <van-cell
+        title="圆角样式"
+        [value]="primaryRoundTel"
+    ></van-cell>
+    <van-cell
+        title="标记样式"
+        [value]="primaryMarkTel"
+    ></van-cell>
+    <van-cell
+        title="可关闭标签"
+        [value]="primaryCloseableTel"
+    ></van-cell>
+    <ng-template #primaryPlainTel>
+        <van-tag
+            [plain]="true"
+            type="primary"
+        >
+            标签
+        </van-tag>
+    </ng-template>
+    <ng-template #primaryRoundTel>
+        <van-tag
+            [round]="true"
+            type="primary"
+        >
+            标签
+        </van-tag>
+    </ng-template>
+    <ng-template #primaryMarkTel>
+        <van-tag
+            [mark]="true"
+            type="primary"
+        >
+            标签
+        </van-tag>
+    </ng-template>
+    <ng-template #primaryCloseableTel>
+        <van-tag
+            [closeable]="true"
+            type="primary"
+        >
+            标签
+        </van-tag>
+    </ng-template>
+</van-van-doc-demo-card>
+
+<van-van-doc-demo-card title='标签大小'>
+    <van-cell
+        title="小号标签"
+        [value]="primarySmallTel"
+    ></van-cell>
+    <van-cell
+        title="中号标签 "
+        [value]="primaryMediumTel"
+    ></van-cell>
+    <van-cell
+        title="大号标签"
+        [value]="primaryLargeTel"
+    ></van-cell>
+
+    <ng-template #primarySmallTel>
+        <van-tag type="primary">标签</van-tag>
+    </ng-template>
+    <ng-template #primaryMediumTel>
+        <van-tag
+            size="medium"
+            type="primary"
+        >
+            标签
+        </van-tag>
+    </ng-template>
+    <ng-template #primaryLargeTel>
+        <van-tag
+            size="large"
+            type="primary"
+        >
+            标签
+        </van-tag>
+    </ng-template>
+
+</van-van-doc-demo-card>
+
+<van-van-doc-demo-card title='自定义颜色'>
+    <van-cell
+        title="背景颜色        "
+        [value]="primaryColorTel"
+    ></van-cell>
+    <van-cell
+        title="文字颜色"
+        [value]="primaryTextColorTel"
+    ></van-cell>
+    <van-cell
+        title="空心颜色"
+        [value]="primaryPlainColorTel"
+    ></van-cell>
+
+    <ng-template #primaryColorTel>
+        <van-tag color="#7232dd">标签</van-tag>
+    </ng-template>
+    <ng-template #primaryTextColorTel>
+        <van-tag
+            color='#ffe1e1'
+            textColor='#ad0000'
+            type="primary"
+        >
+            标签
+        </van-tag>
+    </ng-template>
+    <ng-template #primaryPlainColorTel>
+        <van-tag
+            [plain]="true"
+            color="#7232dd"
+        >
+            标签
+        </van-tag>
+    </ng-template>
 
 </van-van-doc-demo-card>

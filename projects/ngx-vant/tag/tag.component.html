@@ -1,3 +1,17 @@
-<span [class]="'van-tag van-tag--' + type + ' van-tag--' + size">
+<span
+    [@overlayAnimation]="show"
+    [class]="'van-tag van-tag--' + type + ' van-tag--' + size"
+    [class.van-tag--plain]="plain"
+    [class.van-tag--round]="round"
+    [class.van-tag--mark]="mark"
+    [style.color]="textColor"
+    [ngStyle]="style"
+>
     <ng-content></ng-content>
+    <van-icon
+        *ngIf="closeable"
+        (click)="close($event)"
+        name='cross'
+        nativeClassName='van-tag__close'
+    ></van-icon>
 </span>
