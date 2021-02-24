@@ -18,6 +18,7 @@ import { QuickstartComponent } from "./quickstart/quickstart.component";
 import { TabsComponent } from "./tabs/tabs.component";
 import { TagComponent } from "./tag/tag.component";
 import { ToastComponent } from "./toast/toast.component";
+import { PickerComponent } from "./picker/picker.component";
 
 const routes: Routes = [
     {
@@ -60,24 +61,27 @@ const routes: Routes = [
     }, {
         path: 'field',
         component: FieldComponent
-    },{
-        path:'overlay',
-        component:OverlayComponent
-    },{
-        path:'popup',
-        component:PopupComponent
-    },{
-        path:'tab',
-        component:TabsComponent
-    },{
-        path:'notify',
-        component:NotifyComponent
-    },{
-        path:'tag',
-        component:TagComponent
+    }, {
+        path: 'overlay',
+        component: OverlayComponent
+    }, {
+        path: 'popup',
+        component: PopupComponent
+    }, {
+        path: 'tab',
+        component: TabsComponent
+    }, {
+        path: 'notify',
+        component: NotifyComponent
+    }, {
+        path: 'tag',
+        component: TagComponent
     }, {
         path: 'sticky',
         component: StickyComponent
+    }, {
+        path: 'picker',
+        component: PickerComponent
     }
 ];
 

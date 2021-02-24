@@ -23,6 +23,7 @@ import { TabsComponent } from "./tabs/tabs.component";
 import { NotifyComponent } from "./notify/notify.component";
 import { TagComponent } from "./tag/tag.component";
 import { StickyComponent } from "./sticky/sticky.component";
+import { PickerComponent } from "./picker/picker.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule, NgxVantModule
@@ -34,7 +35,8 @@ import { StickyComponent } from "./sticky/sticky.component";
         NavBarComponent, ImageComponent, LayoutComponent, ToastComponent,
         ProgressComponent, CellComponent, FieldComponent, OverlayComponent,
         PopupComponent, VanDocDemoCardComponent, TabsComponent,NotifyComponent,
-        TagComponent,StickyComponent
+        TagComponent,StickyComponent,
+        PickerComponent
     ]
 })
 export class MobileModule { }

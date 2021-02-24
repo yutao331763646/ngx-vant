@@ -18,6 +18,7 @@ import { NotifyModule } from './notify/notify.module';
 import { TagModule } from './tag/tag.module';
 import { StickyModule } from './sticky/sticky.module';
 import { DirectiveModule } from './directive/directive.module';
+import { PickerModule } from './picker/picker.module';
 
 export * from './icon/icon.module';
 export * from './button/button.module';
@@ -37,6 +38,7 @@ export * from './notify/notify.module';
 export * from './tag/tag.module';
 export * from './sticky/sticky.module';
 export * from './directive/directive.module';
+export * from './picker/picker.module';
 @NgModule({
     imports: [DirectiveModule],
     exports: [
@@ -44,7 +46,7 @@ export * from './directive/directive.module';
         NavBarModule,ImageModule,RowModule,ColModule,
         ToastModule,ProgressModule,CellModule,FieldModule,
         OverlayModule,PopupModule,TabsModule,NotifyModule,
-        TagModule,StickyModule,DirectiveModule
+        TagModule,StickyModule,DirectiveModule,PickerModule
     ],
     declarations: []
   })

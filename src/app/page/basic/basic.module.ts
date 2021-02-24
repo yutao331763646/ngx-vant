@@ -21,6 +21,7 @@ import { TabsComponent } from "./tabs/tabs.component";
 import { NotifyComponent } from "./notify/notify.component";
 import { TagComponent } from "./tag/tag.component";
 import { StickyComponent } from "./sticky/sticky.component";
+import { PickerComponent } from "./picker/picker.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule,
@@ -32,7 +33,8 @@ import { StickyComponent } from "./sticky/sticky.component";
         QuickstartComponent,ImageComponent,
         NavBarComponent,LayoutComponent,ProgressComponent,
         CellComponent,FieldComponent,OverlayComponent,PopupComponent,
-        TabsComponent,NotifyComponent,TagComponent,StickyComponent
+        TabsComponent,NotifyComponent,TagComponent,StickyComponent,
+        PickerComponent
     ]
 })
 export class BasicModule { }
