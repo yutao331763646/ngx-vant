@@ -1,3 +1,27 @@
-<p>
-  picker works!
-</p>
+<div class="van-picker">
+    <van-toolbar
+        *ngIf="toolbarPosition==='top'"
+        [cancelButtonText]="cancelButtonText"
+        [confirmButtonText]="confirmButtonText"
+        [title]="title"
+    ></van-toolbar>
+    <div
+        class="van-picker__columns"
+        [style.heigth]="columnsHeight"
+    >
+        <div
+            class="van-picker__mask"
+            [style.backgroundSize]="'100% ' + maskBackHeight"
+        ></div>
+        <div
+            class=" van-hairline-unset--top-bottom van-picker__frame"
+            [style.heigth]="frameHeight"
+        ></div>
+    </div>
+    <van-toolbar
+        *ngIf="toolbarPosition==='bottom'"
+        [cancelButtonText]="cancelButtonText"
+        [confirmButtonText]="confirmButtonText"
+        [title]="title"
+    ></van-toolbar>
+</div>
