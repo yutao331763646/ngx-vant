@@ -1,0 +1,13 @@
+<div [class]="'van-picker-column '+className">
+    <ul
+        #wrapper
+        class="van-picker-column__wrapper"
+        [style.transform]="'translate3d(0, '+offset+baseOffset+'px, 0'"
+        [style.transitionDuration]="duration+'ms'"
+        [style.transitionProperty]="duration?'all':'none'"
+    >
+        <li>
+            <div class="van-ellipsis" ></div>
+        </li>
+    </ul>
+</div>

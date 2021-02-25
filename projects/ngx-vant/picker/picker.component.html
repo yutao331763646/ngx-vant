@@ -9,6 +9,19 @@
         class="van-picker__columns"
         [style.heigth]="columnsHeight"
     >
+        <ng-container *ngFor="let item of formattedColumns;let columnIndex=index">
+            <van-picker-column
+                [readonly]="readonly"
+                [allowHtml]="allowHtml"
+                [valueKey]="valueKey"
+                [className]="item.className"
+                [itemHeight]="itemHeight"
+                [swipeDuration]="swipeDuration"
+                [visibleItemCount]="visibleItemCount"
+                [defaultIndex]="item.defaultIndex+defaultIndex"
+                [initialOptions]="item.value"
+            ></van-picker-column>
+        </ng-container>
         <div
             class="van-picker__mask"
             [style.backgroundSize]="'100% ' + maskBackHeight"

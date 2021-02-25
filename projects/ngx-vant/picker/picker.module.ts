@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PickerComponent, ToolBarComponent } from './picker.component';
+import { PickerColumnComponent, PickerComponent, ToolBarComponent } from './picker.component';
 
 @NgModule({
     imports: [
         CommonModule
     ],
-    exports: [PickerComponent, ToolBarComponent],
-    declarations: [PickerComponent, ToolBarComponent]
+    exports: [PickerComponent, ToolBarComponent,PickerColumnComponent],
+    declarations: [PickerComponent, ToolBarComponent,PickerColumnComponent]
 })
 export class PickerModule { }
