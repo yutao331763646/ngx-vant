@@ -1,13 +1,18 @@
-<div [class]="'van-picker-column '+className">
-    <ul
-        #wrapper
-        class="van-picker-column__wrapper"
-        [style.transform]="'translate3d(0, '+offset+baseOffset+'px, 0'"
-        [style.transitionDuration]="duration+'ms'"
-        [style.transitionProperty]="duration?'all':'none'"
+<ul
+    #wrapper
+    class="van-picker-column__wrapper"
+    [style.transform]="'translate3d(0, '+(offset+baseOffset)+'px, 0'"
+    [style.transitionDuration]="duration+'ms'"
+    [style.transitionProperty]="duration?'all':'none'"
+>
+    <li
+        *ngFor="let option of options;let index=index"
+        role="button"
+        class="van-picker-column__item "
+        [class.van-picker-column__item--selected]="index === currentIndex"
+        [class.van-picker-column__item--disabled]="isOptionDisabled(option)"
+        [style.height]="itemHeight+'px'"
     >
-        <li>
-            <div class="van-ellipsis" ></div>
-        </li>
-    </ul>
-</div>
+        <div class="van-ellipsis">{{option}}</div>
+    </li>
+</ul>

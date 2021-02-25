@@ -1,16 +1,17 @@
 <div class="van-picker">
-    <van-toolbar
+    <div van-toolbar
         *ngIf="toolbarPosition==='top'"
         [cancelButtonText]="cancelButtonText"
         [confirmButtonText]="confirmButtonText"
         [title]="title"
-    ></van-toolbar>
+    ></div>
     <div
         class="van-picker__columns"
-        [style.heigth]="columnsHeight"
+        (touchmove)="preventDefault($event)"
+        [style.height]="columnsHeight"
     >
         <ng-container *ngFor="let item of formattedColumns;let columnIndex=index">
-            <van-picker-column
+            <div  van-picker-column
                 [readonly]="readonly"
                 [allowHtml]="allowHtml"
                 [valueKey]="valueKey"
@@ -19,8 +20,8 @@
                 [swipeDuration]="swipeDuration"
                 [visibleItemCount]="visibleItemCount"
                 [defaultIndex]="item.defaultIndex+defaultIndex"
-                [initialOptions]="item.value"
-            ></van-picker-column>
+                [initialOptions]="item.values"
+            ></div>
         </ng-container>
         <div
             class="van-picker__mask"
@@ -28,13 +29,13 @@
         ></div>
         <div
             class=" van-hairline-unset--top-bottom van-picker__frame"
-            [style.heigth]="frameHeight"
+            [style.height]="frameHeight"
         ></div>
     </div>
-    <van-toolbar
+    <div van-toolbar
         *ngIf="toolbarPosition==='bottom'"
         [cancelButtonText]="cancelButtonText"
         [confirmButtonText]="confirmButtonText"
         [title]="title"
-    ></van-toolbar>
+    ></div>
 </div>
