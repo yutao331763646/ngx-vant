@@ -418,15 +418,22 @@ export class PickerColumnComponent implements OnInit {
         return range(Math.round(-offset / this.itemHeight), 0, this.count - 1);
     }
 
-    adjustIndex(index: number) {
+    adjustIndex(index: number): void | number {
         index = range(index, 0, this.count);
-
         for (let i = index; i < this.count; i++) {
-            if (!this.isOptionDisabled(this.options[i])) return i;
+            if (!this.isOptionDisabled(this.options[i])) {
+                return i;
+            } else {
+                return 0
+            }
         }
 
         for (let i = index - 1; i >= 0; i--) {
-            if (!this.isOptionDisabled(this.options[i])) return i;
+            if (!this.isOptionDisabled(this.options[i])) {
+                return i;
+            } else {
+                return 0
+            }
         }
     }
     setIndex(index: number, emitChange: any) {
