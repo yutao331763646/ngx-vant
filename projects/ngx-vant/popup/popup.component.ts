@@ -8,6 +8,7 @@ export type iconPositionType = 'top-left' | 'top-right' | 'bottom-left' | 'botto
     animations: [overlayAnimation]
 })
 export class PopupComponent implements OnInit {
+
     isOpen = false;
     @Input()
     get visible(): boolean { return this.isOpen; }
@@ -15,7 +16,7 @@ export class PopupComponent implements OnInit {
         this.isOpen = value;
     }
     @Output() visibleChange = new EventEmitter<boolean>(false);
-    @Input() overlay:boolean=true
+    @Input() overlay: boolean = true
     @Input() closeOnClickOverlay: boolean = true
     @Input() position: 'top' | 'bottom' | 'right' | 'left' | 'center' = 'center'
     @Input() customStyle: { [klass: string]: any } = {};
@@ -64,6 +65,7 @@ export class PopupComponent implements OnInit {
 
     ngOnInit() {
     }
+
     maskClose() {
         this.visible = false
         this.visibleChange.emit(false)

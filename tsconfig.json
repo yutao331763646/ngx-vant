@@ -24,7 +24,7 @@
         "dist/ngx-vant/ngx-vant",
         "dist/ngx-vant"
       ]
-    }
+    },
   },
   "angularCompilerOptions": {
     "strictInjectionParameters": true,
