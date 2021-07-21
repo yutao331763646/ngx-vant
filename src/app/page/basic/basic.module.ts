@@ -23,6 +23,7 @@ import { TagComponent } from "./tag/tag.component";
 import { StickyComponent } from "./sticky/sticky.component";
 import { PickerComponent } from "./picker/picker.component";
 import { SafePipe } from "src/app/common/pipe/sage.pipe";
+import { DocComponent } from "src/app/components/doc/doc.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule,
@@ -35,7 +36,7 @@ import { SafePipe } from "src/app/common/pipe/sage.pipe";
         NavBarComponent,LayoutComponent,ProgressComponent,
         CellComponent,FieldComponent,OverlayComponent,PopupComponent,
         TabsComponent,NotifyComponent,TagComponent,StickyComponent,
-        PickerComponent,SafePipe
+        PickerComponent,SafePipe,DocComponent
     ]
 })
 export class BasicModule { }
