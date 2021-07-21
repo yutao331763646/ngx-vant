@@ -1,15 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { cardWrapper } from 'src/app/common/card-wrapper';
 
 @Component({
-  selector: 'app-picker',
-  templateUrl: './picker.component.html',
-  styleUrls: ['./picker.component.less']
+    selector: 'app-picker',
+    templateUrl: './picker.component.html',
+    styleUrls: ['./picker.component.less']
 })
 export class PickerComponent implements OnInit {
+    private _readMe: HTMLElement | string = '';
+    @Input() set readMe(readMe: HTMLElement | string) {
+        this._readMe = readMe;
+    }
+    get readMe() {
+        return cardWrapper(this._readMe);
+    }
+    constructor() { }
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+    ngOnInit() {
+        this.setReadMe()
+    }
+    setReadMe() {
+        this.readMe = require(`!html-loader!markdown-loader!./README.md`).default;
+    }
 }
