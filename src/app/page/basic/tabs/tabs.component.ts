@@ -1,15 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { cardWrapper } from 'src/app/common/card-wrapper';
 
 @Component({
-  selector: 'app-tabs',
-  templateUrl: './tabs.component.html',
-  styleUrls: ['./tabs.component.less']
+    selector: 'app-tabs',
+    templateUrl: './tabs.component.html',
+    styleUrls: ['./tabs.component.less']
 })
 export class TabsComponent implements OnInit {
+    private _readMe: HTMLElement | string = '';
+    @Input() set readMe(readMe: HTMLElement | string) {
+        this._readMe = readMe;
+    }
+    get readMe() {
+        return cardWrapper(this._readMe);
+    }
+    constructor() { }
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+    ngOnInit() {
+        this.setReadMe()
+    }
+    setReadMe() {
+        this.readMe = require(`!html-loader!markdown-loader!./README.zh-CN.md`).default;
+    }
 
 }
