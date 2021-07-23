@@ -101,17 +101,7 @@ import VantTabsModule from 'VantModule';
 </van-tabs>
 ```
 
-### 切换动画
 
-通过 `animated` 属性可以开启切换标签内容时的转场动画。
-
-```html
-<van-tabs v-model="active" animated>
-  <van-tab v-for="index in 4" :title="'选项 ' + index">
-    内容 {{ index }}
-  </van-tab>
-</van-tabs>
-```
 
 ### 滑动切换
 
