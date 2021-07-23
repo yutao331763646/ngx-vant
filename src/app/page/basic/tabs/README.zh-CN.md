@@ -103,17 +103,7 @@ import VantTabsModule from 'VantModule';
 
 
 
-### 滑动切换
 
-通过 `swipeable` 属性可以开启滑动切换标签页。
-
-```html
-<van-tabs v-model="active" swipeable>
-  <van-tab v-for="index in 4" :title="'选项 ' + index">
-    内容 {{ index }}
-  </van-tab>
-</van-tabs>
-```
 
 ### 滚动导航
 
