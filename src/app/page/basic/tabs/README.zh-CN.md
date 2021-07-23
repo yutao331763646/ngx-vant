@@ -85,28 +85,7 @@ import VantTabsModule from 'VantModule';
 </van-tabs>
 ```
 
-### 点击事件
 
-可以在 `van-tabs` 上绑定 `click` 事件，事件传参为标签对应的标识符和标题。
-
-```html
-<van-tabs @click="onClick">
-  <van-tab title="标签 1">内容 1</van-tab>
-  <van-tab title="标签 2">内容 2</van-tab>
-</van-tabs>
-```
-
-```js
-import { Toast } from 'vant';
-
-export default {
-  methods: {
-    onClick(name, title) {
-      Toast(title);
-    },
-  },
-};
-```
 
 ### 粘性布局
 
