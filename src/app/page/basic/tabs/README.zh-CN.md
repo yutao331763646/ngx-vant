@@ -87,17 +87,6 @@ import VantTabsModule from 'VantModule';
 
 
 
-### 粘性布局
-
-通过 `sticky` 属性可以开启粘性布局，粘性布局下，标签页滚动到顶部时会自动吸顶。
-
-```html
-<van-tabs v-model="active" sticky>
-  <van-tab v-for="index in 4" :title="'选项 ' + index">
-    内容 {{ index }}
-  </van-tab>
-</van-tabs>
-```
 
 ### 自定义标签
 
