@@ -105,17 +105,7 @@ import VantTabsModule from 'VantModule';
 
 
 
-### 滚动导航
 
-通过 `scrollspy` 属性可以开启滚动导航模式，该模式下，内容将会平铺展示。
-
-```html
-<van-tabs v-model="active" scrollspy sticky>
-  <van-tab v-for="index in 8" :title="'选项 ' + index">
-    内容 {{ index }}
-  </van-tab>
-</van-tabs>
-```
 
 ### 异步切换
 
