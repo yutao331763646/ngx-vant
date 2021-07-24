@@ -114,7 +114,6 @@ import VantTabsModule from 'VantModule';
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| v-model | 绑定当前选中标签的标识符 | _number \| string_ | `0` |
 | type | 样式风格类型，可选值为 `card` | _string_ | `line` |
 | color | 标签主题色 | _string_ | `#ee0a24` |
 | background | 标签栏背景色 | _string_ | `white` |
@@ -140,12 +139,7 @@ import VantTabsModule from 'VantModule';
 | --- | --- | --- | --- |
 | title | 标题 | _string_ | - |
 | disabled | 是否禁用标签 | _boolean_ | `false` |
-| dot `v2.3.0` | 是否在标题右上角显示小红点 | _boolean_ | `false` |
-| badge `v2.5.6` | 图标右上角徽标的内容 | _number \| string_ | - |
-| info `v2.3.0` | 图标右上角徽标的内容（已废弃，请使用 badge 属性） | _number \| string_ | - |
 | name | 标签名称，作为匹配的标识符 | _number \| string_ | 标签的索引值 |
-| url | 点击后跳转的链接地址 | _string_ | - |
-| to | 点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to) | _string \| object_ | - |
 | replace | 是否在跳转时替换当前页面历史 | _boolean_ | `false` |
 | title-style | 自定义标题样式 | _any_ | - |
 
@@ -156,31 +150,9 @@ import VantTabsModule from 'VantModule';
 | click | 点击标签时触发 | name：标识符，title：标题 |
 | change | 当前激活的标签改变时触发 | name：标识符，title：标题 |
 | disabled | 点击被禁用的标签时触发 | name：标识符，title：标题 |
-| rendered `v2.3.0` | 标签内容首次渲染时触发（仅在开启延迟渲染后触发） | name：标识符，title：标题 |
 | scroll | 滚动时触发，仅在 sticky 模式下生效 | { scrollTop: 距离顶部位置, isFixed: 是否吸顶 } |
 
-### Tabs 方法
 
-通过 ref 可以获取到 Tabs 实例并调用实例方法，详见[组件实例方法](#/zh-CN/advanced-usage#zu-jian-shi-li-fang-fa)。
-
-| 方法名 | 说明 | 参数 | 返回值 |
-| --- | --- | --- | --- |
-| resize | 外层元素大小或组件显示状态变化时，可以调用此方法来触发重绘 | - | - |
-| scrollTo `v2.9.3` | 滚动到指定的标签页，在滚动导航模式下可用 | name: 标识符 | - |
-
-### Tabs Slots
-
-| 名称      | 说明         |
-| --------- | ------------ |
-| nav-left  | 标题左侧内容 |
-| nav-right | 标题右侧内容 |
-
-### Tab Slots
-
-| 名称    | 说明       |
-| ------- | ---------- |
-| default | 标签页内容 |
-| title   | 自定义标题 |
 
 ### 样式变量
 
@@ -201,29 +173,3 @@ import VantTabsModule from 'VantModule';
 | @tabs-bottom-bar-height    | `3px`                 | -    |
 | @tabs-bottom-bar-color     | `@tabs-default-color` | -    |
 
-## 常见问题
-
-### 组件从隐藏状态切换到显示状态时，底部条位置错误？
-
-Tabs 组件在挂载时，会获取自身的宽度，并计算出底部条的位置。如果组件一开始处于隐藏状态，则获取到的宽度永远为 0，因此无法展示底部条位置。
-
-#### 解决方法
-
-方法一，如果是使用 `v-show` 来控制组件展示的，则替换为 `v-if` 即可解决此问题：
-
-```html
-<!-- Before -->
-<van-tabs v-show="show" />
-<!-- After -->
-<van-tabs v-if="show" />
-```
-
-方法二，调用组件的 resize 方法来主动触发重绘：
-
-```html
-<van-tabs v-show="show" ref="tabs" />
-```
-
-```js
-this.$refs.tabs.resize();
-```
