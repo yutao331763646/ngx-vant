@@ -107,36 +107,6 @@ import VantTabsModule from 'VantModule';
 
 
 
-### 异步切换
-
-通过 `before-change` 属性可以在切换标签前执行特定的逻辑。
-
-```html
-<van-tabs :before-change="beforeChange">
-  <van-tab v-for="index in 4" :title="'选项 ' + index">
-    内容 {{ index }}
-  </van-tab>
-</van-tabs>
-```
-
-```js
-export default {
-  methods: {
-    beforeChange(index) {
-      // 返回 false 表示阻止此次切换
-      if (index === 1) {
-        return false;
-      }
-
-      // 返回 Promise 来执行异步逻辑
-      return new Promise((resolve) => {
-        // 在 resolve 函数中返回 true 或 false
-        resolve(index !== 3);
-      });
-    },
-  },
-};
-```
 
 ## API
 
