@@ -87,7 +87,18 @@ import VantTagModule from 'VantModule';
 通过 `mark` 设置为标记样式(半圆角)。
 
 ```html
-<van-tag mark type="primary">标签</van-tag>
+<van-cell
+    title="标记样式"
+    [value]="primaryMarkTel"
+></van-cell>
+<ng-template #primaryMarkTel>
+    <van-tag
+        [mark]="true"
+        type="primary"
+    >
+        标签
+    </van-tag>
+</ng-template>
 ```
 
 ### 可关闭标签
@@ -95,25 +106,21 @@ import VantTagModule from 'VantModule';
 添加 `closeable` 属性表示标签是可关闭的，关闭标签时会触发 `close` 事件，在 `close` 事件中可以执行隐藏标签的逻辑。
 
 ```html
-<van-tag v-if="show" closeable size="medium" type="primary" @close="close">
-  标签
-</van-tag>
+<van-cell
+    title="可关闭标签"
+    [value]="primaryCloseableTel"
+></van-cell>
+<ng-template #primaryCloseableTel>
+    <van-tag
+        [closeable]="true"
+        type="primary"
+    >
+        标签
+    </van-tag>
+</ng-template>
 ```
 
-```js
-export default {
-  data() {
-    return {
-      show: true,
-    };
-  },
-  methods: {
-    close() {
-      this.show = false;
-    },
-  },
-};
-```
+
 
 ### 标签大小
 
