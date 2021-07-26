@@ -217,11 +217,7 @@ import VantTagModule from 'VantModule';
 | text-color | 文本颜色，优先级高于`color`属性 | _string_ | `white` |
 | closeable | 是否为可关闭标签 | _boolean_ | `false` |
 
-### Slots
 
-| 名称    | 说明         |
-| ------- | ------------ |
-| default | 标签显示内容 |
 
 ### Events
 
