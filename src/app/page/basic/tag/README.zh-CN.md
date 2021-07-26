@@ -166,9 +166,40 @@ import VantTagModule from 'VantModule';
 通过 `color` 和 `text-color` 属性设置标签颜色。
 
 ```html
-<van-tag color="#7232dd">标签</van-tag>
-<van-tag color="#ffe1e1" text-color="#ad0000">标签</van-tag>
-<van-tag color="#7232dd" plain>标签</van-tag>
+<van-cell
+    title="背景颜色        "
+    [value]="primaryColorTel"
+></van-cell>
+<van-cell
+    title="文字颜色"
+    [value]="primaryTextColorTel"
+></van-cell>
+<van-cell
+    title="空心颜色"
+    [value]="primaryPlainColorTel"
+></van-cell>
+
+<ng-template #primaryColorTel>
+    <van-tag color="#7232dd">标签</van-tag>
+</ng-template>
+<ng-template #primaryTextColorTel>
+    <van-tag
+        color='#ffe1e1'
+        textColor='#ad0000'
+        type="primary"
+    >
+        标签
+    </van-tag>
+</ng-template>
+<ng-template #primaryPlainColorTel>
+    <van-tag
+        [plain]="true"
+        color="#7232dd"
+    >
+        标签
+    </van-tag>
+</ng-template>
+
 ```
 
 ## API
