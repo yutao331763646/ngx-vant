@@ -3,7 +3,7 @@
 ### 引入
 
 ```js
-import VantTagModule from 'VantModule';
+import TagModule from 'VantModule';
 
 ```
 
