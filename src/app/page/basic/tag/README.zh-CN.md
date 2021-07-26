@@ -14,10 +14,34 @@ import VantTagModule from 'VantModule';
 通过 `type` 属性控制标签颜色。
 
 ```html
-<van-tag type="primary">标签</van-tag>
-<van-tag type="success">标签</van-tag>
-<van-tag type="danger">标签</van-tag>
-<van-tag type="warning">标签</van-tag>
+<van-cell
+    title="primary 类型"
+    [value]="primaryTel"
+></van-cell>
+<van-cell
+    title="success 类型"
+    [value]="successTel"
+></van-cell>
+<van-cell
+    title="danger 类型"
+    [value]="dangerTel"
+></van-cell>
+<van-cell
+    title="warning 类型"
+    [value]="warningTel"
+></van-cell>
+<ng-template #primaryTel>
+    <van-tag type="primary">标签</van-tag>
+</ng-template>
+<ng-template #successTel>
+    <van-tag type="success">标签</van-tag>
+</ng-template>
+<ng-template #dangerTel>
+    <van-tag type="danger">标签</van-tag>
+</ng-template>
+<ng-template #warningTel>
+    <van-tag type="warning">标签</van-tag>
+</ng-template>
 ```
 
 ### 空心样式
@@ -25,7 +49,10 @@ import VantTagModule from 'VantModule';
 设置 `plain` 属性设置为空心样式。
 
 ```html
-<van-tag plain type="primary">标签</van-tag>
+<van-cell
+    title="空心样式"
+    [value]="primaryPlainTel"
+></van-cell>
 ```
 
 ### 圆角样式
