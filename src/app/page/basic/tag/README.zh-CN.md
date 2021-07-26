@@ -53,6 +53,14 @@ import VantTagModule from 'VantModule';
     title="空心样式"
     [value]="primaryPlainTel"
 ></van-cell>
+<ng-template #primaryPlainTel>
+    <van-tag
+        [plain]="true"
+        type="primary"
+    >
+        标签
+    </van-tag>
+</ng-template>
 ```
 
 ### 圆角样式
@@ -60,7 +68,18 @@ import VantTagModule from 'VantModule';
 通过 `round` 设置为圆角样式。
 
 ```html
-<van-tag round type="primary">标签</van-tag>
+<van-cell
+    title="圆角样式"
+    [value]="primaryRoundTel"
+></van-cell>
+<ng-template #primaryRoundTel>
+    <van-tag
+        [round]="true"
+        type="primary"
+    >
+        标签
+    </van-tag>
+</ng-template>
 ```
 
 ### 标记样式
