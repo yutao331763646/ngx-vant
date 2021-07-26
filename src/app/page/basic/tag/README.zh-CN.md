@@ -127,9 +127,38 @@ import VantTagModule from 'VantModule';
 通过 `size` 属性调整标签大小。
 
 ```html
-<van-tag type="primary">标签</van-tag>
-<van-tag type="primary" size="medium">标签</van-tag>
-<van-tag type="primary" size="large">标签</van-tag>
+<van-cell
+    title="小号标签"
+    [value]="primarySmallTel"
+></van-cell>
+<van-cell
+    title="中号标签 "
+    [value]="primaryMediumTel"
+></van-cell>
+<van-cell
+    title="大号标签"
+    [value]="primaryLargeTel"
+></van-cell>
+
+<ng-template #primarySmallTel>
+    <van-tag type="primary">标签</van-tag>
+</ng-template>
+<ng-template #primaryMediumTel>
+    <van-tag
+        size="medium"
+        type="primary"
+    >
+        标签
+    </van-tag>
+</ng-template>
+<ng-template #primaryLargeTel>
+    <van-tag
+        size="large"
+        type="primary"
+    >
+        标签
+    </van-tag>
+</ng-template>
 ```
 
 ### 自定义颜色
