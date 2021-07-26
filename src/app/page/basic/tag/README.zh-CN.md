@@ -3,10 +3,8 @@
 ### 引入
 
 ```js
-import Vue from 'vue';
-import { Tag } from 'vant';
+import VantTagModule from 'VantModule';
 
-Vue.use(Tag);
 ```
 
 ## 代码演示
