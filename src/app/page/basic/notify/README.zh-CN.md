@@ -19,7 +19,32 @@ import NotifyModule from 'VantModule';
 ### 基础用法
 
 ```js
-Notify('通知内容');
+import { Component, OnInit } from '@angular/core';
+import { NotifyService } from 'VantModule/notify/notify.service';
+@Component({
+    selector: 'app-notify',
+    template:`
+        <van-cell
+            title="基础用法"
+            [isLink]="true"
+            (click)="baseClick()"
+        ></van-cell>
+    `
+})
+export class NotifyComponent implements OnInit {
+    constructor(private notifyService: NotifyService) { }
+    ngOnInit() {}
+    baseClick() {
+        this.notifyService.create({
+            type: 'danger',
+            message: '基础用法 ',
+            duration: 3000,
+            color: 'white',
+            background: ''
+        })
+    }
+}
+
 ```
 
 ### 通知类型
@@ -27,17 +52,67 @@ Notify('通知内容');
 支持 `primary`、`success`、`warning`、`danger` 四种通知类型，默认为 `danger`。
 
 ```js
-// 主要通知
-Notify({ type: 'primary', message: '通知内容' });
-
-// 成功通知
-Notify({ type: 'success', message: '通知内容' });
-
-// 危险通知
-Notify({ type: 'danger', message: '通知内容' });
-
-// 警告通知
-Notify({ type: 'warning', message: '通知内容' });
+import { Component, OnInit } from '@angular/core';
+import { NotifyService } from 'VantModule/notify/notify.service';
+@Component({
+    selector: 'app-notify',
+    template:`
+        <van-cell
+            title="主要通知"
+            [isLink]="true"
+            (click)="primaryClick()"
+        ></van-cell>
+        <van-cell
+            title="成功通知"
+            [isLink]="true"
+            (click)="successClick()"
+        ></van-cell>
+        <van-cell
+            title="危险通知        "
+            [isLink]="true"
+            (click)="dangerClick()"
+        ></van-cell>
+        <van-cell
+            title="警告通知        "
+            [isLink]="true"
+            (click)="warningClick()"
+        ></van-cell>
+    `
+})
+export class NotifyComponent implements OnInit {
+    constructor(private notifyService: NotifyService) { }
+    ngOnInit() { }
+    this.notifyService.primary({
+        message: '主要通知 ',
+        duration: 3000,
+        color: 'white',
+        background: ''
+    })
+    successClick() {
+        this.notifyService.success({
+            message: '成功通知 ',
+            duration: 3000,
+            color: 'white',
+            background: ''
+        })
+    }
+    dangerClick() {
+        this.notifyService.danger({
+            message: '危险通知 ',
+            duration: 3000,
+            color: 'white',
+            background: ''
+        })
+    }
+    warningClick() {
+        this.notifyService.warning({
+            message: '警告通知 ',
+            duration: 3000,
+            color: 'white',
+            background: ''
+        })
+    }
+}
 ```
 
 ### 自定义通知
