@@ -9,29 +9,10 @@
 Notify 是一个服务，调用后会直接在页面中弹出相应的消息提示。
 
 ```js
-import { Notify } from 'vant';
+import NotifyModule from 'VantModule';
 
-Notify('通知内容');
 ```
 
-### 组件调用
-
-通过组件调用 Notify 时，可以通过下面的方式进行注册（从 2.8.5 版本开始支持）：
-
-```js
-import Vue from 'vue';
-import { Notify } from 'vant';
-
-// 全局注册
-Vue.use(Notify);
-
-// 局部注册
-export default {
-  components: {
-    [Notify.Component.name]: Notify.Component,
-  },
-};
-```
 
 ## 代码演示
 
