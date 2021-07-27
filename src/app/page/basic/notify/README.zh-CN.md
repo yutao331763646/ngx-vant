@@ -120,16 +120,44 @@ export class NotifyComponent implements OnInit {
 自定义消息通知的颜色和展示时长。
 
 ```js
-Notify({
-  message: '自定义颜色',
-  color: '#ad0000',
-  background: '#ffe1e1',
-});
-
-Notify({
-  message: '自定义时长',
-  duration: 1000,
-});
+import { Component, OnInit } from '@angular/core';
+import { NotifyService } from 'VantModule/notify/notify.service';
+@Component({
+    selector: 'app-notify',
+    template:`
+       <van-cell
+            title="自定义颜色"
+            [isLink]="true"
+            (click)="customStyleClick()"
+        ></van-cell>
+        <van-cell
+            title="自定义时长"
+            [isLink]="true"
+            (click)="customDurationClick()"
+        ></van-cell>
+    `
+})
+export class NotifyComponent implements OnInit {
+    constructor(private notifyService: NotifyService) { }
+    ngOnInit() {}
+    customStyleClick() {
+        this.notifyService.create({
+            type: 'danger',
+            message: '自定义颜色 ', duration: 3000,
+            color: '#ad0000',
+            background: '#ffe1e1'
+        })
+    }
+    customDurationClick() {
+        this.notifyService.create({
+            type: 'danger',
+            message: '自定义颜色 ',
+            duration: 1000,
+            color: 'white',
+            background: ''
+        })
+    }
+}
 ```
 
 ### 全局方法
