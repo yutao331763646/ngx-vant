@@ -160,47 +160,7 @@ export class NotifyComponent implements OnInit {
 }
 ```
 
-### 全局方法
 
-引入 Notify 组件后，会自动在 Vue 的 prototype 上挂载 `$notify` 方法，便于在组件内调用。
-
-```js
-export default {
-  mounted() {
-    this.$notify('提示文案');
-  },
-};
-```
-
-### 组件调用
-
-如果需要在 Notify 内嵌入组件或其他自定义内容，可以使用组件调用的方式。
-
-```html
-<van-button type="primary" text="组件调用" @click="showNotify" />
-<van-notify v-model="show" type="success">
-  <van-icon name="bell" style="margin-right: 4px;" />
-  <span>通知内容</span>
-</van-notify>
-```
-
-```js
-export default {
-  data() {
-    return {
-      show: false,
-    };
-  },
-  methods: {
-    showNotify() {
-      this.show = true;
-      setTimeout(() => {
-        this.show = false;
-      }, 2000);
-    },
-  },
-};
-```
 
 ## API
 

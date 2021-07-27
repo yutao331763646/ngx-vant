@@ -6,9 +6,7 @@ import { NotifyService } from 'projects/ngx-vant/notify/notify.service';
     styleUrls: ['./notify.component.less']
 })
 export class NotifyComponent implements OnInit {
-
     constructor(private notifyService: NotifyService) { }
-
     ngOnInit() {
     }
     baseClick() {
