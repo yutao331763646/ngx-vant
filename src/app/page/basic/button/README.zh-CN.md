@@ -66,8 +66,8 @@ import ButtonModule from 'VantModule';
 通过 `square` 设置方形按钮，通过 `round` 设置圆形按钮。
 
 ```html
-<van-button square type="primary">方形按钮</van-button>
-<van-button round type="info">圆形按钮</van-button>
+<van-button [square]="true" type="primary">方形按钮</van-button>
+<van-button [round]="true" type="info">圆形按钮</van-button>
 ```
 
 ### 图标按钮
@@ -98,7 +98,7 @@ import ButtonModule from 'VantModule';
 按钮在默认情况下为行内块级元素，通过 `block` 属性可以将按钮的元素类型设置为块级元素。
 
 ```html
-<van-button type="primary" block>块级元素</van-button>
+<van-button type="primary" [block]="true">块级元素</van-button>
 ```
 
 ### 页面导航
