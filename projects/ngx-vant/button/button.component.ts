@@ -12,6 +12,7 @@ export type ButtonSize = 'large' | 'normal' | 'small' | 'mini';
 })
 export class ButtonComponent implements OnInit, OnChanges {
     @Output() readonly click = new EventEmitter<MouseEvent>();
+    @Output() readonly touchstart = new EventEmitter<TouchEvent>();
     @Input() type: ButtonType = 'default';
     @Input() size: ButtonSize = 'normal';
     @Input() round: boolean = false;
@@ -45,8 +46,11 @@ export class ButtonComponent implements OnInit, OnChanges {
     ngOnInit() {
         removeNgTag(this.elementRef.nativeElement)
     }
-    onClick(e: MouseEvent): void{
+    onClick(e: MouseEvent): void {
         this.click.emit(e);
+    }
+    onTouchstart(e: TouchEvent): void {
+        this.touchstart.emit(e)
     }
     ngOnChanges(changes: SimpleChanges) {
         if (changes.color) {
