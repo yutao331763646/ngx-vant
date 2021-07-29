@@ -146,7 +146,6 @@ import ButtonModule from 'VantModule';
 | loading-size | 加载图标大小 | _string_ | `20px` |
 | url | 点击后跳转的链接地址 | _string_ | - |
 | to | 点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to) | _string \| object_ | - |
-| replace | 是否在跳转时替换当前页面历史 | _boolean_ | `false` |
 
 ### Events
 
@@ -155,12 +154,6 @@ import ButtonModule from 'VantModule';
 | click      | 点击按钮，且按钮状态不为加载或禁用时触发 | _event: Event_      |
 | touchstart | 开始触摸按钮时触发                       | _event: TouchEvent_ |
 
-### Slots
-
-| 名称              | 说明           |
-| ----------------- | -------------- |
-| default           | 按钮内容       |
-| loading `v2.10.1` | 自定义加载图标 |
 
 ### 样式变量
 
