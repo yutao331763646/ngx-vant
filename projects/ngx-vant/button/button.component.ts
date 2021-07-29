@@ -26,7 +26,7 @@ export class ButtonComponent implements OnInit, OnChanges {
     @Input() block: boolean = false;
     @Input() icon: string = ''
     @Input() iconPrefix: string = 'left'
-
+    @Input() nativeType: string = ''
     @Input()
     get color(): string { return this._color; }
     set color(value: string) {
