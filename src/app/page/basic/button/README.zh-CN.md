@@ -47,18 +47,18 @@ import ButtonModule from 'VantModule';
 通过 `disabled` 属性来禁用按钮，禁用状态下按钮不可点击。
 
 ```html
-<van-button disabled type="primary">禁用状态</van-button>
-<van-button disabled type="info">禁用状态</van-button>
+<van-button [disabled]="true" type="primary">禁用状态</van-button>
+<van-button [disabled]="true" type="info">禁用状态</van-button>
 ```
 
 ### 加载状态
 
-通过 `loading` 属性设置按钮为加载状态，加载状态下默认会隐藏按钮文字，可以通过 `loading-text` 设置加载状态下的文字。
+通过 `loading` 属性设置按钮为加载状态，加载状态下默认会隐藏按钮文字，可以通过 `lloadingText` 设置加载状态下的文字。
 
 ```html
-<van-button loading type="primary" />
-<van-button loading type="primary" loading-type="spinner" />
-<van-button loading type="info" loading-text="加载中..." />
+<van-button [loading]="true" type="primary" />
+<van-button [loading]="true" type="primary" loadingText="spinner" />
+<van-button [loading]="true" type="info" lloadingText="加载中..." />
 ```
 
 ### 按钮形状
