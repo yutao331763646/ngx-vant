@@ -104,13 +104,13 @@ import CellModule from 'VantModule';
 | iconPrefix  | 图标类名前缀，同 Icon 组件的 class-prefix 属性 | _string_ | `van-icon` |
 | border | 是否显示内边框 | _boolean_ | `true` |
 | clickable | 是否开启点击反馈 | _boolean_ | `false` |
-| is-link | 是否展示右侧箭头并开启点击反馈 | _boolean_ | `false` |
+| isLink | 是否展示右侧箭头并开启点击反馈 | _boolean_ | `false` |
 | required | 是否显示表单必填星号 | _boolean_ | `false` |
 | center | 是否使内容垂直居中 | _boolean_ | `false` |
-| arrow-direction | 箭头方向，可选值为 `left` `up` `down` | _string_ | `right` |
-| title-style | 左侧标题额外样式 | _any_ | - |
-| title-class | 左侧标题额外类名 | _any_ | - |
-| value-class | 右侧内容额外类名 | _any_ | - |
+| arrowDirection | 箭头方向，可选值为 `left` `up` `down` | _string_ | `right` |
+| titleStyle | 左侧标题额外样式 | _any_ | - |
+| titleClass | 左侧标题额外类名 | _any_ | - |
+| valueClass | 右侧内容额外类名 | _any_ | - |
 | label-class | 描述信息额外类名 | _any_ | - |
 
 ### Cell Events
