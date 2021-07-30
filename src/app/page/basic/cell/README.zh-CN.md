@@ -119,12 +119,6 @@ import CellModule from 'VantModule';
 | ------ | ---------------- | -------------- |
 | click  | 点击单元格时触发 | _event: Event_ |
 
-### CellGroup Slots
-
-| 名称    | 说明           |
-| ------- | -------------- |
-| default | 默认插槽       |
-| title   | 自定义分组标题 |
 
 ### Cell Slots
 
