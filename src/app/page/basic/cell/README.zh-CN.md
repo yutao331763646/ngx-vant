@@ -101,10 +101,8 @@ import CellModule from 'VantModule';
 | label | 标题下方的描述信息 | _string_ | - |
 | size | 单元格大小，可选值为 `large` | _string_ | - |
 | icon | 左侧图标名称或图片链接 | _string_ | - |
-| icon-prefix  | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `van-icon` |
-| url | 点击后跳转的链接地址 | _string_ | - |
+| iconPrefix  | 图标类名前缀，同 Icon 组件的 class-prefix 属性 | _string_ | `van-icon` |
 | border | 是否显示内边框 | _boolean_ | `true` |
-| replace | 是否在跳转时替换当前页面历史 | _boolean_ | `false` |
 | clickable | 是否开启点击反馈 | _boolean_ | `false` |
 | is-link | 是否展示右侧箭头并开启点击反馈 | _boolean_ | `false` |
 | required | 是否显示表单必填星号 | _boolean_ | `false` |
