@@ -111,7 +111,7 @@ import CellModule from 'VantModule';
 | titleStyle | 左侧标题额外样式 | _any_ | - |
 | titleClass | 左侧标题额外类名 | _any_ | - |
 | valueClass | 右侧内容额外类名 | _any_ | - |
-| label-class | 描述信息额外类名 | _any_ | - |
+| labelClass | 描述信息额外类名 | _any_ | - |
 
 ### Cell Events
 
