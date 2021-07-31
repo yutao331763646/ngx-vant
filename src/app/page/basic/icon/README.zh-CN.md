@@ -81,7 +81,7 @@ import 'vant/lib/icon/local.css';
 
 ```html
 <!-- 通过 class-prefix 指定类名为 my-icon -->
-<van-icon class-prefix="my-icon" name="extra" />
+<van-icon classPrefix="my-icon" name="extra" />
 ```
 
 ## API
@@ -95,8 +95,7 @@ import 'vant/lib/icon/local.css';
 | badge | 图标右上角徽标的内容 | _number \| string_ | - |
 | color | 图标颜色 | _string_ | `inherit` |
 | size | 图标大小，如 `20px` `2em`，默认单位为`px` | _number \| string_ | `inherit` |
-| class-prefix | 类名前缀，用于使用自定义图标 | _string_ | `van-icon` |
-| tag | HTML 标签 | _string_ | `i` |
+| classPrefix | 类名前缀，用于使用自定义图标 | _string_ | `van-icon` |
 
 ### Events
 
