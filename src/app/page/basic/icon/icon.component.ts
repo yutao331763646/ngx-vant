@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
 import { cardWrapper } from 'src/app/common/card-wrapper';
 
 @Component({
