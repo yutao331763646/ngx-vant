@@ -18,7 +18,7 @@ export class IconComponent implements OnInit {
     }
 
   
-  constructor( private sanitizer: DomSanitizer) { }
+  constructor( ) { }
 
   ngOnInit() {
     this.setReadMe()
