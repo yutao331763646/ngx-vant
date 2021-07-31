@@ -7,10 +7,7 @@
 ### 引入
 
 ```js
-import Vue from 'vue';
-import { Icon } from 'vant';
-
-Vue.use(Icon);
+import IconModule from 'VantModule';
 ```
 
 ## 代码演示
