@@ -45,7 +45,8 @@ import IconModule from 'VantModule';
 `Icon` 的 `size` 属性用来设置图标的尺寸大小，默认单位为 `px`。
 
 ```html
-<van-icon name="chat-o" size="40" /> <van-icon name="chat-o" size="3rem" />
+<van-icon name="chat-o" size="40" /> 
+<van-icon name="chat-o" size="3rem" />
 ```
 
 ### 使用本地字体文件
