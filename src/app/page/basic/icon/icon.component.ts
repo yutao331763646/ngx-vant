@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
+import { cardWrapper } from 'src/app/common/card-wrapper';
 
 @Component({
   selector: 'app-icon',
@@ -7,6 +8,15 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./icon.component.scss']
 })
 export class IconComponent implements OnInit {
+
+    private _readMe: HTMLElement | string = '';
+    @Input() set readMe(readMe: HTMLElement | string) {
+        this._readMe = readMe;
+    }
+    get readMe() {
+        return cardWrapper(this._readMe);
+    }
+
     cards = [{
         title: '介绍',
         desc: this.sanitizer.bypassSecurityTrustHtml('基于字体的图标集，可以通过 Icon 组件使用，也可以在其他组件中通过 <code>icon</code> 属性引用。')
@@ -79,6 +89,9 @@ export class IconComponent implements OnInit {
   constructor( private sanitizer: DomSanitizer) { }
 
   ngOnInit() {
-  }
-
+    this.setReadMe()
+}
+setReadMe() {
+    this.readMe = require(`!html-loader!markdown-loader!./README.zh-CN.md`).default;
+}
 }
