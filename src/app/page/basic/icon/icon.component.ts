@@ -64,7 +64,8 @@ export class IconComponent implements OnInit {
     },
     {
         title: '自定义图标',
-        desc:this.sanitizer.bypassSecurityTrustHtml('如果需要在现有 Icon 的基础上使用更多图标，可以引入第三方 iconfont 对应的字体文件和 CSS 文件，之后就可以在 Icon 组件中直接使用。') ,
+        desc:this.sanitizer.bypassSecurityTrustHtml(
+            '如果需要在现有 Icon 的基础上使用更多图标，可以引入第三方 iconfont 对应的字体文件和 CSS 文件，之后就可以在 Icon 组件中直接使用。') ,
         code: 
 `  /* 引入第三方或自定义的字体图标样式 */
   @font-face {
