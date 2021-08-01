@@ -51,13 +51,15 @@ import ImageModule from 'VantModule';
 
 ### 加载中提示
 
-`Image` 组件提供了默认的加载中提示，支持通过 `loading` 插槽自定义内容。
+`Image` 组件提供了默认的加载中提示。
 
 ```html
-<van-image src="https://img.yzcdn.cn/vant/cat.jpeg">
-  <template v-slot:loading>
-    <van-loading type="spinner" size="20" />
-  </template>
+<van-image
+    width="10rem"
+    height="10rem"
+    [showLoading]="true"
+    src="https://img.yzcdn.cn/vant/cat.jpeg"
+    >
 </van-image>
 ```
 
