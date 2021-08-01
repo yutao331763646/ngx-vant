@@ -39,6 +39,7 @@ export class ImageComponent implements OnInit {
     @Input() fit: ImgageFit = 'fill';
     @Input() alt: string = '';
     @Output() readonly click = new EventEmitter<MouseEvent>();
+    @Output() readonly load = new EventEmitter<Event>();
 
     constructor() { }
     ngOnInit() {
@@ -48,5 +49,6 @@ export class ImageComponent implements OnInit {
     }
     onLoad(e: Event): void {
         console.log(e)
+        this.load.emit(e);
     }
 }
