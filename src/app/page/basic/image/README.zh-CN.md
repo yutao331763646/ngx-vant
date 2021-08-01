@@ -40,11 +40,12 @@ import ImageModule from 'VantModule';
 
 ```html
 <van-image
-  round
-  width="10rem"
-  height="10rem"
-  src="https://img.yzcdn.cn/vant/cat.jpeg"
-/>
+    [round]="true"
+    width="10rem"
+    height="10rem"
+    src="https://img.yzcdn.cn/vant/cat.jpeg"
+    >
+</van-image>
 ```
 
 ### 图片懒加载
