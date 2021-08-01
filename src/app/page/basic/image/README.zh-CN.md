@@ -17,7 +17,7 @@ import ImageModule from 'VantModule';
 基础用法与原生 `img` 标签一致，可以设置 `src`、`width`、`height`、`alt` 等原生属性。
 
 ```html
-<van-image width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+<van-image width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" ></van-image>
 ```
 
 ### 填充模式
