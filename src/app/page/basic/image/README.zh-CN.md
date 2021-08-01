@@ -48,25 +48,6 @@ import ImageModule from 'VantModule';
 </van-image>
 ```
 
-### 图片懒加载
-
-设置 `lazy-load` 属性来开启图片懒加载，需要搭配 [Lazyload](#/zh-CN/lazyload) 组件使用。
-
-```html
-<van-image
-  width="100"
-  height="100"
-  lazy-load
-  src="https://img.yzcdn.cn/vant/cat.jpeg"
-/>
-```
-
-```js
-import Vue from 'vue';
-import { Lazyload } from 'vant';
-
-Vue.use(Lazyload);
-```
 
 ### 加载中提示
 
