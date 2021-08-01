@@ -26,11 +26,12 @@ import ImageModule from 'VantModule';
 
 ```html
 <van-image
-  width="10rem"
-  height="10rem"
-  fit="contain"
-  src="https://img.yzcdn.cn/vant/cat.jpeg"
-/>
+    width="10rem"
+    height="10rem"
+    fit="contain"
+    src="https://img.yzcdn.cn/vant/cat.jpeg"
+    >
+</van-image>
 ```
 
 ### 圆形图片
