@@ -92,7 +92,7 @@ import ImageModule from 'VantModule';
 | round | 是否显示为圆形 | _boolean_ | `false` |
 | showError | 是否展示图片加载失败提示 | _boolean_ | `true` |
 | showLoading | 是否展示图片加载中提示 | _boolean_ | `true` |
-| errorIcon  | 失败时提示的[图标名称](#/zh-CN/icon)或图片链接 | _string_ | `photo-fail` |
+| errorIcon  | 失败时提示的图标名称或图片链接 | _string_ | `photo-fail` |
 | loading-icon `v2.4.2` | 加载时提示的[图标名称](#/zh-CN/icon)或图片链接 | _string_ | `photo` |
 | icon-prefix `v2.10.12` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `van-icon` |
 
