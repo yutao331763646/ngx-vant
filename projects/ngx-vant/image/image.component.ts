@@ -48,7 +48,6 @@ export class ImageComponent implements OnInit {
         this.click.emit(e);
     }
     onLoad(e: Event): void {
-        console.log(e)
         this.load.emit(e);
     }
 }
