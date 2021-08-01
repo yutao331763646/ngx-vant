@@ -10,6 +10,7 @@
         [src]="src"
         [alt]="alt"
         [style.objectFit]="fit"
+        (load)="onLoad($event)"
     >
     <div
         *ngIf="showLoading"
