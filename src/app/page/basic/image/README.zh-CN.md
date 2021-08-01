@@ -68,9 +68,13 @@ import ImageModule from 'VantModule';
 `Image` 组件提供了默认的加载失败提示。
 
 ```html
-<van-image src="https://img.yzcdn.cn/vant/cat.jpeg">
-  <template v-slot:error>加载失败</template>
-</van-image>
+<van-image
+    width="10rem"
+    height="10rem"
+    [showError]="true"
+    src="https://img.yzcdn.cn/vant/cat.jpeg"
+    >
+</van-image>`
 ```
 
 ## API
