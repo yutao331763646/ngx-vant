@@ -52,6 +52,6 @@ export class ImageComponent implements OnInit {
         this.load.emit(e);
     }
     onError(e: Event): void {
-
+        this.error.emit(e);
     }
 }
