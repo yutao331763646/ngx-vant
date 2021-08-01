@@ -65,7 +65,7 @@ import ImageModule from 'VantModule';
 
 ### 加载失败提示
 
-`Image` 组件提供了默认的加载失败提示，支持通过 `error` 插槽自定义内容。
+`Image` 组件提供了默认的加载失败提示。
 
 ```html
 <van-image src="https://img.yzcdn.cn/vant/cat.jpeg">
