@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { addUnit } from '../utils';
 
 export type ImgageFit = 'contain' | 'cover' | 'fill' | 'none' | 'scale-down';
@@ -38,6 +38,8 @@ export class ImageComponent implements OnInit {
     @Input() errorIcon: string = 'photo-fail';
     @Input() fit: ImgageFit = 'fill';
     @Input() alt: string = '';
+    @Output() readonly click = new EventEmitter<MouseEvent>();
+
     constructor() { }
     ngOnInit() {
     }
