@@ -46,4 +46,7 @@ export class ImageComponent implements OnInit {
     onClick(e: MouseEvent): void {
         this.click.emit(e);
     }
+    onLoad(e: Event): void {
+        console.log(e)
+    }
 }
