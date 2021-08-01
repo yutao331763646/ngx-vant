@@ -40,6 +40,7 @@ export class ImageComponent implements OnInit {
     @Input() alt: string = '';
     @Output() readonly click = new EventEmitter<MouseEvent>();
     @Output() readonly load = new EventEmitter<Event>();
+    @Output() readonly error = new EventEmitter<Event>();
 
     constructor() { }
     ngOnInit() {
