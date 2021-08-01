@@ -11,6 +11,7 @@
         [alt]="alt"
         [style.objectFit]="fit"
         (load)="onLoad($event)"
+        (error)="onError($event)"
     >
     <div
         *ngIf="showLoading"
