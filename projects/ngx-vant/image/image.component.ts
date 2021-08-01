@@ -43,5 +43,7 @@ export class ImageComponent implements OnInit {
     constructor() { }
     ngOnInit() {
     }
-
+    onClick(e: MouseEvent): void {
+        this.click.emit(e);
+    }
 }
