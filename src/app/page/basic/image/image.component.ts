@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { cardWrapper } from 'src/app/common/card-wrapper';
 
 @Component({
     selector: 'app-image',
@@ -6,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./image.component.less']
 })
 export class ImageComponent implements OnInit {
+
+    private _readMe: HTMLElement | string = '';
+    @Input() set readMe(readMe: HTMLElement | string) {
+        this._readMe = readMe;
+    }
+    get readMe() {
+        return cardWrapper(this._readMe);
+    }
+
+
     cards = [{
         title: '介绍',
         desc: '增强版的 img 标签，提供多种图片填充模式，支持图片懒加载、加载中提示、加载失败提示。'
@@ -63,6 +74,10 @@ export class ImageComponent implements OnInit {
     constructor() { }
 
     ngOnInit() {
+        this.setReadMe()
+    }
+    setReadMe() {
+        this.readMe = require(`!html-loader!markdown-loader!./README.zh-CN.md`).default;
     }
 
 }
