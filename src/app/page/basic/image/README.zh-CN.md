@@ -93,7 +93,7 @@ import ImageModule from 'VantModule';
 | showError | 是否展示图片加载失败提示 | _boolean_ | `true` |
 | showLoading | 是否展示图片加载中提示 | _boolean_ | `true` |
 | errorIcon  | 失败时提示的图标名称或图片链接 | _string_ | `photo-fail` |
-| loadingIcon  | 加载时提示的[图标名称](#/zh-CN/icon)或图片链接 | _string_ | `photo` |
+| loadingIcon  | 加载时提示的图标名称或图片链接 | _string_ | `photo` |
 
 
 ### 图片填充模式 
