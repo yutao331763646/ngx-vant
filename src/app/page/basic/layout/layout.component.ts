@@ -3,9 +3,9 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { cardWrapper } from 'src/app/common/card-wrapper';
 
 @Component({
-  selector: 'app-layout',
-  templateUrl: './layout.component.html',
-  styleUrls: ['./layout.component.less']
+    selector: 'app-layout',
+    templateUrl: './layout.component.html',
+    styleUrls: ['./layout.component.less']
 })
 export class LayoutComponent implements OnInit {
     private _readMe: HTMLElement | string = '';
@@ -25,7 +25,7 @@ export class LayoutComponent implements OnInit {
             `  import RowModule from 'VantModule'; 
   import ColModule from 'VantModule'; `
     }]
-    cards2=[{
+    cards2 = [{
         title: '基础用法',
         desc: this.sanitizer.bypassSecurityTrustHtml('Layout 组件提供了 <code>24列栅格</code>，通过在 <code>Col</code> 上添加 <code>span</code> 属性设置列所占的宽度百分比。此外，添加 <code>offset</code> 属性可以设置列的偏移宽度，计算方式与 <code>span</code> 相同。'),
         code: `  <van-row>
@@ -42,7 +42,7 @@ export class LayoutComponent implements OnInit {
   <van-row>
     <van-col offset="12" span="12">offset: 12, span: 12</van-col>
   </van-row> `
-    },{
+    }, {
         title: '设置列元素间距',
         desc: this.sanitizer.bypassSecurityTrustHtml('通过 <code>gutter</code> 属性可以设置列元素之间的间距，默认间距为 <code>0</code>。'),
         code: `  <van-row gutter="20">
@@ -50,7 +50,7 @@ export class LayoutComponent implements OnInit {
     <van-col span="8">span: 8</van-col>
     <van-col span="8">span: 8</van-col>
   </van-row>`
-    },{
+    }, {
         title: 'Flex 布局 ',
         desc: this.sanitizer.bypassSecurityTrustHtml('将 <code>type</code> 属性设置为 <code>flex</code> 可以启用 <code>flex</code> 布局，便于进行灵活的对齐。'),
         code: `  <!-- 左对齐 -->
@@ -86,14 +86,14 @@ export class LayoutComponent implements OnInit {
     <van-col span="6">span: 6</van-col>
     <van-col span="6">span: 6</van-col>
     <van-col span="6">span: 6</van-col>
-  </van-row>` 
+  </van-row>`
     }]
-  constructor( private sanitizer: DomSanitizer) { }
+    constructor(private sanitizer: DomSanitizer) { }
 
-  ngOnInit() {
-    this.setReadMe()
-}
-setReadMe() {
-    this.readMe = require(`!html-loader!markdown-loader!./README.zh-CN.md`).default;
-}
+    ngOnInit() {
+        this.setReadMe()
+    }
+    setReadMe() {
+        this.readMe = require(`!html-loader!markdown-loader!./README.zh-CN.md`).default;
+    }
 }
