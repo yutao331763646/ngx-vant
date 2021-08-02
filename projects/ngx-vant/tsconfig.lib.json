@@ -18,12 +18,12 @@
         "strictMetadataEmit": true,
         "enableResourceInlining": true
     },
-    //   "exclude": [
-    //     "src/test.ts",
-    //     "**/*.spec.ts"
-    //   ],
-    "include": [
-        "**/*.ts",
-        "./**/*.ts"
-    ]
+      "exclude": [
+        "src/test.ts",
+        "**/*.spec.ts"
+      ],
+    // "include": [
+    //     "**/*.ts",
+    //     "./**/*.ts"
+    // ]
 }

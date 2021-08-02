@@ -19,7 +19,6 @@
             "es2018",
             "dom"
         ],
-        "rootDir": "./",
         "paths": {
             "ngx-vant": [
                 "dist/ngx-vant/ngx-vant",
@@ -30,10 +29,6 @@
     "angularCompilerOptions": {
         "strictInjectionParameters": true,
         "strictInputAccessModifiers": true,
-        "strictTemplates": true,
-        "enableIvy": false
-    },
-    "include": [
-        "./**/*.ts"
-    ]
+        "strictTemplates": true
+        }
 }
