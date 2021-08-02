@@ -7,7 +7,7 @@
 ### 引入
 
 ```js
-import ImageModule from 'VantModule';
+import ImageModule from 'ngx-vant';
 ```
 
 ## 代码演示
