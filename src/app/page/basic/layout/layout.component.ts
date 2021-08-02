@@ -91,6 +91,9 @@ export class LayoutComponent implements OnInit {
   constructor( private sanitizer: DomSanitizer) { }
 
   ngOnInit() {
-  }
-
+    this.setReadMe()
+}
+setReadMe() {
+    this.readMe = require(`!html-loader!markdown-loader!./README.zh-CN.md`).default;
+}
 }
