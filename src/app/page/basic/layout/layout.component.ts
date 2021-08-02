@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
+import { cardWrapper } from 'src/app/common/card-wrapper';
 
 @Component({
   selector: 'app-layout',
@@ -7,6 +8,13 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./layout.component.less']
 })
 export class LayoutComponent implements OnInit {
+    private _readMe: HTMLElement | string = '';
+    @Input() set readMe(readMe: HTMLElement | string) {
+        this._readMe = readMe;
+    }
+    get readMe() {
+        return cardWrapper(this._readMe);
+    }
     cards = [{
         title: '介绍',
         desc: 'Layout 提供了 <code>van-row</code> 和 <code>van-col</code> 两个组件来进行行列布局。'
