@@ -1,5 +1,12 @@
 import { Component, ElementRef, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { removeNgTag } from '../utils';
+const removeNgTag = (nativeElement: HTMLElement): void => {
+    const parentElement = nativeElement.parentElement
+    if (!parentElement || !parentElement.insertBefore) return
+    while (nativeElement.firstChild) {
+        parentElement.insertBefore(nativeElement.firstChild, nativeElement)
+    }
+    parentElement.removeChild(nativeElement)
+}
 function isImage(name?: string): boolean {
     return name ? name.indexOf('/') !== -1 : false;
 }

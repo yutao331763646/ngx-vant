@@ -50,7 +50,7 @@ function getElementTop(el: ScrollElement, scroller?: HTMLElement) {
 let prev = Date.now();
 const root = (false ? '' : window) as Window;
 /* istanbul ignore next */
-function fallback(fn: FrameRequestCallback): number {
+function fallback(fn: FrameRequestCallback): any {
     const curr = Date.now();
     const ms = Math.max(0, 16 - (curr - prev));
     const id = setTimeout(fn, ms);

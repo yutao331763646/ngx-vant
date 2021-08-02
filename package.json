@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build_lib": "ng build --configuration production ngx-vant",
+    "build_lib": "ng build --prod --configuration production ngx-vant",
     "npm_pack": "cd ./dist/ngx-vant && npm pack",
     "package": "npm run build_lib && npm run npm_pack"
   },

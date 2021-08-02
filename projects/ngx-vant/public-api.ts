@@ -4,3 +4,4 @@
 
 export * from './ngx-vant.module';
 
+// export default void 0;

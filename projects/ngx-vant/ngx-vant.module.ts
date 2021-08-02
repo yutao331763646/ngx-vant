@@ -40,7 +40,7 @@ export * from './sticky/sticky.module';
 export * from './directive/directive.module';
 export * from './picker/picker.module';
 @NgModule({
-    imports: [DirectiveModule],
+    imports: [DirectiveModule,IconModule],
     exports: [
         IconModule,ButtonModule,LoadingModule,
         NavBarModule,ImageModule,RowModule,ColModule,
