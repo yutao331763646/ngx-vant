@@ -95,7 +95,6 @@ Layout 组件提供了 `24列栅格`，通过在 `Col` 上添加 `span` 属性�
 | --- | --- | --- | --- |
 | type | 布局方式，可选值为`flex` | _string_ | - |
 | gutter | 列元素之间的间距（单位为 px） | _number \| string_ | - |
-| tag | 自定义元素标签 | _string_ | `div` |
 | justify | Flex 主轴对齐方式，可选值为 `end` `center` <br> `space-around` `space-between` | _string_ | `start` |
 | align | Flex 交叉轴对齐方式，可选值为 `center` `bottom` | _string_ | `top` |
 
@@ -105,7 +104,6 @@ Layout 组件提供了 `24列栅格`，通过在 `Col` 上添加 `span` 属性�
 | ------ | -------------- | ------------------ | ------ |
 | span   | 列元素宽度     | _number \| string_ | -      |
 | offset | 列元素偏移距离 | _number \| string_ | -      |
-| tag    | 自定义元素标签 | _string_           | `div`  |
 
 ### Row Events
 
