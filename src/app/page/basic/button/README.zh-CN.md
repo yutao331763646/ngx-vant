@@ -7,7 +7,7 @@
 ### 引入
 
 ```js
-import ButtonModule from 'VantModule';
+import ButtonModule from 'ngx-vant';
 ```
 
 ## 代码演示
