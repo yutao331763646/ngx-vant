@@ -19,6 +19,7 @@ import { TabsComponent } from "./tabs/tabs.component";
 import { TagComponent } from "./tag/tag.component";
 import { ToastComponent } from "./toast/toast.component";
 import { PickerComponent } from "./picker/picker.component";
+import { ThemeComponent } from "./theme/theme.component";
 
 const routes: Routes = [
     {
@@ -29,6 +30,10 @@ const routes: Routes = [
     {
         path: 'quickstart',
         component: QuickstartComponent
+    },
+    {
+        path: 'theme',
+        component: ThemeComponent
     },
     {
         path: 'button',

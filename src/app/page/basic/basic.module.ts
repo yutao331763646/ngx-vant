@@ -25,6 +25,7 @@ import { PickerComponent } from "./picker/picker.component";
 import { SafePipe } from "src/app/common/pipe/sage.pipe";
 import { DocComponent } from "src/app/components/doc/doc.component";
 import { ToastComponent } from "./toast/toast.component";
+import { ThemeComponent } from "./theme/theme.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule,
@@ -37,7 +38,7 @@ import { ToastComponent } from "./toast/toast.component";
         NavBarComponent,LayoutComponent,ProgressComponent,
         CellComponent,FieldComponent,OverlayComponent,PopupComponent,
         TabsComponent,NotifyComponent,TagComponent,StickyComponent,
-        PickerComponent,SafePipe,DocComponent,ToastComponent
+        PickerComponent,SafePipe,DocComponent,ToastComponent,ThemeComponent
     ]
 })
 export class BasicModule { }

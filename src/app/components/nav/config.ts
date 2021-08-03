@@ -18,10 +18,10 @@ export const navConfig = [
         //   path: 'changelog',
         //   title: '更新日志',
         // },
-        // {
-        //   path: 'theme',
-        //   title: '定制主题',
-        // },
+        {
+          path: 'theme',
+          title: '定制主题',
+        },
         // {
         //   path: 'contribution',
         //   title: '开发指南',
