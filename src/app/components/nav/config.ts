@@ -22,10 +22,10 @@ export const navConfig = [
           path: 'theme',
           title: '定制主题',
         },
-        // {
-        //   path: 'contribution',
-        //   title: '开发指南',
-        // },
+        {
+          path: 'contribution',
+          title: '开发指南',
+        },
         // {
         //   path: 'design',
         //   title: '设计资源',

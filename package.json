@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "ng": "ng",
+    "bootstrap": "yarn || npm i",
     "start": "ng serve",
     "doc": "ng serve  --port  4201 ",
     "doc:build": "ng build --configuration production",

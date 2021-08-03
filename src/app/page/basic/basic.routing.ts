@@ -20,6 +20,7 @@ import { TagComponent } from "./tag/tag.component";
 import { ToastComponent } from "./toast/toast.component";
 import { PickerComponent } from "./picker/picker.component";
 import { ThemeComponent } from "./theme/theme.component";
+import { ContributionComponent } from "./contribution/contribution.component";
 
 const routes: Routes = [
     {
@@ -34,6 +35,10 @@ const routes: Routes = [
     {
         path: 'theme',
         component: ThemeComponent
+    },
+    {
+        path: 'contribution',
+        component: ContributionComponent
     },
     {
         path: 'button',
