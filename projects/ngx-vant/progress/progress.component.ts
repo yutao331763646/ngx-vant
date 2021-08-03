@@ -3,7 +3,6 @@ import { addUnit, removeNgTag } from '../utils';
 @Component({
     selector: 'van-progress',
     templateUrl: './progress.component.html',
-    // styleUrls: ['./progress.component.less']
 })
 export class ProgressComponent implements OnInit {
     @ViewChild("pro", { static: true }) pro!: ElementRef<HTMLDivElement>;
