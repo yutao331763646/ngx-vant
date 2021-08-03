@@ -22,6 +22,7 @@ import { PickerComponent } from "./picker/picker.component";
 import { ThemeComponent } from "./theme/theme.component";
 import { ContributionComponent } from "./contribution/contribution.component";
 import { DesignComponent } from "./design/design.component";
+import { StyleGuideComponent } from "./style-guide/style-guide.component";
 
 const routes: Routes = [
     {
@@ -44,6 +45,10 @@ const routes: Routes = [
     {
         path: 'design',
         component: DesignComponent
+    },
+    {
+        path: 'style-guide',
+        component: StyleGuideComponent
     },
     {
         path: 'button',

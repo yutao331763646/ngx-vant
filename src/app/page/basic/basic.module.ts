@@ -28,6 +28,7 @@ import { ToastComponent } from "./toast/toast.component";
 import { ThemeComponent } from "./theme/theme.component";
 import { ContributionComponent } from "./contribution/contribution.component";
 import { DesignComponent } from "./design/design.component";
+import { StyleGuideComponent } from "./style-guide/style-guide.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule,
@@ -41,7 +42,7 @@ import { DesignComponent } from "./design/design.component";
         CellComponent,FieldComponent,OverlayComponent,PopupComponent,
         TabsComponent,NotifyComponent,TagComponent,StickyComponent,
         PickerComponent,SafePipe,DocComponent,ToastComponent,ThemeComponent,
-        ContributionComponent,DesignComponent
+        ContributionComponent,DesignComponent,StyleGuideComponent
     ]
 })
 export class BasicModule { }
