@@ -7,7 +7,6 @@ import { removeNgTag } from '../utils';
 @Component({
     selector: 'vant-notify',
     templateUrl: './notify.component.html',
-    // styleUrls: ['./notify.component.less']
 })
 export class NotifyComponent implements OnInit {
      show = false
