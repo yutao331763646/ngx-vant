@@ -4,7 +4,6 @@ import { removeNgTag } from '../utils';
 @Component({
     selector: 'van-tab',
     templateUrl: './tab.component.html',
-    // styleUrls: ['./tab.component.less']
 })
 export class TabComponent implements OnInit, OnChanges {
     @ViewChild('contentTemplate', { static: true }) contentTemplate!: TemplateRef<any>;
