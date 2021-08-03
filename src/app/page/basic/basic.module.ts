@@ -27,6 +27,7 @@ import { DocComponent } from "src/app/components/doc/doc.component";
 import { ToastComponent } from "./toast/toast.component";
 import { ThemeComponent } from "./theme/theme.component";
 import { ContributionComponent } from "./contribution/contribution.component";
+import { DesignComponent } from "./design/design.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule,
@@ -40,7 +41,7 @@ import { ContributionComponent } from "./contribution/contribution.component";
         CellComponent,FieldComponent,OverlayComponent,PopupComponent,
         TabsComponent,NotifyComponent,TagComponent,StickyComponent,
         PickerComponent,SafePipe,DocComponent,ToastComponent,ThemeComponent,
-        ContributionComponent
+        ContributionComponent,DesignComponent
     ]
 })
 export class BasicModule { }
