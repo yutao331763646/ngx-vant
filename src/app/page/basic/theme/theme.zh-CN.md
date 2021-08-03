@@ -87,92 +87,22 @@ ngx-vant 使用了 [Less](http://lesscss.org/) 对样式进行预处理，并内
 
 ### 步骤一 引入样式源文件
 
-定制主题时，需要引入组件对应的 Less 样式文件，支持按需引入和手动引入两种方式。
+在 `src/styles.less` 里引入预定义主题文件 
 
-#### 按需引入样式（推荐）
 
-在 babel.config.js 中配置按需引入样式源文件，注意 babel6 不支持按需引入样式，请手动引入样式。
-
-```js
-module.exports = {
-  plugins: [
-    [
-      'import',
-      {
-        libraryName: 'vant',
-        libraryDirectory: 'es',
-        // 指定样式路径
-        style: (name) => `${name}/style/less`,
-      },
-      'vant',
-    ],
-  ],
-};
-```
-
-#### 手动引入样式
-
-```js
-// 引入全部样式
-import 'vant/lib/index.less';
-
-// 引入单个组件样式
-import 'vant/lib/button/style/less';
+```less
+/* You can add global styles to this file, and also import other style files */
+@import  '../node_modules/ngx-vant/ngx-vant.less';
 ```
 
 ### 步骤二 修改样式变量
 
-使用 Less 提供的 [modifyVars](http://lesscss.org/usage/#using-less-in-the-browser-modify-variables) 即可对变量进行修改，下面是参考的 webpack 配置。
+使用 Less 提供的 [modifyVars](http://lesscss.org/usage/#using-less-in-the-browser-modify-variables) 即可对变量进行修改。
 
-```js
-// webpack.config.js
-module.exports = {
-  rules: [
-    {
-      test: /\.less$/,
-      use: [
-        // ...其他 loader 配置
-        {
-          loader: 'less-loader',
-          options: {
-            // 若 less-loader 版本小于 6.0，请移除 lessOptions 这一级，直接配置选项。
-            lessOptions: {
-              modifyVars: {
-                // 直接覆盖变量
-                'text-color': '#111',
-                'border-color': '#eee',
-                // 或者可以通过 less 文件覆盖（文件路径为绝对路径）
-                hack: `true; @import "your-less-file-path.less";`,
-              },
-            },
-          },
-        },
-      ],
-    },
-  ],
-};
-```
+```less
+/* You can add global styles to this file, and also import other style files */
+@import  '../node_modules/ngx-vant/ngx-vant.less';
 
-如果 vue-cli 搭建的项目，可以在 `vue.config.js` 中进行配置。
-
-```js
-// vue.config.js
-module.exports = {
-  css: {
-    loaderOptions: {
-      less: {
-        // 若 less-loader 版本小于 6.0，请移除 lessOptions 这一级，直接配置选项。
-        lessOptions: {
-          modifyVars: {
-            // 直接覆盖变量
-            'text-color': '#111',
-            'border-color': '#eee',
-            // 或者可以通过 less 文件覆盖（文件路径为绝对路径）
-            hack: `true; @import "your-less-file-path.less";`,
-          },
-        },
-      },
-    },
-  },
-};
+@button-primary-background-color: red;
+@button-primary-border-color: red;
 ```
