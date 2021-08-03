@@ -4,7 +4,6 @@ import { removeNgTag } from '../utils';
 @Component({
     selector: 'van-nav-bar',
     templateUrl: './nav-bar.component.html',
-    // styleUrls: ['./nav-bar.component.less']
 })
 export class NavBarComponent implements OnInit {
     //leftText rightText暂时只传入string,后续需支持TemplateRef传入
