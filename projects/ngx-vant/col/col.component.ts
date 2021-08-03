@@ -6,7 +6,6 @@ export function isNotNil<T>(value: T): value is NonNullable<T> {
 @Component({
     selector: 'van-col',
     templateUrl: './col.component.html',
-    // styleUrls: ['./col.component.less']
 })
 export class ColComponent implements OnInit, OnChanges {
     classMap: { [key: string]: boolean } = {};
