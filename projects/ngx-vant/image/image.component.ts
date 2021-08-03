@@ -6,7 +6,7 @@ export type ImgageFit = 'contain' | 'cover' | 'fill' | 'none' | 'scale-down';
 @Component({
     selector: 'van-image',
     templateUrl: './image.component.html',
-    styleUrls: ['./image.component.less']
+    // styleUrls: ['./image.component.less']
 })
 export class ImageComponent implements OnInit {
 

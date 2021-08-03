@@ -5,7 +5,7 @@ export type FieldType = 'tel' | 'digit' | 'number' | 'textarea' | 'password' | '
 @Component({
     selector: 'van-field',
     templateUrl: './field.component.html',
-    styleUrls: ['./field.component.less']
+    // styleUrls: ['./field.component.less']
 })
 export class FieldComponent implements OnInit, OnChanges {
 

@@ -5,7 +5,7 @@ import { overlayAnimation } from './overlay.animation';
 @Component({
     selector: 'van-overlay',
     templateUrl: './overlay.component.html',
-    styleUrls: ['./overlay.component.less'],
+    // styleUrls: ['./overlay.component.less'],
     animations: [overlayAnimation]
 })
 export class OverlayComponent implements OnInit {

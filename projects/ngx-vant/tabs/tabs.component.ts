@@ -5,7 +5,7 @@ export type TabsType = 'line' | 'card';
 @Component({
     selector: 'van-tabs',
     templateUrl: './tabs.component.html',
-    styleUrls: ['./tabs.component.less']
+    // styleUrls: ['./tabs.component.less']
 })
 export class TabsComponent implements OnInit {
     @ContentChildren(TabComponent, { descendants: true }) allTabs: QueryList<TabComponent> = new QueryList<TabComponent>();

@@ -26,7 +26,7 @@ function addUnit(value?: string | number): string | undefined {
 @Component({
     selector: 'van-icon',
     templateUrl: './icon.component.html',
-    styleUrls: ['./icon.component.less']
+    // styleUrls: ['./icon.component.less']
 })
 export class IconComponent implements OnInit {
     @Output() readonly click = new EventEmitter<MouseEvent>();

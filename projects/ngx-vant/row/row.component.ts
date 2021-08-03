@@ -14,7 +14,7 @@ export type RowJustify =
 @Component({
     selector: 'van-row',
     templateUrl: './row.component.html',
-    styleUrls: ['./row.component.less']
+    // styleUrls: ['./row.component.less']
 })
 export class RowComponent implements OnInit, AfterContentInit {
     @ContentChildren(ColComponent) clos: QueryList<ColComponent> | undefined;

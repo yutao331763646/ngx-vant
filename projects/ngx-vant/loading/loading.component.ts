@@ -5,7 +5,7 @@ export type LoadingType = 'spinner' | 'circular'
 @Component({
     selector: 'van-loading',
     templateUrl: './loading.component.html',
-    styleUrls: ['./loading.component.less']
+    // styleUrls: ['./loading.component.less']
 })
 export class LoadingComponent implements OnInit {
     @Input() type: LoadingType = 'circular'

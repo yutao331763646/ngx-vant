@@ -4,7 +4,7 @@ import { removeNgTag } from '../utils';
 @Component({
     selector: 'van-cell',
     templateUrl: './cell.component.html',
-    styleUrls: ['./cell.component.less']
+    // styleUrls: ['./cell.component.less']
 })
 export class CellComponent implements OnInit {
     @Input() center: boolean = false;

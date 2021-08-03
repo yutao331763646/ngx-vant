@@ -99,7 +99,7 @@ export interface Column {
 @Component({
     selector: 'van-picker',
     templateUrl: './picker.component.html',
-    styleUrls: ['./picker.component.less']
+    // styleUrls: ['./picker.component.less']
 })
 export class PickerComponent implements OnInit {
     @Input() title: string = ''

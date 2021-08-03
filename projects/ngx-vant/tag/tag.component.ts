@@ -5,7 +5,7 @@ export type TagSize = 'large' | 'medium' | '';
 @Component({
     selector: 'van-tag',
     templateUrl: './tag.component.html',
-    styleUrls: ['./tag.component.less'],
+    // styleUrls: ['./tag.component.less'],
     animations: [overlayAnimation]
 })
 export class TagComponent implements OnInit {
