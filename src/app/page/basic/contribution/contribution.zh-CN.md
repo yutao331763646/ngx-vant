@@ -49,7 +49,7 @@ npm run doc
 2. 基于 fork 后仓库的 dev 分支新建一个分支，比如`feature/button_color`
 3. 在新分支上进行开发，开发完成后，提 Pull Request 到主仓库的 dev 分支
 4. Pull Request 会在 Review 通过后被合并到主仓库
-5. 等待 Vant 发布版本，一般是每周一次
+5. 等待 ngx-vant 发布版本，一般是每周一次
 
 ### 同步最新代码
 
@@ -57,7 +57,8 @@ npm run doc
 
 ```bash
 # 添加主仓库到 remote，作为 fork 后仓库的上游仓库
-git remote add upstream https://github.com/youzan/vant.git
+git remote add upstream https://github.com/yutao331763646/ngx-vant.git
+
 
 # 拉取主仓库最新代码
 git fetch upstream
