@@ -8,7 +8,6 @@ export type ButtonSize = 'large' | 'normal' | 'small' | 'mini';
 @Component({
     selector: 'van-button',
     templateUrl: './button.component.html',
-    // styleUrls: ['./button.component.less']
 })
 export class ButtonComponent implements OnInit, OnChanges {
     @Output() readonly click = new EventEmitter<MouseEvent>();
