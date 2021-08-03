@@ -25,7 +25,7 @@ git clone git@github.com:yutao331763646/ngx-vant.git
 cd ngx-vant && npm run bootstrap
 
 # 进入开发模式，浏览器访问 http://localhost:4201
-npm run dev
+npm run doc
 ```
 
 ### 目录结构
