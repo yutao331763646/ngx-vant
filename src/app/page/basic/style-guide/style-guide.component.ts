@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { cardWrapper } from 'src/app/common/card-wrapper';
 
 @Component({
   selector: 'app-style-guide',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StyleGuideComponent implements OnInit {
 
-  constructor() { }
+    private _readMe: HTMLElement | string = '';
+    @Input() set readMe(readMe: HTMLElement | string) {
+        this._readMe = readMe;
+    }
+    get readMe() {
+        return cardWrapper(this._readMe);
+    }
 
-  ngOnInit() {
-  }
+    constructor() { }
+
+    ngOnInit() {
+        this.setReadMe()
+    }
+    setReadMe() {
+        this.readMe = require(`!html-loader!markdown-loader!./style-guide.zh-CN.md`).default;
+    }
 
 }
