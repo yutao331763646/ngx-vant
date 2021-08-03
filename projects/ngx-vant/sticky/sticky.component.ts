@@ -5,7 +5,6 @@ import { getElementTop, getScroller, getScrollTop } from '../utils';
 @Component({
     selector: 'van-sticky',
     templateUrl: './sticky.component.html',
-    // styleUrls: ['./sticky.component.less']
 })
 export class StickyComponent implements OnInit, OnDestroy {
     @Input() offsetTop: number = 0
