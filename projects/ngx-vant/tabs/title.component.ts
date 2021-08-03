@@ -2,7 +2,6 @@ import { Component, EventEmitter, Input, OnInit, Output, QueryList } from '@angu
 
 @Component({
     selector: '[van-tab-title]',
-    // styleUrls: ['./title.component.less'],
     template: `<span class="van-tab__text van-tab__text--ellipsis">{{title}}</span> `,
     host: {
         role: 'tab',
