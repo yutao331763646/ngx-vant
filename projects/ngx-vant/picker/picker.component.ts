@@ -194,7 +194,6 @@ export class PickerComponent implements OnInit {
 @Component({
     selector: '[van-toolbar]',
     templateUrl: './toolbar.component.html',
-    styleUrls: ['./picker.component.less']
 })
 export class ToolBarComponent implements OnInit {
     @Input() title: string = ''
@@ -239,7 +238,6 @@ const DEFAULT_DURATION = 200;
 @Component({
     selector: '[van-picker-column]',
     templateUrl: './picker-column.component.html',
-    styleUrls: ['./picker.component.less'],
     host: {
         '[class]': '"van-picker-column " + className',
         '(touchstart)': 'onTouchStart($event)',
