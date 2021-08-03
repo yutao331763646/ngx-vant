@@ -4,7 +4,6 @@ export type iconPositionType = 'top-left' | 'top-right' | 'bottom-left' | 'botto
 @Component({
     selector: 'van-popup',
     templateUrl: './popup.component.html',
-    // styleUrls: ['./popup.component.less'],
     animations: [overlayAnimation]
 })
 export class PopupComponent implements OnInit {
