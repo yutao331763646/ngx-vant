@@ -26,10 +26,10 @@ export const navConfig = [
           path: 'contribution',
           title: '开发指南',
         },
-        // {
-        //   path: 'design',
-        //   title: '设计资源',
-        // },
+        {
+          path: 'design',
+          title: '设计资源',
+        },
         // {
         //   path: 'style-guide',
         //   title: '风格指南',
