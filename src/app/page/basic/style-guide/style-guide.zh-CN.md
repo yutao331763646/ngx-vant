@@ -2,7 +2,8 @@
 
 ### 介绍
 
-在参与 Vant 开发时，请遵守约定的单文件组件风格指南，指南内容节选自 [Vue 官方风格指南](https://cn.vuejs.org/v2/style-guide)。
+在参与 ngx-vant 开发时，请遵守约定的单文件组件风格指南，指南内容节选自 [Angular coding style guide
+](https://angular.io/guide/styleguide)。
 
 ### 组件数据
 
