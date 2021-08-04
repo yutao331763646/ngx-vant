@@ -160,7 +160,7 @@ import FieldModule from 'ngx-vant';
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| v-model (value) | 当前输入的值 | _number \| string_ | - |
+| [(ngModel)] | 当前输入的值 | _number \| string_ | - |
 | label | 输入框左侧文本 | _string_ | - |
 | name  | 名称，提交表单的标识符 | _string_ | - |
 | type | 输入框类型, 可选值为 `tel` `digit`<br>`number` `textarea` `password` 等 | _string_ | `text` |
@@ -170,7 +170,6 @@ import FieldModule from 'ngx-vant';
 | border | 是否显示内边框 | _boolean_ | `true` |
 | disabled | 是否禁用输入框 | _boolean_ | `false` |
 | readonly | 是否只读 | _boolean_ | `false` |
-| colon `v2.7.2` | 是否在 label 后面添加冒号 | _boolean_ | `false` |
 | required | 是否显示表单必填星号 | _boolean_ | `false` |
 | center | 是否使内容垂直居中 | _boolean_ | `false` |
 | clearable | 是否启用清除图标，点击清除图标后会清空输入框 | _boolean_ | `false` |
