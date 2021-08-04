@@ -200,7 +200,7 @@ import FieldModule from 'ngx-vant';
 | blur                 | 输入框失去焦点时触发 | _event: Event_                 |
 | clear                | 点击清除按钮时触发   | _event: Event_                 |
 | click                | 点击 Field 时触发    | _event: Event_                 |
-| click-input `v2.8.1` | 点击输入区域时触发   | _event: Event_                 |
+| clickInput  | 点击输入区域时触发   | _event: Event_                 |
 | click-left-icon      | 点击左侧图标时触发   | _event: Event_                 |
 | click-right-icon     | 点击右侧图标时触发   | _event: Event_                 |
 
