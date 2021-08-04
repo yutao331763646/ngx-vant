@@ -182,9 +182,9 @@ import FieldModule from 'ngx-vant';
 | arrowDirection | 箭头方向，可选值为 `left` `up` `down` | _string_ | `right` |
 | labelClass | 左侧文本额外类名 | _any_ | - |
 | labelWidth | 左侧文本宽度，默认单位为`px` | _number \| string_ | `6.2em` |
-| label-align | 左侧文本对齐方式，可选值为 `center` `right` | _string_ | `left` |
-| input-align | 输入框对齐方式，可选值为 `center` `right` | _string_ | `left` |
-| error-message-align | 错误提示文案对齐方式，可选值为 `center` `right` | _string_ | `left` |
+| labelAlign | 左侧文本对齐方式，可选值为 `center` `right` | _string_ | `left` |
+| inputAlign | 输入框对齐方式，可选值为 `center` `right` | _string_ | `left` |
+| errorMessageAlign | 错误提示文案对齐方式，可选值为 `center` `right` | _string_ | `left` |
 | autosize | 是否自适应内容高度，只对 textarea 有效，<br>可传入对象,如 { maxHeight: 100, minHeight: 50 }，<br>单位为`px` | _boolean \| object_ | `false` |
 | left-icon | 左侧[图标名称](#/zh-CN/icon)或图片链接 | _string_ | - |
 | right-icon | 右侧[图标名称](#/zh-CN/icon)或图片链接 | _string_ | - |
