@@ -57,37 +57,28 @@ import FieldModule from 'ngx-vant';
 
 ### 显示图标
 
-通过 `left-icon` 和 `right-icon` 配置输入框两侧的图标，通过设置 `clearable` 在输入过程中展示清除图标。
+通过 `leftIcon` 和 `rightIcon` 配置输入框两侧的图标，通过设置 `clearable` 在输入过程中展示清除图标。
 
 ```html
 <van-cell-group>
-  <van-field
-    v-model="value1"
-    label="文本"
-    left-icon="smile-o"
-    right-icon="warning-o"
-    placeholder="显示图标"
-  />
-  <van-field
-    v-model="value2"
-    clearable
-    label="文本"
-    left-icon="music-o"
-    placeholder="显示清除图标"
-  />
+    <van-field
+        [(ngModel)]="value1"
+        label="文本"
+        leftIcon="smile-o"
+        rightIcon="warning-o"
+        placeholder="显示图标"
+    ></van-field>
+    <van-field
+        [(ngModel)]="value2"
+        [clearable]="true"
+        label="文本"
+        leftIcon="music-o"
+        placeholder="显示清除图标"
+    ></van-field>
 </van-cell-group>
 ```
 
-```js
-export default {
-  data() {
-    return {
-      value1: '',
-      value2: '123',
-    };
-  },
-};
-```
+
 
 ### 错误提示
 
