@@ -109,15 +109,16 @@ import FieldModule from 'ngx-vant';
 
 ```html
 <van-field
-  v-model="sms"
-  center
-  clearable
-  label="短信验证码"
-  placeholder="请输入短信验证码"
+    [(ngModel)]="sms"
+    [center]="true"
+    [clearable]="true"
+    [button]="button"
+    label="短信验证码"
+    placeholder="请输入短信验证码"
 >
-  <template #button>
-    <van-button size="small" type="primary">发送验证码</van-button>
-  </template>
+    <ng-template #button>
+        <van-button size="small" type="primary">发送验证码</van-button>
+    </ng-template>
 </van-field>
 ```
 
