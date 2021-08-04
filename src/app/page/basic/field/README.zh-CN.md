@@ -131,28 +131,27 @@ import FieldModule from 'ngx-vant';
 
 ```html
 <van-field
-  v-model="message"
-  rows="2"
-  autosize
-  label="留言"
-  type="textarea"
-  maxlength="50"
-  placeholder="请输入留言"
-  show-word-limit
-/>
+    [(ngModel)]="message"
+    rows="2"
+    label="留言"
+    type="textarea"
+    maxlength="50"
+    placeholder="请输入留言"
+    [showWordLimit]="true"
+></van-field>
 ```
 
 ### 输入框内容对齐
 
-通过 `input-align` 属性可以设置输入框内容的对齐方式，可选值为 `center`、`right`。
+通过 `inputAlign` 属性可以设置输入框内容的对齐方式，可选值为 `center`、`right`。
 
 ```html
 <van-field
-  v-model="value"
-  label="文本"
-  placeholder="输入框内容右对齐"
-  input-align="right"
-/>
+    [(ngModel)]="value"
+    label="文本"
+    placeholder="输入框内容右对齐"
+    inputAlign="right"
+></van-field>
 ```
 
 ## API
