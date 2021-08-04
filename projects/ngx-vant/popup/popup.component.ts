@@ -18,7 +18,7 @@ export class PopupComponent implements OnInit {
     @Input() overlay: boolean = true
     @Input() closeOnClickOverlay: boolean = true
     @Input() position: 'top' | 'bottom' | 'right' | 'left' | 'center' = 'center'
-    @Input() customStyle: { [klass: string]: any } = {};
+    @Input() customStyle: { [key: string]: any } = {};
     @Input() round: boolean = false
     @Input() safeAreaInsetBottom: boolean = false
     @Input() closeable: boolean = false
