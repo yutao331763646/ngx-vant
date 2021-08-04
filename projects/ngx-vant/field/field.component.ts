@@ -91,6 +91,7 @@ export class FieldComponent implements OnInit, OnChanges {
     }
     onBlur(event: FocusEvent): void {
         this.focused = false;
+        this.blur.emit(event)
     }
     onClickClear(event: MouseEvent): void {
         event.preventDefault()
