@@ -29,6 +29,7 @@
             (focus)="onFocus($event)"
             (blur)="onBlur($event)"
             (input)="onInputChange($event)"
+            (click)="onClickInput($event)"
         ></textarea>
         <input
             *ngIf="type !== 'textarea'"
@@ -45,6 +46,7 @@
             (focus)="onFocus($event)"
             (blur)="onBlur($event)"
             (input)="onInputChange($event)"
+            (click)="onClickInput($event)"
         >
         <van-icon
             [show]="showClear"

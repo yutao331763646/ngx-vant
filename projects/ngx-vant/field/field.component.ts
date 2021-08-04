@@ -100,6 +100,9 @@ export class FieldComponent implements OnInit, OnChanges {
         this.showClear = false
         this.clear.emit(event)
     }
+    onClickInput(event: MouseEvent): void {
+
+    }
     onInputChange(event: Event): void {
         console.log(event)
         if (this.clearable) {
