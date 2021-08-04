@@ -19,19 +19,10 @@ import FieldModule from 'ngx-vant';
 ```html
 <!-- Field 是基于 Cell 实现的，可以使用 CellGroup 作为容器来提供外边框。 -->
 <van-cell-group>
-  <van-field v-model="value" label="文本" placeholder="请输入用户名" />
+  <van-field [(ngModel)]="value" label="文本" placeholder="请输入用户名"></van-field>
 </van-cell-group>
 ```
 
-```js
-export default {
-  data() {
-    return {
-      value: '',
-    };
-  },
-};
-```
 
 ### 自定义类型
 
