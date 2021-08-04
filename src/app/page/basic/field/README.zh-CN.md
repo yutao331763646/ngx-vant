@@ -188,7 +188,6 @@ import FieldModule from 'ngx-vant';
 | leftIcon | 左侧图标名称或图片链接 | _string_ | - |
 | rightIcon | 右侧图标名称或图片链接 | _string_ | - |
 | iconPrefix  | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/basic/icon) | _string_ | `van-icon` |
-| rules `v2.5.0` | 表单校验规则，详见 [Form 组件](#/zh-CN/form#rule-shu-ju-jie-gou) | _Rule[]_ | - |
 
 ### Events
 
