@@ -30,15 +30,15 @@ import FieldModule from 'ngx-vant';
 
 ```html
 <!-- 输入任意文本 -->
-<van-field v-model="text" label="文本" />
+<van-field [(ngModel)]="text" label="文本" ></van-field>
 <!-- 输入手机号，调起手机号键盘 -->
-<van-field v-model="tel" type="tel" label="手机号" />
+<van-field [(ngModel)]="tel" type="tel" label="手机号"></van-field>
 <!-- 允许输入正整数，调起纯数字键盘 -->
-<van-field v-model="digit" type="digit" label="整数" />
+<van-field [(ngModel)]="digit" type="digit" label="整数" ></van-field>
 <!-- 允许输入数字，调起带符号的纯数字键盘 -->
-<van-field v-model="number" type="number" label="数字" />
+<van-field [(ngModel)]="number" type="number" label="数字"></van-field>
 <!-- 输入密码 -->
-<van-field v-model="password" type="password" label="密码" />
+<van-field [(ngModel)]="password" type="password" label="密码" ></van-field>
 ```
 
 ```js
