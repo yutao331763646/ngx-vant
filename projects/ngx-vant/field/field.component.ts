@@ -90,10 +90,10 @@ export class FieldComponent implements OnInit, OnChanges {
         removeNgTag(this.el.nativeElement)
     }
     toFocus(): void {
-
+        this.focused = true;
     }
     toBlur(): void {
-
+        this.focused = false;
     }
     onFocus(event: FocusEvent): void {
         this.focused = true;
