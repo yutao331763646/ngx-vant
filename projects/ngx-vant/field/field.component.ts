@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, OnChanges, OnInit, SimpleChanges, TemplateRef } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges, TemplateRef } from '@angular/core';
 import { addUnit, removeNgTag } from '../utils';
 export type FieldType = 'tel' | 'digit' | 'number' | 'textarea' | 'password' | 'text'
 
@@ -22,7 +22,7 @@ export class FieldComponent implements OnInit, OnChanges {
     @Input() valueClass: string = '';
     @Input() labelClass: string = '';
     @Input() title: string | number = '';
-    @Input() value: string  = '';
+    @Input() value: string = '';
     @Input() arrowDirection: 'up' | 'down' | 'left' | 'right' | '' = '';
 
     @Input() leftIcon: string = ''
@@ -46,7 +46,7 @@ export class FieldComponent implements OnInit, OnChanges {
     @Input() name: string = ''
     @Input() button?: TemplateRef<void>
     @Input() showWordLimit: boolean = false
-    @Input() maxlength:string | number = '';
+    @Input() maxlength: string | number = '';
 
 
     inputType: FieldType = 'text';
@@ -75,6 +75,9 @@ export class FieldComponent implements OnInit, OnChanges {
 
     showClear: boolean = false
     focused: boolean = false
+
+    @Output() readonly input = new EventEmitter<Event>();
+
     constructor(private el: ElementRef) { }
 
     ngOnInit() {
@@ -92,6 +95,7 @@ export class FieldComponent implements OnInit, OnChanges {
         this.showClear = false
     }
     onInputChange(event: Event): void {
+        console.log(event)
         if (this.clearable) {
             if (this.clearable && !this.readonly) {
                 const trigger = this.clearTrigger === 'always' ||
@@ -100,6 +104,7 @@ export class FieldComponent implements OnInit, OnChanges {
             }
 
         }
+        this.input.emit(event)
     }
     ngOnChanges(changes: SimpleChanges) {
         if (changes.clearable) {
