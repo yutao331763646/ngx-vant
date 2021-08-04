@@ -208,8 +208,8 @@ import FieldModule from 'ngx-vant';
 
 | 方法名 | 说明           | 参数 | 返回值 |
 | ------ | -------------- | ---- | ------ |
-| toFocus  | 获取输入框焦点 | -    | _void_  |
-| toBlur   | 取消输入框焦点 | -    | _void_  |
+| setFocus  | 获取输入框焦点 | -    | _void_  |
+| setBlur   | 取消输入框焦点 | -    | _void_  |
 
 
 ### 样式变量
