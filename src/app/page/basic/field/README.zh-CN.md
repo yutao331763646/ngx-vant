@@ -180,8 +180,8 @@ import FieldModule from 'ngx-vant';
 | error | 是否将输入内容标红 | _boolean_ | `false` |
 | errorMessage | 底部错误提示文案，为空时不展示 | _string_ | - |
 | arrowDirection | 箭头方向，可选值为 `left` `up` `down` | _string_ | `right` |
-| label-class | 左侧文本额外类名 | _any_ | - |
-| label-width | 左侧文本宽度，默认单位为`px` | _number \| string_ | `6.2em` |
+| labelClass | 左侧文本额外类名 | _any_ | - |
+| labelWidth | 左侧文本宽度，默认单位为`px` | _number \| string_ | `6.2em` |
 | label-align | 左侧文本对齐方式，可选值为 `center` `right` | _string_ | `left` |
 | input-align | 输入框对齐方式，可选值为 `center` `right` | _string_ | `left` |
 | error-message-align | 错误提示文案对齐方式，可选值为 `center` `right` | _string_ | `left` |
