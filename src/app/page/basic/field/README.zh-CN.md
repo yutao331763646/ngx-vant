@@ -175,14 +175,11 @@ import FieldModule from 'ngx-vant';
 | clearable | 是否启用清除图标，点击清除图标后会清空输入框 | _boolean_ | `false` |
 | clearTrigger  | 显示清除图标的时机，`always` 表示输入框不为空时展示，<br>`focus` 表示输入框聚焦且不为空时展示 | _string_ | `focus` |
 | clickable | 是否开启点击反馈 | _boolean_ | `false` |
-| is-link | 是否展示右侧箭头并开启点击反馈 | _boolean_ | `false` |
-| autofocus | 是否自动聚焦，iOS 系统不支持该属性 | _boolean_ | `false` |
-| show-word-limit | 是否显示字数统计，需要设置`maxlength`属性 | _boolean_ | `false` |
+| isLink | 是否展示右侧箭头并开启点击反馈 | _boolean_ | `false` |
+| showWordLimit | 是否显示字数统计，需要设置`maxlength`属性 | _boolean_ | `false` |
 | error | 是否将输入内容标红 | _boolean_ | `false` |
-| error-message | 底部错误提示文案，为空时不展示 | _string_ | - |
-| formatter `v2.4.2` | 输入内容格式化函数 | _Function_ | - |
-| format-trigger `v2.8.7` | 格式化函数触发的时机，可选值为 `onBlur` | _string_ | `onChange` |
-| arrow-direction | 箭头方向，可选值为 `left` `up` `down` | _string_ | `right` |
+| errorMessage | 底部错误提示文案，为空时不展示 | _string_ | - |
+| arrowDirection | 箭头方向，可选值为 `left` `up` `down` | _string_ | `right` |
 | label-class | 左侧文本额外类名 | _any_ | - |
 | label-width | 左侧文本宽度，默认单位为`px` | _number \| string_ | `6.2em` |
 | label-align | 左侧文本对齐方式，可选值为 `center` `right` | _string_ | `left` |
