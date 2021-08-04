@@ -79,6 +79,7 @@ export class FieldComponent implements OnInit, OnChanges {
     @Output() readonly input = new EventEmitter<Event>();
     @Output() readonly focus = new EventEmitter<FocusEvent>();
     @Output() readonly blur = new EventEmitter<FocusEvent>();
+    @Output() readonly clear = new EventEmitter<MouseEvent>();
 
     constructor(private el: ElementRef) { }
 
@@ -97,6 +98,7 @@ export class FieldComponent implements OnInit, OnChanges {
         event.preventDefault()
         this.value = ''
         this.showClear = false
+        this.clear.emit(event)
     }
     onInputChange(event: Event): void {
         console.log(event)
