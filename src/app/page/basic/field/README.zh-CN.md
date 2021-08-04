@@ -185,9 +185,8 @@ import FieldModule from 'ngx-vant';
 | labelAlign | 左侧文本对齐方式，可选值为 `center` `right` | _string_ | `left` |
 | inputAlign | 输入框对齐方式，可选值为 `center` `right` | _string_ | `left` |
 | errorMessageAlign | 错误提示文案对齐方式，可选值为 `center` `right` | _string_ | `left` |
-| autosize | 是否自适应内容高度，只对 textarea 有效，<br>可传入对象,如 { maxHeight: 100, minHeight: 50 }，<br>单位为`px` | _boolean \| object_ | `false` |
-| left-icon | 左侧[图标名称](#/zh-CN/icon)或图片链接 | _string_ | - |
-| right-icon | 右侧[图标名称](#/zh-CN/icon)或图片链接 | _string_ | - |
+| leftIcon | 左侧图标名称或图片链接 | _string_ | - |
+| rightIcon | 右侧图标名称或图片链接 | _string_ | - |
 | icon-prefix `v2.5.3` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `van-icon` |
 | rules `v2.5.0` | 表单校验规则，详见 [Form 组件](#/zh-CN/form#rule-shu-ju-jie-gou) | _Rule[]_ | - |
 
