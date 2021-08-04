@@ -77,6 +77,8 @@ export class FieldComponent implements OnInit, OnChanges {
     focused: boolean = false
 
     @Output() readonly input = new EventEmitter<Event>();
+    @Output() readonly focus = new EventEmitter<FocusEvent>();
+    @Output() readonly blur = new EventEmitter<FocusEvent>();
 
     constructor(private el: ElementRef) { }
 
@@ -85,6 +87,7 @@ export class FieldComponent implements OnInit, OnChanges {
     }
     onFocus(event: FocusEvent): void {
         this.focused = true;
+        this.focus.emit(event)
     }
     onBlur(event: FocusEvent): void {
         this.focused = false;
