@@ -41,21 +41,8 @@ import FieldModule from 'ngx-vant';
 <van-field [(ngModel)]="password" type="password" label="密码" ></van-field>
 ```
 
-```js
-export default {
-  data() {
-    return {
-      tel: '',
-      text: '',
-      digit: '',
-      number: '',
-      password: '',
-    };
-  },
-};
-```
 
-> Tips: digit 类型从 2.4.2 版本开始支持
+
 
 ### 禁用输入框
 
@@ -63,9 +50,9 @@ export default {
 
 ```html
 <van-cell-group>
-  <van-field label="文本" value="输入框只读" readonly />
-  <van-field label="文本" value="输入框已禁用" disabled />
-</van-cell-group>
+    <van-field label="文本" value="输入框只读" [readonly]="true" ></van-field>
+    <van-field label="文本" value="输入框已禁用"  [disabled]="true" ></van-field>
+</van-cell-group>`
 ```
 
 ### 显示图标
