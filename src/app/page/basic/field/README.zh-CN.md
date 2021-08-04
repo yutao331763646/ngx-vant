@@ -162,7 +162,7 @@ import FieldModule from 'ngx-vant';
 | --- | --- | --- | --- |
 | v-model (value) | 当前输入的值 | _number \| string_ | - |
 | label | 输入框左侧文本 | _string_ | - |
-| name `v2.5.0` | 名称，提交表单的标识符 | _string_ | - |
+| name  | 名称，提交表单的标识符 | _string_ | - |
 | type | 输入框类型, 可选值为 `tel` `digit`<br>`number` `textarea` `password` 等 | _string_ | `text` |
 | size | 大小，可选值为 `large` | _string_ | - |
 | maxlength | 输入的最大字符数 | _number \| string_ | - |
