@@ -173,7 +173,7 @@ import FieldModule from 'ngx-vant';
 | required | 是否显示表单必填星号 | _boolean_ | `false` |
 | center | 是否使内容垂直居中 | _boolean_ | `false` |
 | clearable | 是否启用清除图标，点击清除图标后会清空输入框 | _boolean_ | `false` |
-| clear-trigger  | 显示清除图标的时机，`always` 表示输入框不为空时展示，<br>`focus` 表示输入框聚焦且不为空时展示 | _string_ | `focus` |
+| clearTrigger  | 显示清除图标的时机，`always` 表示输入框不为空时展示，<br>`focus` 表示输入框聚焦且不为空时展示 | _string_ | `focus` |
 | clickable | 是否开启点击反馈 | _boolean_ | `false` |
 | is-link | 是否展示右侧箭头并开启点击反馈 | _boolean_ | `false` |
 | autofocus | 是否自动聚焦，iOS 系统不支持该属性 | _boolean_ | `false` |
