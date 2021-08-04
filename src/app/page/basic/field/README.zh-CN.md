@@ -122,61 +122,12 @@ import FieldModule from 'ngx-vant';
 </van-field>
 ```
 
-### 格式化输入内容
 
-通过 `formatter` 属性可以对输入的内容进行格式化，通过 `format-trigger` 属性可以指定执行格式化的时机，默认在输入时进行格式化。
 
-```html
-<van-field
-  v-model="value1"
-  label="文本"
-  :formatter="formatter"
-  placeholder="在输入时执行格式化"
-/>
-<van-field
-  v-model="value2"
-  label="文本"
-  :formatter="formatter"
-  format-trigger="onBlur"
-  placeholder="在失焦时执行格式化"
-/>
-```
-
-```js
-export default {
-  data() {
-    return {
-      value1: '',
-      value2: '',
-    };
-  },
-  methods: {
-    formatter(value) {
-      // 过滤输入的数字
-      return value.replace(/\d/g, '');
-    },
-  },
-};
-```
-
-### 高度自适应
-
-对于 textarea，可以通过 `autosize` 属性设置高度自适应。
-
-```html
-<van-field
-  v-model="message"
-  rows="1"
-  autosize
-  label="留言"
-  type="textarea"
-  placeholder="请输入留言"
-/>
-```
 
 ### 显示字数统计
 
-设置 `maxlength` 和 `show-word-limit` 属性后会在底部显示字数统计。
+设置 `maxlength` 和 `showWordLimit` 属性后会在底部显示字数统计。
 
 ```html
 <van-field
