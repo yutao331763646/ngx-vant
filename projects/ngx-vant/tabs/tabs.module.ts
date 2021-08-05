@@ -10,4 +10,4 @@ import { TitleComponent } from './title.component';
     exports: [TabsComponent,TitleComponent,TabBodyComponent],
     declarations: [TabsComponent,TitleComponent,TabBodyComponent]
 })
-export class VantTabsModule { }
+export class TabsModule { }

@@ -1,5 +1,5 @@
 import { Component, ElementRef, Input, OnChanges, OnInit, SimpleChanges, TemplateRef, ViewChild } from '@angular/core';
-import { removeNgTag } from '../utils/com';
+import { removeNgTag } from 'ngx-vant/utils';
 
 @Component({
     selector: 'van-tab',
