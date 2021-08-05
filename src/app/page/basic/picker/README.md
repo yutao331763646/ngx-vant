@@ -41,7 +41,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PickerComponent implements OnInit {
 
-    columns = ['杭州', '宁波', '温州', '绍兴', '湖州', '嘉兴', '金华', '衢州']
+    columns :string[] = ['杭州', '宁波', '温州', '绍兴', '湖州', '嘉兴', '金华', '衢州']
 
     constructor() { }
 
@@ -60,10 +60,40 @@ export class PickerComponent implements OnInit {
 
 ### 默认选中项
 
-单列选择时，可以通过 `default-index` 属性设置初始选中项的索引。
+单列选择时，可以通过 `defaultIndex` 属性设置初始选中项的索引。
 
-```html
-<van-picker show-toolbar title="标题" :columns="columns" :default-index="2" />
+```js
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+    selector: 'app-picker',
+    template: `
+        <van-picker
+            title='标题'
+            [defaultIndex]="2"
+            [showToolbar]='true'
+            [columns]='columns'
+            (cancel)="onCancel($event)"
+            (confirm)="onConfirm($event)"
+        ></van-picker>
+    `
+})
+export class PickerComponent implements OnInit {
+
+    columns :string[] = ['杭州', '宁波', '温州', '绍兴', '湖州', '嘉兴', '金华', '衢州']
+
+    constructor() { }
+
+    ngOnInit() { }
+
+    onCancel(e: MouseEvent): void {
+       console.log(e)
+    }
+    onConfirm(e: MouseEvent): void {
+        console.log(e)
+    }
+
+}
 ```
 
 ### 多列选择
