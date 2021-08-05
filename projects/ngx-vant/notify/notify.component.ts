@@ -9,7 +9,7 @@ import { removeNgTag } from '../utils';
     templateUrl: './notify.component.html',
 })
 export class NotifyComponent implements OnInit {
-     show = false
+    show = false
     type = 'danger';
     message = '通知';
     duration = 3000;
@@ -19,7 +19,7 @@ export class NotifyComponent implements OnInit {
     ngOnInit() {
         removeNgTag(this.elementRef.nativeElement)
     }
-  
+
 }
 
 

@@ -9,7 +9,7 @@
 Notify 是一个服务，调用后会直接在页面中弹出相应的消息提示。
 
 ```js
-import NotifyModule from 'VantModule';
+import NotifyModule from 'ngx-vant';
 
 ```
 
