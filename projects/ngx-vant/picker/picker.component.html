@@ -37,5 +37,7 @@
         [cancelButtonText]="cancelButtonText"
         [confirmButtonText]="confirmButtonText"
         [title]="title"
+        (cancel)="onCancel($event)"
+        (confirm)="onConfirm($event)"
     ></div>
 </div>

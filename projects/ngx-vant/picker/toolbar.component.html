@@ -2,12 +2,14 @@
     <button
         type="button"
         class="van-picker__cancel"
+        (click)="onCancel($event)"
     >
-        {{confirmButtonText}}
+        {{cancelButtonText}}
     </button>
     <div class="van-ellipsis van-picker__title">{{title}}</div>
     <button
         type="button"
+        (click)="onConfirm($event)"
         class="van-picker__confirm"
     >
         {{confirmButtonText}}

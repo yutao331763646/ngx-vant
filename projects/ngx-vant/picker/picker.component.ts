@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
 import { isDef } from '../utils';
 import { on } from '../utils/event';
 export const inBrowser = typeof window !== 'undefined';
@@ -101,6 +101,9 @@ export interface Column {
     templateUrl: './picker.component.html',
 })
 export class PickerComponent implements OnInit {
+    @Output() readonly cancel = new EventEmitter<MouseEvent>();
+    @Output() readonly confirm = new EventEmitter<MouseEvent>();
+
     @Input() title: string = ''
     @Input() showToolbar: boolean = false
     @Input() loading: boolean = false
@@ -187,7 +190,12 @@ export class PickerComponent implements OnInit {
     preventDefault(e: TouchEvent) {
         e.preventDefault()
     }
-
+    onCancel(e: MouseEvent): void {
+        this.cancel.emit(e)
+    }
+    onConfirm(e: MouseEvent): void {
+        this.confirm.emit(e)
+    }
 }
 
 
@@ -199,11 +207,19 @@ export class ToolBarComponent implements OnInit {
     @Input() title: string = ''
     @Input() cancelButtonText: string = '取消'
     @Input() confirmButtonText: string = '确认'
+    @Output() readonly cancel = new EventEmitter<MouseEvent>();
+    @Output() readonly confirm = new EventEmitter<MouseEvent>();
+
     constructor() { }
 
     ngOnInit() {
     }
-
+    onCancel(e: MouseEvent): void {
+        this.cancel.emit(e)
+    }
+    onConfirm(e: MouseEvent): void {
+        this.confirm.emit(e)
+    }
 }
 
 const MIN_DISTANCE = 10;
