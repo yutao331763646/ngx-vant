@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { overlayAnimation } from '../overlay/overlay.animation';
+import { overlayAnimation } from 'ngx-vant/overlay';
 export type iconPositionType = 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right'
 @Component({
     selector: 'van-popup',

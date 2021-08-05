@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PopupComponent } from './popup.component';
-import { OverlayModule } from '../overlay/overlay.module';
-import { IconModule } from '../icon/icon.module';
+import { OverlayModule } from 'ngx-vant/overlay';
+import { IconModule } from 'ngx-vant/icon';
 
 @NgModule({
   imports: [

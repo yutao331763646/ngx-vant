@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NotifyComponent } from './notify.component';
 import { NotifyServiceModule } from './notify.service.module';
 import {OverlayModule} from '@angular/cdk/overlay';
-import { PopupModule } from '../popup/popup.module';
+import { PopupModule } from 'ngx-vant/popup';
 
 @NgModule({
     imports: [
