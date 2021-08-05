@@ -157,7 +157,7 @@ export class PickerComponent implements OnInit {
 | --- | --- | --- | --- |
 | columns | 对象数组，配置每一列显示的数据 | _Column[]_ | `[]` |
 | title | 顶部栏标题 | _string_ | - |
-| confirm-button-text | 确认按钮文字 | _string_ | `确认` |
+| cancelButtonText | 确认按钮文字 | _string_ | `确认` |
 | cancel-button-text | 取消按钮文字 | _string_ | `取消` |
 | value-key | 选项对象中，选项文字对应的键名 | _string_ | `text` |
 | toolbar-position | 顶部栏位置，可选值为`bottom` | _string_ | `top` |
