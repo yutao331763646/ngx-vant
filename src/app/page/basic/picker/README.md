@@ -230,8 +230,4 @@ export class PickerComponent implements OnInit {
 | @picker-loading-icon-color      | `@blue`                    | -    |
 | @picker-loading-mask-color      | `rgba(255, 255, 255, 0.9)` | -    |
 
-## 常见问题
 
-### 在桌面端无法操作组件？
-
-参见[桌面端适配](#/zh-CN/advanced-usage#zhuo-mian-duan-gua-pei)。
