@@ -23,5 +23,10 @@ export class PickerComponent implements OnInit {
 
     ngOnInit() {
     }
-
+    onCancel(e: MouseEvent): void {
+       console.log(e)
+    }
+    onConfirm(e: MouseEvent): void {
+        console.log(e)
+    }
 }

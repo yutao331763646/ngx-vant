@@ -1,4 +1,6 @@
 <van-picker
     [columns]='columns'
-    title='ddd'
+    title='标题'
+    (cancel)="onCancel($event)"
+    (confirm)="onConfirm($event)"
 ></van-picker>

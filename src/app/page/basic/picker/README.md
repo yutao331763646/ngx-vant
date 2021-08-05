@@ -33,17 +33,26 @@ import { Component, OnInit } from '@angular/core';
         <van-picker
             [showToolbar]='true'
             [columns]='columns'
-            title='ddd'
+            title='标题'
+            (cancel)="onCancel($event)"
+            (confirm)="onConfirm($event)"
         ></van-picker>
     `
 })
 export class PickerComponent implements OnInit {
-    
+
     columns = ['杭州', '宁波', '温州', '绍兴', '湖州', '嘉兴', '金华', '衢州']
 
     constructor() { }
 
     ngOnInit() { }
+
+    onCancel(e: MouseEvent): void {
+       console.log(e)
+    }
+    onConfirm(e: MouseEvent): void {
+        console.log(e)
+    }
 
 }
 
