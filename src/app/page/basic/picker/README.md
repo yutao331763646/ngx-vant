@@ -98,154 +98,55 @@ export class PickerComponent implements OnInit {
 
 ### 多列选择
 
-`columns` 属性可以通过对象数组的形式配置多列选择，对象中可以配置选项数据、初始选中项等，详细格式见[下方表格](#/zh-CN/picker#column-shu-ju-jie-gou)。
-
-```html
-<van-picker show-toolbar title="标题" :columns="columns" />
-```
+`columns` 属性可以通过对象数组的形式配置多列选择，对象中可以配置选项数据、初始选中项等，详细格式见。
 
 ```js
-export default {
-  data() {
-    return {
-      columns: [
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+    selector: 'app-picker',
+    template: `
+        <van-picker
+            title='标题'
+            [showToolbar]='true'
+            [columns]='columns'
+            (cancel)="onCancel($event)"
+            (confirm)="onConfirm($event)"
+        ></van-picker>
+    `
+})
+export class PickerComponent implements OnInit {
+
+    columns :string[] = [
         // 第一列
         {
-          values: ['周一', '周二', '周三', '周四', '周五'],
-          defaultIndex: 2,
+            values: ['周一', '周二', '周三', '周四', '周五'],
+            defaultIndex: 2,
         },
         // 第二列
         {
-          values: ['上午', '下午', '晚上'],
-          defaultIndex: 1,
+            values: ['上午', '下午', '晚上'],
+            defaultIndex: 1,
         },
-      ],
-    };
-  },
-};
+    ]
+
+    constructor() { }
+
+    ngOnInit() { }
+
+    onCancel(e: MouseEvent): void {
+       console.log(e)
+    }
+    onConfirm(e: MouseEvent): void {
+        console.log(e)
+    }
+
+}
 ```
 
-### 级联选择
 
-使用 `columns` 的 `children` 字段可以实现选项级联的效果（从 2.4.5 版本开始支持）。
 
-```html
-<van-picker show-toolbar title="标题" :columns="columns" />
-```
 
-```js
-export default {
-  data() {
-    return {
-      columns: [
-        {
-          text: '浙江',
-          children: [
-            {
-              text: '杭州',
-              children: [{ text: '西湖区' }, { text: '余杭区' }],
-            },
-            {
-              text: '温州',
-              children: [{ text: '鹿城区' }, { text: '瓯海区' }],
-            },
-          ],
-        },
-        {
-          text: '福建',
-          children: [
-            {
-              text: '福州',
-              children: [{ text: '鼓楼区' }, { text: '台江区' }],
-            },
-            {
-              text: '厦门',
-              children: [{ text: '思明区' }, { text: '海沧区' }],
-            },
-          ],
-        },
-      ],
-    };
-  },
-};
-```
-
-> 级联选择的数据嵌套深度需要保持一致，如果部分选项没有子选项，可以使用空字符串进行占位
-
-### 禁用选项
-
-选项可以为对象结构，通过设置 `disabled` 来禁用该选项。
-
-```html
-<van-picker show-toolbar :columns="columns" />
-```
-
-```js
-export default {
-  data() {
-    return {
-      columns: [
-        { text: '杭州', disabled: true },
-        { text: '宁波' },
-        { text: '温州' },
-      ],
-    };
-  },
-};
-```
-
-### 动态设置选项
-
-通过 Picker 上的实例方法可以更灵活地控制选择器，比如使用 `setColumnValues` 方法实现多列联动。
-
-```html
-<van-picker show-toolbar :columns="columns" @change="onChange" />
-```
-
-```js
-const cities = {
-  浙江: ['杭州', '宁波', '温州', '嘉兴', '湖州'],
-  福建: ['福州', '厦门', '莆田', '三明', '泉州'],
-};
-
-export default {
-  data() {
-    return {
-      columns: [{ values: Object.keys(cities) }, { values: cities['浙江'] }],
-    };
-  },
-  methods: {
-    onChange(picker, values) {
-      picker.setColumnValues(1, cities[values[0]]);
-    },
-  },
-};
-```
-
-### 加载状态
-
-若选择器数据是异步获取的，可以通过 `loading` 属性显示加载提示。
-
-```html
-<van-picker show-toolbar :columns="columns" :loading="loading" />
-```
-
-```js
-export default {
-  data() {
-    return {
-      columns: [],
-      loading: true,
-    };
-  },
-  created() {
-    setTimeout(() => {
-      this.loading = false;
-      this.columns = ['选项'];
-    }, 1000);
-  },
-};
-```
 
 ### 搭配弹出层使用
 

@@ -19,12 +19,29 @@ export class PickerComponent implements OnInit {
         //     defaultIndex: 1,
         // },
     ]
+    columns2 = [
+        // 第一列
+        {
+            values: ['周一', '周二', '周三', '周四', '周五'],
+            defaultIndex: 2,
+        },
+        // 第二列
+        {
+            values: ['上午', '下午', '晚上'],
+            defaultIndex: 1,
+        },
+    ]
+    columns3=[
+        { text: '杭州', disabled: true },
+        { text: '宁波' },
+        { text: '温州' },
+    ]
     constructor() { }
 
     ngOnInit() {
     }
     onCancel(e: MouseEvent): void {
-       console.log(e)
+        console.log(e)
     }
     onConfirm(e: MouseEvent): void {
         console.log(e)
