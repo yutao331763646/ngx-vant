@@ -1,6 +1,6 @@
 {
   "name": "ngx-vant",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "scripts": {
     "ng": "ng",
     "bootstrap": "yarn || npm i",
@@ -10,9 +10,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build_lib": "ng build  --configuration production ngx-vant",
+    "build_lib": "ng build  ngx-vant",
     "npm_pack": "cd ./dist/ngx-vant && npm pack",
-    "copy_style":"node ./scripts/copyStyle.js",
+    "copy_style": "node ./scripts/copyStyle.js",
     "package": "npm run build_lib && npm run npm_pack && npm run copy_style"
   },
   "private": false,
@@ -51,7 +51,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
-    "ng-packagr": "^12.1.2",
+    "ng-packagr": "^12.1.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",

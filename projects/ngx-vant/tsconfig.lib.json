@@ -2,38 +2,31 @@
 {
     "extends": "../../tsconfig.json",
     "compilerOptions": {
+        "baseUrl": "./",
         "outDir": "../../out-tsc/lib",
-        "target": "es2015",
-        // "baseUrl": ".",
-        // "rootDir": ".",
-        // "paths": {
-        //     "ngx-vant/*": [
-        //         "./*"
-        //     ]
-        // },
-        "typeRoots": [
-            "node_modules/@types"
-        ],
+        "alwaysStrict": true,
         "declaration": true,
-        "declarationMap": true,
         "inlineSources": true,
-        // "types": [
-        //     "jasmine"
-        // ],
-        "lib": [
-            "dom",
-            "es2018"
-        ]
+        "declarationMap": true,
+        "lib": ["es2018", "dom"],
+        "sourceMap": true,
+        "strictFunctionTypes": true,
+        "stripInternal": true,
+        "target": "es2015"
     },
     "angularCompilerOptions": {
+        "strictInputAccessModifiers": true,
         "skipTemplateCodegen": true,
         "strictMetadataEmit": true,
-        "enableResourceInlining": true
+        "enableResourceInlining": true,
+        "fullTemplateTypeCheck": true,
+        "strictTemplates": true,
+        "strictInjectionParameters": true
     },
-    // "exclude": [
+    //   "exclude": [
     //     "src/test.ts",
     //     "**/*.spec.ts"
-    // ],
+    //   ],
     "include": [
         "**/*.ts",
         "./**/*.ts"

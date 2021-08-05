@@ -3,6 +3,7 @@
   "dest": "../../dist/ngx-vant",
   "deleteDestPath": true,
   "lib": {
+    "flatModuleFile": "ngx-vant",
     "entryFile": "./public-api"
   },
   "allowedNonPeerDependencies": [ "@vant/icons"]
