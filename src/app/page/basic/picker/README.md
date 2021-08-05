@@ -163,7 +163,7 @@ export class PickerComponent implements OnInit {
 | toolbarPosition | 顶部栏位置，可选值为`bottom` | _string_ | `top` |
 | loading | 是否显示加载状态 | _boolean_ | `false` |
 | readonly  | 是否为只读状态，只读状态下无法切换选项 | _boolean_ | `false` |
-| show-toolbar | 是否显示顶部栏 | _boolean_ | `false` |
+| showToolbar | 是否显示顶部栏 | _boolean_ | `false` |
 | allow-html | 是否允许选项内容中渲染 HTML | _boolean_ | `true` |
 | default-index | 单列选择时，默认选中项的索引 | _number \| string_ | `0` |
 | item-height `v2.8.6` | 选项高度，支持 `px` `vw` `vh` `rem` 单位，默认 `px` | _number \| string_ | `44` |
