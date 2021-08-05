@@ -31,9 +31,9 @@ import { Component, OnInit } from '@angular/core';
     selector: 'app-picker',
     template: `
         <van-picker
+            title='标题'
             [showToolbar]='true'
             [columns]='columns'
-            title='标题'
             (cancel)="onCancel($event)"
             (confirm)="onConfirm($event)"
         ></van-picker>
