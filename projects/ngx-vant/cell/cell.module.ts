@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CellComponent } from './cell.component';
-import { IconModule } from '../icon/icon.module';
-import { DirectiveModule } from '../directive/directive.module';
+import { IconModule } from 'ngx-vant/icon';
+import { DirectiveModule } from 'ngx-vant/directive';
 
 @NgModule({
     imports: [
