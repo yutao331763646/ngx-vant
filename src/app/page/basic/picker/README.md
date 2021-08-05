@@ -190,7 +190,7 @@ export class PickerComponent implements OnInit {
 | values            | 列中对应的备选值           | _string[]_ |
 | defaultIndex      | 初始选中项的索引，默认为 0 | _number_   |
 | className         | 为对应列添加额外的类名     | _any_      |
-| children `v2.4.5` | 级联选项                   | _Column_   |
+| children | 级联选项                   | _Column_   |
 
 ### 方法
 
