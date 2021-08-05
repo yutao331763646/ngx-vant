@@ -2,12 +2,12 @@
 
 ### 介绍
 
-提供多个选项集合供用户选择，支持单列选择和多列级联，通常与[弹出层](#/zh-CN/popup)组件配合使用。
+提供多个选项集合供用户选择，支持单列选择和多列级联，通常与[弹出层](#/basic/popup)组件配合使用。
 
 ### 引入
 
 ```js
-import PickerModule from 'VantModule';
+import PickerModule from 'ngx-vant';
 ```
 
 ## 代码演示
@@ -20,7 +20,7 @@ Picker 组件通过 `columns` 属性配置选项数据，`columns` 是一个包�
 
 #### 顶部栏
 
-设置 `show-toolbar` 属性后会展示顶部操作栏，顶部栏包含标题、确认按钮和取消按钮，点击确认按钮触发 `confirm` 事件，点击取消按钮触发 `cancel` 事件。
+设置 `showToolbar` 属性后会展示顶部操作栏，顶部栏包含标题、确认按钮和取消按钮，点击确认按钮触发 `confirm` 事件，点击取消按钮触发 `cancel` 事件。
 
 
 
