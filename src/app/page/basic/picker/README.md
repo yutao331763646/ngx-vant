@@ -179,7 +179,6 @@ export class PickerComponent implements OnInit {
 | confirm | 点击完成按钮时触发 | 单列：选中值，选中值对应的索引<br>多列：所有列选中值，所有列选中值对应的索引 |
 | cancel | 点击取消按钮时触发 | 单列：选中值，选中值对应的索引<br>多列：所有列选中值，所有列选中值对应的索引 |
 
-                       |
 
 ### Column 数据结构
 
