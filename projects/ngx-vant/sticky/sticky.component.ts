@@ -1,6 +1,6 @@
 import { Component, ElementRef, Input, OnDestroy, OnInit } from '@angular/core';
 import { fromEvent, Subscription } from 'rxjs';
-import { getElementTop, getScroller, getScrollTop } from '../utils';
+import { getElementTop, getScroller, getScrollTop } from '../utils/com';
 
 @Component({
     selector: 'van-sticky',

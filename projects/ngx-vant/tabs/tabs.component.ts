@@ -1,6 +1,6 @@
 import { Component, ContentChildren, ElementRef, Input, OnInit, QueryList, TemplateRef, ViewChild, ViewChildren, ViewEncapsulation } from '@angular/core';
 import { TabComponent } from '../tab/tab.component';
-import { addUnit, scrollLeftTo } from '../utils';
+import { addUnit, scrollLeftTo } from '../utils/com';
 export type TabsType = 'line' | 'card';
 @Component({
     selector: 'van-tabs',

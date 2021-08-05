@@ -4,13 +4,25 @@
     "compilerOptions": {
         "outDir": "../../out-tsc/lib",
         "target": "es2015",
+        // "baseUrl": ".",
+        // "rootDir": ".",
+        // "paths": {
+        //     "ngx-vant/*": [
+        //         "./*"
+        //     ]
+        // },
+        "typeRoots": [
+            "node_modules/@types"
+        ],
         "declaration": true,
         "declarationMap": true,
         "inlineSources": true,
-        "types": [],
+        // "types": [
+        //     "jasmine"
+        // ],
         "lib": [
-          "dom",
-          "es2018"
+            "dom",
+            "es2018"
         ]
     },
     "angularCompilerOptions": {
@@ -18,12 +30,12 @@
         "strictMetadataEmit": true,
         "enableResourceInlining": true
     },
-      "exclude": [
-        "src/test.ts",
-        "**/*.spec.ts"
-      ],
-    // "include": [
-    //     "**/*.ts",
-    //     "./**/*.ts"
-    // ]
+    // "exclude": [
+    //     "src/test.ts",
+    //     "**/*.spec.ts"
+    // ],
+    "include": [
+        "**/*.ts",
+        "./**/*.ts"
+    ]
 }

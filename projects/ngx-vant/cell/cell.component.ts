@@ -1,5 +1,5 @@
 import { Component, ElementRef, EventEmitter, Input, OnInit, Output, TemplateRef } from '@angular/core';
-import { removeNgTag } from '../utils';
+import { removeNgTag } from '../utils/com';
 
 @Component({
     selector: 'van-cell',

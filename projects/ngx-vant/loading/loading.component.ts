@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { addUnit } from '../utils';
+import {addUnit} from 'ngx-vant/utils'
 export type LoadingType = 'spinner' | 'circular'
 
 @Component({

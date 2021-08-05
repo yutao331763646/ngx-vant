@@ -1,5 +1,5 @@
 import { Component, ElementRef, Input, OnInit, SimpleChanges, ViewChild } from '@angular/core';
-import { addUnit, removeNgTag } from '../utils';
+import { addUnit, removeNgTag } from '../utils/com';
 @Component({
     selector: 'van-progress',
     templateUrl: './progress.component.html',

@@ -3,7 +3,7 @@ import {
     ElementRef,
     OnInit,
 } from '@angular/core';
-import { removeNgTag } from '../utils';
+import { removeNgTag } from '../utils/com';
 @Component({
     selector: 'vant-notify',
     templateUrl: './notify.component.html',

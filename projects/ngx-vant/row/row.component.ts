@@ -1,6 +1,6 @@
 import { AfterContentInit, Component, ContentChildren, ElementRef, EventEmitter, Input, OnInit, Output, QueryList } from '@angular/core';
 import { ColComponent } from '../col/col.component';
-import { removeNgTag } from '../utils';
+import { removeNgTag } from '../utils/com';
 
 export type RowType = 'flex' | ''
 export type RowAlign = 'top' | 'center' | 'bottom';

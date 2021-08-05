@@ -1,6 +1,6 @@
 import { Component, ElementRef, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
-import { LoadingType } from '../loading/loading.component';
-import { removeNgTag } from '../utils';
+import { LoadingType } from 'ngx-vant/loading';
+import { removeNgTag } from 'ngx-vant/utils';
 
 export type ButtonType = 'default' | 'primary' | 'info' | 'warning' | 'danger';
 export type ButtonSize = 'large' | 'normal' | 'small' | 'mini';
