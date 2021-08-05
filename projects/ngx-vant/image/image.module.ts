@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ImageComponent } from './image.component';
-import { IconModule } from '../icon/icon.module';
+import { IconModule } from 'ngx-vant/icon';
 
 @NgModule({
     imports: [

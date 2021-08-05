@@ -11,4 +11,4 @@ import { DirectiveModule } from 'ngx-vant/directive';
     exports: [CellComponent],
     declarations: [CellComponent]
 })
-export class CelModule { }
+export class CellModule { }

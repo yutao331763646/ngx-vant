@@ -1,5 +1,5 @@
 import { Component, ElementRef, EventEmitter, Input, OnChanges, OnInit, Output, Renderer2 } from '@angular/core';
-import { removeNgTag } from '../utils/com';
+import { removeNgTag } from 'ngx-vant/utils';
 export function isNotNil<T>(value: T): value is NonNullable<T> {
     return typeof value !== 'undefined' && value !== null;
 }

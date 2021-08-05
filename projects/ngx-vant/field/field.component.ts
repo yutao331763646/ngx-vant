@@ -1,5 +1,5 @@
 import { Component, ElementRef, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges, TemplateRef } from '@angular/core';
-import { addUnit, removeNgTag } from '../utils/com';
+import { addUnit, removeNgTag } from 'ngx-vant/utils';
 export type FieldType = 'tel' | 'digit' | 'number' | 'textarea' | 'password' | 'text'
 
 @Component({

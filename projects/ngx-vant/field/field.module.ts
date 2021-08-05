@@ -4,8 +4,8 @@ import { FieldComponent } from './field.component';
 import { FormsModule } from '@angular/forms';
 
 
-import { CellModule } from '../cell/index.module'
-import { IconModule } from '../icon/icon.module';
+import { CellModule } from 'ngx-vant/cell'
+import { IconModule } from 'ngx-vant/icon';
 @NgModule({
     imports: [
         CommonModule, CellModule,FormsModule,IconModule

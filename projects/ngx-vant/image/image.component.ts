@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { addUnit } from '../utils/com';
+import { addUnit } from 'ngx-vant/utils';
 
 export type ImgageFit = 'contain' | 'cover' | 'fill' | 'none' | 'scale-down';
 
