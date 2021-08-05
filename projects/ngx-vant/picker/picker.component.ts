@@ -1,5 +1,5 @@
 import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
-import { isDef } from '../utils/com';
+import { isDef } from 'ngx-vant/utils';
 export const inBrowser = typeof window !== 'undefined';
 export const DEFAULT_ITEM_HEIGHT = 44;
 let rootFontSize: number;
