@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavBarComponent } from './nav-bar.component';
-import { IconModule } from '../icon/icon.module';
+import { IconModule } from 'ngx-vant/icon';
 
 @NgModule({
   imports: [

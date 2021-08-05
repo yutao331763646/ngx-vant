@@ -1,5 +1,5 @@
 import { Component, ElementRef, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { removeNgTag } from '../utils/com';
+import { removeNgTag } from 'ngx-vant/utils';
 
 @Component({
     selector: 'van-nav-bar',
