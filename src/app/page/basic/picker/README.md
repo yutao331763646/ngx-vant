@@ -159,10 +159,10 @@ export class PickerComponent implements OnInit {
 | title | 顶部栏标题 | _string_ | - |
 | confirmButtonText | 确认按钮文字 | _string_ | `确认` |
 | cancelButtonText | 取消按钮文字 | _string_ | `取消` |
-| value-key | 选项对象中，选项文字对应的键名 | _string_ | `text` |
-| toolbar-position | 顶部栏位置，可选值为`bottom` | _string_ | `top` |
+| valueKey | 选项对象中，选项文字对应的键名 | _string_ | `text` |
+| toolbarPosition | 顶部栏位置，可选值为`bottom` | _string_ | `top` |
 | loading | 是否显示加载状态 | _boolean_ | `false` |
-| readonly `v2.10.5` | 是否为只读状态，只读状态下无法切换选项 | _boolean_ | `false` |
+| readonly  | 是否为只读状态，只读状态下无法切换选项 | _boolean_ | `false` |
 | show-toolbar | 是否显示顶部栏 | _boolean_ | `false` |
 | allow-html | 是否允许选项内容中渲染 HTML | _boolean_ | `true` |
 | default-index | 单列选择时，默认选中项的索引 | _number \| string_ | `0` |
