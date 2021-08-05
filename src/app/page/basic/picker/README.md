@@ -148,46 +148,6 @@ export class PickerComponent implements OnInit {
 
 
 
-### 搭配弹出层使用
-
-在实际场景中，Picker 通常作为用于辅助表单填写，可以搭配 Popup 和 Field 实现该效果。
-
-```html
-<van-field
-  readonly
-  clickable
-  label="城市"
-  :value="value"
-  placeholder="选择城市"
-  @click="showPicker = true"
-/>
-<van-popup v-model="showPicker" round position="bottom">
-  <van-picker
-    show-toolbar
-    :columns="columns"
-    @cancel="showPicker = false"
-    @confirm="onConfirm"
-  />
-</van-popup>
-```
-
-```js
-export default {
-  data() {
-    return {
-      value: '',
-      showPicker: false,
-      columns: ['杭州', '宁波', '温州', '绍兴', '湖州', '嘉兴', '金华', '衢州'],
-    };
-  },
-  methods: {
-    onConfirm(value) {
-      this.value = value;
-      this.showPicker = false;
-    },
-  },
-};
-```
 
 ## API
 
