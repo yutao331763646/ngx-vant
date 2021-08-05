@@ -192,7 +192,7 @@ export class PickerComponent implements OnInit {
 | className         | 为对应列添加额外的类名     | _any_      |
 | children | 级联选项                   | _Column_   |
 
-### 方法
+<!-- ### 方法
 
 通过 ref 可以获取到 Picker 实例并调用实例方法，详见[组件实例方法](#/zh-CN/advanced-usage#zu-jian-shi-li-fang-fa)。
 
@@ -208,7 +208,7 @@ export class PickerComponent implements OnInit {
 | setColumnIndex | 设置对应列选中项的索引 | columnIndex, optionIndex | - |
 | getColumnValues | 获取对应列中所有选项 | columnIndex | values |
 | setColumnValues | 设置对应列中所有选项 | columnIndex, values | - |
-| confirm `v2.4.0` | 停止惯性滚动并触发 confirm 事件 | - | - |
+| confirm `v2.4.0` | 停止惯性滚动并触发 confirm 事件 | - | - | -->
 
 ### 样式变量
 
