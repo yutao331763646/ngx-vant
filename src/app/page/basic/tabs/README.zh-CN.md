@@ -3,7 +3,7 @@
 ### 引入
 
 ```js
-import VantTabsModule from 'VantModule';
+import VantTabsModule from 'VantModule/tabs';
 ```
 
 ## 代码演示
