@@ -7,7 +7,7 @@
 ### 引入
 
 ```js
-import ToastModule from 'VantModule';
+import ToastModule from 'VantModule/toast';
 ```
 
 ## 代码演示
