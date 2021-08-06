@@ -7,8 +7,8 @@ Layout 提供了 `van-row` 和 `van-col` 两个组件来进行行列布局。
 ### 引入
 
 ```js
-import RowModule from 'ngx-vant'; 
-import ColModule from 'ngx-vant';
+import RowModule from 'ngx-vant/row'; 
+import ColModule from 'ngx-vant/col';
 ```
 
 ## 代码演示
