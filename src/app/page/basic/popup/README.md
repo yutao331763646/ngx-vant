@@ -7,7 +7,7 @@
 ### 引入
 
 ```js
-import PopupModule from 'VantModule';
+import PopupModule from 'VantModule/popup';
 ```
 
 ## 代码演示
