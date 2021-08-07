@@ -25,10 +25,10 @@ import StickyModule from 'VantModule/tabs';
 
 ### 吸顶距离
 
-通过 `offset-top` 属性可以设置组件在吸顶时与顶部的距离。
+通过 `offsetTop` 属性可以设置组件在吸顶时与顶部的距离。
 
 ```html
-<van-sticky :offset-top="50">
+<van-sticky [offsetTop]="50">
   <van-button type="info">吸顶距离</van-button>
 </van-sticky>
 ```
