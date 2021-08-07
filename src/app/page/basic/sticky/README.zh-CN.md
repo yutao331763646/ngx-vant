@@ -41,8 +41,7 @@ import StickyModule from 'VantModule/tabs';
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| offset-top  | 吸顶时与顶部的距离，支持 `px` `vw` `vh` `rem` 单位，默认 `px` | _number \| string_ | `0` |
-| z-index | 吸顶时的 z-index | _number \| string_ | `99` |
+| offsetTop  | 吸顶时与顶部的距离，支持 `px` `vw` `vh` `rem` 单位，默认 `px` | _number \| string_ | `0` |
 
 ### Events
 
