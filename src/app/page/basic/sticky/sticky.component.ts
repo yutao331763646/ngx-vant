@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { cardWrapper } from 'src/app/common/card-wrapper';
 
 @Component({
   selector: 'app-sticky',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StickyComponent implements OnInit {
 
-  constructor() { }
+    private _readMe: HTMLElement | string = '';
+    @Input() set readMe(readMe: HTMLElement | string) {
+        this._readMe = readMe;
+    }
+    get readMe() {
+        return cardWrapper(this._readMe);
+    }
+    constructor() { }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+        this.setReadMe()
+    }
+    setReadMe() {
+        this.readMe = require(`!html-loader!markdown-loader!./README.zh-CN.md`).default;
+    }
 
 }
