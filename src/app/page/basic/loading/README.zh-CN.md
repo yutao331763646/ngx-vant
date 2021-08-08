@@ -7,10 +7,7 @@
 ### 引入
 
 ```js
-import Vue from 'vue';
-import { Loading } from 'vant';
-
-Vue.use(Loading);
+import LoadingModule from 'VantModule';
 ```
 
 ## 代码演示
