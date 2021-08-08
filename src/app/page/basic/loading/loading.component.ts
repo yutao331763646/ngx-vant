@@ -7,6 +7,13 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./loading.component.scss']
 })
 export class LoadingComponent implements OnInit {
+    private _readMe: HTMLElement | string = '';
+    @Input() set readMe(readMe: HTMLElement | string) {
+        this._readMe = readMe;
+    }
+    get readMe() {
+        return cardWrapper(this._readMe);
+    }
     cards = [{
         title: '介绍',
         desc: '加载图标，用于表示加载中的过渡状态。'
