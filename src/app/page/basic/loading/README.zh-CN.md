@@ -7,7 +7,7 @@
 ### 引入
 
 ```js
-import LoadingModule from 'VantModule';
+import LoadingModule from 'VantModule/loading';
 ```
 
 ## 代码演示
