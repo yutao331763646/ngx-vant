@@ -91,11 +91,6 @@ import LoadingModule from 'VantModule/loading';
 | textSize | 文字大小，默认单位为`px`     | _number \| string_ | `14px`     |
 | vertical  | 是否垂直排列图标和文字内容   | _boolean_          | `false`    |
 
-### Slots
-
-| 名称    | 说明     |
-| ------- | -------- |
-| default | 加载文案 |
 
 ### 样式变量
 
