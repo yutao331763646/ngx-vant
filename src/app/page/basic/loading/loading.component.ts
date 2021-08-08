@@ -3,9 +3,9 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { cardWrapper } from 'src/app/common/card-wrapper';
 
 @Component({
-  selector: 'app-loading',
-  templateUrl: './loading.component.html',
-  styleUrls: ['./loading.component.scss']
+    selector: 'app-loading',
+    templateUrl: './loading.component.html',
+    styleUrls: ['./loading.component.scss']
 })
 export class LoadingComponent implements OnInit {
     private _readMe: HTMLElement | string = '';
@@ -26,13 +26,17 @@ export class LoadingComponent implements OnInit {
     }]
     cards2 = [{
         title: '按钮类型',
-        desc:this.sanitizer.bypassSecurityTrustHtml('通过 <code>type</code> 属性可以设置加载图标的类型，默认为 <code>circular</code>，可选值为 <code>spinner</code>。') ,
+        desc: this.sanitizer.bypassSecurityTrustHtml('通过 <code>type</code> 属性可以设置加载图标的类型，默认为 <code>circular</code>，可选值为 <code>spinner</code>。'),
         code: `  <van-loading />
   <van-loading type="spinner" /> `
     }]
-  constructor(  private sanitizer: DomSanitizer) { }
+    constructor(private sanitizer: DomSanitizer) { }
 
-  ngOnInit() {
-  }
 
+    ngOnInit() {
+        this.setReadMe()
+    }
+    setReadMe() {
+        this.readMe = require(`!html-loader!markdown-loader!./README.zh-CN.md`).default;
+    }
 }
