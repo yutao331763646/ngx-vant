@@ -37,9 +37,15 @@ import LoadingModule from 'VantModule/loading';
 通过 `size` 属性设置加载图标的大小，默认单位为 `px`。
 
 ```html
-<van-loading size="24" />
-
-<van-loading type="spinner" size="24px" />
+<van-loading
+    color="#1989fa"
+    [size]="54"
+></van-loading>
+<van-loading
+    type="spinner"
+    color="red"
+    size="26px"
+></van-loading>
 ```
 
 ### 加载文案
@@ -55,7 +61,22 @@ import LoadingModule from 'VantModule/loading';
 设置 `vertical` 属性后，图标和文案会垂直排列。
 
 ```html
-<van-loading size="24px" vertical>加载中...</van-loading>
+<van-loading
+    size="24px"
+    [vertical]='true'
+>
+    加载中...
+</van-loading>
+```
+### 自定义文案颜色
+
+
+
+```html
+<!-- 可修改文案和加载图标的颜色 -->
+<van-loading color="#0094ff">加载中...</van-loading>
+<!-- 只修改文案颜色 -->
+<van-loading textColor="#0094ff">加载中...</van-loading>
 ```
 
 ## API
