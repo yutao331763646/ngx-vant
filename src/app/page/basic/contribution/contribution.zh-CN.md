@@ -30,7 +30,7 @@ npm run doc
 
 ### 目录结构
 
-- 仓库的组件代码位于 projects/ngx-vant 下，每个组件一个文件夹
+- 仓库的组件代码位于 library/ngx-vant 下，每个组件一个文件夹
 - src/app/page/basic 目录下是文档网站的代码，本地开发时可以在目录下运行 npm run doc 开启文档网站
 - src/app/page/mobile 目录下是示例代码
 

@@ -45,13 +45,14 @@ import { StickyModule } from "ngx-vant/sticky";
 import { PickerModule } from "ngx-vant/picker";
 import { TabModule } from "ngx-vant/tab";
 import { CellGroupModule } from "ngx-vant/cell-group";
+import { zh_CN, VANT_I18N, Vant18nModule } from 'ngx-vant/i18n';
 
 const NGX_VANT=[
     IconModule,ButtonModule,LoadingModule,
     NavBarModule,ImageModule,RowModule,ColModule,
     ToastModule,ProgressModule,CellModule,CellGroupModule,FieldModule,
     OverlayModule,PopupModule,TabsModule,TabModule,NotifyModule,
-    TagModule,StickyModule,PickerModule
+    TagModule,StickyModule,PickerModule,Vant18nModule
 ]
 
 @NgModule({
@@ -59,6 +60,7 @@ const NGX_VANT=[
         RouterModule, CommonModule,
         ...NGX_VANT
     ],
+    providers: [{ provide: VANT_I18N, useValue: zh_CN }],
 
     declarations: [
         ButtonComponent, NavComponent, DemoComponent,
