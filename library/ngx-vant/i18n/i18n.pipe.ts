@@ -4,7 +4,7 @@ import { VantI18nService } from './i18n.service';
 @Pipe({
     name: 'vantI18n'
 })
-export class I18nPipe implements PipeTransform {
+export class VantI18nPipe implements PipeTransform {
     private localeId: any;
     private catchContent: any;
     constructor(private locale: VantI18nService) { }

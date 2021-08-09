@@ -1,13 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { I18nPipe } from './i18n.pipe';
+import { VantI18nPipe } from './i18n.pipe';
+import { VantI18nDirective } from './i18n.directive';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [	
-      I18nPipe
-   ]
+    imports: [
+        CommonModule
+    ],
+    exports:[
+        VantI18nPipe,
+        VantI18nDirective 
+    ],
+    declarations: [
+        VantI18nPipe,
+        VantI18nDirective
+    ]
 })
-export class I18nModule { }
+export class Vant18nModule { }
