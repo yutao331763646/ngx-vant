@@ -12,10 +12,18 @@
                         target="_blank"
                         [href]="'https://github.com/yutao331763646/ngx-vant'"
                     >
-                        <img class="logogithub" src="https://b.yzcdn.cn/vant/logo/github.svg">
+                        <img
+                            class="logogithub"
+                            src="https://b.yzcdn.cn/vant/logo/github.svg"
+                        >
                     </a>
                 </li>
-
+                <li
+                    class="van-doc-header__top-nav-item"
+                    (click)="onSwitchLang()"
+                >
+                    <a class="van-doc-header__cube">{{lang}}</a>
+                </li>
             </ul>
         </div>
     </div>
