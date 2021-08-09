@@ -2,15 +2,22 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { VantI18nService } from './i18n.service';
 
 @Pipe({
-  name: 'vantI18n'
+    name: 'vantI18n'
 })
 export class I18nPipe implements PipeTransform {
     private localeId: any;
     private catchContent: any;
-    constructor(private locale: VantI18nService) {}
-  
-  transform(value: any, args?: any): any {
-    return null;
-  }
+    constructor(private locale: VantI18nService) { }
+
+    transform(path: string, keyValue?: object) {
+        const localeId = this.locale.getLocaleId();
+        const content = this.locale.translate(path, keyValue);
+        if (this.localeId !== localeId || this.catchContent !== content) {
+            this.catchContent = content;
+            this.localeId = localeId;
+        }
+
+        return this.catchContent;
+    }
 
 }
