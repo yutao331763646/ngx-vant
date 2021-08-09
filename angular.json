@@ -146,18 +146,18 @@
         },
         "ngx-vant": {
             "projectType": "library",
-            "root": "projects/ngx-vant",
-            "sourceRoot": "projects/ngx-vant/src",
+            "root": "library/ngx-vant",
+            "sourceRoot": "library/ngx-vant/src",
             "prefix": "van",
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-angular:ng-packagr",
                     "options": {
-                        "project": "projects/ngx-vant/ng-package.json"
+                        "project": "library/ngx-vant/ng-package.json"
                     },
                     "configurations": {
                         "production": {
-                            "tsConfig": "projects/ngx-vant/tsconfig.lib.prod.json"
+                            "tsConfig": "library/ngx-vant/tsconfig.lib.prod.json"
                         }
                     },
                     "defaultConfiguration": "production"
@@ -165,17 +165,17 @@
                 "test": {
                     "builder": "@angular-devkit/build-angular:karma",
                     "options": {
-                        "main": "projects/ngx-vant/src/test.ts",
-                        "tsConfig": "projects/ngx-vant/tsconfig.spec.json",
-                        "karmaConfig": "projects/ngx-vant/karma.conf.js"
+                        "main": "library/ngx-vant/src/test.ts",
+                        "tsConfig": "library/ngx-vant/tsconfig.spec.json",
+                        "karmaConfig": "library/ngx-vant/karma.conf.js"
                     }
                 },
                 "lint": {
                     "builder": "@angular-devkit/build-angular:tslint",
                     "options": {
                         "tsConfig": [
-                            "projects/ngx-vant/tsconfig.lib.json",
-                            "projects/ngx-vant/tsconfig.spec.json"
+                            "library/ngx-vant/tsconfig.lib.json",
+                            "library/ngx-vant/tsconfig.spec.json"
                         ],
                         "exclude": [
                             "**/node_modules/**"

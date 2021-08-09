@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NotifyService } from 'projects/ngx-vant/notify/notify.service';
+import { NotifyService } from 'ngx-vant/notify/notify.service';
 @Component({
     selector: 'app-notify',
     templateUrl: './notify.component.html',

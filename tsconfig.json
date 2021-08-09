@@ -22,7 +22,7 @@
         ],
         "paths": {
             "ngx-vant/*": [
-                "projects/ngx-vant/*"
+                "library/ngx-vant/*"
             ]
         },
     },
