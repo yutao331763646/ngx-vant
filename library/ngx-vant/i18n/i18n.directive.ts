@@ -1,7 +1,15 @@
-import { Directive, ElementRef, Input, OnChanges, OnDestroy, SimpleChanges } from '@angular/core';
+import { Directive, ElementRef, Input, OnChanges, OnDestroy, SimpleChange, SimpleChanges } from '@angular/core';
 import { Subject } from 'rxjs';
 import { VantI18nService } from './i18n.service';
 import { takeUntil } from 'rxjs/operators';
+
+// 值改变判断
+export const VantIsChange = (...changes: SimpleChange[]) => {
+    for (let change of changes) {
+        if (change?.currentValue !== change?.previousValue) return true;
+    }
+    return false;
+};
 @Directive({
     selector: '[vant-i18n]'
 })
@@ -13,10 +21,11 @@ export class VantI18nDirective implements OnChanges, OnDestroy {
     }
 
     ngOnDestroy(): void {
-        throw new Error('Method not implemented.');
+        this._unSubject.next();
+        this._unSubject.complete();
     }
     ngOnChanges(changes: SimpleChanges): void {
-        throw new Error('Method not implemented.');
+        VantIsChange(changes.path) && this.setLocale();
     }
     setLocale() {
         if (typeof this.path !== 'undefined') {
