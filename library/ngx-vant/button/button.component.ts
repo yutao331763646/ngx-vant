@@ -1,6 +1,9 @@
-import { Component, ElementRef, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
+import { ChangeDetectorRef, Component, ElementRef, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
+import { VantI18nService } from 'ngx-vant/i18n';
 import { LoadingType } from 'ngx-vant/loading';
 import { removeNgTag } from 'ngx-vant/utils';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 export type ButtonType = 'default' | 'primary' | 'info' | 'warning' | 'danger';
 export type ButtonSize = 'large' | 'normal' | 'small' | 'mini';
@@ -39,11 +42,16 @@ export class ButtonComponent implements OnInit, OnChanges {
         this._plain = value;
     }
     private _plain: boolean = false;
-
+    private _unSubject = new Subject<void>();
     colorStyle: any = {}
-    constructor(private elementRef: ElementRef,) { }
+    constructor(
+        private elementRef: ElementRef,
+        public cdr: ChangeDetectorRef,
+        private vantI18nService:VantI18nService) { }
     ngOnInit() {
         removeNgTag(this.elementRef.nativeElement)
+        this.vantI18nService.localeChange.pipe(takeUntil(this._unSubject)).subscribe(() => this.cdr.markForCheck());
+
     }
     onClick(e: MouseEvent): void {
         this.click.emit(e);
@@ -51,6 +59,10 @@ export class ButtonComponent implements OnInit, OnChanges {
     onTouchstart(e: TouchEvent): void {
         this.touchstart.emit(e)
     }
+    ngOnDestory() {
+        this._unSubject.next();
+        this._unSubject.unsubscribe();
+      }
     ngOnChanges(changes: SimpleChanges) {
         if (changes.color) {
             this.colorStyle.color = this.plain ? changes.color.currentValue : 'white'
