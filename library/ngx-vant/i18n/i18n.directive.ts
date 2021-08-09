@@ -1,10 +1,16 @@
-import { Directive } from '@angular/core';
+import { Directive, OnChanges, OnDestroy, SimpleChanges } from '@angular/core';
 
 @Directive({
-  selector: '[appI18n]'
+    selector: '[vant-i18n]'
 })
-export class VantI18nDirective {
+export class VantI18nDirective implements OnChanges, OnDestroy {
 
-  constructor() { }
+    constructor() { }
+    ngOnDestroy(): void {
+        throw new Error('Method not implemented.');
+    }
+    ngOnChanges(changes: SimpleChanges): void {
+        throw new Error('Method not implemented.');
+    }
 
 }
