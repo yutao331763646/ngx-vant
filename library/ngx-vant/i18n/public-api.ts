@@ -6,3 +6,4 @@ export * from './i18n.prop'
 export * from './i18n.service'
 
 export { default as zh_CN } from './languages/zh_CN';
+export { default as en_US } from './languages/zh_CN';
