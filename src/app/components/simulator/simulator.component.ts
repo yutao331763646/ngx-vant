@@ -20,7 +20,8 @@ export class SimulatorComponent implements OnInit {
                 if(homeUrl.includes(mUrl)){
                     mUrl ='home'
                 }
-                this.src = this.sanitizer.bypassSecurityTrustResourceUrl(`${host[0]}/#/mobile/${mUrl}`);
+                // 从url获取国际化拼接移动端demo的url
+                this.src = this.sanitizer.bypassSecurityTrustResourceUrl(`${host[0]}/#/${host[1].split('/')[0]}/mobile/${mUrl}`);
             }
         })
     }

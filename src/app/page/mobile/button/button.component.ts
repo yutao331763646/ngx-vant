@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { VantI18nService } from 'ngx-vant/i18n';
 
 @Component({
   selector: 'app-button',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private vantI18n: VantI18nService,
+  ) { }
 
   ngOnInit() {
+      this.vantI18n.localeChange.subscribe(res=>{
+          console.log(res)
+      })
   }
 
 }

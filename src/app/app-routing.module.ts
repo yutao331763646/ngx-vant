@@ -20,6 +20,69 @@ import { TabsComponent } from './page/mobile/tabs/tabs.component';
 import { TagComponent } from './page/mobile/tag/tag.component';
 import { ToastComponent } from './page/mobile/toast/toast.component';
 
+
+
+
+const M_PATH = [
+    {
+        path: 'home',
+        component: MHomeComponent
+    },
+    {
+        path: 'button',
+        component: ButtonComponent
+    },
+    {
+        path: 'icon',
+        component: IconComponent
+    }, {
+        path: 'loading',
+        component: LoadingComponent
+    }, {
+        path: 'nav-bar',
+        component: NavBarComponent
+    }, {
+        path: 'image',
+        component: ImageComponent
+    }, {
+        path: 'layout',
+        component: LayoutComponent
+    }, {
+        path: 'toast',
+        component: ToastComponent
+    }, {
+        path: 'progress',
+        component: ProgressComponent
+    }
+    , {
+        path: 'cell',
+        component: CellComponent
+    }, {
+        path: 'field',
+        component: FieldComponent
+    }, {
+        path: 'overlay',
+        component: OverlayComponent
+    }, {
+        path: 'popup',
+        component: PopupComponent
+    }, {
+        path: 'tab',
+        component: TabsComponent
+    }, {
+        path: 'notify',
+        component: NotifyComponent
+    }, {
+        path: 'tag',
+        component: TagComponent
+    }, {
+        path: 'sticky',
+        component: StickyComponent
+    }, {
+        path: 'picker',
+        component: PickerComponent
+    }
+]
 const routes: Routes = [
     {
         path: '', loadChildren: () => import('./page/index/index.module').then(m => m.IndexModule)
@@ -33,72 +96,24 @@ const routes: Routes = [
         loadChildren: () => import('./page/en_US/en_US.module').then(m => m.En_USModule)
     },
     {
-        path: 'mobile',
+        path: 'zh_CN/mobile',
         component: MobileComponent,
         children: [
             {
-                path: '', redirectTo: '/mobile/home', pathMatch: 'full'
+                path: '', redirectTo: '/zh_CN/mobile/home', pathMatch: 'full'
             },
-            {
-                path: 'home',
-                component: MHomeComponent
-            },
-            {
-                path: 'button',
-                component: ButtonComponent
-            },
-            {
-                path: 'icon',
-                component: IconComponent
-            }, {
-                path: 'loading',
-                component: LoadingComponent
-            }, {
-                path: 'nav-bar',
-                component: NavBarComponent
-            }, {
-                path: 'image',
-                component: ImageComponent
-            }, {
-                path: 'layout',
-                component: LayoutComponent
-            }, {
-                path: 'toast',
-                component: ToastComponent
-            }, {
-                path: 'progress',
-                component: ProgressComponent
-            }
-            , {
-                path: 'cell',
-                component: CellComponent
-            }, {
-                path: 'field',
-                component: FieldComponent
-            }, {
-                path: 'overlay',
-                component: OverlayComponent
-            }, {
-                path: 'popup',
-                component: PopupComponent
-            }, {
-                path: 'tab',
-                component: TabsComponent
-            }, {
-                path: 'notify',
-                component: NotifyComponent
-            }, {
-                path: 'tag',
-                component: TagComponent
-            }, {
-                path: 'sticky',
-                component: StickyComponent
-            }, {
-                path: 'picker',
-                component: PickerComponent
-            }
+            ...M_PATH
         ]
-        // loadChildren: () => import('./page/mobile/mobile.module').then(m => m.MobileModule)
+    },
+    {
+        path: 'en_US/mobile',
+        component: MobileComponent,
+        children: [
+            {
+                path: '', redirectTo: '/en_US/mobile/home', pathMatch: 'full'
+            },
+            ...M_PATH
+        ]
     }
 ];
 
