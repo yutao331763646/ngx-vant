@@ -360,3 +360,354 @@ export const navConfig = [
       ],
     },
   ]
+
+export const navEnConfig = [
+    {
+      title: 'Essentials',
+      items: [
+        {
+          path: 'home',
+          title: 'Introduction',
+        },
+        {
+          path: 'quickstart',
+          title: 'Quickstart',
+        },
+        {
+          path: 'advanced-usage',
+          title: 'Advanced Usage',
+        },
+        {
+          path: 'changelog',
+          title: 'Changelog',
+        },
+        {
+          path: 'theme',
+          title: 'Custom Theme',
+        },
+        {
+          path: 'locale',
+          title: 'Internationalization',
+        },
+      ],
+    },
+    {
+      title: 'Basic Components',
+      items: [
+        {
+          path: 'button',
+          title: 'Button',
+        },
+        {
+          path: 'cell',
+          title: 'Cell',
+        },
+        {
+          path: 'icon',
+          title: 'Icon',
+        },
+        {
+          path: 'image',
+          title: 'Image',
+        },
+        {
+          path: 'col',
+          title: 'Layout',
+        },
+        {
+          path: 'popup',
+          title: 'Popup',
+        },
+        {
+          path: 'style',
+          title: 'Built-in style',
+        },
+        {
+          path: 'toast',
+          title: 'Toast',
+        },
+      ],
+    },
+    {
+      title: 'Form Components',
+      items: [
+        {
+          path: 'calendar',
+          title: 'Calendar',
+        },
+        {
+          path: 'checkbox',
+          title: 'Checkbox',
+        },
+        {
+          path: 'datetime-picker',
+          title: 'DatetimePicker',
+        },
+        {
+          path: 'field',
+          title: 'Field',
+        },
+        {
+          path: 'form',
+          title: 'Form',
+        },
+        {
+          path: 'number-keyboard',
+          title: 'NumberKeyboard',
+        },
+        {
+          path: 'password-input',
+          title: 'PasswordInput',
+        },
+        {
+          path: 'picker',
+          title: 'Picker',
+        },
+        {
+          path: 'radio',
+          title: 'Radio',
+        },
+        {
+          path: 'rate',
+          title: 'Rate',
+        },
+        {
+          path: 'search',
+          title: 'Search',
+        },
+        {
+          path: 'slider',
+          title: 'Slider',
+        },
+        {
+          path: 'stepper',
+          title: 'Stepper',
+        },
+        {
+          path: 'switch',
+          title: 'Switch',
+        },
+        {
+          path: 'switch-cell',
+          title: 'SwitchCell',
+        },
+        {
+          path: 'uploader',
+          title: 'Uploader',
+        },
+      ],
+    },
+    {
+      title: 'Action Components',
+      items: [
+        {
+          path: 'action-sheet',
+          title: 'ActionSheet',
+        },
+        {
+          path: 'dialog',
+          title: 'Dialog',
+        },
+        {
+          path: 'dropdown-menu',
+          title: 'DropdownMenu',
+        },
+        {
+          path: 'loading',
+          title: 'Loading',
+        },
+        {
+          path: 'notify',
+          title: 'Notify',
+        },
+        {
+          path: 'overlay',
+          title: 'Overlay',
+        },
+        {
+          path: 'pull-refresh',
+          title: 'PullRefresh',
+        },
+        {
+          path: 'share-sheet',
+          title: 'ShareSheet',
+        },
+        {
+          path: 'swipe-cell',
+          title: 'SwipeCell',
+        },
+      ],
+    },
+    {
+      title: 'Display Components',
+      items: [
+        {
+          path: 'badge',
+          title: 'Badge',
+        },
+        {
+          path: 'circle',
+          title: 'Circle',
+        },
+        {
+          path: 'collapse',
+          title: 'Collapse',
+        },
+        {
+          path: 'count-down',
+          title: 'CountDown',
+        },
+        {
+          path: 'divider',
+          title: 'Divider',
+        },
+        {
+          path: 'empty',
+          title: 'Empty',
+        },
+        {
+          path: 'image-preview',
+          title: 'ImagePreview',
+        },
+        {
+          path: 'lazyload',
+          title: 'Lazyload',
+        },
+        {
+          path: 'list',
+          title: 'List',
+        },
+        {
+          path: 'notice-bar',
+          title: 'NoticeBar',
+        },
+        {
+          path: 'popover',
+          title: 'Popover',
+        },
+        {
+          path: 'progress',
+          title: 'Progress',
+        },
+        {
+          path: 'skeleton',
+          title: 'Skeleton',
+        },
+        {
+          path: 'steps',
+          title: 'Steps',
+        },
+        {
+          path: 'sticky',
+          title: 'Sticky',
+        },
+        {
+          path: 'swipe',
+          title: 'Swipe',
+        },
+        {
+          path: 'tag',
+          title: 'Tag',
+        },
+      ],
+    },
+    {
+      title: 'Navigation Components',
+      items: [
+        {
+          path: 'grid',
+          title: 'Grid',
+        },
+        {
+          path: 'index-bar',
+          title: 'IndexBar',
+        },
+        {
+          path: 'nav-bar',
+          title: 'NavBar',
+        },
+        {
+          path: 'pagination',
+          title: 'Pagination',
+        },
+        {
+          path: 'sidebar',
+          title: 'Sidebar',
+        },
+        {
+          path: 'tab',
+          title: 'Tab',
+        },
+        {
+          path: 'tabbar',
+          title: 'Tabbar',
+        },
+        {
+          path: 'tree-select',
+          title: 'TreeSelect',
+        },
+      ],
+    },
+    {
+      title: 'Business Components',
+      items: [
+        {
+          path: 'address-edit',
+          title: 'AddressEdit',
+        },
+        {
+          path: 'address-list',
+          title: 'AddressList',
+        },
+        {
+          path: 'area',
+          title: 'Area',
+        },
+        {
+          path: 'card',
+          title: 'Card',
+        },
+        {
+          path: 'contact-card',
+          title: 'ContactCard',
+        },
+        {
+          path: 'contact-edit',
+          title: 'ContactEdit',
+        },
+        {
+          path: 'contact-list',
+          title: 'ContactList',
+        },
+        {
+          path: 'coupon-list',
+          title: 'Coupon',
+        },
+        {
+          path: 'goods-action',
+          title: 'GoodsAction',
+        },
+        {
+          path: 'submit-bar',
+          title: 'SubmitBar',
+        },
+        {
+          path: 'sku',
+          title: 'Sku',
+        },
+      ],
+    },
+    {
+      title: 'Deprecated',
+      items: [
+        {
+          path: 'panel',
+          title: 'Panel',
+        },
+        {
+          path: 'switch-cell',
+          title: 'SwitchCell',
+        },
+      ],
+    },
+  ]
