@@ -17,7 +17,7 @@ import { IndexRoutingModule } from "./index.routing";
     ],
     imports: [
         RouterModule,CommonModule,
-        IndexRoutingModule
+        IndexRoutingModule,
     ],
     providers: [],
 })

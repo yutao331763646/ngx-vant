@@ -14,9 +14,12 @@ export const VantIsChange = (...changes: SimpleChange[]) => {
     selector: '[vant-i18n]'
 })
 export class VantI18nDirective implements OnChanges, OnDestroy {
-    @Input('x-i18n') path!: string;
+    @Input('vant-i18n') path!: string;
     private _unSubject = new Subject<void>();
-    constructor(private locale: VantI18nService, private elementRef: ElementRef) {
+    constructor(
+        private locale: VantI18nService,
+        private elementRef: ElementRef
+    ) {
         this.locale.localeChange.pipe(takeUntil(this._unSubject)).subscribe(() => this.setLocale());
     }
 

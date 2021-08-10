@@ -2,6 +2,7 @@ import { InjectionToken } from "@angular/core";
 
 export interface VantI18nProperty {
     locale: string;
+    comment?: VantI18nComment;
     [property: string]: any;
 }
 export interface VantI18nComment {

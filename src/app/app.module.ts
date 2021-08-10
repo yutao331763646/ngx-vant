@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MobileModule } from './page/mobile/mobile.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { VANT_I18N, zh_CN } from 'ngx-vant/i18n';
 
 
 
@@ -19,7 +20,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
         MobileModule,
         BrowserAnimationsModule,
     ],
-    providers: [],
+    providers: [{ provide: VANT_I18N, useValue: zh_CN }],
+
     bootstrap: [AppComponent]
 })
 export class AppModule { }

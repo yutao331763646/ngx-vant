@@ -9,12 +9,13 @@ import zh_CN from './languages/zh_CN';
 export class VantI18nService {
     private _locale!: VantI18nProperty;
     private _change = new BehaviorSubject<VantI18nProperty>(zh_CN);
-
     get localeChange(): Observable<VantI18nProperty> {
-        return this._change.asObservable();
+        console.log('get')
+        return this._change.asObservable()
     }
-
-    constructor(@Optional() @Inject(VANT_I18N) locale: VantI18nProperty) {
+    constructor(
+        @Optional() @Inject(VANT_I18N) locale: VantI18nProperty
+    ) {
         this.setLocale(locale || zh_CN);
     }
     translate(path: string, data?: any) {
@@ -27,11 +28,9 @@ export class VantI18nService {
         }
         return path;
     }
-
     getLocale(): VantI18nProperty {
         return this._locale;
     }
-
     getLocaleId(): string {
         return this._locale ? this._locale.locale : '';
     }
@@ -40,8 +39,8 @@ export class VantI18nService {
         if (!forceRefresh && this._locale && this._locale.locale === locale.locale) {
             return;
         }
-
         this._locale = locale;
+        console.log(locale)
         this._change.next(locale);
     }
 

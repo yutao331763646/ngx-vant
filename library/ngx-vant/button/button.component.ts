@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, ElementRef, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges, ViewEncapsulation } from '@angular/core';
 import { VantI18nService } from 'ngx-vant/i18n';
 import { LoadingType } from 'ngx-vant/loading';
 import { removeNgTag } from 'ngx-vant/utils';
@@ -11,6 +11,8 @@ export type ButtonSize = 'large' | 'normal' | 'small' | 'mini';
 @Component({
     selector: 'van-button',
     templateUrl: './button.component.html',
+    encapsulation: ViewEncapsulation.None,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ButtonComponent implements OnInit, OnChanges {
     @Output() readonly click = new EventEmitter<MouseEvent>();
@@ -47,10 +49,16 @@ export class ButtonComponent implements OnInit, OnChanges {
     constructor(
         private elementRef: ElementRef,
         public cdr: ChangeDetectorRef,
-        private vantI18nService:VantI18nService) { }
+        private vantI18n: VantI18nService
+    ) { }
     ngOnInit() {
+        this.vantI18n.localeChange.pipe(
+            takeUntil(this._unSubject)
+            )
+            .subscribe(() => 
+                this.cdr.markForCheck()
+            );
         removeNgTag(this.elementRef.nativeElement)
-        this.vantI18nService.localeChange.pipe(takeUntil(this._unSubject)).subscribe(() => this.cdr.markForCheck());
 
     }
     onClick(e: MouseEvent): void {
@@ -62,7 +70,7 @@ export class ButtonComponent implements OnInit, OnChanges {
     ngOnDestory() {
         this._unSubject.next();
         this._unSubject.unsubscribe();
-      }
+    }
     ngOnChanges(changes: SimpleChanges) {
         if (changes.color) {
             this.colorStyle.color = this.plain ? changes.color.currentValue : 'white'
