@@ -1,9 +1,6 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges, ViewEncapsulation } from '@angular/core';
-import { en_US, VantI18nService } from 'ngx-vant/i18n';
 import { LoadingType } from 'ngx-vant/loading';
 import { removeNgTag } from 'ngx-vant/utils';
-import { Subject } from 'rxjs';
-import { takeUntil } from 'rxjs/operators';
 
 export type ButtonType = 'default' | 'primary' | 'info' | 'warning' | 'danger';
 export type ButtonSize = 'large' | 'normal' | 'small' | 'mini';
@@ -44,24 +41,11 @@ export class ButtonComponent implements OnInit, OnChanges {
         this._plain = value;
     }
     private _plain: boolean = false;
-    private _unSubject = new Subject<void>();
     colorStyle: any = {}
     constructor(
         private elementRef: ElementRef,
-        public cdr: ChangeDetectorRef,
-        private vantI18n: VantI18nService,
     ) { }
     ngOnInit() {
-        this.vantI18n.localeChange
-            .pipe(
-                takeUntil(this._unSubject)
-            )
-            .subscribe(
-                () => {
-                    console.log('ooooo')
-                    this.cdr.markForCheck()
-                }
-            );
         removeNgTag(this.elementRef.nativeElement)
 
     }
@@ -70,10 +54,6 @@ export class ButtonComponent implements OnInit, OnChanges {
     }
     onTouchstart(e: TouchEvent): void {
         this.touchstart.emit(e)
-    }
-    ngOnDestory() {
-        this._unSubject.next();
-        this._unSubject.unsubscribe();
     }
     ngOnChanges(changes: SimpleChanges) {
         if (changes.color) {
