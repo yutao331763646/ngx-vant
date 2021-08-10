@@ -22,18 +22,17 @@ import { NotifyComponent } from "./notify/notify.component";
 import { TagComponent } from "./tag/tag.component";
 import { StickyComponent } from "./sticky/sticky.component";
 import { PickerComponent } from "./picker/picker.component";
-import { SafePipe } from "src/app/common/pipe/sage.pipe";
-import { DocComponent } from "src/app/components/doc/doc.component";
 import { ToastComponent } from "./toast/toast.component";
 import { ThemeComponent } from "./theme/theme.component";
 import { ContributionComponent } from "./contribution/contribution.component";
 import { DesignComponent } from "./design/design.component";
 import { StyleGuideComponent } from "./style-guide/style-guide.component";
 import { LocaleComponent } from "./locale/locale.component";
+import { DocSharedModule } from "../shared/doc-shared";
 @NgModule({
     imports: [
         RouterModule, CommonModule,
-        BasicRoutingModule
+        BasicRoutingModule,DocSharedModule
     ],
     declarations: [
         DomeComponent, ButtonComponent, HighlightPipe,
@@ -42,7 +41,7 @@ import { LocaleComponent } from "./locale/locale.component";
         NavBarComponent,LayoutComponent,ProgressComponent,
         CellComponent,FieldComponent,OverlayComponent,PopupComponent,
         TabsComponent,NotifyComponent,TagComponent,StickyComponent,
-        PickerComponent,SafePipe,DocComponent,ToastComponent,ThemeComponent,
+        PickerComponent,ToastComponent,ThemeComponent,
         ContributionComponent,DesignComponent,
         StyleGuideComponent,LocaleComponent
     ]

@@ -29,6 +29,10 @@ const routes: Routes = [
         loadChildren: () => import('./page/zh_CN/basic.module').then(m => m.BasicModule)
     },
     {
+        path: 'en_US',
+        loadChildren: () => import('./page/en_US/en_US.module').then(m => m.En_USModule)
+    },
+    {
         path: 'mobile',
         component: MobileComponent,
         children: [

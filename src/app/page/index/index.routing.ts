@@ -11,6 +11,10 @@ const routes: Routes = [
                 path: 'zh_CN',
                 loadChildren: () => import('../zh_CN/basic.module').then(m => m.BasicModule)
             },
+            {
+                path: 'en_US',
+                loadChildren: () => import('../en_US/en_US.module').then(m => m.En_USModule)
+            },
         ]
     },
 ];

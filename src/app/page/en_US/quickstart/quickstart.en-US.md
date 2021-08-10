@@ -1,27 +1,20 @@
-# 快速上手
+# Quickstart
 
-### 介绍
+## Install
 
-通过本章节你可以了解到 Vant 的安装方法和基本使用姿势。
-
-## 安装
-
-### 通过 npm 安装
-
-在现有项目中使用 Vant 时，可以通过 `npm` 或 `yarn` 进行安装：
-
+### npm or yarn
+ 
 ```js
 npm i ngx-vant -S
 ```
 
 
+## Usage
 
 
 
 
-
-## 按需引入组件
-
+###  Manually import
 
 
 ```js
@@ -43,9 +36,6 @@ import { ButtonModule } from 'ngx-vant/button';
 })
 export class AppModule { }
 ```
-
-
-
 
 
 

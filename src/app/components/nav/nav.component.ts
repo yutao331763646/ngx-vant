@@ -18,8 +18,12 @@ export class NavComponent implements OnInit {
     ngOnInit() {
         this.vantI18n.localeChange.subscribe(({ locale }) => {
             console.log(locale)
+            const host = window.location.href.split('/#/')
+            console.log(host)
+            const path = host[1].replace(this.lang, locale)
+            console.log(path)
             this.lang = locale
-            this.router.navigateByUrl(`/${locale}/${this.nav}`);
+            this.router.navigateByUrl(`/${path}`);
         })
     }
     toPath(nav: any): void {
