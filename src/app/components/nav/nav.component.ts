@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { VantI18nService } from 'ngx-vant/i18n';
 import { Subject } from 'rxjs';
@@ -10,7 +10,7 @@ import { navConfig, navEnConfig } from './config'
     templateUrl: './nav.component.html',
     styleUrls: ['./nav.component.less']
 })
-export class NavComponent implements OnInit {
+export class NavComponent implements OnInit, OnDestroy {
     navConfig = navConfig
     private _unSubject = new Subject<void>();
     constructor(
@@ -24,14 +24,14 @@ export class NavComponent implements OnInit {
             .pipe(
                 takeUntil(this._unSubject)
             ).subscribe(({ locale }) => {
-                this.navConfig = locale==='en_US'?navEnConfig:navConfig
+                this.navConfig = locale === 'en_US' ? navEnConfig : navConfig
                 const host = window.location.href.split('/#/')
                 const path = host[1].replace(this.lang, locale)
                 this.lang = locale
                 this.router.navigateByUrl(`/${path}`);
             })
     }
-    ngOnDestory() {
+    ngOnDestroy() {
         this._unSubject.next();
         this._unSubject.unsubscribe();
     }
