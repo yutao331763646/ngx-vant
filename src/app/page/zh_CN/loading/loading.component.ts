@@ -16,7 +16,7 @@ export class LoadingComponent implements OnInit {
         return cardWrapper(this._readMe);
     }
    
-    constructor(private sanitizer: DomSanitizer) { }
+    constructor() { }
 
 
     ngOnInit() {
