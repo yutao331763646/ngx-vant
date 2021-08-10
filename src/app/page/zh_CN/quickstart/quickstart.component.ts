@@ -6,6 +6,16 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./quickstart.component.less']
 })
 export class QuickstartComponent implements OnInit {
+
+    private _readMe: HTMLElement | string = '';
+    @Input() set readMe(readMe: HTMLElement | string) {
+        this._readMe = readMe;
+    }
+    get readMe() {
+        return cardWrapper(this._readMe);
+    }
+
+
     cards = [{
         title: '介绍',
         desc: '通过本章节你可以了解到 Ngx-Vant 的安装方法和基本使用姿势。'
@@ -39,6 +49,10 @@ export class QuickstartComponent implements OnInit {
     constructor() { }
 
     ngOnInit() {
+        this.setReadMe()
+    }
+    setReadMe() {
+        this.readMe = require(`!html-loader!markdown-loader!./README.zh-CN.md`).default;
     }
 
 }
