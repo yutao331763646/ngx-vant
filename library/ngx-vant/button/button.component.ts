@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges, ViewEncapsulation } from '@angular/core';
-import { VantI18nService } from 'ngx-vant/i18n';
+import { en_US, VantI18nService } from 'ngx-vant/i18n';
 import { LoadingType } from 'ngx-vant/loading';
 import { removeNgTag } from 'ngx-vant/utils';
 import { Subject } from 'rxjs';
@@ -49,16 +49,33 @@ export class ButtonComponent implements OnInit, OnChanges {
     constructor(
         private elementRef: ElementRef,
         public cdr: ChangeDetectorRef,
-        private vantI18n: VantI18nService
+        private vantI18n: VantI18nService,
     ) { }
     ngOnInit() {
-        this.vantI18n.localeChange.pipe(
-            takeUntil(this._unSubject)
-            )
-            .subscribe(() => 
-                this.cdr.markForCheck()
+        this.vantI18n.localeChange
+            // .pipe(
+            //     takeUntil(this._unSubject)
+            // )
+            .subscribe(
+                () => {
+                    console.log('ooooo')
+                    this.cdr.markForCheck()
+                }
             );
+
+
+        // this.lobService.messageObserve.subscribe(res => {
+        //     console.log(res)
+        //     console.log(['fffdfeoiii'])
+        // })
+
         removeNgTag(this.elementRef.nativeElement)
+
+
+        // setTimeout(() => {
+        //     console.log('切换')
+        //     this.vantI18n.setLocale(en_US, true);
+        // }, 2000)
 
     }
     onClick(e: MouseEvent): void {

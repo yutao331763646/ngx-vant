@@ -11,9 +11,8 @@ import { IndexRoutingModule } from "./index.routing";
 
 @NgModule({
     declarations: [
-        IndexComponent,
-        HeaderComponent,
-        NavComponent, SimulatorComponent,
+        
+      
     ],
     imports: [
         RouterModule,CommonModule,

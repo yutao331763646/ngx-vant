@@ -11,10 +11,8 @@ export class VantI18nPipe implements PipeTransform {
     constructor(private locale: VantI18nService) { }
 
     transform(path: string, keyValue?: object) {
-        // console.log(path,keyValue)
         const localeId = this.locale.getLocaleId();
         const content = this.locale.translate(path, keyValue);
-        // console.log(content)
         if (this.localeId !== localeId || this.catchContent !== content) {
             this.catchContent = content;
             this.localeId = localeId;

@@ -5,7 +5,7 @@ import { Component, Input, OnInit } from '@angular/core';
     templateUrl: './nav.component.html',
     styleUrls: ['./nav.component.less']
 })
-export class NavComponent implements OnInit {
+export class MNavComponent implements OnInit {
     @Input() title = ''
     constructor() { }
 

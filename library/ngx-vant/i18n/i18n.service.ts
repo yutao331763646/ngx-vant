@@ -10,7 +10,6 @@ export class VantI18nService {
     private _locale!: VantI18nProperty;
     private _change = new BehaviorSubject<VantI18nProperty>(zh_CN);
     get localeChange(): Observable<VantI18nProperty> {
-        console.log('get')
         return this._change.asObservable()
     }
     constructor(
