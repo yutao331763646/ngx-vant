@@ -1,4 +1,3 @@
-
 <button
     [class]="'van-button van-button--' + type + ' van-button--' + size"
     [class.van-button--hairline]="hairline"
@@ -15,8 +14,8 @@
     (touchstart)="onTouchstart($event)"
 >
 
-<p>{{ 'comment.comments' | vantI18n }}</p>
-<p vant-i18n="comment.comments"></p>
+    <!-- <p>{{ 'comment.comments' | vantI18n }}</p> -->
+    <!-- <p vant-i18n="comment.comments"></p> -->
 
     <div class="van-button__content">
         <van-icon
@@ -42,6 +41,7 @@
             *ngIf="loadingText"
             class="van-button__text"
         >
+        <!-- {{ 'comment.comments' | vantI18n }} -->
             {{loadingText}}
         </span>
         <van-icon

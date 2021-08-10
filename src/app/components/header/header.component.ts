@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { en_US, VantI18nService, zh_CN } from 'ngx-vant/i18n';
+import { en_US, zh_CN } from 'ngx-vant/i18n';
+import { ConfigService } from 'src/app/common/services';
 
 @Component({
     selector: 'vant-doc-header',
@@ -12,7 +13,7 @@ export class HeaderComponent implements OnInit {
     lang = 'En'
     constructor(
         public cdr: ChangeDetectorRef,
-        private vantI18n: VantI18nService,
+        private vantI18n: ConfigService,
     ) { }
 
     ngOnInit() {
@@ -20,7 +21,7 @@ export class HeaderComponent implements OnInit {
     onSwitchLang() {
         this.lang = this.lang === 'En' ? '中文' : 'En'
         const lang = this.lang === 'En' ? en_US : zh_CN
-        this.vantI18n.setLocale(lang, true);
+        this.vantI18n.setLocale(lang);
         // this.cdr.markForCheck();
     }
 }
