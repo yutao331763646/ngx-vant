@@ -53,29 +53,16 @@ export class ButtonComponent implements OnInit, OnChanges {
     ) { }
     ngOnInit() {
         this.vantI18n.localeChange
-            // .pipe(
-            //     takeUntil(this._unSubject)
-            // )
+            .pipe(
+                takeUntil(this._unSubject)
+            )
             .subscribe(
                 () => {
                     console.log('ooooo')
                     this.cdr.markForCheck()
                 }
             );
-
-
-        // this.lobService.messageObserve.subscribe(res => {
-        //     console.log(res)
-        //     console.log(['fffdfeoiii'])
-        // })
-
         removeNgTag(this.elementRef.nativeElement)
-
-
-        // setTimeout(() => {
-        //     console.log('切换')
-        //     this.vantI18n.setLocale(en_US, true);
-        // }, 2000)
 
     }
     onClick(e: MouseEvent): void {
