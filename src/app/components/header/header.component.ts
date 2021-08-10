@@ -22,6 +22,5 @@ export class HeaderComponent implements OnInit {
         this.lang = this.lang === 'En' ? '中文' : 'En'
         const lang = this.lang !== 'En' ? en_US : zh_CN
         this.vantI18n.setLocale(lang);
-        // this.cdr.markForCheck();
     }
 }
