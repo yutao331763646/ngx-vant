@@ -25,8 +25,8 @@ const routes: Routes = [
         path: '', loadChildren: () => import('./page/index/index.module').then(m => m.IndexModule)
     }
     , {
-        path: 'basic',
-        loadChildren: () => import('./page/basic/basic.module').then(m => m.BasicModule)
+        path: 'zh_CN',
+        loadChildren: () => import('./page/zh_CN/basic.module').then(m => m.BasicModule)
     },
     {
         path: 'mobile',

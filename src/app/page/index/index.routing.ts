@@ -6,10 +6,10 @@ const routes: Routes = [
     {
         path: '', component: IndexComponent,
         children: [
-            { path: '', redirectTo: '/basic/home', pathMatch: 'full' },
+            { path: '', redirectTo: '/zh_CN/home', pathMatch: 'full' },
             {
-                path: 'basic',
-                loadChildren: () => import('../basic/basic.module').then(m => m.BasicModule)
+                path: 'zh_CN',
+                loadChildren: () => import('../zh_CN/basic.module').then(m => m.BasicModule)
             },
         ]
     },

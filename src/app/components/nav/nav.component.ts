@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { VantI18nService } from 'ngx-vant/i18n';
 import { navConfig } from './config'
 @Component({
     selector: 'vant-doc-nav',
@@ -9,14 +10,22 @@ import { navConfig } from './config'
 export class NavComponent implements OnInit {
     readonly navConfig = navConfig
     constructor(
+        private vantI18n: VantI18nService,
         private router: Router
     ) { }
-
+    lang = 'zh_CN'
+    nav = ''
     ngOnInit() {
+        this.vantI18n.localeChange.subscribe(({ locale }) => {
+            console.log(locale)
+            this.lang = locale
+            this.router.navigateByUrl(`/${locale}/${this.nav}`);
+        })
     }
     toPath(nav: any): void {
         console.log(nav)
         const { path } = nav
-        this.router.navigateByUrl(`/basic/${path}`);
+        this.nav = path
+        this.router.navigateByUrl(`/${this.lang}/${path}`);
     }
 }

@@ -15,7 +15,7 @@ export class SimulatorComponent implements OnInit {
             if (event instanceof NavigationEnd) {
                 const host = window.location.href.split('/#/')
                 const urls = event.url.split('/')
-                const homeUrl = ['home','quickstart','theme','contribution','design','style-guide']
+                const homeUrl = ['home','quickstart','theme','contribution','design','style-guide','locale']
                 let mUrl = urls[urls.length - 1]
                 if(homeUrl.includes(mUrl)){
                     mUrl ='home'
