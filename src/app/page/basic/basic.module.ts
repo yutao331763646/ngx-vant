@@ -29,7 +29,7 @@ import { ThemeComponent } from "./theme/theme.component";
 import { ContributionComponent } from "./contribution/contribution.component";
 import { DesignComponent } from "./design/design.component";
 import { StyleGuideComponent } from "./style-guide/style-guide.component";
-import { I18nComponent } from "./i18n/i18n.component";
+import { LocaleComponent } from "./locale/locale.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule,
@@ -44,7 +44,7 @@ import { I18nComponent } from "./i18n/i18n.component";
         TabsComponent,NotifyComponent,TagComponent,StickyComponent,
         PickerComponent,SafePipe,DocComponent,ToastComponent,ThemeComponent,
         ContributionComponent,DesignComponent,
-        StyleGuideComponent,I18nComponent
+        StyleGuideComponent,LocaleComponent
     ]
 })
 export class BasicModule { }

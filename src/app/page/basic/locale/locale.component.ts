@@ -2,11 +2,11 @@ import { Component, Input, OnInit } from '@angular/core';
 import { cardWrapper } from 'src/app/common/card-wrapper';
 
 @Component({
-  selector: 'app-i18n',
-  templateUrl: './i18n.component.html',
-  styleUrls: ['./i18n.component.less']
+  selector: 'app-locale',
+  templateUrl: './locale.component.html',
+  styleUrls: ['./locale.component.less']
 })
-export class I18nComponent implements OnInit {
+export class LocaleComponent implements OnInit {
 
     private _readMe: HTMLElement | string = '';
     @Input() set readMe(readMe: HTMLElement | string) {
