@@ -33,7 +33,7 @@ import { CellGroupModule } from "ngx-vant/cell-group";
 import { ButtonComponent } from './page/mobile/button/button.component';
 import { CellComponent } from './page/mobile/cell/cell.component';
 import { FieldComponent } from './page/mobile/field/field.component';
-import { HomeComponent } from './page/mobile/home/home.component';
+import {  MHomeComponent } from './page/mobile/home/home.component';
 import { IconComponent } from './page/mobile/icon/icon.component';
 import { ImageComponent } from './page/mobile/image/image.component';
 import { LayoutComponent } from './page/mobile/layout/layout.component';
@@ -72,7 +72,7 @@ const NGX_VANT = [
         AppComponent,
 
         ButtonComponent, NavComponent, DemoComponent,
-        IconComponent, MobileComponent, LoadingComponent, HomeComponent,
+        IconComponent, MobileComponent, LoadingComponent, MHomeComponent,
         NavBarComponent, ImageComponent, LayoutComponent, ToastComponent,
         ProgressComponent, CellComponent, FieldComponent, OverlayComponent,
         PopupComponent, VanDocDemoCardComponent, TabsComponent, NotifyComponent,
