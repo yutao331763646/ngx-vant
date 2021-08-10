@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { en_US, VantI18nService, zh_CN } from 'ngx-vant/i18n';
-import { Subject } from 'rxjs';
 
 @Component({
     selector: 'app-button',
