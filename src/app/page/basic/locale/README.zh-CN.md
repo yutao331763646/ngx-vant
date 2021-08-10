@@ -6,34 +6,50 @@ Nnx-Vant 采用中文作为默认语言，同时支持多语言切换，请按�
 
 ## 使用方法
 
-### 多语言切换
+### 在app.module.ts中指定默认语言
 
-Vant 通过 Locale 组件实现多语言支持，使用 `Locale.use` 方法可以切换当前使用的语言。
 
 ```js
-import { Locale } from 'vant';
-// 引入英文语言包
-import enUS from 'vant/es/locale/lang/en-US';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-Locale.use('en-US', enUS);
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { Vant18nModule, VANT_I18N, zh_CN } from 'ngx-vant/i18n';
+
+
+@NgModule({
+    declarations: [AppComponent],
+    imports: [BrowserModule, AppRoutingModule],
+    providers: [{ provide: VANT_I18N, useValue: zh_CN }],
+    bootstrap: [AppComponent]
+})
+export class AppModule {}
 ```
 
-### 覆盖语言包
+### 运行时修改
 
-通过 `Locale.add` 方法可以实现文案的修改和扩展，示例如下：
+ `Ngx-Vant` 提供了`VantI18nService`服务用于动态修改国际化：
 
 ```js
-import { Locale } from 'vant';
+import { Component } from '@angular/core';
+import { en_US, zh_CN } from 'ngx-vant/i18n';
+import { VantI18nService } from 'ngx-vant/i18n';
 
-const messages = {
-  'zh-CN': {
-    vanPicker: {
-      confirm: '关闭', // 将'确认'修改为'关闭'
-    },
-  },
-};
+@Component({
+    selector: 'app',
+    templateUrl: './demo.component.html'
+})
+export class AppComponent {
+    constructor(
+        private vantI18n: VantI18nService,
+    ) { }
+   
+    onSwitchLang() {
+        this.vantI18n.setLocale(lang);
+    }
+}
 
-Locale.add(messages);
 ```
 
 ### 语言包
