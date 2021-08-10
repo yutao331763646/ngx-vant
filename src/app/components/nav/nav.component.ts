@@ -24,6 +24,7 @@ export class NavComponent implements OnInit, OnDestroy {
             .pipe(
                 takeUntil(this._unSubject)
             ).subscribe(({ locale }) => {
+                // console.log(locale)
                 this.navConfig = locale === 'en_US' ? navEnConfig : navConfig
                 const host = window.location.href.split('/#/')
                 const path = host[1].replace(this.lang, locale)

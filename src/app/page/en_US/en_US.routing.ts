@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 // import { StickyComponent } from "./sticky/sticky.component";
-// import { ButtonComponent } from "./button/button.component";
+import { ButtonComponent } from "./button/button.component";
 // import { CellComponent } from "./cell/cell.component";
 // import { FieldComponent } from "./field/field.component";
 // import { HomeComponent } from "./home/home.component";
@@ -55,10 +55,10 @@ const routes: Routes = [
     //     path: 'locale',
     //     component: LocaleComponent
     // },
-    // {
-    //     path: 'button',
-    //     component: ButtonComponent
-    // },
+    {
+        path: 'button',
+        component: ButtonComponent
+    },
     // {
     //     path: 'icon',
     //     component: IconComponent
