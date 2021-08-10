@@ -29,6 +29,7 @@ import { ThemeComponent } from "./theme/theme.component";
 import { ContributionComponent } from "./contribution/contribution.component";
 import { DesignComponent } from "./design/design.component";
 import { StyleGuideComponent } from "./style-guide/style-guide.component";
+import { I18nComponent } from "./i18n/i18n.component";
 @NgModule({
     imports: [
         RouterModule, CommonModule,
@@ -42,7 +43,8 @@ import { StyleGuideComponent } from "./style-guide/style-guide.component";
         CellComponent,FieldComponent,OverlayComponent,PopupComponent,
         TabsComponent,NotifyComponent,TagComponent,StickyComponent,
         PickerComponent,SafePipe,DocComponent,ToastComponent,ThemeComponent,
-        ContributionComponent,DesignComponent,StyleGuideComponent
+        ContributionComponent,DesignComponent,
+        StyleGuideComponent,I18nComponent
     ]
 })
 export class BasicModule { }

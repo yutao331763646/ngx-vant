@@ -34,10 +34,10 @@ export const navConfig = [
           path: 'style-guide',
           title: '风格指南',
         },
-        // {
-        //   path: 'locale',
-        //   title: '国际化',
-        // },
+        {
+          path: 'locale',
+          title: '国际化',
+        },
       ],
     },
     {
