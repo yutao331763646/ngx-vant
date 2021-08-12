@@ -21,15 +21,15 @@ import ButtonModule from 'ngx-vant/button';
 ### Plain
 
 ```html
-<van-button plain type="primary">Primary</van-button>
-<van-button plain type="info">Danger</van-button>
+<van-button [plain]="true"  type="primary">Primary</van-button>
+<van-button [plain]="true"  type="info">Danger</van-button>
 ```
 
 ### Hairline
 
 ```html
-<van-button plain hairline type="primary">Hairline</van-button>
-<van-button plain hairline type="info">Hairline</van-button>
+<van-button [plain]="true"  [hairline]="true"  type="primary">Hairline</van-button>
+<van-button [plain]="true"  [hairline]="true"  type="info">Hairline</van-button>
 ```
 
 ### Disabled
