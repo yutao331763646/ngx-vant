@@ -119,7 +119,7 @@ import ButtonModule from 'ngx-vant/button';
 | loading | Whether show loading status | _boolean_ | `false` |
 | loadingText | Loading text | _string_ | - |
 | loadingType | Loading type, can be set to `spinner` | _string_ | `circular` |
-| loading-size | Loading icon size | _string_ | `20px` |
+| loadingSize | Loading icon size | _string_ | `20px` |
 | url | Link URL | _string_ | - |
 | to | Target route of the link, same as using vue-router | _string \| object_ | - |
 | replace | If true, the navigation will not leave a history record | _boolean_ | `false` |
