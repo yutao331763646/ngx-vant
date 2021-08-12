@@ -3,10 +3,7 @@
 ### Install
 
 ```js
-import Vue from 'vue';
-import { Button } from 'vant';
-
-Vue.use(Button);
+import ButtonModule from 'ngx-vant/button';
 ```
 
 ## Usage
