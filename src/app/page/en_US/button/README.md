@@ -117,7 +117,7 @@ import ButtonModule from 'ngx-vant/button';
 | square | Whether to be square button | _boolean_ | `false` |
 | disabled | Whether to disable button | _boolean_ | `false` |
 | loading | Whether show loading status | _boolean_ | `false` |
-| loading-text | Loading text | _string_ | - |
+| loadingText | Loading text | _string_ | - |
 | loading-type | Loading type, can be set to `spinner` | _string_ | `circular` |
 | loading-size | Loading icon size | _string_ | `20px` |
 | url | Link URL | _string_ | - |
