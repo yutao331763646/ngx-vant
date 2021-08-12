@@ -50,8 +50,8 @@ import ButtonModule from 'ngx-vant/button';
 ### Shape
 
 ```html
-<van-button square type="primary">Square</van-button>
-<van-button round type="info">Round</van-button>
+<van-button [square]="true" type="primary">Square</van-button>
+<van-button [round]="true" type="info">Round</van-button>
 ```
 
 ### Icon
