@@ -107,7 +107,7 @@ import ButtonModule from 'ngx-vant/button';
 | text | Text | _string_ | - |
 | color | Color, support linear-gradient | _string_ | - |
 | icon | Left Icon | _string_ | - |
-| icon-prefix `v2.6.0` | Icon className prefix | _string_ | `van-icon` |
+| icon-prefix  | Icon className prefix | _string_ | `van-icon` |
 | icon-position `v2.10.7` | Icon position, can be set to `right` | _string_ | `left` |
 | tag | HTML Tag | _string_ | `button` |
 | native-type | Native Type Attribute | _string_ | `''` |
