@@ -131,12 +131,7 @@ import ButtonModule from 'ngx-vant/button';
 | click | Emitted when button is clicked and not disabled or loading | _event: Event_ |
 | touchstart | Emitted when button is touched | _event: TouchEvent_ |
 
-### Slots
 
-| Name              | Description         |
-| ----------------- | ------------------- |
-| default           | Default slot        |
-| loading `v2.10.1` | Custom loading icon |
 
 ### Less Variables
 
