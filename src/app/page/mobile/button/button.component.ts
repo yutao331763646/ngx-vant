@@ -18,7 +18,8 @@ export class ButtonComponent implements OnInit {
             if (event instanceof NavigationEnd) {
                 const host = window.location.href.split('/#/')
                 console.log(host[1].split('/')[0])
-                const lang = host[1].split('/')[0] !== 'en_US' ? en_US : zh_CN
+                const lang = host[1].split('/')[0] === 'en_US' ? en_US : zh_CN
+             console.log(lang)
                 this.vantI18n.setLocale(lang);
             }
         })
