@@ -35,8 +35,8 @@ import ButtonModule from 'ngx-vant/button';
 ### Disabled
 
 ```html
-<van-button disabled type="primary">Diabled</van-button>
-<van-button disabled type="info">Diabled</van-button>
+<van-button [disabled]="true" type="primary">Diabled</van-button>
+<van-button [disabled]="true" type="info">Diabled</van-button>
 ```
 
 ### Loading
