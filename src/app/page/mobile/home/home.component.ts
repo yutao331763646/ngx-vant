@@ -3,6 +3,8 @@ import { NavigationEnd, Router } from '@angular/router';
 import {  VantI18nService } from 'ngx-vant/i18n';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import en_US from 'src/app/common/i18n/languages/en_US';
+import zh_CN from 'src/app/common/i18n/languages/zh_CN';
 import { navConfig, navEnConfig } from './config'
 @Component({
     selector: 'app-home',
