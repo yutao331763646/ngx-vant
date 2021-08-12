@@ -1,5 +1,8 @@
+import { zh_CN } from "ngx-vant/i18n";
+
 export default {
-    locale: 'zh_CN',
+    // locale: 'zh_CN',
+    ...zh_CN,
     button: {
         primary: '主要按钮',
         info: '信息按钮',

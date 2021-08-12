@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
-import { en_US, VantI18nService, zh_CN } from 'ngx-vant/i18n';
+import {  VantI18nService } from 'ngx-vant/i18n';
+import en_US from 'src/app/common/i18n/languages/en_US';
+import zh_CN from 'src/app/common/i18n/languages/zh_CN';
 
 @Component({
     selector: 'app-button',

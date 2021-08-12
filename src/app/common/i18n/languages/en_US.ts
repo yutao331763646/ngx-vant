@@ -1,9 +1,13 @@
+import { en_US } from "ngx-vant/i18n";
+
 export default {
-    locale: 'en_US',
+    // locale: 'en_US',
+    ...en_US,
     button: {
-        comments: 'Comments',
-        giveALike: 'Like',
-        reply: 'Reply',
-        more: 'See more',
-    }
+        primary: 'Primary',
+        info: 'Info',
+        default: 'Default',
+        danger: 'Danger',
+        warning: 'Warning',
+    },
 }

@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MobileModule } from './page/mobile/mobile.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import { Vant18nModule, VANT_I18N, zh_CN } from 'ngx-vant/i18n';
+import { Vant18nModule, VANT_I18N } from 'ngx-vant/i18n';
 
 
 import { CellModule } from 'ngx-vant/cell';
@@ -56,6 +56,7 @@ import { SimulatorComponent } from './components/simulator/simulator.component';
 import { IndexComponent } from './page/index/index.component';
 import { NavComponent } from './components/nav/nav.component';
 import { MNavComponent } from './page/mobile/components/nav/nav.component';
+import zh_CN from './common/i18n/languages/zh_CN';
 
 
 const NGX_VANT = [
