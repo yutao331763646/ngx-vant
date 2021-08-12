@@ -42,9 +42,9 @@ import ButtonModule from 'ngx-vant/button';
 ### Loading
 
 ```html
-<van-button loading type="primary" />
-<van-button loading type="primary" loading-type="spinner" />
-<van-button loading type="info" loading-text="Loading..." />
+<van-button [loading]="true" type="primary" />
+<van-button [loading]="true" type="primary" loadingText="spinner" />
+<van-button [loading]="true" type="info" loadingText="Loading..." />
 ```
 
 ### Shape
