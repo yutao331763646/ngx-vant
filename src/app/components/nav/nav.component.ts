@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { VantI18nService } from 'ngx-vant/i18n';
+import { NavigationEnd, Router } from '@angular/router';
+import { en_US, VantI18nService, zh_CN } from 'ngx-vant/i18n';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { navConfig, navEnConfig } from './config'
@@ -16,7 +16,17 @@ export class NavComponent implements OnInit, OnDestroy {
     constructor(
         private vantI18n: VantI18nService,
         private router: Router
-    ) { }
+    ) { 
+        //    this.router.events.subscribe((event: any) => {
+        //             // console.log(event)
+        //             if (event instanceof NavigationEnd) {
+        //                 const host = window.location.href.split('/#/')
+        //                 console.log(host[1].split('/')[0])
+        //                 const lang = host[1].split('/')[0] !== 'en_US' ? en_US : zh_CN
+        //                 this.vantI18n.setLocale(lang);
+        //             }
+        //         })
+    }
     lang = 'zh_CN'
     nav = ''
     ngOnInit() {
@@ -24,13 +34,19 @@ export class NavComponent implements OnInit, OnDestroy {
             .pipe(
                 takeUntil(this._unSubject)
             ).subscribe(({ locale }) => {
-                // console.log(locale)
+                console.log(locale)
                 this.navConfig = locale === 'en_US' ? navEnConfig : navConfig
                 const host = window.location.href.split('/#/')
                 const path = host[1].replace(this.lang, locale)
                 this.lang = locale
                 this.router.navigateByUrl(`/${path}`);
+
+
+
+                
             })
+
+             
     }
     ngOnDestroy() {
         this._unSubject.next();
