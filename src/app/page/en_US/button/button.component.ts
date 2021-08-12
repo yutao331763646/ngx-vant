@@ -2,9 +2,9 @@ import { Component, Input, OnInit } from '@angular/core';
 import { cardWrapper } from 'src/app/common/card-wrapper';
 
 @Component({
-  selector: 'app-button',
-  templateUrl: './button.component.html',
-  styleUrls: ['./button.component.less']
+    selector: 'app-button',
+    templateUrl: './button.component.html',
+    styleUrls: ['./button.component.less']
 })
 export class ButtonComponent implements OnInit {
     private _readMe: HTMLElement | string = '';
@@ -15,12 +15,12 @@ export class ButtonComponent implements OnInit {
         return cardWrapper(this._readMe);
     }
 
-  constructor() { }
+    constructor() { }
 
-  ngOnInit() {
-    this.setReadMe()
-}
-setReadMe() {
-    this.readMe = require(`!html-loader!markdown-loader!./README.md`).default;
-}
+    ngOnInit() {
+        this.setReadMe()
+    }
+    setReadMe() {
+        this.readMe = require(`!html-loader!markdown-loader!./README.md`).default;
+    }
 }
