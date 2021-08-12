@@ -76,7 +76,7 @@ import ButtonModule from 'ngx-vant/button';
 ### Block Element
 
 ```html
-<van-button type="primary" block>Block Element</van-button>
+<van-button type="primary" block]="true">Block Element</van-button>
 ```
 
 ### Route
