@@ -187,15 +187,15 @@
 </vant-mobile-demo>
 
 <vant-mobile-demo
-    title='自定义颜色'
+    [title]="'button.cusColor' | vantI18n "
     class="demo-button"
 >
-    <van-button color="#7232dd">单色按钮</van-button>
+    <van-button color="#7232dd">{{'button.pure' | vantI18n }}</van-button>
     <van-button
         [plain]="true"
         color="#0032dd"
     >
-        单色按钮
+        {{'button.pure' | vantI18n }}
     </van-button>
-    <van-button color="linear-gradient(to right, #ff6034, #ee0a24)">渐变色按钮</van-button>
+    <van-button color="linear-gradient(to right, #ff6034, #ee0a24)">{{'button.gradient' | vantI18n }}</van-button>
 </vant-mobile-demo>
