@@ -99,20 +99,20 @@
 </vant-mobile-demo>
 
 <vant-mobile-demo
-    title='按钮形状'
+    [title]="'button.shape' | vantI18n "
     class="demo-button"
 >
     <van-button
         [square]="true"
         type="primary"
     >
-        方形按钮
+        {{'button.square' | vantI18n }}
     </van-button>
     <van-button
         [round]="true"
         type="info"
     >
-        圆形按钮
+        {{'button.round' | vantI18n }}
     </van-button>
 </vant-mobile-demo>
 
