@@ -14,6 +14,6 @@ export default {
         plain:'朴素按钮',
         hairline:'细边框',
         hairlineBtn:'细边框按钮',
-
+        disabled:'禁用状态'
     },
 }

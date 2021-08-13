@@ -54,20 +54,20 @@
 </vant-mobile-demo>
 
 <vant-mobile-demo
-    title='禁用状态'
+[title]="'button.disabled' | vantI18n "
     class="demo-button"
 >
     <van-button
         [disabled]="true"
         type="primary"
     >
-        禁用状态
+    {{'button.hairlineBtn' | vantI18n }}
     </van-button>
     <van-button
         [disabled]="true"
         type="info"
     >
-        禁用状态
+    {{'button.hairlineBtn' | vantI18n }}
     </van-button>
 </vant-mobile-demo>
 
