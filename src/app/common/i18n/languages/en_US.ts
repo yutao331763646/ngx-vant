@@ -20,7 +20,9 @@ export default {
 
         shape:'Shape',
         square:'Square',
-        round:'Round'
+        round:'Round',
 
+        icon:'Icon',
+        btn:'Button'
     },
 }

@@ -20,6 +20,9 @@ export default {
 
         shape:'按钮形状',
         square:'方形按钮',
-        round:'圆形按钮'
+        round:'圆形按钮',
+
+        icon:'图标按钮',
+        btn:'按钮'
     },
 }
