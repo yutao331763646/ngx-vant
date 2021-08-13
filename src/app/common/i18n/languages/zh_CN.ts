@@ -32,5 +32,9 @@ export default {
         mini: '迷你按钮',
 
         blockEl:'块级元素',
+
+        cusColor:'自定义颜色',
+        pure:'单色按钮',
+        gradient:'渐变色按钮'
     },
 }

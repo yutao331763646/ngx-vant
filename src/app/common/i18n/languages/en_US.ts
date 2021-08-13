@@ -32,6 +32,9 @@ export default {
         mini: 'Mini',
 
         blockEl:'Block Element',
-        
+
+        cusColor:'ustom Color',
+        pure:'Pure',
+        gradient:'Gradient'
     },
 }
