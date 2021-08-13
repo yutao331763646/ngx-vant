@@ -18,11 +18,11 @@ export default {
         loading: 'Loading',
         load: 'Loading...',
 
-        shape:'Shape',
-        square:'Square',
-        round:'Round',
+        shape: 'Shape',
+        square: 'Square',
+        round: 'Round',
 
-        icon:'Icon',
-        btn:'Button'
+        icon: 'Icon',
+        btn: 'Button'
     },
 }

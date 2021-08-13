@@ -18,11 +18,11 @@ export default {
         loading: '加载状态',
         load: '加载中...',
 
-        shape:'按钮形状',
-        square:'方形按钮',
-        round:'圆形按钮',
+        shape: '按钮形状',
+        square: '方形按钮',
+        round: '圆形按钮',
 
-        icon:'图标按钮',
-        btn:'按钮'
+        icon: '图标按钮',
+        btn: '按钮'
     },
 }
