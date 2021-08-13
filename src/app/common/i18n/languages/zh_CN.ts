@@ -29,6 +29,8 @@ export default {
         large: '大号按钮',
         normal: '普通按钮',
         small: '小型按钮',
-        mini: '迷你按钮'
+        mini: '迷你按钮',
+
+        blockEl:'块级元素',
     },
 }

@@ -29,6 +29,9 @@ export default {
         large: 'Large',
         normal: 'Normal',
         small: 'Small',
-        mini: 'Mini'
+        mini: 'Mini',
+
+        blockEl:'Block Element',
+        
     },
 }

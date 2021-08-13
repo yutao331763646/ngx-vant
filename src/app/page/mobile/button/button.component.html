@@ -175,14 +175,14 @@
 </vant-mobile-demo>
 
 <vant-mobile-demo
-    title='块级元素'
+    [title]="'button.blockEl' | vantI18n "
     class="demo-button"
 >
     <van-button
         type="primary"
         [block]="true"
     >
-        块级元素
+        {{'button.blockEl' | vantI18n }}
     </van-button>
 </vant-mobile-demo>
 
