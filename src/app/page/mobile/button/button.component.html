@@ -1,12 +1,12 @@
 <vant-mobile-nav title='Button'></vant-mobile-nav>
 <vant-mobile-demo
-[title]="'button.type' | vantI18n "
+    [title]="'button.type' | vantI18n "
     class="demo-button"
 >
-<!-- Pipe -->
-<!-- <p>{{ 'comment.comments' | vantI18n }}</p> -->
-<!-- Directive -->
-<!-- <p vant-i18n="comment.comments"></p> -->
+    <!-- Pipe -->
+    <!-- <p>{{ 'comment.comments' | vantI18n }}</p> -->
+    <!-- Directive -->
+    <!-- <p vant-i18n="comment.comments"></p> -->
     <div class="demo-button-row">
         <van-button type="primary">{{ 'button.primary' | vantI18n }}</van-button>
         <van-button type="info">{{ 'button.info' | vantI18n }}</van-button>
@@ -35,7 +35,7 @@
 </vant-mobile-demo>
 
 <vant-mobile-demo
-[title]="'button.hairline' | vantI18n "
+    [title]="'button.hairline' | vantI18n "
     class="demo-button"
 >
     <van-button
@@ -43,13 +43,13 @@
         [hairline]="true"
         type="primary"
     >
-    {{'button.hairlineBtn' | vantI18n }}
+        {{'button.hairlineBtn' | vantI18n }}
     </van-button>
     <van-button
         [hairline]="true"
         type="info"
     >
-    {{'button.hairlineBtn' | vantI18n }}
+        {{'button.hairlineBtn' | vantI18n }}
     </van-button>
 </vant-mobile-demo>
 
@@ -137,9 +137,11 @@
     >
         按钮
     </van-button>
-    <van-button [plain]="true"
+    <van-button
+        [plain]="true"
         icon="https://img.yzcdn.cn/vant/user-active.png"
-        type="info"  iconPrefix='right'
+        type="info"
+        iconPrefix='right'
     >
         按钮
     </van-button>
