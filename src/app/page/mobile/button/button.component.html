@@ -1,6 +1,6 @@
 <vant-mobile-nav title='Button'></vant-mobile-nav>
 <vant-mobile-demo
-    title='按钮类型'
+[title]="'button.type' | vantI18n "
     class="demo-button"
 >
 <!-- Pipe -->
@@ -17,25 +17,25 @@
 </vant-mobile-demo>
 
 <vant-mobile-demo
-    title='朴素按钮'
+    [title]="'button.plain' | vantI18n "
     class="demo-button"
 >
     <van-button
         [plain]="true"
         type="primary"
     >
-        朴素按钮
+        {{'button.plain' | vantI18n }}
     </van-button>
     <van-button
         [plain]="true"
         type="info"
     >
-        朴素按钮
+        {{'button.plain' | vantI18n }}
     </van-button>
 </vant-mobile-demo>
 
 <vant-mobile-demo
-    title='细边框'
+[title]="'button.hairline' | vantI18n "
     class="demo-button"
 >
     <van-button
@@ -43,7 +43,7 @@
         [hairline]="true"
         type="primary"
     >
-        细边框按钮
+    {{'button.hairlineBtn' | vantI18n }}
     </van-button>
     <van-button
         [hairline]="true"
