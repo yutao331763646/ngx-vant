@@ -23,6 +23,12 @@ export default {
         round: 'Round',
 
         icon: 'Icon',
-        btn: 'Button'
+        btn: 'Button',
+
+        size: 'Size',
+        large: 'Large',
+        normal: 'Normal',
+        small: 'Small',
+        mini: 'Mini'
     },
 }

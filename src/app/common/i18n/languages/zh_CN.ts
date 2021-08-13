@@ -23,6 +23,12 @@ export default {
         round: '圆形按钮',
 
         icon: '图标按钮',
-        btn: '按钮'
+        btn: '按钮',
+
+        size: '按钮尺寸',
+        large: '大号按钮',
+        normal: '普通按钮',
+        small: '小型按钮',
+        mini: '迷你按钮'
     },
 }
