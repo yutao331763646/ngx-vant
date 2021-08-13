@@ -15,6 +15,6 @@ export default {
         hairline:'细边框',
         hairlineBtn:'细边框按钮',
         disabled:'禁用状态',
-        loading:'Loading'
+        loading:'加载状态'
     },
 }
