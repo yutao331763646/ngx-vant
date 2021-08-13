@@ -4,18 +4,20 @@ export default {
     // locale: 'en_US',
     ...en_US,
     button: {
-        type:'Type',
+        type: 'Type',
         primary: 'Primary',
         info: 'Info',
         default: 'Default',
         danger: 'Danger',
         warning: 'Warning',
 
-        plain:'Plain',
-        hairline:'Hairline',
-        hairlineBtn:'Hairline',
-        disabled:'Diabled',
-        loading:'Loading',
-        load:'Loading...'
+        plain: 'Plain',
+        hairline: 'Hairline',
+        hairlineBtn: 'Hairline',
+        disabled: 'Diabled',
+        loading: 'Loading',
+        load: 'Loading...',
+
+        shape:'Shape',
     },
 }
