@@ -19,6 +19,7 @@ export default {
         load: '加载中...',
 
         shape:'按钮形状',
-
+        square:'方形按钮',
+        round:'圆形按钮'
     },
 }

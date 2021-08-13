@@ -19,5 +19,8 @@ export default {
         load: 'Loading...',
 
         shape:'Shape',
+        square:'Square',
+        round:'Round'
+
     },
 }
