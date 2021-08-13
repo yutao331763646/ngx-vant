@@ -15,6 +15,7 @@ export default {
         hairline:'Hairline',
         hairlineBtn:'Hairline',
         disabled:'Diabled',
-        loading:'Loading'
+        loading:'Loading',
+        load:'Loading'
     },
 }
