@@ -68,11 +68,11 @@ import { Vant18nModule, VANT_I18N } from 'ngx-vant/i18n';
 export class AppModule { }
 ```
 
-See more in [Quickstart](https://yutao331763646.github.io/yutao331763646/#/basic/quickstart).
+See more in [Quickstart](https://ngx-vant.github.io/ngx-vant/#/basic/quickstart).
 
 ## Contribution
 
-Please make sure to read the [Contributing Guide](https://yutao331763646.github.io/yutao331763646/#/basic/contribution) before making a pull request.
+Please make sure to read the [Contributing Guide](https://ngx-vant.github.io/ngx-vant/#/basic/contribution) before making a pull request.
 
 ## Browser Support
 
@@ -81,7 +81,7 @@ Modern browsers and Android 4.0+, iOS 8.0+.
 
 ## Links
 
-- [Documentation](https://yutao331763646.github.io/yutao331763646)
+- [Documentation](https://ngx-vant.github.io/ngx-vant)
 
 
 ## LICENSE
