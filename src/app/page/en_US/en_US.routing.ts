@@ -19,7 +19,7 @@ import { QuickstartComponent } from "./quickstart/quickstart.component";
 // import { TagComponent } from "./tag/tag.component";
 // import { ToastComponent } from "./toast/toast.component";
 // import { PickerComponent } from "./picker/picker.component";
-// import { ThemeComponent } from "./theme/theme.component";
+import { ThemeComponent } from "./theme/theme.component";
 // import { ContributionComponent } from "./contribution/contribution.component";
 // import { DesignComponent } from "./design/design.component";
 // import { StyleGuideComponent } from "./style-guide/style-guide.component";
@@ -35,10 +35,10 @@ const routes: Routes = [
         path: 'quickstart',
         component: QuickstartComponent
     },
-    // {
-    //     path: 'theme',
-    //     component: ThemeComponent
-    // },
+    {
+        path: 'theme',
+        component: ThemeComponent
+    },
     // {
     //     path: 'contribution',
     //     component: ContributionComponent
