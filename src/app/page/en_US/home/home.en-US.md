@@ -22,7 +22,7 @@ See in [Quickstart](#/en-US/quickstart).
 
 ### Contribution
 
-Please make sure to read the [Contributing Guide](https://github.com/youzan/vant/blob/dev/.github/CONTRIBUTING.md) before making a pull request.
+Please make sure to read the [Contributing Guide](#/en-US/contribution) before making a pull request.
 
 ### Browser Support
 
@@ -41,9 +41,7 @@ Modern browsers and Android 4.0+, iOS 8.0+.
 
 ### Links
 
-- [Feedback](https://github.com/youzan/vant/issues)
-- [Changelog](#/en-US/changelog)
-- [Gitter](https://gitter.im/vant-contrib/discuss?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
+- [Feedback](https://github.com/yutao331763646/ngx-vant/issues)
 
 ### LICENSE
 
