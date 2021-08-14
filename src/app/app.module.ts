@@ -67,7 +67,6 @@ const NGX_VANT = [
     TagModule, StickyModule, PickerModule,Vant18nModule
 ]
 
-
 @NgModule({
     declarations: [
         AppComponent,

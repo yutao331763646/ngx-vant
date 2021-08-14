@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
-import {  VantI18nService } from 'ngx-vant/i18n';
+import { VantI18nService } from 'ngx-vant/i18n';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { navConfig, navEnConfig } from './config'
@@ -16,16 +16,7 @@ export class NavComponent implements OnInit, OnDestroy {
     constructor(
         private vantI18n: VantI18nService,
         private router: Router
-    ) { 
-        //    this.router.events.subscribe((event: any) => {
-        //             // console.log(event)
-        //             if (event instanceof NavigationEnd) {
-        //                 const host = window.location.href.split('/#/')
-        //                 console.log(host[1].split('/')[0])
-        //                 const lang = host[1].split('/')[0] !== 'en_US' ? en_US : zh_CN
-        //                 this.vantI18n.setLocale(lang);
-        //             }
-        //         })
+    ) {
     }
     lang = 'zh_CN'
     nav = ''
@@ -43,10 +34,10 @@ export class NavComponent implements OnInit, OnDestroy {
 
 
 
-                
+
             })
 
-             
+
     }
     ngOnDestroy() {
         this._unSubject.next();
