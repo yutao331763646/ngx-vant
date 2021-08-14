@@ -2,37 +2,49 @@
 
 ### Intro
 
-Vant uses Chinese as the default language. If you want to use other languages, please follow the instructions below.
+Nnx-Vant uses Chinese as the default language. If you want to use other languages, please follow the instructions below.
 
 ## Usage
 
-### Switch languages
 
-Vant supports multiple languages with the Locale component, and the `Locale.use` method allows you to switch to different languages.
 
 ```js
-import { Locale } from 'vant';
-import enUS from 'vant/es/locale/lang/en-US';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-Locale.use('en-US', enUS);
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { Vant18nModule, VANT_I18N, zh_CN } from 'ngx-vant/i18n';
+
+
+@NgModule({
+    declarations: [AppComponent],
+    imports: [BrowserModule, AppRoutingModule],
+    providers: [{ provide: VANT_I18N, useValue: zh_CN }],
+    bootstrap: [AppComponent]
+})
+export class AppModule {}
 ```
 
-### Override default configs
-
-Use `Locale.add` method to modify the default configs.
 
 ```js
-import { Locale } from 'vant';
+import { Component } from '@angular/core';
+import { en_US, zh_CN } from 'ngx-vant/i18n';
+import { VantI18nService } from 'ngx-vant/i18n';
 
-const messages = {
-  'en-US': {
-    vanPicker: {
-      confirm: 'Close',
-    },
-  },
-};
-
-Locale.add(messages);
+@Component({
+    selector: 'app',
+    templateUrl: './demo.component.html'
+})
+export class AppComponent {
+    constructor(
+        private vantI18n: VantI18nService,
+    ) { }
+   
+    onSwitchLang() {
+        this.vantI18n.setLocale(lang);
+    }
+}
 ```
 
 ### Config files
@@ -55,6 +67,3 @@ Current supported languages:
 
 > View all language configs [Here](https://github.com/youzan/vant/tree/dev/src/locale/lang).
 
-### Add new language
-
-If you can’t find the language you need, please send us a Pull Request to add the new language pack, you can refer to [Add German language pack](https://github.com/youzan/vant/pull/7245) PR.
