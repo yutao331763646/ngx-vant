@@ -51,7 +51,7 @@ Ngx-Vant 是**Zan Design System**视觉规范实现的**Angular UI** 组件库�
 
 ### 链接
 
-- [意见反馈](https://github.com/youzan/vant/issues)
+- [意见反馈](https://github.com/yutao331763646/ngx-vant/issues)
 - [更新日志](#/zh-CN/changelog)
 - [码云镜像](https://vant-contrib.gitee.io/vant)
 - [Gitter 讨论组](https://gitter.im/vant-contrib/discuss?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
