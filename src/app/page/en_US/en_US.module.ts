@@ -5,6 +5,7 @@ import { QuickstartComponent } from './quickstart/quickstart.component';
 import { DocSharedModule } from '../shared/doc-shared';
 import { ButtonComponent } from './button/button.component';
 import { HomeComponent } from './home/home.component';
+import { ThemeComponent } from './theme/theme.component';
 
 @NgModule({
     imports: [
@@ -12,7 +13,8 @@ import { HomeComponent } from './home/home.component';
         DocSharedModule
     ],
     declarations: [
-        QuickstartComponent,ButtonComponent,HomeComponent
+        QuickstartComponent,ButtonComponent,HomeComponent,
+        ThemeComponent
     ]
 })
 export class En_USModule { }
