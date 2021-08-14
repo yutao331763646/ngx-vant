@@ -6,6 +6,7 @@
     "bootstrap": "yarn || npm i",
     "start": "ng serve",
     "doc": "ng serve  --port  4201 ",
+    "gen:doc":"node ./scripts/genDoc",
     "doc:build": "ng build --configuration production",
     "test": "ng test",
     "lint": "ng lint",

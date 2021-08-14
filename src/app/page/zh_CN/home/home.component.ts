@@ -14,6 +14,13 @@ export class HomeComponent implements OnInit {
         desc: '本项目基于 <strong>MIT</strong> 协议，请自由地享受和参与开源'
 
     }]
+    private _readMe: HTMLElement | string = '';
+    @Input() set readMe(readMe: HTMLElement | string) {
+        this._readMe = readMe;
+    }
+    get readMe() {
+        return cardWrapper(this._readMe);
+    }
     constructor() { }
 
     ngOnInit() {

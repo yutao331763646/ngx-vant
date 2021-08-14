@@ -1,7 +1,6 @@
 import { en_US } from "ngx-vant/i18n";
 
 export default {
-    // locale: 'en_US',
     ...en_US,
     button: {
         type: 'Type',
