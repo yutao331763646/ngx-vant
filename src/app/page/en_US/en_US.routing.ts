@@ -23,7 +23,7 @@ import { ThemeComponent } from "./theme/theme.component";
 // import { ContributionComponent } from "./contribution/contribution.component";
 // import { DesignComponent } from "./design/design.component";
 // import { StyleGuideComponent } from "./style-guide/style-guide.component";
-// import { LocaleComponent } from "./locale/locale.component";
+import { LocaleComponent } from "./locale/locale.component";
 
 const routes: Routes = [
     {
@@ -51,10 +51,10 @@ const routes: Routes = [
     //     path: 'style-guide',
     //     component: StyleGuideComponent
     // },
-    // {
-    //     path: 'locale',
-    //     component: LocaleComponent
-    // },
+    {
+        path: 'locale',
+        component: LocaleComponent
+    },
     {
         path: 'button',
         component: ButtonComponent

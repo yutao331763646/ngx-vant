@@ -6,6 +6,7 @@ import { DocSharedModule } from '../shared/doc-shared';
 import { ButtonComponent } from './button/button.component';
 import { HomeComponent } from './home/home.component';
 import { ThemeComponent } from './theme/theme.component';
+import { LocaleComponent } from './locale/locale.component';
 
 @NgModule({
     imports: [
@@ -14,7 +15,7 @@ import { ThemeComponent } from './theme/theme.component';
     ],
     declarations: [
         QuickstartComponent,ButtonComponent,HomeComponent,
-        ThemeComponent
+        ThemeComponent,LocaleComponent
     ]
 })
 export class En_USModule { }
