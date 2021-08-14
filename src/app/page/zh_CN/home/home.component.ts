@@ -23,8 +23,11 @@ export class HomeComponent implements OnInit {
         return cardWrapper(this._readMe);
     }
     constructor() { }
-
     ngOnInit() {
+        this.setReadMe()
+    }
+    setReadMe() {
+        this.readMe = require(`!html-loader!markdown-loader!./quickstart.en-US.md`).default;
     }
 
 }
