@@ -1,23 +1,20 @@
 <div class="card">
   <div class="van-doc-intro">
     <img class="van-doc-intro__logo" style="width: 120px; height: 120px;" src="https://img.yzcdn.cn/vant/logo.png">
-    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">Vant</h2>
-    <p>Mobile UI Components built on Vue</p>
+    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">Ngx-Vant</h2>
+    <p>Mobile UI Components built on Angular</p>
   </div>
 </div>
 
 ### Features
 
 - 65+ Reusable components
-- 1kb Component average size (min+gzip)
-- 90%+ Unit test coverage
 - Extensive documentation and demos
-- Support Vue 2 & Vue 3
+- Support Angular12
 - Support Tree Shaking
 - Support Custom Theme
 - Support i18n
 - Support TS
-- Support SSR
 
 ### Quickstart
 
