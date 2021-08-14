@@ -1,14 +1,14 @@
 <div class="card">
   <div class="van-doc-intro">
     <img class="van-doc-intro__logo" style="width: 120px; height: 120px;" src="https://img.yzcdn.cn/vant/logo.png">
-    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">Vant</h2>
-    <p>轻量、可靠的移动端 Vue 组件库</p>
+    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">Ngx-Vant</h2>
+    <p>轻量、可靠的移动端 Angular 组件库</p>
   </div>
 </div>
 
 ### 介绍
 
-Vant 是**有赞前端团队**开源的移动端组件库，于 2017 年开源，已持续维护 4 年时间。Vant 对内承载了有赞所有核心业务，对外服务十多万开发者，是业界主流的移动端组件库之一。 <br><br>
+Ngx-Vant 是**Zan Design System**视觉规范实现的**Angular UI** 组件库，全部代码开源并遵循 MIT 协议，任何企业、组织及个人均可免费使用。 <br><br>
 
 目前 Vant 官方提供了 [Vue 2 版本](https://vant-contrib.gitee.io/vant)、[Vue 3 版本](https://vant-contrib.gitee.io/vant/next)和[微信小程序版本](http://vant-contrib.gitee.io/vant-weapp)，并由社区团队维护 [React 版本](https://github.com/mxdi9i7/vant-react)。
 
@@ -33,7 +33,7 @@ Vant 是**有赞前端团队**开源的移动端组件库，于 2017 年开源�
 
 修改代码请阅读我们的[开发指南](#/zh-CN/contribution)。
 
-使用过程中发现任何问题都可以提 [Issue](https://github.com/youzan/vant/issues) 给我们，当然，我们也非常欢迎你给我们发 [PR](https://github.com/youzan/vant/pulls)。
+使用过程中发现任何问题都可以提 [Issue](https://github.com/yutao331763646/ngx-vant/issues) 给我们，当然，我们也非常欢迎你给我们发 [PR](https://github.com/yutao331763646/ngx-vant/pulls)。
 
 ### 浏览器支持
 
