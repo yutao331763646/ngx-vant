@@ -4,7 +4,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { ButtonComponent } from "./button/button.component";
 // import { CellComponent } from "./cell/cell.component";
 // import { FieldComponent } from "./field/field.component";
-// import { HomeComponent } from "./home/home.component";
+import { HomeComponent } from "./home/home.component";
 // import { IconComponent } from "./icon/icon.component";
 // import { ImageComponent } from "./image/image.component";
 // import { LayoutComponent } from "./layout/layout.component";
@@ -26,11 +26,11 @@ import { QuickstartComponent } from "./quickstart/quickstart.component";
 // import { LocaleComponent } from "./locale/locale.component";
 
 const routes: Routes = [
-    // {
-    //     path: 'home',
-    //     component: HomeComponent
+    {
+        path: 'home',
+        component: HomeComponent
 
-    // },
+    },
     {
         path: 'quickstart',
         component: QuickstartComponent

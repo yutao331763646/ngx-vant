@@ -4,6 +4,7 @@ import { EnRoutingModule } from './en_US.routing';
 import { QuickstartComponent } from './quickstart/quickstart.component';
 import { DocSharedModule } from '../shared/doc-shared';
 import { ButtonComponent } from './button/button.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
     imports: [
@@ -11,7 +12,7 @@ import { ButtonComponent } from './button/button.component';
         DocSharedModule
     ],
     declarations: [
-        QuickstartComponent,ButtonComponent
+        QuickstartComponent,ButtonComponent,HomeComponent
     ]
 })
 export class En_USModule { }
