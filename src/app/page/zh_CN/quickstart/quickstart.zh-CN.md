@@ -29,6 +29,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ButtonModule } from 'ngx-vant/button';
+import { Vant18nModule, VANT_I18N } from 'ngx-vant/i18n';
 @NgModule({
     declarations: [
         AppComponent,
@@ -38,7 +39,7 @@ import { ButtonModule } from 'ngx-vant/button';
         AppRoutingModule,
         ButtonModule
     ],
-    providers: [],
+    providers: [{ provide: VANT_I18N, useValue: zh_CN }],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
