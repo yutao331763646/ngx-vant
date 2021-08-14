@@ -15,15 +15,12 @@ Ngx-Vant 是**Zan Design System**视觉规范实现的**Angular UI** 组件库�
 ### 特性
 
 - 提供 60 多个高质量组件，覆盖移动端各类场景
-- 性能极佳，组件平均体积不到 1kb（min+gzip）
-- 单元测试覆盖率 90%+，提供稳定性保障
 - 完善的中英文文档和示例
-- 支持 Vue 2 & Vue 3
+- 支持 Angular12
 - 支持按需引入
 - 支持主题定制
 - 支持国际化
 - 支持 TypeScript
-- 支持 SSR
 
 ### 快速上手
 
@@ -39,19 +36,7 @@ Ngx-Vant 是**Zan Design System**视觉规范实现的**Angular UI** 组件库�
 
 现代浏览器以及 Android 4.0+, iOS 8.0+。
 
-### 加入我们
 
-**有赞前端团队**是由一群年轻、皮实、对技术饱含热情的小伙伴组成的，目前共有 100 多名前端工程师，分布在业务中台、电商、零售、美业、资产、有赞云、赋能平台、增长中心等业务线。
-
-我们热爱分享和开源，崇尚用工程师的方式解决问题，因此造了很多工具来解决我们遇到的问题，目前我们维护的开源产品有：
-
-<img src="https://img.yzcdn.cn/public_files/2019/07/22/f4b70763c55c8710c52c667ecf192c05.jpeg" style="width: 320px; height: 303px;">
-
-我们正在寻找更多优秀的小伙伴，一起拓展前端技术的边界，期待你的加入！
-
-- <a target="_blank" href="https://app.mokahr.com/apply/youzan/3750#/jobs/?keyword=%E5%89%8D%E7%AB%AF&_k=tueqds">职位详情</a>（Base: 杭州/深圳）
-- <a target="_blank" href="https://tech.youzan.com/tag/front-end/">团队博客</a>
-- <a target="_blank" href="https://github.com/youzan">开源项目</a>
 
 ### 生态
 
