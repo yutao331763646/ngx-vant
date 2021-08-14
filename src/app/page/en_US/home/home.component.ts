@@ -17,6 +17,10 @@ export class HomeComponent implements OnInit {
     constructor() { }
 
     ngOnInit() {
+        this.setReadMe()
+    }
+    setReadMe() {
+        this.readMe = require(`!html-loader!markdown-loader!./home.en-US.md`).default;
     }
 
 }
