@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
         this.setReadMe()
     }
     setReadMe() {
-        this.readMe = require(`!html-loader!markdown-loader!./quickstart.en-US.md`).default;
+        this.readMe = require(`!html-loader!markdown-loader!./home.en-US.md`).default;
     }
 
 }
