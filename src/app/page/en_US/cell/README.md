@@ -57,14 +57,6 @@ import CellModule from 'ngx-vant/cell';
 </van-cell-group>
 ```
 
-### Router
-
-```html
-<van-cell-group>
-  <van-cell title="URL" is-link url="/vant/mobile.html" />
-  <van-cell title="Vue Router" is-link to="index" />
-</van-cell-group>
-```
 
 ### Group Title
 
