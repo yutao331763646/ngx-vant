@@ -104,7 +104,7 @@ import CellModule from 'ngx-vant/cell';
 | clickable | Whether to show click feedback when clicked | _boolean_ | `false` |
 | isLink | Whether to show link icon | _boolean_ | `false` |
 | required | Whether to show required mark | _boolean_ | `false` |
-| arrow-direction | Can be set to `left` `up` `down` | _string_ | `right` |
+| arrowDirection | Can be set to `left` `up` `down` | _string_ | `right` |
 | title-style | Title style | _any_ | - |
 | title-class | Title className | _any_ | - |
 | value-class | Value className | _any_ | - |
