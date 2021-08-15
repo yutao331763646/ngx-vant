@@ -116,23 +116,7 @@ import CellModule from 'ngx-vant/cell';
 | ----- | ---------------------------- | -------------- |
 | click | Emitted when cell is clicked | _event: Event_ |
 
-### CellGroup Slots
 
-| Name    | Description  |
-| ------- | ------------ |
-| default | Default slot |
-| title   | Custom title |
-
-### Cell Slots
-
-| Name       | Description                       |
-| ---------- | --------------------------------- |
-| default    | Custom value                      |
-| icon       | Custom icon                       |
-| title      | Custom title                      |
-| label      | Custom label                      |
-| right-icon | Custom right icon                 |
-| extra      | Custom extra content on the right |
 
 ### Less Variables
 
