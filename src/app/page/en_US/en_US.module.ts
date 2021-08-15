@@ -7,6 +7,7 @@ import { ButtonComponent } from './button/button.component';
 import { HomeComponent } from './home/home.component';
 import { ThemeComponent } from './theme/theme.component';
 import { LocaleComponent } from './locale/locale.component';
+import { CellComponent } from './cell/cell.component';
 
 @NgModule({
     imports: [
@@ -15,7 +16,8 @@ import { LocaleComponent } from './locale/locale.component';
     ],
     declarations: [
         QuickstartComponent,ButtonComponent,HomeComponent,
-        ThemeComponent,LocaleComponent
+        ThemeComponent,LocaleComponent,
+        CellComponent
     ]
 })
 export class En_USModule { }
