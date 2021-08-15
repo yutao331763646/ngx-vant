@@ -107,7 +107,7 @@ import CellModule from 'ngx-vant/cell';
 | arrowDirection | Can be set to `left` `up` `down` | _string_ | `right` |
 | titleStyle | Title style | _any_ | - |
 | titleClass | Title className | _any_ | - |
-| value-class | Value className | _any_ | - |
+| valueClass | Value className | _any_ | - |
 | label-class | Label className | _any_ | - |
 
 ### Cell Events
