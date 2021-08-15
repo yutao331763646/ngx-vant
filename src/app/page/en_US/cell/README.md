@@ -105,7 +105,7 @@ import CellModule from 'ngx-vant/cell';
 | isLink | Whether to show link icon | _boolean_ | `false` |
 | required | Whether to show required mark | _boolean_ | `false` |
 | arrowDirection | Can be set to `left` `up` `down` | _string_ | `right` |
-| title-style | Title style | _any_ | - |
+| titleStyle | Title style | _any_ | - |
 | title-class | Title className | _any_ | - |
 | value-class | Value className | _any_ | - |
 | label-class | Label className | _any_ | - |
