@@ -108,7 +108,7 @@ import CellModule from 'ngx-vant/cell';
 | titleStyle | Title style | _any_ | - |
 | titleClass | Title className | _any_ | - |
 | valueClass | Value className | _any_ | - |
-| label-class | Label className | _any_ | - |
+| labelClass | Label className | _any_ | - |
 
 ### Cell Events
 
