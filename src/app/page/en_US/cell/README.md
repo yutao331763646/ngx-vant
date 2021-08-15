@@ -51,9 +51,9 @@ import CellModule from 'ngx-vant/cell';
 
 ```html
 <van-cell-group>
-  <van-cell title="Cell title" is-link />
-  <van-cell title="Cell title" is-link value="Content" />
-  <van-cell title="Cell title" is-link arrow-direction="down" value="Content" />
+  <van-cell title="Cell title" [isLink]="true" />
+  <van-cell title="Cell title" [isLink]="true" value="Content" />
+  <van-cell title="Cell title" [isLink]="true" arrow-direction="down" value="Content" />
 </van-cell-group>
 ```
 
