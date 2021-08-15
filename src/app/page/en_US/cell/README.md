@@ -3,11 +3,7 @@
 ### Install
 
 ```js
-import Vue from 'vue';
-import { Cell, CellGroup } from 'vant';
-
-Vue.use(Cell);
-Vue.use(CellGroup);
+import CellModule from 'ngx-vant/cell';
 ```
 
 ## Usage
