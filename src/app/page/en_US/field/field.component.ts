@@ -20,7 +20,7 @@ export class FieldComponent implements OnInit {
         this.setReadMe()
     }
     setReadMe() {
-        this.readMe = require(`!html-loader!markdown-loader!./README.zh-CN.md`).default;
+        this.readMe = require(`!html-loader!markdown-loader!./README.md`).default;
     }
 
 }
