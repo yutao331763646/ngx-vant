@@ -157,7 +157,7 @@ Use `inputAlign` prop to align the input value.
 | clearable | Whether to be clearable | _boolean_ | `false` |
 | clearTrigger  | When to display the clear icon, `always` means to display the icon when value is not empty, `focus` means to display the icon when input is focused | _string_ | `focus` |
 | clickable | Whether to show click feedback when clicked | _boolean_ | `false` |
-| is-link | Whether to show link icon | _boolean_ | `false` |
+| isLink | Whether to show link icon | _boolean_ | `false` |
 | autofocus | Whether to auto focus, unsupported in iOS | _boolean_ | `false` |
 | show-word-limit | Whether to show word limit, need to set the `maxlength` prop | _boolean_ | `false` |
 | error | Whether to show error info | _boolean_ | `false` |
