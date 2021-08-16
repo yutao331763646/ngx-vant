@@ -141,7 +141,7 @@ Use `inputAlign` prop to align the input value.
 
 | Attribute | Description | Type | Default |
 | --- | --- | --- | --- |
-| v-model (value) | Field value | _number \| string_ | - |
+| [(ngModel)] | Field value | _number \| string_ | - |
 | label | Field label | _string_ | - |
 | name `v2.5.0` | Name | _string_ | - |
 | type | Input type, can be set to `tel` `digit`<br>`number` `textarea` `password` | _string_ | `text` |
