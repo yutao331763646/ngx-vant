@@ -171,7 +171,7 @@ Use `inputAlign` prop to align the input value.
 | autosize | Textarea auto resize，can accpet an object,<br>e.g. { maxHeight: 100, minHeight: 50 } | _boolean \| object_ | `false` |
 | left-icon | Left side icon name | _string_ | - |
 | right-icon | Right side icon name | _string_ | - |
-| icon-prefix `v2.5.3` | Icon className prefix | _string_ | `van-icon` |
+| icon-prefix  | Icon className prefix | _string_ | `van-icon` |
 | rules `v2.5.0` | Form validation rules | _Rule[]_ | - |
 
 ### Events
