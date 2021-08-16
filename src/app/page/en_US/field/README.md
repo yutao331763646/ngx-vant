@@ -23,11 +23,11 @@ The value of field is bound with ngModel.
 Use `type` prop to custom different type fields.
 
 ```html
-<van-field v-model="text" label="Text" />
-<van-field v-model="tel" type="tel" label="Phone" />
-<van-field v-model="digit" type="digit" label="Digit" />
-<van-field v-model="number" type="number" label="Number" />
-<van-field v-model="password" type="password" label="Password" />
+<van-field [(ngModel)]="text" label="Text" />
+<van-field [(ngModel)]="tel" type="tel" label="Phone" />
+<van-field [(ngModel)]="digit" type="digit" label="Digit" />
+<van-field [(ngModel)]="number" type="number" label="Number" />
+<van-field [(ngModel)]="password" type="password" label="Password" />
 ```
 
 ```js
