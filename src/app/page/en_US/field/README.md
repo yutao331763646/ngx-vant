@@ -112,15 +112,14 @@ Use button slot to insert button.
 
 ```html
 <van-field
-  v-model="message"
-  rows="2"
-  autosize
-  label="Message"
-  type="textarea"
-  maxlength="50"
-  placeholder="Message"
-  show-word-limit
-/>
+    [(ngModel)]="message"
+    rows="2"
+    label="Message"
+    type="textarea"
+    maxlength="50"
+    placeholder="Message"
+    [showWordLimit]="true"
+></van-field>
 ```
 
 ### Input Align
