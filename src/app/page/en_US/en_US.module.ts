@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { ThemeComponent } from './theme/theme.component';
 import { LocaleComponent } from './locale/locale.component';
 import { CellComponent } from './cell/cell.component';
+import { FieldComponent } from './field/field.component';
 
 @NgModule({
     imports: [
@@ -17,7 +18,7 @@ import { CellComponent } from './cell/cell.component';
     declarations: [
         QuickstartComponent,ButtonComponent,HomeComponent,
         ThemeComponent,LocaleComponent,
-        CellComponent
+        CellComponent,FieldComponent
     ]
 })
 export class En_USModule { }

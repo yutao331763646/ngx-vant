@@ -3,7 +3,7 @@ import { RouterModule, Routes } from "@angular/router";
 // import { StickyComponent } from "./sticky/sticky.component";
 import { ButtonComponent } from "./button/button.component";
 import { CellComponent } from "./cell/cell.component";
-// import { FieldComponent } from "./field/field.component";
+import { FieldComponent } from "./field/field.component";
 import { HomeComponent } from "./home/home.component";
 // import { IconComponent } from "./icon/icon.component";
 // import { ImageComponent } from "./image/image.component";
@@ -85,10 +85,11 @@ const routes: Routes = [
         path: 'cell',
         component: CellComponent
     }, 
+    {
+        path: 'field',
+        component: FieldComponent
+    }, 
     // {
-    //     path: 'field',
-    //     component: FieldComponent
-    // }, {
     //     path: 'overlay',
     //     component: OverlayComponent
     // }, {
