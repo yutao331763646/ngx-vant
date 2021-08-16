@@ -18,16 +18,6 @@ The value of field is bound with ngModel.
 </van-cell-group>
 ```
 
-```js
-export default {
-  data() {
-    return {
-      value: '',
-    };
-  },
-};
-```
-
 ### Custom Type
 
 Use `type` prop to custom different type fields.
