@@ -14,7 +14,7 @@ import FieldModule from 'ngx-vant/field';
 
 ### 基础用法
 
-可以通过 `v-model` 双向绑定输入框的值，通过 `placeholder` 设置占位提示文字。
+可以通过 `ngModel` 双向绑定输入框的值，通过 `placeholder` 设置占位提示文字。
 
 ```html
 <!-- Field 是基于 Cell 实现的，可以使用 CellGroup 作为容器来提供外边框。 -->
