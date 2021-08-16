@@ -92,10 +92,17 @@ Use `error` or `errorMessage` to show error info.
 Use button slot to insert button.
 
 ```html
-<van-field v-model="sms" center clearable label="SMS" placeholder="SMS">
-  <template #button>
-    <van-button size="small" type="primary">Send SMS</van-button>
-  </template>
+<van-field
+    [(ngModel)]="sms"
+    [center]="true"
+    [clearable]="true"
+    [button]="button"
+    label="SMS"
+    placeholder="SMS"
+>
+    <ng-template #button>
+        <van-button size="small" type="primary">Send SMS</van-button>
+    </ng-template>
 </van-field>
 ```
 
