@@ -162,7 +162,6 @@ Use `inputAlign` prop to align the input value.
 | showWordLimit | Whether to show word limit, need to set the `maxlength` prop | _boolean_ | `false` |
 | error | Whether to show error info | _boolean_ | `false` |
 | errorMessage | Error message | _string_ | - |
-| format-trigger `v2.8.7` | When to format value，can be set to `onBlur` | _string_ | `onChange` |
 | arrow-direction | Can be set to `left` `up` `down` | _string_ | `right` |
 | label-class | Label className | _any_ | - |
 | label-width | Label width | _number \| string_ | `6.2em` |
