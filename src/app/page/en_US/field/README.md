@@ -172,7 +172,7 @@ Use `inputAlign` prop to align the input value.
 | left-icon | Left side icon name | _string_ | - |
 | right-icon | Right side icon name | _string_ | - |
 | icon-prefix  | Icon className prefix | _string_ | `van-icon` |
-| rules `v2.5.0` | Form validation rules | _Rule[]_ | - |
+| rules  | Form validation rules | _Rule[]_ | - |
 
 ### Events
 
