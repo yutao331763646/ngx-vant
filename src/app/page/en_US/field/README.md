@@ -10,7 +10,7 @@ import FieldModule from 'ngx-vant/field';
 
 ### Basic Usage
 
-The value of field is bound with v-model.
+The value of field is bound with ngModel.
 
 ```html
 <van-cell-group>
