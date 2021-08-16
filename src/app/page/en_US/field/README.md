@@ -185,7 +185,7 @@ Field support all native events of input tag
 | blur | Emitted when input is blured | _event: Event_ |
 | clear | Emitted when the clear icon is clicked | _event: Event_ |
 | click | Emitted when component is clicked | _event: Event_ |
-| click-input `v2.8.1` | Emitted when the input is clicked | _event: Event_ |
+| clickInput  | Emitted when the input is clicked | _event: Event_ |
 | click-left-icon | Emitted when the left icon is clicked | _event: Event_ |
 | click-right-icon | Emitted when the right icon is clicked | _event: Event_ |
 
