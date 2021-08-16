@@ -66,7 +66,7 @@ Use `type` prop to custom different type fields.
 
 ### Error Info
 
-Use `error` or `error-message` to show error info.
+Use `error` or `errorMessage` to show error info.
 
 ```html
 <van-cell-group>
