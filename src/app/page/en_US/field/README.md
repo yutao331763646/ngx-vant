@@ -30,26 +30,14 @@ Use `type` prop to custom different type fields.
 <van-field [(ngModel)]="password" type="password" label="Password" />
 ```
 
-```js
-export default {
-  data() {
-    return {
-      tel: '',
-      text: '',
-      digit: '',
-      number: '',
-      password: '',
-    };
-  },
-};
-```
+
 
 ### Disabled
 
 ```html
 <van-cell-group>
-  <van-field label="Text" value="Input Readonly" readonly />
-  <van-field label="Text" value="Input Disabled" disabled />
+  <van-field label="Text" value="Input Readonly" [readonly]="true"  />
+  <van-field label="Text" value="Input Disabled" [disabled]="true" />
 </van-cell-group>
 ```
 
