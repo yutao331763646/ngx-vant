@@ -197,16 +197,6 @@ Field support all native events of input tag
 | setFocus | Trigger input focus | -         | -            |
 | setBlur  | Trigger input blur  | -         | -            |
 
-### Slots
-
-| Name           | Description                 |
-| -------------- | --------------------------- |
-| label          | Custom label                |
-| input          | Custom input                |
-| left-icon      | Custom left icon            |
-| right-icon     | Custom right icon           |
-| button         | Insert button               |
-| extra `v2.8.2` | Custom content on the right |
 
 ### Less Variables
 
