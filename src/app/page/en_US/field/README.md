@@ -106,42 +106,6 @@ Use button slot to insert button.
 </van-field>
 ```
 
-### Format Value
-
-Use `formatter` prop to format the input value.
-
-```html
-<van-field
-  v-model="value1"
-  label="Text"
-  :formatter="formatter"
-  placeholder="Format On Change"
-/>
-<van-field
-  v-model="value2"
-  label="Text"
-  :formatter="formatter"
-  format-trigger="onBlur"
-  placeholder="Format On Blur"
-/>
-```
-
-```js
-export default {
-  data() {
-    return {
-      value1: '',
-      value2: '',
-    };
-  },
-  methods: {
-    formatter(value) {
-      return value.replace(/\d/g, '');
-    },
-  },
-};
-```
-
 
 
 ### Show Word Limit
