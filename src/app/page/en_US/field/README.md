@@ -124,15 +124,15 @@ Use button slot to insert button.
 
 ### Input Align
 
-Use `input-align` prop to align the input value.
+Use `inputAlign` prop to align the input value.
 
 ```html
 <van-field
-  v-model="value"
-  label="Text"
-  placeholder="Input Align Right"
-  input-align="right"
-/>
+    [(ngModel)]="value"
+    label="Text"
+    placeholder="Input Align Right"
+    inputAlign="right"
+></van-field>
 ```
 
 ## API
