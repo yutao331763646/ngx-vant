@@ -14,7 +14,7 @@ The value of field is bound with ngModel.
 
 ```html
 <van-cell-group>
-  <van-field v-model="value" label="Label" placeholder="Text" />
+  <van-field [(ngModel)]="value" label="Label" placeholder="Text"></van-field>
 </van-cell-group>
 ```
 
