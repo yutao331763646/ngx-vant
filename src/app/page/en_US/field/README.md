@@ -159,7 +159,7 @@ Use `inputAlign` prop to align the input value.
 | clickable | Whether to show click feedback when clicked | _boolean_ | `false` |
 | isLink | Whether to show link icon | _boolean_ | `false` |
 | autofocus | Whether to auto focus, unsupported in iOS | _boolean_ | `false` |
-| show-word-limit | Whether to show word limit, need to set the `maxlength` prop | _boolean_ | `false` |
+| showWordLimit | Whether to show word limit, need to set the `maxlength` prop | _boolean_ | `false` |
 | error | Whether to show error info | _boolean_ | `false` |
 | error-message | Error message | _string_ | - |
 | formatter `v2.4.2` | Input value formatter | _Function_ | - |
