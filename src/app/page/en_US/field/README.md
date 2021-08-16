@@ -186,7 +186,7 @@ Field support all native events of input tag
 | clear | Emitted when the clear icon is clicked | _event: Event_ |
 | click | Emitted when component is clicked | _event: Event_ |
 | clickInput  | Emitted when the input is clicked | _event: Event_ |
-| click-right-icon | Emitted when the right icon is clicked | _event: Event_ |
+| clickRightIcon | Emitted when the right icon is clicked | _event: Event_ |
 
 ### Methods
 
