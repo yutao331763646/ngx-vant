@@ -71,15 +71,15 @@ Use `error` or `errorMessage` to show error info.
 ```html
 <van-cell-group>
   <van-field
-    v-model="username"
-    error
-    required
+    [(ngModel)]="username"
+    [error]="true"
+    [required]="true"
     label="Username"
     placeholder="Username"
   />
   <van-field
-    v-model="phone"
-    required
+    [(ngModel)]="phone"
+    [required]="true"
     label="Phone"
     placeholder="Phone"
     error-message="Invalid phone"
