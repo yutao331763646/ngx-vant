@@ -62,16 +62,7 @@ Use `type` prop to custom different type fields.
 </van-cell-group>
 ```
 
-```js
-export default {
-  data() {
-    return {
-      value1: '',
-      value2: '123',
-    };
-  },
-};
-```
+
 
 ### Error Info
 
