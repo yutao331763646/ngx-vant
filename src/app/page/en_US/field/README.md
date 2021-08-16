@@ -53,10 +53,10 @@ Use `type` prop to custom different type fields.
     placeholder="Show Icon"
   />
   <van-field
-    v-model="value2"
-    clearable
+    [(ngModel)]="value2"
+    [clearable]="true"
     label="Text"
-    left-icon="music-o"
+    leftIcon="music-o"
     placeholder="Show Clear Icon"
   />
 </van-cell-group>
