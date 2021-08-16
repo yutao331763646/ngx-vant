@@ -142,20 +142,7 @@ export default {
 };
 ```
 
-### Auto Resize
 
-Textarea Field can be auto resize when has `autosize` prop.
-
-```html
-<van-field
-  v-model="message"
-  label="Message"
-  type="textarea"
-  placeholder="Message"
-  rows="1"
-  autosize
-/>
-```
 
 ### Show Word Limit
 
