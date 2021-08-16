@@ -2,9 +2,9 @@ import { Component, Input, OnInit } from '@angular/core';
 import { cardWrapper } from 'src/app/common/card-wrapper';
 
 @Component({
-  selector: 'app-field',
-  templateUrl: './field.component.html',
-  styleUrls: ['./field.component.less']
+    selector: 'app-field',
+    templateUrl: './field.component.html',
+    styleUrls: ['./field.component.less']
 })
 export class FieldComponent implements OnInit {
     private _readMe: HTMLElement | string = '';
@@ -14,13 +14,13 @@ export class FieldComponent implements OnInit {
     get readMe() {
         return cardWrapper(this._readMe);
     }
-  constructor() { }
+    constructor() { }
 
-  ngOnInit() {
-    this.setReadMe()
-}
-setReadMe() {
-    this.readMe = require(`!html-loader!markdown-loader!./README.zh-CN.md`).default;
-}
+    ngOnInit() {
+        this.setReadMe()
+    }
+    setReadMe() {
+        this.readMe = require(`!html-loader!markdown-loader!./README.zh-CN.md`).default;
+    }
 
 }
