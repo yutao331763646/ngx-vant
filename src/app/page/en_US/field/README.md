@@ -46,10 +46,10 @@ Use `type` prop to custom different type fields.
 ```html
 <van-cell-group>
   <van-field
-    v-model="value1"
+   [(ngModel)]="value1"
     label="Text"
-    left-icon="smile-o"
-    right-icon="warning-o"
+    leftIcon="smile-o"
+    rightIcon="warning-o"
     placeholder="Show Icon"
   />
   <van-field
