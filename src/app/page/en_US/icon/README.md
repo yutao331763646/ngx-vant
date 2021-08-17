@@ -90,7 +90,6 @@ import 'vant/lib/icon/local.css';
 | color          | Icon color              | _string_           | `inherit`  |
 | size           | Icon size               | _number \| string_ | `inherit`  |
 | class-prefix   | ClassName prefix        | _string_           | `van-icon` |
-| tag            | HTML Tag                | _string_           | `i`        |
 
 ### Events
 
