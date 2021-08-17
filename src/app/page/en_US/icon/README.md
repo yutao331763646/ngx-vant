@@ -24,7 +24,7 @@ Use `dot` prop, a small red dot will be displayed in the upper right corner of t
 Use `badge` prop, the badge will be displayed in the upper right corner of the icon.
 
 ```html
-<van-icon name="chat-o" dot />
+<van-icon name="chat-o" [dot]="true" />
 <van-icon name="chat-o" badge="9" />
 <van-icon name="chat-o" badge="99+" />
 ```
