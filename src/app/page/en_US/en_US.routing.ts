@@ -5,7 +5,7 @@ import { ButtonComponent } from "./button/button.component";
 import { CellComponent } from "./cell/cell.component";
 import { FieldComponent } from "./field/field.component";
 import { HomeComponent } from "./home/home.component";
-// import { IconComponent } from "./icon/icon.component";
+import { IconComponent } from "./icon/icon.component";
 // import { ImageComponent } from "./image/image.component";
 // import { LayoutComponent } from "./layout/layout.component";
 // import { LoadingComponent } from "./loading/loading.component";
@@ -59,10 +59,11 @@ const routes: Routes = [
         path: 'button',
         component: ButtonComponent
     },
+    {
+        path: 'icon',
+        component: IconComponent
+    }, 
     // {
-    //     path: 'icon',
-    //     component: IconComponent
-    // }, {
     //     path: 'loading',
     //     component: LoadingComponent
     // }, {
