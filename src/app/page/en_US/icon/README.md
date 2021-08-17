@@ -43,7 +43,8 @@ Use `color` prop to set icon color.
 Use `size` prop to set icon size.
 
 ```html
-<van-icon name="chat-o" size="40" /> <van-icon name="chat-o" size="3rem" />
+<van-icon name="chat-o" size="40" />
+<van-icon name="chat-o" size="3rem" />
 ```
 
 ### Use local font file
