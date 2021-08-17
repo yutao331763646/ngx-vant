@@ -9,6 +9,7 @@ import { ThemeComponent } from './theme/theme.component';
 import { LocaleComponent } from './locale/locale.component';
 import { CellComponent } from './cell/cell.component';
 import { FieldComponent } from './field/field.component';
+import { IconComponent } from './icon/icon.component';
 
 @NgModule({
     imports: [
@@ -18,7 +19,7 @@ import { FieldComponent } from './field/field.component';
     declarations: [
         QuickstartComponent,ButtonComponent,HomeComponent,
         ThemeComponent,LocaleComponent,
-        CellComponent,FieldComponent
+        CellComponent,FieldComponent,IconComponent
     ]
 })
 export class En_USModule { }
