@@ -89,7 +89,7 @@ import 'vant/lib/icon/local.css';
 | badge          | Content of the badge    | _number \| string_ | `''`       |
 | color          | Icon color              | _string_           | `inherit`  |
 | size           | Icon size               | _number \| string_ | `inherit`  |
-| class-prefix   | ClassName prefix        | _string_           | `van-icon` |
+| classPrefix   | ClassName prefix        | _string_           | `van-icon` |
 
 ### Events
 
