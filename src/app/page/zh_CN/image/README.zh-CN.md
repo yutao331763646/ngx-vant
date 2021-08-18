@@ -74,7 +74,7 @@ import ImageModule from 'ngx-vant/image';
     [showError]="true"
     src="https://img.yzcdn.cn/vant/cat.jpeg"
     >
-</van-image>`
+</van-image>
 ```
 
 ## API
