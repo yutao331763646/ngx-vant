@@ -96,7 +96,7 @@ Show round image, it may not works at `fit=contain` and `fit=scale-down`.
 | Event | Description                    | Arguments      |
 | ----- | ------------------------------ | -------------- |
 | click | Emitted when image is clicked  | _event: Event_ |
-| load  | Emitted when image loaded      | -              |
+| load  | Emitted when image loaded      | _event: Event_             |
 | error | Emitted when image load failed | -              |
 
 ### Slots
