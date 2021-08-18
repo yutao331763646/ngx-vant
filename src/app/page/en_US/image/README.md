@@ -79,7 +79,7 @@ Show round image, it may not works at `fit=contain` and `fit=scale-down`.
 | showError | Whether to show error placeholder | _boolean_ | `true` |
 | showLoading | Whether to show loading placeholder | _boolean_ | `true` |
 | errorIcon  | Error icon | _string_ | `photo-fail` |
-| loading-icon `v2.4.2` | Loading icon | _string_ | `photo` |
+| loadingIcon | Loading icon | _string_ | `photo` |
 | icon-prefix `v2.10.12` | Icon className prefix | _string_ | `van-icon` |
 
 ### fit optional value
