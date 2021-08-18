@@ -38,24 +38,17 @@ Show round image, it may not works at `fit=contain` and `fit=scale-down`.
 />
 ```
 
-### Lazy Load
+### Loading
 
 ```html
 <van-image
-  width="100"
-  height="100"
-  lazy-load
-  src="https://img.yzcdn.cn/vant/cat.jpeg"
-/>
+    width="10rem"
+    height="10rem"
+    [showLoading]="true"
+    src="https://img.yzcdn.cn/vant/cat.jpeg"
+    >
+</van-image>
 ```
-
-```js
-import Vue from 'vue';
-import { Lazyload } from 'vant';
-
-Vue.use(Lazyload);
-```
-
 ## API
 
 ### Props
