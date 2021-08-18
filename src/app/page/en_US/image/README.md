@@ -99,13 +99,7 @@ Show round image, it may not works at `fit=contain` and `fit=scale-down`.
 | load  | Emitted when image loaded      | _event: Event_             |
 | error | Emitted when image load failed | _event: Event_             |
 
-### Slots
 
-| Name             | Description                        |
-| ---------------- | ---------------------------------- |
-| default `v2.9.0` | Custom the content below the image |
-| loading          | Custom loading placeholder         |
-| error            | Custom error placeholder           |
 
 ### Less Variables
 
