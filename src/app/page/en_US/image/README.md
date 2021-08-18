@@ -31,7 +31,7 @@ Show round image, it may not works at `fit=contain` and `fit=scale-down`.
 
 ```html
 <van-image
-  round
+  [round]="true"
   width="10rem"
   height="10rem"
   src="https://img.yzcdn.cn/vant/cat.jpeg"
