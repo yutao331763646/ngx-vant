@@ -6,7 +6,7 @@ import { CellComponent } from "./cell/cell.component";
 import { FieldComponent } from "./field/field.component";
 import { HomeComponent } from "./home/home.component";
 import { IconComponent } from "./icon/icon.component";
-// import { ImageComponent } from "./image/image.component";
+import { ImageComponent } from "./image/image.component";
 // import { LayoutComponent } from "./layout/layout.component";
 // import { LoadingComponent } from "./loading/loading.component";
 // import { NavBarComponent } from "./nav-bar/nav-bar.component";
@@ -66,13 +66,16 @@ const routes: Routes = [
     // {
     //     path: 'loading',
     //     component: LoadingComponent
-    // }, {
+    // },
+    //  {
     //     path: 'nav-bar',
     //     component: NavBarComponent
-    // }, {
-    //     path: 'image',
-    //     component: ImageComponent
-    // }, {
+    // }, 
+    {
+        path: 'image',
+        component: ImageComponent
+    }, 
+    // {
     //     path: 'layout',
     //     component: LayoutComponent
     // }, {
