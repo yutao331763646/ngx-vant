@@ -76,7 +76,6 @@ Show round image, it may not works at `fit=contain` and `fit=scale-down`.
 | height | Height | _number \| string_ | - |
 | radius | Border Radius | _number \| string_ | `0` |
 | round | Whether to be round | _boolean_ | `false` |
-| lazy-load | Whether to enable lazy load，should register [Lazyload](#/en-US/lazyload) component | _boolean_ | `false` |
 | show-error | Whether to show error placeholder | _boolean_ | `true` |
 | show-loading | Whether to show loading placeholder | _boolean_ | `true` |
 | error-icon `v2.4.2` | Error icon | _string_ | `photo-fail` |
