@@ -49,6 +49,20 @@ Show round image, it may not works at `fit=contain` and `fit=scale-down`.
     >
 </van-image>
 ```
+
+### Loading Error
+
+```html
+<van-image
+    width="10rem"
+    height="10rem"
+    [showError]="true"
+    src="https://img.yzcdn.cn/vant/cat.jpeg"
+    >
+</van-image>
+```
+
+
 ## API
 
 ### Props
