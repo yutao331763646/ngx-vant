@@ -7,11 +7,8 @@ Quickly and easily create layouts with `van-row` and `van-col`.
 ### Install
 
 ```js
-import Vue from 'vue';
-import { Col, Row } from 'vant';
-
-Vue.use(Col);
-Vue.use(Row);
+import RowModule from 'ngx-vant/row'; 
+import ColModule from 'ngx-vant/col';
 ```
 
 ## Usage
