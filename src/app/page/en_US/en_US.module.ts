@@ -11,6 +11,7 @@ import { CellComponent } from './cell/cell.component';
 import { FieldComponent } from './field/field.component';
 import { IconComponent } from './icon/icon.component';
 import { ImageComponent } from './image/image.component';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
     imports: [
@@ -21,7 +22,8 @@ import { ImageComponent } from './image/image.component';
         QuickstartComponent,ButtonComponent,HomeComponent,
         ThemeComponent,LocaleComponent,
         CellComponent,FieldComponent,IconComponent,
-        ImageComponent
+        ImageComponent,
+        LayoutComponent
     ]
 })
 export class En_USModule { }
