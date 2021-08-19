@@ -101,7 +101,6 @@ Setting `type` to `flex` to enable flex layout.
 | --- | --- | --- | --- |
 | span | number of column the grid spans | _number \| string_ | - |
 | offset | number of spacing on the left side of the grid | _number \| string_ | - |
-| tag | Custom element tag | _string_ | `div` |
 
 ### Row Events
 
