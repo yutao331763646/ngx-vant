@@ -8,7 +8,7 @@ import { HomeComponent } from "./home/home.component";
 import { IconComponent } from "./icon/icon.component";
 import { ImageComponent } from "./image/image.component";
 import { LayoutComponent } from "./layout/layout.component";
-// import { LoadingComponent } from "./loading/loading.component";
+import { LoadingComponent } from "./loading/loading.component";
 // import { NavBarComponent } from "./nav-bar/nav-bar.component";
 // import { NotifyComponent } from "./notify/notify.component";
 // import { OverlayComponent } from "./overlay/overlay.component";
@@ -63,10 +63,10 @@ const routes: Routes = [
         path: 'icon',
         component: IconComponent
     }, 
-    // {
-    //     path: 'loading',
-    //     component: LoadingComponent
-    // },
+    {
+        path: 'loading',
+        component: LoadingComponent
+    },
     //  {
     //     path: 'nav-bar',
     //     component: NavBarComponent
