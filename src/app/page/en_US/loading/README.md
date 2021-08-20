@@ -3,10 +3,7 @@
 ### Install
 
 ```js
-import Vue from 'vue';
-import { Loading } from 'vant';
-
-Vue.use(Loading);
+import LoadingModule from 'VantModule/loading';
 ```
 
 ## Usage
