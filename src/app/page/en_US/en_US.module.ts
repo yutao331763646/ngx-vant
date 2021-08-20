@@ -12,6 +12,7 @@ import { FieldComponent } from './field/field.component';
 import { IconComponent } from './icon/icon.component';
 import { ImageComponent } from './image/image.component';
 import { LayoutComponent } from './layout/layout.component';
+import { LoadingComponent } from './loading/loading.component';
 
 @NgModule({
     imports: [
@@ -23,7 +24,8 @@ import { LayoutComponent } from './layout/layout.component';
         ThemeComponent,LocaleComponent,
         CellComponent,FieldComponent,IconComponent,
         ImageComponent,
-        LayoutComponent
+        LayoutComponent,
+        LoadingComponent
     ]
 })
 export class En_USModule { }
