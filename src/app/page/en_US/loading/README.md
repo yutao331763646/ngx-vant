@@ -27,7 +27,7 @@ import LoadingModule from 'VantModule/loading';
 ### Size
 
 ```html
-<van-loading size="24" />
+<van-loading [size]="24" />
 
 <van-loading type="spinner" size="24px" />
 ```
