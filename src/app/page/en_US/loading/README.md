@@ -41,7 +41,7 @@ import LoadingModule from 'VantModule/loading';
 ### Vertical
 
 ```html
-<van-loading size="24px" vertical>Loading...</van-loading>
+<van-loading size="24px" [vertical]='true'>Loading...</van-loading>
 ```
 
 ## API
