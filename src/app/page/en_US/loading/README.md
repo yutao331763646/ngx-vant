@@ -44,6 +44,14 @@ import LoadingModule from 'VantModule/loading';
 <van-loading size="24px" [vertical]='true'>Loading...</van-loading>
 ```
 
+### Custom Color
+
+```html
+<van-loading color="#0094ff">Loading...</van-loading>
+<van-loading textColor="#0094ff">Loading...</van-loading>
+```
+
+
 ## API
 
 ### Props
@@ -56,11 +64,6 @@ import LoadingModule from 'VantModule/loading';
 | text-size | Text font size | _number \| string_ | `14px` |
 | vertical | Whether to arrange icons and text content vertically | _boolean_ | `false` |
 
-### Slots
-
-| Name    | Description  |
-| ------- | ------------ |
-| default | Loading text |
 
 ### Less Variables
 
