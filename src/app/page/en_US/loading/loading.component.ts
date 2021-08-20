@@ -18,6 +18,10 @@ export class LoadingComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
+    this.setReadMe()
+}
+setReadMe() {
+    this.readMe = require(`!html-loader!markdown-loader!./README.zh-CN.md`).default;
+}
 
 }
