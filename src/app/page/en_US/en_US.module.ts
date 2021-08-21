@@ -13,6 +13,7 @@ import { IconComponent } from './icon/icon.component';
 import { ImageComponent } from './image/image.component';
 import { LayoutComponent } from './layout/layout.component';
 import { LoadingComponent } from './loading/loading.component';
+import { NotifyComponent } from './notify/notify.component';
 
 @NgModule({
     imports: [
@@ -25,7 +26,7 @@ import { LoadingComponent } from './loading/loading.component';
         CellComponent,FieldComponent,IconComponent,
         ImageComponent,
         LayoutComponent,
-        LoadingComponent
+        LoadingComponent,NotifyComponent
     ]
 })
 export class En_USModule { }
