@@ -60,12 +60,12 @@ import { NotifyService } from 'VantModule/notify/notify.service';
             (click)="successClick()"
         ></van-cell>
         <van-cell
-            title="danger        "
+            title="danger"
             [isLink]="true"
             (click)="dangerClick()"
         ></van-cell>
         <van-cell
-            title="warning        "
+            title="warning"
             [isLink]="true"
             (click)="warningClick()"
         ></van-cell>
@@ -111,16 +111,45 @@ export class NotifyComponent implements OnInit {
 ### Custom Notify
 
 ```js
-Notify({
-  message: 'Custom Color',
-  color: '#ad0000',
-  background: '#ffe1e1',
-});
+import { Component, OnInit } from '@angular/core';
+import { NotifyService } from 'VantModule/notify/notify.service';
+@Component({
+    selector: 'app-notify',
+    template:`
+       <van-cell
+            title="Custom Color"
+            [isLink]="true"
+            (click)="customStyleClick()"
+        ></van-cell>
+        <van-cell
+            title="Custom Duration"
+            [isLink]="true"
+            (click)="customDurationClick()"
+        ></van-cell>
+    `
+})
+export class NotifyComponent implements OnInit {
+    constructor(private notifyService: NotifyService) { }
+    ngOnInit() {}
+    customStyleClick() {
+        this.notifyService.create({
+            type: 'danger',
+            message: 'Custom Color ', duration: 3000,
+            color: '#ad0000',
+            background: '#ffe1e1'
+        })
+    }
+    customDurationClick() {
+        this.notifyService.create({
+            type: 'danger',
+            message: 'Custom Duration ',
+            duration: 1000,
+            color: 'white',
+            background: ''
+        })
+    }
+}
 
-Notify({
-  message: 'Custom Duration',
-  duration: 1000,
-});
 ```
 
 ### Global Method
