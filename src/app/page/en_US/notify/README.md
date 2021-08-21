@@ -3,10 +3,7 @@
 ### Install
 
 ```js
-import Vue from 'vue';
-import { Notify } from 'vant';
-
-Vue.use(Notify);
+import NotifyModule from 'ngx-vant/notify';
 ```
 
 ## Usage
