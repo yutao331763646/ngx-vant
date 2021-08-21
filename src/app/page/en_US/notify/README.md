@@ -11,8 +11,33 @@ import NotifyModule from 'ngx-vant/notify';
 ### Basic Usage
 
 ```js
-Notify('Notify Message');
+import { Component, OnInit } from '@angular/core';
+import { NotifyService } from 'VantModule/notify/notify.service';
+@Component({
+    selector: 'app-notify',
+    template:`
+        <van-cell
+            title="Basic Usage"
+            [isLink]="true"
+            (click)="baseClick()"
+        ></van-cell>
+    `
+})
+export class NotifyComponent implements OnInit {
+    constructor(private notifyService: NotifyService) { }
+    ngOnInit() {}
+    baseClick() {
+        this.notifyService.create({
+            type: 'danger',
+            message: 'Notify Message ',
+            duration: 3000,
+            color: 'white',
+            background: ''
+        })
+    }
+}
 ```
+
 
 ### Notify Type
 
