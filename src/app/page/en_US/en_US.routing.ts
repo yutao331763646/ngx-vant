@@ -62,7 +62,7 @@ const routes: Routes = [
     {
         path: 'icon',
         component: IconComponent
-    }, 
+    },
     {
         path: 'loading',
         component: LoadingComponent
@@ -74,11 +74,11 @@ const routes: Routes = [
     {
         path: 'image',
         component: ImageComponent
-    }, 
+    },
     {
         path: 'layout',
         component: LayoutComponent
-    }, 
+    },
     // {
     //     path: 'toast',
     //     component: ToastComponent
@@ -89,11 +89,11 @@ const routes: Routes = [
     {
         path: 'cell',
         component: CellComponent
-    }, 
+    },
     {
         path: 'field',
         component: FieldComponent
-    }, 
+    },
     // {
     //     path: 'overlay',
     //     component: OverlayComponent
@@ -104,10 +104,10 @@ const routes: Routes = [
     //     path: 'tab',
     //     component: TabsComponent
     // },
-     {
+    {
         path: 'notify',
         component: NotifyComponent
-    }, 
+    },
     // {
     //     path: 'tag',
     //     component: TagComponent
