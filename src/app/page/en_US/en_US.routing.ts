@@ -10,7 +10,7 @@ import { ImageComponent } from "./image/image.component";
 import { LayoutComponent } from "./layout/layout.component";
 import { LoadingComponent } from "./loading/loading.component";
 // import { NavBarComponent } from "./nav-bar/nav-bar.component";
-// import { NotifyComponent } from "./notify/notify.component";
+import { NotifyComponent } from "./notify/notify.component";
 // import { OverlayComponent } from "./overlay/overlay.component";
 // import { PopupComponent } from "./popup/popup.component";
 // import { ProgressComponent } from "./progress/progress.component";
@@ -103,10 +103,12 @@ const routes: Routes = [
     // }, {
     //     path: 'tab',
     //     component: TabsComponent
-    // }, {
-    //     path: 'notify',
-    //     component: NotifyComponent
-    // }, {
+    // },
+     {
+        path: 'notify',
+        component: NotifyComponent
+    }, 
+    // {
     //     path: 'tag',
     //     component: TagComponent
     // }, {
