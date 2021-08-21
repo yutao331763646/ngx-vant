@@ -41,12 +41,72 @@ export class NotifyComponent implements OnInit {
 
 ### Notify Type
 
+
+
 ```js
-Notify({ type: 'primary', message: 'Notify Message' });
-Notify({ type: 'success', message: 'Notify Message' });
-Notify({ type: 'danger', message: 'Notify Message' });
-Notify({ type: 'warning', message: 'Notify Message' });
+import { Component, OnInit } from '@angular/core';
+import { NotifyService } from 'VantModule/notify/notify.service';
+@Component({
+    selector: 'app-notify',
+    template:`
+        <van-cell
+            title="primary"
+            [isLink]="true"
+            (click)="primaryClick()"
+        ></van-cell>
+        <van-cell
+            title="success"
+            [isLink]="true"
+            (click)="successClick()"
+        ></van-cell>
+        <van-cell
+            title="danger        "
+            [isLink]="true"
+            (click)="dangerClick()"
+        ></van-cell>
+        <van-cell
+            title="warning        "
+            [isLink]="true"
+            (click)="warningClick()"
+        ></van-cell>
+    `
+})
+export class NotifyComponent implements OnInit {
+    constructor(private notifyService: NotifyService) { }
+    ngOnInit() { }
+    this.notifyService.primary({
+        message: 'primary ',
+        duration: 3000,
+        color: 'white',
+        background: ''
+    })
+    successClick() {
+        this.notifyService.success({
+            message: 'success ',
+            duration: 3000,
+            color: 'white',
+            background: ''
+        })
+    }
+    dangerClick() {
+        this.notifyService.danger({
+            message: 'danger ',
+            duration: 3000,
+            color: 'white',
+            background: ''
+        })
+    }
+    warningClick() {
+        this.notifyService.warning({
+            message: 'warning ',
+            duration: 3000,
+            color: 'white',
+            background: ''
+        })
+    }
+}
 ```
+
 
 ### Custom Notify
 
