@@ -152,17 +152,6 @@ export class NotifyComponent implements OnInit {
 
 ```
 
-### Global Method
-
-After import the Notify component, the `$notify` method is automatically mounted on Vue.prototype, making it easy to call within a vue component.
-
-```js
-export default {
-  mounted() {
-    this.$notify('Notify Message');
-  },
-};
-```
 
 ### Component Call
 
