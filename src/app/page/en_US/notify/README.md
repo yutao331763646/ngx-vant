@@ -153,33 +153,6 @@ export class NotifyComponent implements OnInit {
 ```
 
 
-### Component Call
-
-```html
-<van-button type="primary" text="Component Call" @click="showNotify" />
-<van-notify v-model="show" type="success">
-  <van-icon name="bell" style="margin-right: 4px;" />
-  <span>Content</span>
-</van-notify>
-```
-
-```js
-export default {
-  data() {
-    return {
-      show: false,
-    };
-  },
-  methods: {
-    showNotify() {
-      this.show = true;
-      setTimeout(() => {
-        this.show = false;
-      }, 2000);
-    },
-  },
-};
-```
 
 ## API
 
