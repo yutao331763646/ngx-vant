@@ -160,10 +160,8 @@ export class NotifyComponent implements OnInit {
 
 | Methods | Attribute | Return value | Description |
 | --- | --- | --- | --- |
-| Notify | `options | message` | notify instance | Show notify |
-| Notify.clear | - | `void` | Close notify |
-| Notify.setDefaultOptions | `options` | `void` | Set default options of all notifies |
-| Notify.resetDefaultOptions | - | `void` | Reset default options of all notifies |
+| NotifyService | `options | message` | notify instance | Show notify |
+| NotifyService.close | - | `void` | Close notify |
 
 ### Options
 
