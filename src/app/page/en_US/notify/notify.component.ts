@@ -2,9 +2,9 @@ import { Component, Input, OnInit } from '@angular/core';
 import { cardWrapper } from 'src/app/common/card-wrapper';
 
 @Component({
-  selector: 'app-notify',
-  templateUrl: './notify.component.html',
-  styleUrls: ['./notify.component.less']
+    selector: 'app-notify',
+    templateUrl: './notify.component.html',
+    styleUrls: ['./notify.component.less']
 })
 export class NotifyComponent implements OnInit {
     private _readMe: HTMLElement | string = '';
@@ -14,14 +14,14 @@ export class NotifyComponent implements OnInit {
     get readMe() {
         return cardWrapper(this._readMe);
     }
-  constructor() { }
+    constructor() { }
 
-  ngOnInit() {
-    this.setReadMe()
-}
-setReadMe() {
-    this.readMe = require(`!html-loader!markdown-loader!./README.md`).default;
-}
+    ngOnInit() {
+        this.setReadMe()
+    }
+    setReadMe() {
+        this.readMe = require(`!html-loader!markdown-loader!./README.md`).default;
+    }
 
 
 }
