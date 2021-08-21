@@ -21,12 +21,12 @@ import { NotifyComponent } from './notify/notify.component';
         DocSharedModule
     ],
     declarations: [
-        QuickstartComponent,ButtonComponent,HomeComponent,
-        ThemeComponent,LocaleComponent,
-        CellComponent,FieldComponent,IconComponent,
+        QuickstartComponent, ButtonComponent, HomeComponent,
+        ThemeComponent, LocaleComponent,
+        CellComponent, FieldComponent, IconComponent,
         ImageComponent,
         LayoutComponent,
-        LoadingComponent,NotifyComponent
+        LoadingComponent, NotifyComponent
     ]
 })
 export class En_USModule { }
