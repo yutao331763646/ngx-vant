@@ -7,10 +7,7 @@ The Picker component is usually used with [Popup](#/en-US/popup) Component.
 ### Install
 
 ```js
-import Vue from 'vue';
-import { Picker } from 'vant';
-
-Vue.use(Picker);
+import PickerModule from 'ngx-vant/picker';
 ```
 
 ## Usage
