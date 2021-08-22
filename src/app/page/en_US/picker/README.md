@@ -148,7 +148,7 @@ export class PickerComponent implements OnInit {
 | valueKey | Key of option text | _string_ | `text` |
 | toolbarPosition | Toolbar position, cat be set to `bottom` | _string_ | `top` |
 | loading | Whether to show loading prompt | _boolean_ | `false` |
-| readonly `v2.10.5` | Whether to be readonly | _boolean_ | `false` |
+| readonly  | Whether to be readonly | _boolean_ | `false` |
 | show-toolbar | Whether to show toolbar | _boolean_ | `false` |
 | allow-html | Whether to allow HTML in option text | _boolean_ | `true` |
 | default-index | Default value index of single column picker | _number \| string_ | `0` |
