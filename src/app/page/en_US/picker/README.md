@@ -145,7 +145,7 @@ export class PickerComponent implements OnInit {
 | title | Toolbar title | _string_ | - |
 | confirmButtonText | Text of confirm button | _string_ | `Confirm` |
 | cancelButtonText | Text of cancel button | _string_ | `Cancel` |
-| value-key | Key of option text | _string_ | `text` |
+| valueKey | Key of option text | _string_ | `text` |
 | toolbar-position | Toolbar position, cat be set to `bottom` | _string_ | `top` |
 | loading | Whether to show loading prompt | _boolean_ | `false` |
 | readonly `v2.10.5` | Whether to be readonly | _boolean_ | `false` |
