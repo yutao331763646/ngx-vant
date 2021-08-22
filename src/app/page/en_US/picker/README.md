@@ -135,33 +135,6 @@ export class PickerComponent implements OnInit {
 
 
 
-
-### Set Column Values
-
-```html
-<van-picker show-toolbar title="Title" :columns="columns" @change="onChange" />
-```
-
-```js
-const states = {
-  Group1: ['Delaware', 'Florida', 'Georqia', 'Indiana', 'Maine'],
-  Group2: ['Alabama', 'Kansas', 'Louisiana', 'Texas'],
-};
-
-export default {
-  data() {
-    return {
-      columns: [{ values: Object.keys(states) }, { values: states.Group1 }],
-    };
-  },
-  methods: {
-    onChange(picker, values) {
-      picker.setColumnValues(1, states[values[0]]);
-    },
-  },
-};
-```
-
 ### Loading
 
 When Picker columns data is acquired asynchronously, use `loading` prop to show loading prompt.
