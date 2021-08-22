@@ -114,10 +114,11 @@ const routes: Routes = [
     // }, {
     //     path: 'sticky',
     //     component: StickyComponent
-    // }, {
-    //     path: 'picker',
-    //     component: PickerComponent
-    // }
+    // }, 
+    {
+        path: 'picker',
+        component: PickerComponent
+    }
 ];
 
 export const BasicRoutes = RouterModule.forChild(routes);
