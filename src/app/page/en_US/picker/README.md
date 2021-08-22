@@ -52,9 +52,41 @@ export class PickerComponent implements OnInit {
 
 ### Default Index
 
-```html
-<van-picker show-toolbar title="Title" :columns="columns" :default-index="2" />
+```js
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+    selector: 'app-picker',
+    template: `
+        <van-picker
+            title='Title'
+            [defaultIndex]="2"
+            [showToolbar]='true'
+            [columns]='columns'
+            (cancel)="onCancel($event)"
+            (confirm)="onConfirm($event)"
+        ></van-picker>
+    `
+})
+export class PickerComponent implements OnInit {
+
+    columns :string[] = ['Delaware', 'Florida', 'Georqia', 'Indiana', 'Maine']
+
+    constructor() { }
+
+    ngOnInit() { }
+
+    onCancel(e: MouseEvent): void {
+       console.log(e)
+    }
+    onConfirm(e: MouseEvent): void {
+        console.log(e)
+    }
+
+}
+
 ```
+
 
 ### Multiple Columns
 
