@@ -137,27 +137,6 @@ export class PickerComponent implements OnInit {
 
 
 
-### With Popup
-
-```html
-<van-field
-  readonly
-  clickable
-  label="City"
-  :value="value"
-  placeholder="Choose City"
-  @click="showPicker = true"
-/>
-<van-popup v-model="showPicker" round position="bottom">
-  <van-picker
-    title="Title"
-    show-toolbar
-    :columns="columns"
-    @cancel="showPicker = false"
-    @confirm="onConfirm"
-  />
-</van-popup>
-```
 
 ```js
 export default {
