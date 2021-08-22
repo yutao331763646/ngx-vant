@@ -176,7 +176,7 @@ Picker events will pass different parameters according to the columns are single
 | className         | ClassName for this column | _any_      |
 | children  | Cascade children          | _Column_   |
 
-### Methods
+<!-- ### Methods
 
 Use [ref](https://vuejs.org/v2/api/#ref) to get Picker instance and call instance methods.
 
@@ -192,7 +192,7 @@ Use [ref](https://vuejs.org/v2/api/#ref) to get Picker instance and call instanc
 | setColumnIndex | Set current index of the column | columnIndex, optionIndex | - |
 | getColumnValues | Get columns data of the column | columnIndex | values |
 | setColumnValues | Set columns data of the column | columnIndex, values | - |
-| confirm `v2.4.0` | Stop scrolling and emit confirm event | - | - |
+| confirm `v2.4.0` | Stop scrolling and emit confirm event | - | - | -->
 
 ### Less Variables
 
