@@ -144,7 +144,7 @@ export class PickerComponent implements OnInit {
 | columns | Columns data | _Column[]_ | `[]` |
 | title | Toolbar title | _string_ | - |
 | confirmButtonText | Text of confirm button | _string_ | `Confirm` |
-| cancel-button-text | Text of cancel button | _string_ | `Cancel` |
+| cancelButtonText | Text of cancel button | _string_ | `Cancel` |
 | value-key | Key of option text | _string_ | `text` |
 | toolbar-position | Toolbar position, cat be set to `bottom` | _string_ | `top` |
 | loading | Whether to show loading prompt | _boolean_ | `false` |
