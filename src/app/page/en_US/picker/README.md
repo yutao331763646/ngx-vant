@@ -14,39 +14,41 @@ import PickerModule from 'ngx-vant/picker';
 
 ### Basic Usage
 
-```html
-<van-picker
-  show-toolbar
-  title="Title"
-  :columns="columns"
-  @confirm="onConfirm"
-  @cancel="onCancel"
-  @change="onChange"
-/>
-```
-
 ```js
-import { Toast } from 'vant';
+import { Component, OnInit } from '@angular/core';
 
-export default {
-  data() {
-    return {
-      columns: ['Delaware', 'Florida', 'Georqia', 'Indiana', 'Maine'],
-    };
-  },
-  methods: {
-    onConfirm(value, index) {
-      Toast(`Value: ${value}, Index: ${index}`);
-    },
-    onChange(picker, value, index) {
-      Toast(`Value: ${value}, Index: ${index}`);
-    },
-    onCancel() {
-      Toast('Cancel');
-    },
-  },
-};
+@Component({
+    selector: 'app-picker',
+    template: `
+        <van-picker
+            title='Title'
+            [showToolbar]='true'
+            [columns]='columns'
+            (cancel)="onCancel($event)"
+            (confirm)="onConfirm($event)"
+        ></van-picker>
+    `
+})
+export class PickerComponent implements OnInit {
+
+    columns :string[] = ['Delaware', 'Florida', 'Georqia', 'Indiana', 'Maine']
+
+    constructor() { }
+
+    ngOnInit() { }
+
+    onCancel(e: MouseEvent): void {
+       console.log(e)
+    }
+    onConfirm(e: MouseEvent): void {
+        console.log(e)
+    }
+
+}
+
 ```
+
+
 
 ### Default Index
 
