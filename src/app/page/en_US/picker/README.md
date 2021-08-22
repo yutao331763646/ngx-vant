@@ -135,68 +135,6 @@ export class PickerComponent implements OnInit {
 
 
 
-### Cascade
-
-```html
-<van-picker show-toolbar title="Title" :columns="columns" />
-```
-
-```js
-export default {
-  data() {
-    return {
-      columns: [
-        {
-          text: 'Zhejiang',
-          children: [
-            {
-              text: 'Hangzhou',
-              children: [{ text: 'Xihu' }, { text: 'Yuhang' }],
-            },
-            {
-              text: 'Wenzhou',
-              children: [{ text: 'Lucheng' }, { text: 'Ouhai' }],
-            },
-          ],
-        },
-        {
-          text: 'Fujian',
-          children: [
-            {
-              text: 'Fuzhou',
-              children: [{ text: 'Gulou' }, { text: 'Taijiang' }],
-            },
-            {
-              text: 'Xiamen',
-              children: [{ text: 'Siming' }, { text: 'Haicang' }],
-            },
-          ],
-        },
-      ],
-    };
-  },
-};
-```
-
-### Disable option
-
-```html
-<van-picker show-toolbar :columns="columns" />
-```
-
-```js
-export default {
-  data() {
-    return {
-      columns: [
-        { text: 'Delaware', disabled: true },
-        { text: 'Florida' },
-        { text: 'Georqia' },
-      ],
-    };
-  },
-};
-```
 
 ### Set Column Values
 
