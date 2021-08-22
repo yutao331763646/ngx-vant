@@ -174,7 +174,7 @@ Picker events will pass different parameters according to the columns are single
 | values            | Value of column           | _string[]_ |
 | defaultIndex      | Default value index       | _number_   |
 | className         | ClassName for this column | _any_      |
-| children `v2.4.5` | Cascade children          | _Column_   |
+| children  | Cascade children          | _Column_   |
 
 ### Methods
 
