@@ -135,13 +135,6 @@ export class PickerComponent implements OnInit {
 
 
 
-### Loading
-
-When Picker columns data is acquired asynchronously, use `loading` prop to show loading prompt.
-
-```html
-<van-picker show-toolbar title="Title" :columns="columns" :loading="loading" />
-```
 
 ```js
 export default {
