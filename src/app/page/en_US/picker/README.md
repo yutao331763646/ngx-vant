@@ -135,27 +135,6 @@ export class PickerComponent implements OnInit {
 
 
 
-
-
-
-```js
-export default {
-  data() {
-    return {
-      value: '',
-      showPicker: false,
-      columns: ['Delaware', 'Florida', 'Georqia', 'Indiana', 'Maine'],
-    };
-  },
-  methods: {
-    onConfirm(value) {
-      this.value = value;
-      this.showPicker = false;
-    },
-  },
-};
-```
-
 ## API
 
 ### Props
