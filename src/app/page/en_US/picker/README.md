@@ -90,28 +90,50 @@ export class PickerComponent implements OnInit {
 
 ### Multiple Columns
 
-```html
-<van-picker show-toolbar title="Title" :columns="columns" />
-```
 
 ```js
-export default {
-  data() {
-    return {
-      columns: [
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+    selector: 'app-picker',
+    template: `
+        <van-picker
+            title='Title'
+            [showToolbar]='true'
+            [columns]='columns'
+            (cancel)="onCancel($event)"
+            (confirm)="onConfirm($event)"
+        ></van-picker>
+    `
+})
+export class PickerComponent implements OnInit {
+
+    columns :string[] = [
         {
-          values: ['Monday', 'Tuesday', 'Wednesday', 'Thusday', 'Friday'],
-          defaultIndex: 2,
+            values: ['Monday', 'Tuesday', 'Wednesday', 'Thusday', 'Friday'],
+            defaultIndex: 2,
         },
         {
-          values: ['Morging', 'Afternoon', 'Evening'],
-          defaultIndex: 1,
+            values: ['Morging', 'Afternoon', 'Evening'],
+            defaultIndex: 1,
         },
-      ],
-    };
-  },
-};
+    ]
+
+    constructor() { }
+
+    ngOnInit() { }
+
+    onCancel(e: MouseEvent): void {
+       console.log(e)
+    }
+    onConfirm(e: MouseEvent): void {
+        console.log(e)
+    }
+
+}
 ```
+
+
 
 ### Cascade
 
