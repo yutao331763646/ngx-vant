@@ -166,17 +166,6 @@ Picker events will pass different parameters according to the columns are single
 | cancel | Emitted when click cancel button | Single column：current value，current index<br>Multiple columns：current values，current indexes |
 
 
-### Slots
-
-| Name | Description | SlotProps |
-| --- | --- | --- |
-| default | Custom toolbar content | - |
-| title | Custom title | - |
-| confirm `v2.10.11` | Custom confirm button text | - |
-| cancel `v2.10.11` | Custom cancel button text | - |
-| option `v2.10.11` | Custom option content | _option: string \| object_ |
-| columns-top | Custom content above columns | - |
-| columns-bottom | Custom content below columns | - |
 
 ### Data Structure of Column
 
