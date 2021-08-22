@@ -136,22 +136,6 @@ export class PickerComponent implements OnInit {
 
 
 
-```js
-export default {
-  data() {
-    return {
-      columns: [],
-      loading: true,
-    };
-  },
-  created() {
-    setTimeout(() => {
-      this.loading = false;
-      this.columns = ['Option'];
-    }, 1000);
-  },
-};
-```
 
 ### With Popup
 
