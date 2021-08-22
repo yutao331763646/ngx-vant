@@ -18,7 +18,7 @@ import { QuickstartComponent } from "./quickstart/quickstart.component";
 // import { TabsComponent } from "./tabs/tabs.component";
 // import { TagComponent } from "./tag/tag.component";
 // import { ToastComponent } from "./toast/toast.component";
-// import { PickerComponent } from "./picker/picker.component";
+import { PickerComponent } from "./picker/picker.component";
 import { ThemeComponent } from "./theme/theme.component";
 // import { ContributionComponent } from "./contribution/contribution.component";
 // import { DesignComponent } from "./design/design.component";
