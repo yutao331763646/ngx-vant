@@ -14,6 +14,7 @@ import { ImageComponent } from './image/image.component';
 import { LayoutComponent } from './layout/layout.component';
 import { LoadingComponent } from './loading/loading.component';
 import { NotifyComponent } from './notify/notify.component';
+import { PickerComponent } from './picker/picker.component';
 
 @NgModule({
     imports: [
@@ -26,7 +27,7 @@ import { NotifyComponent } from './notify/notify.component';
         CellComponent, FieldComponent, IconComponent,
         ImageComponent,
         LayoutComponent,
-        LoadingComponent, NotifyComponent
+        LoadingComponent, NotifyComponent,PickerComponent
     ]
 })
 export class En_USModule { }
