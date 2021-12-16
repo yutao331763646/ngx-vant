@@ -4,12 +4,10 @@ import { addUnit, scrollLeftTo } from 'ngx-vant/utils';
 export type TabsType = 'line' | 'card';
 @Component({
     selector: 'van-tabs',
-    templateUrl: './tabs.component.html',
-    // styleUrls: ['./tabs.component.less']
+    templateUrl: './tabs.component.html'
 })
 export class TabsComponent implements OnInit {
     @ContentChildren(TabComponent, { descendants: true }) allTabs: QueryList<TabComponent> = new QueryList<TabComponent>();
-    // @ViewChildren('titleRef') titleRef!: QueryList<TitleComponent>;
     @ViewChild('navRef') navRef!: ElementRef<HTMLElement>;
     @Input() ellipsis: boolean = true
     @Input() type: TabsType = 'line'

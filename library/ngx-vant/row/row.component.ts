@@ -26,9 +26,6 @@ export class RowComponent implements OnInit, AfterContentInit {
     onClick(e: MouseEvent): void {
         this.click.emit(e);
     }
-    ngOnInit() {
-        removeNgTag(this.el.nativeElement)
-    }
     ngAfterContentInit() {
         console.log(this.clos);
         const gutter = Number(this.gutter);
@@ -63,5 +60,8 @@ export class RowComponent implements OnInit, AfterContentInit {
             item.setGutter(spaces[index])
         })
         console.log(spaces)
+    }
+    ngOnInit() {
+        removeNgTag(this.el.nativeElement)
     }
 }
