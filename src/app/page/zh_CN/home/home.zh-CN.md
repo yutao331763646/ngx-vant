@@ -16,7 +16,7 @@ Ngx-Vant 是**Zan Design System**视觉规范实现的**Angular UI** 组件库�
 
 - 提供 60 多个高质量组件，覆盖移动端各类场景
 - 完善的中英文文档和示例
-- 支持 Angular12
+- 支持 Angular13
 - 支持按需引入
 - 支持主题定制
 - 支持国际化
@@ -36,18 +36,16 @@ Ngx-Vant 是**Zan Design System**视觉规范实现的**Angular UI** 组件库�
 
 现代浏览器以及 Android 4.0+, iOS 8.0+。
 
-
-
 ### 生态
 
-| 项目 | 描述 |
-| --- | --- |
-| [vant-demo](https://github.com/youzan/vant-demo) | Vant 官方示例合集 |
-| [vant-weapp](https://github.com/youzan/vant-weapp) | 微信小程序组件库 |
-| [vant-react](https://github.com/mxdi9i7/vant-react) | Vant React 版（由社区维护） |
-| [vant-cli](https://github.com/youzan/vant/tree/dev/packages/vant-cli) | 开箱即用的组件库搭建工具 |
-| [vant-icons](https://github.com/youzan/vant/tree/dev/packages/vant-icons) | Vant 图标库 |
-| [vant-touch-emulator](https://github.com/youzan/vant/tree/dev/packages/vant-touch-emulator) | 在桌面端使用 Vant 的辅助库 |
+| 项目                                                                                        | 描述                        |
+| ------------------------------------------------------------------------------------------- | --------------------------- |
+| [vant-demo](https://github.com/youzan/vant-demo)                                            | Vant 官方示例合集           |
+| [vant-weapp](https://github.com/youzan/vant-weapp)                                          | 微信小程序组件库            |
+| [vant-react](https://github.com/mxdi9i7/vant-react)                                         | Vant React 版（由社区维护） |
+| [vant-cli](https://github.com/youzan/vant/tree/dev/packages/vant-cli)                       | 开箱即用的组件库搭建工具    |
+| [vant-icons](https://github.com/youzan/vant/tree/dev/packages/vant-icons)                   | Vant 图标库                 |
+| [vant-touch-emulator](https://github.com/youzan/vant/tree/dev/packages/vant-touch-emulator) | 在桌面端使用 Vant 的辅助库  |
 
 ### 链接
 

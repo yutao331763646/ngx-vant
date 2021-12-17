@@ -3,7 +3,7 @@
 ### Install
 
 ```js
-import ButtonModule from 'ngx-vant/button';
+import { ButtonModule } from "ngx-vant/button";
 ```
 
 ## Usage
@@ -21,15 +21,17 @@ import ButtonModule from 'ngx-vant/button';
 ### Plain
 
 ```html
-<van-button [plain]="true"  type="primary">Primary</van-button>
-<van-button [plain]="true"  type="info">Danger</van-button>
+<van-button [plain]="true" type="primary">Primary</van-button>
+<van-button [plain]="true" type="info">Danger</van-button>
 ```
 
 ### Hairline
 
 ```html
-<van-button [plain]="true"  [hairline]="true"  type="primary">Hairline</van-button>
-<van-button [plain]="true"  [hairline]="true"  type="info">Hairline</van-button>
+<van-button [plain]="true" [hairline]="true" type="primary"
+  >Hairline</van-button
+>
+<van-button [plain]="true" [hairline]="true" type="info">Hairline</van-button>
 ```
 
 ### Disabled
@@ -100,38 +102,36 @@ import ButtonModule from 'ngx-vant/button';
 
 ### Props
 
-| Attribute | Description | Type | Default |
-| --- | --- | --- | --- |
-| type | Can be set to `primary` `info` `warning` `danger` | _string_ | `default` |
-| size | Can be set to `large` `small` `mini` | _string_ | `normal` |
-| text | Text | _string_ | - |
-| color | Color, support linear-gradient | _string_ | - |
-| icon | Left Icon | _string_ | - |
-| iconPrefix  | Icon className prefix | _string_ | `van-icon` |
-| iconPosition  | Icon position, can be set to `right` | _string_ | `left` |
-| tag | HTML Tag | _string_ | `button` |
-| native-type | Native Type Attribute | _string_ | `''` |
-| plain | Whether to be plain button | _boolean_ | `false` |
-| block | Whether to set display block | _boolean_ | `false` |
-| round | Whether to be round button | _boolean_ | `false` |
-| square | Whether to be square button | _boolean_ | `false` |
-| disabled | Whether to disable button | _boolean_ | `false` |
-| loading | Whether show loading status | _boolean_ | `false` |
-| loadingText | Loading text | _string_ | - |
-| loadingType | Loading type, can be set to `spinner` | _string_ | `circular` |
-| loadingSize | Loading icon size | _string_ | `20px` |
-| url | Link URL | _string_ | - |
-| to | Target route of the link, same as using vue-router | _string \| object_ | - |
-| replace | If true, the navigation will not leave a history record | _boolean_ | `false` |
+| Attribute    | Description                                             | Type               | Default    |
+| ------------ | ------------------------------------------------------- | ------------------ | ---------- |
+| type         | Can be set to `primary` `info` `warning` `danger`       | _string_           | `default`  |
+| size         | Can be set to `large` `small` `mini`                    | _string_           | `normal`   |
+| text         | Text                                                    | _string_           | -          |
+| color        | Color, support linear-gradient                          | _string_           | -          |
+| icon         | Left Icon                                               | _string_           | -          |
+| iconPrefix   | Icon className prefix                                   | _string_           | `van-icon` |
+| iconPosition | Icon position, can be set to `right`                    | _string_           | `left`     |
+| tag          | HTML Tag                                                | _string_           | `button`   |
+| native-type  | Native Type Attribute                                   | _string_           | `''`       |
+| plain        | Whether to be plain button                              | _boolean_          | `false`    |
+| block        | Whether to set display block                            | _boolean_          | `false`    |
+| round        | Whether to be round button                              | _boolean_          | `false`    |
+| square       | Whether to be square button                             | _boolean_          | `false`    |
+| disabled     | Whether to disable button                               | _boolean_          | `false`    |
+| loading      | Whether show loading status                             | _boolean_          | `false`    |
+| loadingText  | Loading text                                            | _string_           | -          |
+| loadingType  | Loading type, can be set to `spinner`                   | _string_           | `circular` |
+| loadingSize  | Loading icon size                                       | _string_           | `20px`     |
+| url          | Link URL                                                | _string_           | -          |
+| to           | Target route of the link, same as using vue-router      | _string \| object_ | -          |
+| replace      | If true, the navigation will not leave a history record | _boolean_          | `false`    |
 
 ### Events
 
-| Event | Description | Arguments |
-| --- | --- | --- |
-| click | Emitted when button is clicked and not disabled or loading | _event: Event_ |
-| touchstart | Emitted when button is touched | _event: TouchEvent_ |
-
-
+| Event      | Description                                                | Arguments           |
+| ---------- | ---------------------------------------------------------- | ------------------- |
+| click      | Emitted when button is clicked and not disabled or loading | _event: Event_      |
+| touchstart | Emitted when button is touched                             | _event: TouchEvent_ |
 
 ### Less Variables
 

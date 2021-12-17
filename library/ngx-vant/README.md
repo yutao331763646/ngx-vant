@@ -1,5 +1,3 @@
-
-
 <p align="center">
     <img alt="logo" src="https://img.yzcdn.cn/vant/logo.png" width="120" height="120" style="margin-bottom: 10px;">
 </p>
@@ -32,7 +30,7 @@
 - 65+ Reusable components
 - 1kb Component average size (min+gzip)
 - Extensive documentation and demos
-- Support Angular12
+- Support Angular13
 - Support Tree Shaking
 - Support Custom Theme
 - Support i18n
@@ -48,23 +46,17 @@ npm i ngx-vant -S
 ## Quickstart
 
 ```js
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
-import { ButtonModule } from 'ngx-vant';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { AppComponent } from "./app.component";
+import { ButtonModule } from "ngx-vant";
 @NgModule({
-    declarations: [
-        AppComponent,
-    ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        ButtonModule
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, ButtonModule],
+  providers: [],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
 ```
 
 See more in [Quickstart](https://yutao331763646.github.io/yutao331763646/#/basic/quickstart).
@@ -77,22 +69,13 @@ Please make sure to read the [Contributing Guide](https://yutao331763646.github.
 
 Modern browsers and Android 4.0+, iOS 8.0+.
 
-
 ## Links
 
 - [Documentation](https://yutao331763646.github.io/yutao331763646)
 
-
 ## LICENSE
 
 [MIT](https://en.wikipedia.org/wiki/MIT_License)
-
-
-
-
-
-
-
 
 <!-- 发布：
 1、npm run package  等一会儿，等所有等包生成完之后，再执行第二步

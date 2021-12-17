@@ -1,32 +1,32 @@
 {
-    "name": "ngx-vant",
-    "version": "0.7.9",
-    "author": "YuTao",
-    "license": "MIT",
-    "description": "An enterprise-class UI components based on Vant and Angular",
-    "peerDependencies": {
-        "@angular/common": "~12.1.2",
-        "@angular/core": "~12.1.2"
-    },
-    "dependencies": {
-        "@vant/icons": "^1.5.0",
-        "tslib": "^2.0.0"
-    },
-    "keywords": [
-        "vant",
-        "design",
-        "angular",
-        "ui",
-        "framework",
-        "frontend",
-        "ngx-vant"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/yutao331763646/ngx-vant"
-    },
-    "bugs": {
-        "url": "https://github.com/yutao331763646/ngx-vant/issues"
-    },
-    "homepage": "https://ngx-vant.github.io/ngx-vant"
+  "name": "ngx-vant",
+  "version": "0.8.1",
+  "author": "YuTao",
+  "license": "MIT",
+  "description": "An enterprise-class UI components based on Vant and Angular",
+  "peerDependencies": {
+    "@angular/common": "~13.1.1",
+    "@angular/core": "~13.1.1"
+  },
+  "dependencies": {
+    "@vant/icons": "^1.5.0",
+    "tslib": "^2.0.0"
+  },
+  "keywords": [
+    "vant",
+    "design",
+    "angular",
+    "ui",
+    "framework",
+    "frontend",
+    "ngx-vant"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yutao331763646/ngx-vant"
+  },
+  "bugs": {
+    "url": "https://github.com/yutao331763646/ngx-vant/issues"
+  },
+  "homepage": "https://ngx-vant.github.io/ngx-vant"
 }
