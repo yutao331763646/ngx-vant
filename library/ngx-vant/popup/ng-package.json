@@ -1,0 +1,6 @@
+{
+  "lib": {
+    "flatModuleFile": "vanPopup",
+    "entryFile": "public-api.ts"
+  }
+}

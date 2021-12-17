@@ -1,0 +1,6 @@
+{
+  "lib": {
+    "flatModuleFile": "vanToast",
+    "entryFile": "public-api.ts"
+  }
+}

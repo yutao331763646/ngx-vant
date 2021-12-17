@@ -1,0 +1,6 @@
+{
+  "lib": {
+    "flatModuleFile": "vanRow",
+    "entryFile": "public-api.ts"
+  }
+}

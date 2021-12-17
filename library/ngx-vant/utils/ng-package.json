@@ -1,0 +1,6 @@
+{
+  "lib": {
+    "flatModuleFile": "vantUtils",
+    "entryFile": "public-api.ts"
+  }
+}

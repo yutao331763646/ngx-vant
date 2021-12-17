@@ -1,0 +1,6 @@
+{
+  "lib": {
+    "flatModuleFile": "vanField",
+    "entryFile": "public-api.ts"
+  }
+}

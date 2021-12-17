@@ -1,0 +1,6 @@
+{
+  "lib": {
+    "flatModuleFile": "vanButton",
+    "entryFile": "public-api.ts"
+  }
+}

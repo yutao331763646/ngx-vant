@@ -3,7 +3,9 @@
   "dest": "../../dist/ngx-vant",
   "deleteDestPath": true,
   "lib": {
-    "entryFile": "public-api"
+    "entryFile": "public-api.ts"
   },
-  "allowedNonPeerDependencies": [ "@vant/icons"]
+  "allowedNonPeerDependencies": [
+    "@vant/icons"
+  ]
 }

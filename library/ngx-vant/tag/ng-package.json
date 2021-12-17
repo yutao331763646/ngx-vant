@@ -1,0 +1,6 @@
+{
+  "lib": {
+    "flatModuleFile": "vanTag",
+    "entryFile": "public-api.ts"
+  }
+}

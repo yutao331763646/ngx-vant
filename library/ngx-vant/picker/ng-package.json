@@ -1,0 +1,6 @@
+{
+  "lib": {
+    "flatModuleFile": "vanPicker",
+    "entryFile": "public-api.ts"
+  }
+}

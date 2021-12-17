@@ -4,10 +4,9 @@
   "compilerOptions": {
     "outDir": "./out-tsc/app",
     "types": [
-        "node",
-        "jasmine"
-      ],
-
+      "node",
+      "jasmine"
+    ],
   },
   "files": [
     "src/main.ts",

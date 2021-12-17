@@ -1,0 +1,6 @@
+{
+  "lib": {
+    "flatModuleFile": "vantNotify",
+    "entryFile": "public-api.ts"
+  }
+}

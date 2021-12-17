@@ -1,0 +1,6 @@
+{
+  "lib": {
+    "flatModuleFile": "vanProgress",
+    "entryFile": "public-api.ts"
+  }
+}

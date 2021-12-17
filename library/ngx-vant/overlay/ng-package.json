@@ -1,0 +1,6 @@
+{
+  "lib": {
+    "flatModuleFile": "vanOverlay",
+    "entryFile": "public-api.ts"
+  }
+}

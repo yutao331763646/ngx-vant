@@ -1,0 +1,6 @@
+{
+  "lib": {
+    "flatModuleFile": "vanNavBar",
+    "entryFile": "public-api.ts"
+  }
+}
