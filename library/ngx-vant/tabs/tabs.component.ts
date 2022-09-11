@@ -74,7 +74,6 @@ export class TabsComponent implements OnInit {
       this.currentChange(target, 0, false);
     });
   }
-  ngAfterViewInit() {}
   ngAfterContentInit() {
     this.scrollable = this.allTabs.length > this.swipeThreshold;
   }
