@@ -163,7 +163,6 @@
             }
         }
     },
-    "defaultProject": "vant-for-angular",
     "cli": {
         "analytics": "ea2b2145-f880-448c-9ae8-555d360368f4"
     }
