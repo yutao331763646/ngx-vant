@@ -30,7 +30,7 @@
 - 65+ Reusable components
 - 1kb Component average size (min+gzip)
 - Extensive documentation and demos
-- Support Angular13
+- Support Angular14
 - Support Tree Shaking
 - Support Custom Theme
 - Support i18n

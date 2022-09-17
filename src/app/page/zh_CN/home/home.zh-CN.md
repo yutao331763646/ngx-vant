@@ -16,7 +16,7 @@ Ngx-Vant 是**Zan Design System**视觉规范实现的**Angular UI** 组件库�
 
 - 提供 60 多个高质量组件，覆盖移动端各类场景
 - 完善的中英文文档和示例
-- 支持 Angular13
+- 支持 Angular14
 - 支持按需引入
 - 支持主题定制
 - 支持国际化

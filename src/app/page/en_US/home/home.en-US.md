@@ -10,7 +10,7 @@
 
 - 65+ Reusable components
 - Extensive documentation and demos
-- Support Angular13
+- Support Angular14
 - Support Tree Shaking
 - Support Custom Theme
 - Support i18n
