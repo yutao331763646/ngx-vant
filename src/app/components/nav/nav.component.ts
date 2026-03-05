@@ -6,6 +6,7 @@ import { takeUntil } from 'rxjs/operators';
 import { navConfig, navEnConfig } from './config'
 
 @Component({
+  standalone: false,
     selector: 'vant-doc-nav',
     templateUrl: './nav.component.html',
     styleUrls: ['./nav.component.less']

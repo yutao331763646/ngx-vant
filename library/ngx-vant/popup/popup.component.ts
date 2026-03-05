@@ -6,6 +6,7 @@ export type iconPositionType =
   | 'bottom-left'
   | 'bottom-right';
 @Component({
+  standalone: false,
   selector: 'van-popup',
   exportAs: 'vanPopup',
   templateUrl: './popup.component.html',

@@ -8,6 +8,7 @@ export type safeAny = any;
 
 
 @Directive({
+  standalone: false,
     selector: '[vanTemplateOutlet]',
     exportAs: 'vanTemplateOutlet'
 })

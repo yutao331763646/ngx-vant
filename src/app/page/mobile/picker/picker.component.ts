@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+  standalone: false,
     selector: 'app-picker',
     templateUrl: './picker.component.html',
     styleUrls: ['./picker.component.less']

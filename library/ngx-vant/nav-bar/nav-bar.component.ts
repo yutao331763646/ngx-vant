@@ -9,6 +9,7 @@ import {
 import { removeNgTag } from 'ngx-vant/utils';
 
 @Component({
+  standalone: false,
   selector: 'van-nav-bar',
   exportAs: 'vanNavBar',
   templateUrl: './nav-bar.component.html',

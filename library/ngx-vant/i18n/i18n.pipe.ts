@@ -2,6 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { VantI18nService } from './i18n.service';
 
 @Pipe({
+  standalone: false,
     name: 'vantI18n',
     pure: false
 })

@@ -10,6 +10,7 @@ import { removeNgTag } from 'ngx-vant/utils';
 import { overlayAnimation } from './overlay.animation';
 
 @Component({
+  standalone: false,
   selector: 'van-overlay',
   exportAs: 'vanOverlay',
   templateUrl: './overlay.component.html',

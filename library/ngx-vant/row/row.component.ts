@@ -22,6 +22,7 @@ export type RowJustify =
   | 'space-between';
 
 @Component({
+  standalone: false,
   selector: 'van-row',
   exportAs: 'vanRow',
   templateUrl: './row.component.html',

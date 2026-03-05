@@ -11,6 +11,7 @@ export const VantIsChange = (...changes: SimpleChange[]) => {
     return false;
 };
 @Directive({
+  standalone: false,
     selector: '[vant-i18n]'
 })
 export class VantI18nDirective implements OnChanges, OnDestroy {

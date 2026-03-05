@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'app-sticky',
   templateUrl: './sticky.component.html',
   styleUrls: ['./sticky.component.less']

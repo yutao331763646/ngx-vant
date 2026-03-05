@@ -5,6 +5,7 @@ import en_US from 'src/app/common/i18n/languages/en_US';
 import zh_CN from 'src/app/common/i18n/languages/zh_CN';
 
 @Component({
+  standalone: false,
     selector: 'app-button',
     templateUrl: './button.component.html',
     styleUrls: ['./button.component.less']

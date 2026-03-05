@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { cardWrapper } from 'src/app/common/card-wrapper';
 @Component({
+  standalone: false,
     selector: 'app-popup',
     templateUrl: './popup.component.html',
     styleUrls: ['./popup.component.less']

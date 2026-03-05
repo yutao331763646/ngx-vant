@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { cardWrapper } from 'src/app/common/card-wrapper';
 
 @Component({
+  standalone: false,
     selector: 'app-button',
     templateUrl: './button.component.html',
     styleUrls: ['./button.component.less']

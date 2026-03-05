@@ -3,6 +3,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
+  standalone: false,
     selector: 'vant-doc-simulator',
     templateUrl: './simulator.component.html',
     styleUrls: ['./simulator.component.less']

@@ -3,6 +3,7 @@ import { overlayAnimation } from 'ngx-vant/overlay';
 export type TagType = 'default' | 'primary' | 'success' | 'danger' | 'warning';
 export type TagSize = 'large' | 'medium' | '';
 @Component({
+  standalone: false,
   selector: 'van-tag',
   exportAs: 'vanTag',
   templateUrl: './tag.component.html',

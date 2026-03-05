@@ -4,6 +4,7 @@ import zh_CN from 'src/app/common/i18n/languages/zh_CN';
 import { ConfigService } from 'src/app/common/services';
 
 @Component({
+  standalone: false,
     selector: 'vant-doc-header',
     templateUrl: './header.component.html',
     styleUrls: ['./header.component.less'],

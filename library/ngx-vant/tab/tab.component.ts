@@ -11,6 +11,7 @@ import {
 import { removeNgTag } from 'ngx-vant/utils';
 
 @Component({
+  standalone: false,
   selector: 'van-tab',
   exportAs: 'vanTab',
   templateUrl: './tab.component.html',

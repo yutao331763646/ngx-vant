@@ -17,6 +17,7 @@ export type ButtonType = 'default' | 'primary' | 'info' | 'warning' | 'danger';
 export type ButtonSize = 'large' | 'normal' | 'small' | 'mini';
 
 @Component({
+  standalone: false,
   selector: 'van-button',
   exportAs: 'vanButton',
   templateUrl: './button.component.html',

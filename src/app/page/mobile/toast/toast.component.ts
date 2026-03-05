@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ToastService } from 'ngx-vant/toast/toast.service'
 @Component({
+  standalone: false,
     selector: 'app-toast',
     templateUrl: './toast.component.html',
     styleUrls: ['./toast.component.scss']

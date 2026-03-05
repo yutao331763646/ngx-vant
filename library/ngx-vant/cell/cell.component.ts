@@ -10,6 +10,7 @@ import {
 import { removeNgTag } from 'ngx-vant/utils';
 
 @Component({
+  standalone: false,
   selector: 'van-cell',
   exportAs: 'vanCell',
   templateUrl: './cell.component.html',

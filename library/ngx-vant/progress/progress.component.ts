@@ -8,6 +8,7 @@ import {
 } from '@angular/core';
 import { addUnit, removeNgTag } from 'ngx-vant/utils';
 @Component({
+  standalone: false,
   selector: 'van-progress',
   exportAs: 'vanProgress',
   templateUrl: './progress.component.html',

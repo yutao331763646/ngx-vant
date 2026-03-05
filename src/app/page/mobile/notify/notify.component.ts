@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NotifyService } from 'ngx-vant/notify/notify.service';
 @Component({
+  standalone: false,
     selector: 'app-notify',
     templateUrl: './notify.component.html',
     styleUrls: ['./notify.component.less']

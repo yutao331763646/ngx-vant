@@ -13,6 +13,7 @@ export function isNotNil<T>(value: T): value is NonNullable<T> {
   return typeof value !== 'undefined' && value !== null;
 }
 @Component({
+  standalone: false,
   selector: 'van-col',
   exportAs: 'vanCol',
   templateUrl: './col.component.html',

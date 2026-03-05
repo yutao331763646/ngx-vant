@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { icons } from './config';
 @Component({
+  standalone: false,
     selector: 'app-icon',
     templateUrl: './icon.component.html',
     styleUrls: ['./icon.component.less']

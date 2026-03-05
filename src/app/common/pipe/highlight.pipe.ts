@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import * as hljs from 'highlight.js';
+import hljs from 'highlight.js';
 @Pipe({
+  standalone: false,
     name: 'highlightAuto'
 })
 export class HighlightPipe implements PipeTransform {

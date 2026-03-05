@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit } from '@angular/core';
 import { removeNgTag } from 'ngx-vant/utils';
 @Component({
+  standalone: false,
   selector: 'vant-notify',
   exportAs: 'vantNotify',
   templateUrl: './notify.component.html',

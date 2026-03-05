@@ -19,6 +19,7 @@ export type FieldType =
   | 'text';
 
 @Component({
+  standalone: false,
   selector: 'van-field',
   exportAs: 'vanField',
   templateUrl: './field.component.html',

@@ -3,6 +3,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { cardWrapper } from 'src/app/common/card-wrapper';
 
 @Component({
+  standalone: false,
     selector: 'app-loading',
     templateUrl: './loading.component.html',
     styleUrls: ['./loading.component.scss']

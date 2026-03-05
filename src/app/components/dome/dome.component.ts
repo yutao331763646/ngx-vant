@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 @Component({
+  standalone: false,
     selector: 'vant-doc-dome',
     templateUrl: './dome.component.html',
     styleUrls: ['./dome.component.less'],

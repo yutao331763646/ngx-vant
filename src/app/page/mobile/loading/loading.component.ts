@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'app-loading',
   templateUrl: './loading.component.html',
   styleUrls: ['./loading.component.less']

@@ -6,6 +6,7 @@ export type LoadingType = 'spinner' | 'circular';
   selector: 'van-loading',
   exportAs: 'vanLoading',
   templateUrl: './loading.component.html',
+  standalone: false,
 })
 export class LoadingComponent implements OnInit {
   @Input() type: LoadingType = 'circular';

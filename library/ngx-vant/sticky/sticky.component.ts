@@ -3,6 +3,7 @@ import { fromEvent, Subscription } from 'rxjs';
 import { getElementTop, getScroller, getScrollTop } from 'ngx-vant/utils';
 
 @Component({
+  standalone: false,
   selector: 'van-sticky',
   exportAs: 'vanSticky',
   templateUrl: './sticky.component.html',

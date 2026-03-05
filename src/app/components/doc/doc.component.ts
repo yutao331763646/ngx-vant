@@ -1,7 +1,8 @@
 import { Component, Input, OnChanges, SimpleChanges, ViewEncapsulation } from '@angular/core';
-import * as hljs from 'highlight.js/lib/core';
+import hljs from 'highlight.js/lib/core';
 
 @Component({
+  standalone: false,
     selector: 'vant-pc-doc',
     encapsulation: ViewEncapsulation.None,
     templateUrl: './doc.component.html',
@@ -19,7 +20,7 @@ export class DocComponent implements OnChanges {
     refreshView() {
         setTimeout(() => {
             Array.from<HTMLElement>(document.querySelectorAll('pre code')).forEach((block) => {
-                hljs.highlightBlock(block);
+                hljs.highlightElement(block);
             });
         })
     }

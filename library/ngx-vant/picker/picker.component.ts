@@ -102,6 +102,7 @@ export interface Column {
   children: Column;
 }
 @Component({
+  standalone: false,
   selector: 'van-picker',
   exportAs: 'vanPicker',
   templateUrl: './picker.component.html',
@@ -205,6 +206,7 @@ export class PickerComponent implements OnInit {
 }
 
 @Component({
+  standalone: false,
   selector: '[van-toolbar]',
   templateUrl: './toolbar.component.html',
 })
@@ -256,6 +258,7 @@ const MOMENTUM_LIMIT_TIME = 300;
 const MOMENTUM_LIMIT_DISTANCE = 15;
 const DEFAULT_DURATION = 200;
 @Component({
+  standalone: false,
   selector: '[van-picker-column]',
   templateUrl: './picker-column.component.html',
   host: {

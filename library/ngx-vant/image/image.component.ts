@@ -4,6 +4,7 @@ import { addUnit } from 'ngx-vant/utils';
 export type ImgageFit = 'contain' | 'cover' | 'fill' | 'none' | 'scale-down';
 
 @Component({
+  standalone: false,
   selector: 'van-image',
   exportAs: 'vanImage',
   templateUrl: './image.component.html',

@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output, } from '@angular/core';
 
 @Component({
+  standalone: false,
     selector: '[van-tab-title]',
     template: `<span class="van-tab__text van-tab__text--ellipsis">{{title}}</span> `,
     host: {

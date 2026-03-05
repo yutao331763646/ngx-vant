@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
+  standalone: false,
     selector: 'vant-mobile-demo',
     templateUrl: './demo.component.html',
     styleUrls: ['./demo.component.less']

@@ -31,6 +31,7 @@ function addUnit(value?: string | number): string | undefined {
   return isNumeric(value) ? `${value}px` : value;
 }
 @Component({
+  standalone: false,
   selector: 'van-icon',
   exportAs: 'vanIcon',
   templateUrl: './icon.component.html',

@@ -12,6 +12,7 @@ import { TabComponent } from 'ngx-vant/tab';
 import { addUnit, scrollLeftTo } from 'ngx-vant/utils';
 export type TabsType = 'line' | 'card';
 @Component({
+  standalone: false,
   selector: 'van-tabs',
   exportAs: 'vanTabs',
   templateUrl: './tabs.component.html',
@@ -35,7 +36,7 @@ export class TabsComponent implements OnInit {
     return this._swipeThreshold;
   }
   set swipeThreshold(value: string | number) {
-    this.scrollable = this.allTabs.length > value;
+    this.scrollable = this.allTabs.length > Number(value);
     console.log(this.allTabs);
     this._swipeThreshold = addUnit(value) as string;
   }
@@ -75,7 +76,7 @@ export class TabsComponent implements OnInit {
     });
   }
   ngAfterContentInit() {
-    this.scrollable = this.allTabs.length > this.swipeThreshold;
+    this.scrollable = this.allTabs.length > Number(this.swipeThreshold);
   }
 
   currentChange(currentTarget: any, index: number, bool: boolean) {
@@ -96,6 +97,7 @@ export class TabsComponent implements OnInit {
 }
 
 @Component({
+  standalone: false,
   selector: '[tab-body]',
   template: `
     <ng-container *ngIf="active">

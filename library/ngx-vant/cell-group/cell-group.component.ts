@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'van-cell-group',
   exportAs: 'vanCellGroup',
   templateUrl: './cell-group.component.html',

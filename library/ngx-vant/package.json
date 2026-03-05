@@ -1,12 +1,12 @@
 {
   "name": "ngx-vant",
-  "version": "0.8.2",
+  "version": "1.0.0",
   "author": "YuTao",
   "license": "MIT",
   "description": "An enterprise-class UI components based on Vant and Angular",
   "peerDependencies": {
-    "@angular/common": "~14.2.2",
-    "@angular/core": "~14.2.2"
+    "@angular/common": "^21.0.0",
+    "@angular/core": "^21.0.0"
   },
   "dependencies": {
     "@vant/icons": "^1.5.0",

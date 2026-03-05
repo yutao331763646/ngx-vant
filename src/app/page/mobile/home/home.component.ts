@@ -7,6 +7,7 @@ import en_US from 'src/app/common/i18n/languages/en_US';
 import zh_CN from 'src/app/common/i18n/languages/zh_CN';
 import { navConfig, navEnConfig } from './config'
 @Component({
+  standalone: false,
     selector: 'app-home',
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.less']

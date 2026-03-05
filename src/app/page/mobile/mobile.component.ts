@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
+  standalone: false,
     selector: 'mobile-root',
     template: `<router-outlet></router-outlet>`,
     styles: [

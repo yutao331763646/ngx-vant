@@ -30,12 +30,18 @@
 - 65+ Reusable components
 - 1kb Component average size (min+gzip)
 - Extensive documentation and demos
-- Support Angular14
+- Support Angular 21+
 - Support Tree Shaking
 - Support Custom Theme
 - Support i18n
 - Support TS
 - Support SSR
+
+## Version Requirements
+
+- Angular: 21.0.0+
+- TypeScript: 5.9.0+
+- RxJS: 7.4.0+
 
 ## Install
 
